@@ -1,0 +1,218 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import cv2\n",
+    "from matplotlib import pyplot as plt\n",
+    "import numpy as np\n",
+    "from matplotlib.pyplot import figure\n",
+    "import time\n",
+    "import random\n",
+    "import pandas as pd\n",
+    "\n",
+    "from scipy import signal\n",
+    "from scipy import misc\n",
+    "from scipy.spatial import distance\n",
+    "\n",
+    "from ipywidgets import Image\n",
+    "from ipycanvas import Canvas"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "lists = [(338, 192), (346, 216), (335, 184), (322, 188), (312, 210), (319, 197), (324, 186), (341, 201), (313, 207), (323, 189), (348, 218), (330, 182), (314, 204), (317, 199), (344, 210), (348, 222), (316, 202), (337, 189), (345, 211), (315, 205), (311, 212), (350, 220), (339, 193), (326, 184), (339, 195), (343, 207), (319, 195), (338, 190), (340, 196), (321, 193), (342, 202), (318, 198), (311, 211), (308, 215), (320, 192), (333, 183), (313, 209), (322, 190), (312, 208), (329, 183), (336, 185), (307, 215), (345, 213), (343, 205), (327, 183), (323, 187), (341, 199), (314, 206), (317, 201), (342, 204), (344, 208), (346, 214), (334, 184), (325, 184), (316, 200), (330, 175), (331, 183), (324, 185), (305, 217), (315, 203), (340, 198), (336, 186), (318, 196), (337, 187), (320, 194), (321, 191)]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 26,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "img = cv2.imread(\"map.png\", cv2.IMREAD_GRAYSCALE);\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 27,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def most_frequent(List): \n",
+    "    return max(set(List), key = List.count) "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 103,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def get_lines_from_small_contours(asr):\n",
+    "        \n",
+    "    tasr = asr.copy()\n",
+    "    foc_point = tasr[0]\n",
+    "    tasr.remove(foc_point)\n",
+    "    grouped_points=[]\n",
+    "    \n",
+    "    while len(tasr)>0:\n",
+    "        grad_list=[]\n",
+    "        (x,y)=foc_point\n",
+    "        for i in tasr:\n",
+    "            (x1,y1)=i\n",
+    "\n",
+    "            if (x!=x1):\n",
+    "                grad_list.append(np.arctan(abs((y-y1)/(x-x1))))\n",
+    "            else:\n",
+    "                grad_list.append(np.pi)\n",
+    "\n",
+    "        linegrad = most_frequent(grad_list)\n",
+    "        lineindex = ([i for i in range(len(grad_list)) if (grad_list[i]>(linegrad-0.4)) and (grad_list[i]<(linegrad+0.4))])\n",
+    "\n",
+    "        found_line_points=[]\n",
+    "        for i in lineindex:\n",
+    "            fl=tasr[i]\n",
+    "            found_line_points.append(fl)\n",
+    "            cv2.line(img4,fl,fl,(255,0,0),5)\n",
+    "            \n",
+    "        if len(found_line_points)>1: \n",
+    "            minimum = sorted(found_line_points,key=lambda x: x[1], reverse=True)[0]\n",
+    "            maximum = sorted(found_line_points,key=lambda x: x[1], reverse=False)[0]\n",
+    "            \n",
+    "            grouped_points.append([minimum,maximum,len(found_line_points)])\n",
+    "\n",
+    "        for i in found_line_points:\n",
+    "            tasr.remove(i)\n",
+    "\n",
+    "    \n",
+    "    return grouped_points"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 104,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "linecoords = get_lines_from_small_contours(lists)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 105,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[(348, 222), (330, 175), 28], [(305, 217), (329, 183), 35]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(linecoords)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 106,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stderr",
+     "output_type": "stream",
+     "text": [
+      "Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[(348, 222), (330, 175), 28]\n",
+      "[(305, 217), (329, 183), 35]\n"
+     ]
+    },
+    {
+     "data": {
+      "image/png": "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eXMmJiYyd+7cbN26NUuXLk2SSecmvSg7FAAA0DYm26GoPvI0nQQFAAC0j4985AkAAOB0BAUAAFBNUAAAANUEBQAAUE1QAAAA1QQFAABQTVAAAADVBAUAAFBNUAAAANUEBQAAUE1QAAAA1QQFAABQTVAAAADVBAUAAFBNUAAAANUEBQAAUE1QAAAA1QQFAABQTVAAAADVBAUAAFBNUAAAANUEBQAAUE1QAAAA1QQFAABQTVAAAADVBAUAAFBNUAAAANUEBQAAUE1QAAAA1QQFAABQTVAAAADVBAUAAFBNUAAAANUEBQAAUE1QAAAA1QQFAABQTVAAAADVBAUAAFBNUAAAANUEBQAAUE1QAAAA1QQFAABQTVAAAADVBAUAAFBNUAAAANUEBQAAUE1QAAAA1QQFAABQTVAAAADVphwUN954Y6699toMDAxk9erVefbZZ5MkzWYzV199dQYGBjIwMJCHH3649Zzh4eGsWrUq/f39WbFiRfbt23f+/wQAAMDMKVP06quvtn69c+fOMjg4WEop5corryzPP//8aZ+zdu3asmXLllJKKY888khZuXLllF4riWEYhmEYhmEYbTJ6enrO+N59yjsUl112WevXr7/+eubMmfyp4+Pj2bNnTzZu3JgkWb9+fQ4ePJhDhw5N9SUBAIA213Uun3zrrbfmySefTJL89Kc/bT2+YcOGHDt2LL/7u7+bv/qrv8q8efMyOjqahQsXpqvr+Es0Go309fVlZGQkzWbz/P0JAACAGXNON2U/9NBDGR0dzT333JO77747SfL000/nueeey549e9Ld3Z1Nmza1Pr/RaHzo+cdPM/2moaGh9Pb2tgYAANAZGuVM7/LP4tOf/nTGxsbS3d3deuzll19Of39/3nzzzYyPj2fJkiWZmJhIV1dXSilZsGBBdu3addYdilNDBAAAmDk9PT0ZGxs77dyUdijeeOONvPTSS62Pd+7cme7u7nzqU5/Ka6+91np8+/btGRwcTJLMnz8/g4OD2bZtW5Jkx44daTabjjsBAMAsMqV7KF5//fWsX78+b7/9dubMmZN58+blscceyyuvvJL169fn/fffTyklixcvzkMPPdR63t/+7d9m8+bNue+++zJ37txs3bp12v4gAADAhVd95Gk6OfIEAADt4yMfeQIAADgdQQEAAFQTFAAAQDVBAQAAVBMUAABANUEBAABUExQAAEA1QQEAAFQTFAAAQDVBAQAAVBMUAABANUEBAABUExQAAEA1QQEAAFQTFAAAQDVBAQAAVBMUAABANUEBAABUExQAAEA1QQEAAFQTFAAAQDVBAQAAVBMUAABANUEBAABUExQAAEA1QQEAAFQTFAAAQDVBAQAAVBMUAABANUEBAABUExQAAEA1QQEAAFQTFAAAQDVBAQAAVBMUAABANUEBAABUExQAAEA1QQEAAFQTFAAAQDVBAQAAVBMUAABANUEBAABUExQAAEA1QQEAAFQTFAAAQDVBAQAAVBMUAABANUEBAABUExQAAEA1QQEAAFQTFAAAQDVBAQAAVOua6Qs4nU984hP53Oc+N9OXwXn061//OpdeeulMXwbnifWcXazn7GI9Zx9rOrt06noeOXLkjHNtGRSf+9znMjY2NtOXwXnU29trTWcR6zm7WM/ZxXrOPtZ0dpmN6+nIEwAAUE1QAAAA1T7xve9973szfRGn83u/93szfQmcZ9Z0drGes4v1nF2s5+xjTWeX2baejVJKmemLAAAAOpMjTwAAQDVBAQAAVGu7oBgeHs6qVavS39+fFStWZN++fTN9SUzizjvvTLPZTKPRyN69e1uPT7aO1rh9vfPOO7n55pvT39+fgYGBrFu3LocOHUqSjI+PZ926dVmyZEmWLVuWZ555pvW8yeaYeTfeeGOuvfbaDAwMZPXq1Xn22WeT+DrtZH/5l3/5ob93rWXnajabufrqqzMwMJCBgYE8/PDDSaxpp3r33XfzrW99K0uWLMnSpUuzcePGJB+D9SxtZu3atWXLli2llFIeeeSRsnLlypm9ICb11FNPldHR0XLllVeW559/vvX4ZOtojdvX22+/XX7yk5+UY8eOlVJK+cEPflBuuOGGUkopX/va18p3v/vdUkopv/jFL0pfX1957733zjrHzHv11Vdbv965c2cZHBwspfg67VT/+Z//WdatW1f6+vpaf+9ay8516n8/T7Cmnenb3/52+dM//dPWf0dfeumlUsrsX8+2CopXXnmlfPazn229ETl27Fi54oorysGDB2f2wjirk/9CnGwdrXFn2b17d/n85z9fSinlkksuKePj46256667rjz55JNnnaO9/N3f/V354he/6Ou0Q73zzjtl5cqV5cCBA62/d61lZztdUFjTzvTrX/+6fPazny1vvvnmhx7/OKxnWx15Gh0dzcKFC9PVdfwHeDcajfT19WVkZGSGr4xzMdk6WuPO8sADD+Smm27KxMREjh07lnnz5rXmms1mRkZGJp2jfdx6661ZtGhR/vzP/zxbt271ddqh/uIv/iIbN27MVVdd1XrMWna+DRs25Jprrsltt92WI0eOWNMO9cILL6S7uzv33HNPfud3fierV6/OP//zP38s1rOtgiI5/i/yZMV3te1Ik62jNe4M9913X4aHh3Pvvfcmsaad7qGHHsro6Gjuueee3H333Umsaaf5+c9/nt27d+eb3/zmb8xZy8719NNP57nnnsuePXvS3d2dTZs2JbGmnei9997LgQMH8oUvfCH/8R//kb/5m7/Jn/zJn+To0aOzfj3bKigWLVqUsbGxHD16NMnxf6Gjo6Pp6+ub4SvjXEy2jta4M9x///159NFH8/jjj+fiiy9Od3d3kuTIkSOtz3nxxRfT19c36RztZ9OmTXnyySfT29vr67TDPPXUU/nlL3+Zq666Ks1mM2NjY/nyl7+cvXv3WssOdmItfuu3fivf/va382//9m/+O9qhrrzyysyZMycbNmxIkixfvjxXXXVVXnzxxVm/nm0VFPPnz8/g4GC2bduWJNmxY0eazWaazebMXhjnZLJ1tMbtb2hoKNu3b88TTzyRyy67rPX4LbfckgcffDBJsnv37hw+fDjXX3/9WeeYWW+88UZeeuml1sc7d+5Md3e3r9MO9J3vfCcvvfRSDh06lEOHDqW3tzc/+9nPsmnTJmvZod5666289tprrY+3b9+ewcFBX58d6vLLL8+XvvSl/OxnP0ty/H+uHTx4MKtXr57963nhbteYml/+8pdl5cqVZcmSJeWLX/xi2bt370xfEpP45je/WXp6esonPvGJcsUVV7Ru4J1sHa1x+xodHS1JyuLFi8vy5cvL8uXLy4oVK0oppRw+fLjccMMN5bd/+7fLF77whfKv//qvredNNsfMGhkZKdddd11ZtmxZufbaa8uXvvSl8l//9V+lFF+nne7km3mtZWd64YUXysDAQLnmmmvKsmXLyh/90R+1bsa1pp3phRdeKGvWrCnLli0ry5cvL48++mgpZfavZ6OUDjyoBQAAtIW2OvIEAAB0FkEBAABUExQAAEA1QQEAAFQTFAAAQDVBAQAAVBMUAABANUEBAABUExQAAEC1/weIV/jftRcorgAAAABJRU5ErkJggg==\n",
+      "text/plain": [
+       "<Figure size 960x800 with 1 Axes>"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "img4 = np.zeros([400,640,3])*0.0\n",
+    "for li in linecoords:\n",
+    "    [i,j,k] = li\n",
+    "    print(li)\n",
+    "    cv2.line(img4,i,j,(255,0,0),1)\n",
+    "for li in lists:\n",
+    "    cv2.line(img4,li,li,(0,255,0),1)\n",
+    "figure(num=None, figsize=(12, 10), dpi=80, facecolor='w', edgecolor='k')\n",
+    "plt.imshow(img4)\n",
+    "plt.show()\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 87,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "(400, 640)"
+      ]
+     },
+     "execution_count": 87,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "img.shape"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.7.4"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 4
+}
