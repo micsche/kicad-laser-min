@@ -1,0 +1,32252 @@
+G21
+G90
+G94
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.32 Y68.44
+M04 S1000
+G1 X15.06 Y68.66
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.06 Y68.66
+M04 S1000
+G1 X14.88 Y68.64
+G1 X15.1 Y68.92
+
+G1 X15.24 Y69.34
+
+G1 X15.5 Y69.62
+
+G1 X24.7 Y69.62
+
+G1 X25.26 Y69.4
+
+G1 X26.1 Y68.6
+
+G1 X26.32 Y68.5
+
+G1 X26.74 Y68.38
+
+G1 X26.56 Y68.4
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X26.74 Y68.38
+M04 S1000
+G1 X28.6 Y68.38
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.6 Y68.38
+M04 S1000
+G1 X29.1 Y68.52
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X29.1 Y68.52
+M04 S1000
+G1 X29.52 Y68.56
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X29.52 Y68.56
+M04 S1000
+G1 X30.12 Y69.16
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X30.12 Y69.16
+M04 S1000
+G1 X30.6 Y69.28
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X30.6 Y69.28
+M04 S1000
+G1 X30.9 Y69.58
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X30.9 Y69.58
+M04 S1000
+G1 X35.96 Y69.66
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X35.96 Y69.66
+M04 S1000
+G1 X36.34 Y69.54
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X36.34 Y69.54
+M04 S1000
+G1 X36.5 Y69.44
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X36.5 Y69.44
+M04 S1000
+G1 X37.34 Y68.6
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X37.34 Y68.6
+M04 S1000
+G1 X37.5 Y68.5
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X37.5 Y68.5
+M04 S1000
+G1 X37.76 Y68.44
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X37.76 Y68.44
+M04 S1000
+G1 X44.02 Y68.44
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X44.02 Y68.44
+M04 S1000
+G1 X44.34 Y68.52
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X44.34 Y68.52
+M04 S1000
+G1 X44.76 Y68.56
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X44.76 Y68.56
+M04 S1000
+G1 X45.36 Y69.16
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X45.36 Y69.16
+M04 S1000
+G1 X45.84 Y69.28
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X45.84 Y69.28
+M04 S1000
+G1 X46.14 Y69.58
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.14 Y69.58
+M04 S1000
+G1 X50.04 Y69.6
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X50.04 Y69.6
+M04 S1000
+G1 X50.4 Y69.46
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X50.4 Y69.46
+M04 S1000
+G1 X51.32 Y68.58
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X51.32 Y68.58
+M04 S1000
+G1 X51.32 Y68.58
+G1 X51.82 Y68.44
+
+G1 X59.26 Y68.44
+
+G1 X59.58 Y68.52
+
+G1 X60.0 Y68.56
+
+G1 X60.92 Y69.46
+
+G1 X61.28 Y69.62
+
+G1 X72.24 Y69.62
+
+G1 X72.66 Y69.5
+
+G1 X72.66 Y69.5
+
+G1 X73.22 Y69.0
+
+G1 X73.22 Y69.0
+
+G1 X73.46 Y68.94
+
+G1 X73.66 Y68.88
+
+G1 X74.12 Y68.46
+
+G1 X73.9 Y68.6
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.12 Y68.46
+M04 S1000
+G1 X74.62 Y68.42
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.62 Y68.42
+M04 S1000
+G1 X75.0 Y68.54
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.0 Y68.54
+M04 S1000
+G1 X75.18 Y68.68
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.18 Y68.68
+M04 S1000
+G1 X75.38 Y69.38
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.38 Y69.38
+M04 S1000
+G1 X76.1 Y69.56
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.1 Y69.56
+M04 S1000
+G1 X76.5 Y69.84
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.5 Y69.84
+M04 S1000
+G1 X77.08 Y70.04
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X77.08 Y70.04
+M04 S1000
+G1 X77.46 Y71.06
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X77.46 Y71.06
+M04 S1000
+G1 X77.52 Y71.34
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X77.52 Y71.34
+M04 S1000
+G1 X77.52 Y71.82
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X77.52 Y71.82
+M04 S1000
+G1 X77.44 Y72.1
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X77.44 Y72.1
+M04 S1000
+G1 X77.36 Y72.3
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X77.36 Y72.3
+M04 S1000
+G1 X77.1 Y72.56
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X77.1 Y72.56
+M04 S1000
+G1 X77.1 Y72.56
+G1 X77.1 Y72.56
+
+G1 X77.46 Y73.6
+
+G1 X77.52 Y73.88
+
+G1 X77.52 Y74.36
+
+G1 X77.46 Y74.64
+
+G1 X77.36 Y74.84
+
+G1 X77.14 Y75.08
+
+G1 X77.16 Y75.28
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X77.14 Y75.08
+M04 S1000
+G1 X76.94 Y75.04
+G1 X77.46 Y76.14
+
+G1 X77.52 Y76.42
+
+G1 X77.52 Y76.9
+
+G1 X77.46 Y77.18
+
+G1 X77.36 Y77.38
+
+G1 X77.1 Y77.64
+
+G1 X77.1 Y77.64
+
+G1 X77.1 Y77.64
+
+G1 X77.46 Y78.68
+
+G1 X77.52 Y78.96
+
+G1 X77.52 Y79.44
+
+G1 X77.46 Y79.72
+
+G1 X77.36 Y79.92
+
+G1 X77.1 Y80.18
+
+G1 X77.1 Y80.18
+
+G1 X77.1 Y80.18
+
+G1 X77.46 Y81.22
+
+G1 X77.52 Y81.5
+
+G1 X77.52 Y81.98
+
+G1 X77.46 Y82.26
+
+G1 X77.36 Y82.46
+
+G1 X77.1 Y82.72
+
+G1 X77.1 Y82.72
+
+G1 X77.1 Y82.72
+
+G1 X77.46 Y83.76
+
+G1 X77.52 Y84.04
+
+G1 X77.52 Y84.52
+
+G1 X77.46 Y84.8
+
+G1 X77.36 Y85.0
+
+G1 X77.14 Y85.24
+
+G1 X77.16 Y85.44
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X77.14 Y85.24
+M04 S1000
+G1 X76.94 Y85.2
+G1 X77.46 Y86.3
+
+G1 X77.52 Y86.58
+
+G1 X77.52 Y87.06
+
+G1 X77.46 Y87.34
+
+G1 X77.36 Y87.54
+
+G1 X77.1 Y87.8
+
+G1 X77.1 Y87.8
+
+G1 X77.1 Y87.8
+
+G1 X77.46 Y88.84
+
+G1 X77.52 Y89.12
+
+G1 X77.52 Y89.6
+
+G1 X77.46 Y89.88
+
+G1 X77.36 Y90.08
+
+G1 X77.1 Y90.34
+
+G1 X77.1 Y90.34
+
+G1 X77.1 Y90.34
+
+G1 X77.46 Y91.38
+
+G1 X77.52 Y91.66
+
+G1 X77.52 Y92.14
+
+G1 X77.46 Y92.42
+
+G1 X77.36 Y92.62
+
+G1 X77.14 Y92.86
+
+G1 X77.16 Y93.06
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X77.14 Y92.86
+M04 S1000
+G1 X76.94 Y92.82
+G1 X77.46 Y93.92
+
+G1 X77.52 Y94.2
+
+G1 X77.52 Y94.68
+
+G1 X77.46 Y94.96
+
+G1 X77.36 Y95.16
+
+G1 X77.14 Y95.4
+
+G1 X77.16 Y95.6
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X77.14 Y95.4
+M04 S1000
+G1 X76.94 Y95.36
+G1 X77.46 Y96.46
+
+G1 X77.52 Y96.74
+
+G1 X77.52 Y97.22
+
+G1 X77.46 Y97.5
+
+G1 X77.36 Y97.7
+
+G1 X77.1 Y97.96
+
+G1 X77.1 Y97.96
+
+G1 X77.1 Y97.96
+
+G1 X77.5 Y99.2
+
+G1 X77.46 Y99.0
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X77.5 Y99.2
+M04 S1000
+G1 X77.46 Y99.78
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X77.46 Y99.78
+M04 S1000
+G1 X77.46 Y99.78
+G1 X77.14 Y100.1
+
+G1 X76.26 Y100.36
+
+G1 X76.58 Y100.28
+
+G1 X77.14 Y100.1
+
+G1 X77.14 Y100.1
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X77.02 Y99.68
+M04 S1000
+G1 X76.76 Y99.64
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.76 Y99.64
+M04 S1000
+G1 X76.76 Y99.64
+G1 X76.8 Y99.36
+
+G1 X76.8 Y99.36
+
+G1 X77.06 Y99.38
+
+G1 X77.06 Y99.38
+
+G1 X77.02 Y99.68
+
+G1 X77.02 Y99.68
+
+G1 X76.76 Y99.64
+
+G1 X76.8 Y99.36
+
+G1 X77.06 Y99.38
+
+G1 X77.06 Y99.38
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.8 Y99.36
+M04 S1000
+G1 X76.8 Y99.36
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.76 Y99.64
+M04 S1000
+G1 X76.76 Y99.64
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.26 Y100.36
+M04 S1000
+G1 X75.56 Y100.38
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.56 Y100.38
+M04 S1000
+G1 X75.56 Y100.38
+G1 X73.48 Y101.16
+
+G1 X60.04 Y101.14
+
+G1 X59.14 Y100.86
+
+G1 X59.14 Y100.86
+
+G1 X58.24 Y101.16
+
+G1 X44.8 Y101.16
+
+G1 X43.24 Y100.62
+
+G1 X42.96 Y100.58
+
+G1 X41.0 Y101.24
+
+G1 X40.34 Y101.24
+
+G1 X40.34 Y101.24
+
+G1 X39.5 Y101.2
+
+G1 X29.56 Y101.16
+
+G1 X28.66 Y100.86
+
+G1 X28.66 Y100.86
+
+G1 X27.76 Y101.16
+
+G1 X14.4 Y101.16
+
+G1 X12.26 Y100.42
+
+G1 X11.76 Y99.1
+
+G1 X11.74 Y67.94
+
+G1 X10.58 Y64.54
+
+G1 X10.58 Y37.44
+
+G1 X10.6 Y37.28
+
+G1 X11.5 Y34.64
+
+G1 X11.72 Y34.44
+
+G1 X15.66 Y33.14
+
+G1 X15.88 Y33.02
+
+G1 X18.12 Y30.78
+
+G1 X18.12 Y30.78
+
+G1 X25.18 Y28.44
+
+G1 X25.42 Y28.42
+
+G1 X29.92 Y32.96
+
+G1 X30.18 Y33.12
+
+G1 X30.48 Y33.2
+
+G1 X39.4 Y33.18
+
+G1 X40.66 Y31.9
+
+G1 X40.74 Y31.62
+
+G1 X40.72 Y28.16
+
+G1 X40.72 Y28.16
+
+G1 X38.12 Y25.48
+
+G1 X38.12 Y25.48
+
+G1 X28.9 Y25.48
+
+G1 X28.42 Y25.56
+
+G1 X28.42 Y25.56
+
+G1 X28.06 Y25.74
+
+G1 X25.42 Y28.42
+
+G1 X25.42 Y28.42
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X32.98 Y30.14
+M04 S1000
+G1 X32.94 Y30.42
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X32.94 Y30.42
+M04 S1000
+G1 X33.2 Y30.46
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X33.2 Y30.46
+M04 S1000
+G1 X33.2 Y30.46
+G1 X33.24 Y30.16
+
+G1 X32.98 Y30.14
+
+G1 X32.98 Y30.14
+
+G1 X33.24 Y30.16
+
+G1 X33.24 Y30.16
+
+G1 X33.24 Y30.16
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X32.98 Y30.14
+M04 S1000
+G1 X32.98 Y30.14
+G1 X32.94 Y30.42
+
+G1 X32.94 Y30.42
+
+G1 X32.94 Y30.42
+
+G1 X33.2 Y30.46
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X39.3 Y30.42
+M04 S1000
+G1 X39.56 Y30.46
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X39.56 Y30.46
+M04 S1000
+G1 X39.56 Y30.46
+G1 X39.6 Y30.16
+
+G1 X39.34 Y30.14
+
+G1 X39.3 Y30.42
+
+G1 X39.3 Y30.42
+
+G1 X39.34 Y30.14
+
+G1 X39.34 Y30.14
+
+G1 X39.6 Y30.16
+
+G1 X39.6 Y30.16
+
+G1 X39.6 Y30.16
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X39.34 Y30.14
+M04 S1000
+G1 X39.34 Y30.14
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X39.3 Y30.42
+M04 S1000
+G1 X39.3 Y30.42
+G1 X39.56 Y30.46
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X40.66 Y31.9
+M04 S1000
+G1 X40.66 Y31.9
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X41.84 Y30.42
+M04 S1000
+G1 X42.1 Y30.46
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X42.1 Y30.46
+M04 S1000
+G1 X42.1 Y30.46
+G1 X42.14 Y30.16
+
+G1 X41.88 Y30.14
+
+G1 X41.84 Y30.42
+
+G1 X41.84 Y30.42
+
+G1 X41.88 Y30.14
+
+G1 X41.88 Y30.14
+
+G1 X42.14 Y30.16
+
+G1 X42.14 Y30.16
+
+G1 X42.14 Y30.16
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X41.88 Y30.14
+M04 S1000
+G1 X41.88 Y30.14
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X41.84 Y30.42
+M04 S1000
+G1 X41.84 Y30.42
+G1 X42.1 Y30.46
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X42.58 Y36.68
+M04 S1000
+G1 X42.82 Y36.74
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X42.82 Y36.74
+M04 S1000
+G1 X43.7 Y36.74
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X43.7 Y36.74
+M04 S1000
+G1 X43.94 Y36.68
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X43.94 Y36.68
+M04 S1000
+G1 X45.46 Y36.68
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X45.46 Y36.68
+M04 S1000
+G1 X45.84 Y36.74
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X45.84 Y36.74
+M04 S1000
+G1 X46.5 Y36.92
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.5 Y36.92
+M04 S1000
+G1 X46.28 Y36.88
+G1 X47.22 Y36.68
+
+G1 X47.68 Y36.6
+
+G1 X60.2 Y36.6
+
+G1 X60.66 Y36.68
+
+G1 X61.62 Y36.96
+
+G1 X61.42 Y36.92
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.62 Y36.96
+M04 S1000
+G1 X62.46 Y36.68
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X62.46 Y36.68
+M04 S1000
+G1 X62.92 Y36.6
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X62.92 Y36.6
+M04 S1000
+G1 X75.44 Y36.6
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.44 Y36.6
+M04 S1000
+G1 X75.9 Y36.68
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.9 Y36.68
+M04 S1000
+G1 X77.68 Y37.28
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X77.68 Y37.28
+M04 S1000
+G1 X79.98 Y37.28
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X79.98 Y37.28
+M04 S1000
+G1 X80.24 Y36.94
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X80.24 Y36.94
+M04 S1000
+G1 X80.24 Y36.94
+G1 X80.34 Y36.6
+
+G1 X80.36 Y35.48
+
+G1 X80.24 Y35.06
+
+G1 X80.24 Y35.06
+
+G1 X79.86 Y34.64
+
+G1 X78.56 Y34.2
+
+G1 X73.4 Y32.5
+
+G1 X73.1 Y32.32
+
+G1 X71.48 Y30.62
+
+G1 X64.14 Y30.66
+
+G1 X63.84 Y30.58
+
+G1 X63.64 Y30.46
+
+G1 X56.16 Y23.0
+
+G1 X56.12 Y22.82
+
+G1 X56.12 Y12.32
+
+G1 X56.14 Y12.12
+
+G1 X56.9 Y9.82
+
+G1 X57.08 Y9.52
+
+G1 X66.38 Y0.22
+
+G1 X66.38 Y0.0
+
+G1 X0.04 Y0.02
+
+G1 X0.04 Y0.02
+
+G1 X0.04 Y4.5
+
+G1 X0.04 Y4.5
+
+G1 X8.62 Y13.08
+
+G1 X9.08 Y13.06
+
+G1 X9.08 Y13.06
+
+G1 X9.34 Y12.98
+
+G1 X11.08 Y13.0
+
+G1 X11.08 Y13.0
+
+G1 X14.46 Y14.1
+
+G1 X14.72 Y14.26
+
+G1 X16.04 Y15.28
+
+G1 X15.76 Y15.26
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X16.04 Y15.28
+M04 S1000
+G1 X16.04 Y15.28
+G1 X17.82 Y15.72
+
+G1 X17.82 Y15.72
+
+G1 X18.64 Y18.22
+
+G1 X19.3 Y18.76
+
+G1 X22.4 Y18.8
+
+G1 X24.24 Y18.78
+
+G1 X24.9 Y18.12
+
+G1 X25.14 Y17.96
+
+G1 X25.4 Y17.88
+
+G1 X25.72 Y17.86
+
+G1 X26.52 Y17.86
+
+G1 X27.1 Y17.96
+
+G1 X29.52 Y18.78
+
+G1 X39.08 Y18.8
+
+G1 X39.08 Y18.8
+
+G1 X39.38 Y19.04
+
+G1 X39.5 Y19.24
+
+G1 X40.22 Y21.38
+
+G1 X40.24 Y22.92
+
+G1 X40.14 Y23.36
+
+G1 X39.98 Y23.6
+
+G1 X38.12 Y25.48
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X37.66 Y20.86
+M04 S1000
+G1 X37.4 Y20.82
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X37.4 Y20.82
+M04 S1000
+G1 X37.4 Y20.82
+G1 X37.44 Y20.54
+
+G1 X37.44 Y20.54
+
+G1 X37.7 Y20.56
+
+G1 X37.7 Y20.56
+
+G1 X37.66 Y20.86
+
+G1 X37.66 Y20.86
+
+G1 X37.4 Y20.82
+
+G1 X37.44 Y20.54
+
+G1 X37.7 Y20.56
+
+G1 X37.7 Y20.56
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X37.44 Y20.54
+M04 S1000
+G1 X37.44 Y20.54
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X37.4 Y20.82
+M04 S1000
+G1 X37.4 Y20.82
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X39.08 Y18.8
+M04 S1000
+G1 X39.08 Y18.8
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X37.66 Y15.86
+M04 S1000
+G1 X37.4 Y15.82
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X37.4 Y15.82
+M04 S1000
+G1 X37.4 Y15.82
+G1 X37.44 Y15.54
+
+G1 X37.44 Y15.54
+
+G1 X37.7 Y15.56
+
+G1 X37.7 Y15.56
+
+G1 X37.66 Y15.86
+
+G1 X37.66 Y15.86
+
+G1 X37.4 Y15.82
+
+G1 X37.44 Y15.54
+
+G1 X37.7 Y15.56
+
+G1 X37.7 Y15.56
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X37.44 Y15.54
+M04 S1000
+G1 X37.44 Y15.54
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X37.4 Y15.82
+M04 S1000
+G1 X37.4 Y15.82
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X26.26 Y16.74
+M04 S1000
+G1 X26.0 Y16.72
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X26.0 Y16.72
+M04 S1000
+G1 X25.96 Y17.0
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X25.96 Y17.0
+M04 S1000
+G1 X26.22 Y17.04
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X26.22 Y17.04
+M04 S1000
+G1 X26.22 Y17.04
+G1 X26.26 Y16.74
+
+G1 X26.26 Y16.74
+
+G1 X26.26 Y16.74
+
+G1 X26.0 Y16.72
+
+G1 X26.0 Y16.72
+
+G1 X26.0 Y16.72
+
+G1 X25.96 Y17.0
+
+G1 X25.96 Y17.0
+
+G1 X25.96 Y17.0
+
+G1 X26.22 Y17.04
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X25.72 Y17.86
+M04 S1000
+G1 X25.14 Y17.96
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X26.0 Y18.72
+M04 S1000
+G1 X25.96 Y19.0
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X25.96 Y19.0
+M04 S1000
+G1 X26.22 Y19.04
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X26.22 Y19.04
+M04 S1000
+G1 X26.22 Y19.04
+G1 X26.26 Y18.74
+
+G1 X26.0 Y18.72
+
+G1 X26.0 Y18.72
+
+G1 X26.26 Y18.74
+
+G1 X26.26 Y18.74
+
+G1 X26.26 Y18.74
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X26.0 Y18.72
+M04 S1000
+G1 X26.0 Y18.72
+G1 X25.96 Y19.0
+
+G1 X25.96 Y19.0
+
+G1 X25.96 Y19.0
+
+G1 X26.22 Y19.04
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X22.4 Y18.8
+M04 S1000
+G1 X22.4 Y18.8
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X19.3 Y18.76
+M04 S1000
+G1 X19.3 Y18.76
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X18.8 Y18.32
+M04 S1000
+G1 X18.64 Y18.22
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X18.64 Y18.22
+M04 S1000
+G1 X18.28 Y18.58
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X18.28 Y18.58
+M04 S1000
+G1 X17.96 Y18.6
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X17.96 Y18.6
+M04 S1000
+G1 X16.82 Y18.18
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X16.82 Y18.18
+M04 S1000
+G1 X16.04 Y15.28
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X16.04 Y15.28
+M04 S1000
+G1 X16.04 Y15.28
+G1 X16.04 Y15.28
+
+G1 X16.04 Y15.28
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X17.28 Y16.18
+M04 S1000
+G1 X17.28 Y17.78
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X17.28 Y17.78
+M04 S1000
+G1 X17.28 Y17.78
+G1 X17.28 Y17.78
+
+G1 X17.28 Y16.18
+
+G1 X17.28 Y16.18
+
+G1 X17.28 Y16.18
+
+G1 X17.28 Y16.18
+
+G1 X17.28 Y16.18
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X17.82 Y15.72
+M04 S1000
+G1 X17.82 Y15.72
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X17.28 Y17.78
+M04 S1000
+G1 X17.28 Y17.78
+G1 X17.28 Y17.78
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X16.82 Y18.18
+M04 S1000
+G1 X16.82 Y18.18
+G1 X16.82 Y18.18
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X18.62 Y18.02
+M04 S1000
+G1 X18.64 Y18.22
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X14.2 Y20.14
+M04 S1000
+G1 X13.62 Y18.42
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.62 Y18.42
+M04 S1000
+G1 X13.4 Y18.18
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.4 Y18.18
+M04 S1000
+G1 X11.86 Y17.66
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X11.86 Y17.66
+M04 S1000
+G1 X11.4 Y17.68
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X11.4 Y17.68
+M04 S1000
+G1 X11.4 Y17.68
+G1 X11.4 Y17.68
+
+G1 X10.5 Y18.54
+
+G1 X10.38 Y18.32
+
+G1 X10.34 Y18.08
+
+G1 X10.22 Y17.88
+
+G1 X10.18 Y14.32
+
+G1 X10.18 Y14.32
+
+G1 X9.08 Y13.06
+
+G1 X9.14 Y13.24
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X8.62 Y13.08
+M04 S1000
+G1 X8.62 Y13.08
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X8.28 Y16.18
+M04 S1000
+G1 X8.28 Y17.78
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X8.28 Y17.78
+M04 S1000
+G1 X8.28 Y17.78
+G1 X8.28 Y17.78
+
+G1 X8.28 Y16.18
+
+G1 X8.28 Y16.18
+
+G1 X8.28 Y16.18
+
+G1 X8.28 Y16.18
+
+G1 X8.28 Y16.18
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X8.28 Y17.78
+M04 S1000
+G1 X8.28 Y17.78
+G1 X8.28 Y17.78
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X10.38 Y18.32
+M04 S1000
+G1 X10.64 Y18.34
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X10.5 Y18.54
+M04 S1000
+G1 X10.5 Y19.74
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X10.5 Y19.74
+M04 S1000
+G1 X10.42 Y19.96
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X10.42 Y19.96
+M04 S1000
+G1 X8.9 Y21.58
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X8.9 Y21.58
+M04 S1000
+G1 X6.54 Y22.3
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X6.54 Y22.3
+M04 S1000
+G1 X6.28 Y22.46
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X6.28 Y22.46
+M04 S1000
+G1 X4.06 Y24.64
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X4.06 Y24.64
+M04 S1000
+G1 X2.14 Y25.28
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X2.14 Y25.28
+M04 S1000
+G1 X1.9 Y25.42
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X1.9 Y25.42
+M04 S1000
+G1 X0.24 Y27.06
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X0.24 Y27.06
+M04 S1000
+G1 X0.02 Y27.06
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X0.02 Y27.06
+M04 S1000
+G1 X0.04 Y4.7
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X0.04 Y4.7
+M04 S1000
+G1 X0.24 Y4.7
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X11.72 Y9.98
+M04 S1000
+G1 X13.8 Y9.98
+G1 X13.8 Y9.98
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X11.72 Y9.98
+M04 S1000
+G1 X11.72 Y9.98
+G1 X11.72 Y9.98
+
+G1 X11.72 Y9.98
+
+G1 X11.72 Y9.98
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.8 Y9.98
+M04 S1000
+G1 X13.8 Y9.98
+G1 X13.8 Y9.98
+
+G1 X13.8 Y9.98
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.46 Y15.98
+M04 S1000
+G1 X12.08 Y15.98
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X12.08 Y15.98
+M04 S1000
+G1 X12.08 Y15.98
+G1 X12.08 Y15.98
+
+G1 X12.08 Y15.98
+
+G1 X12.08 Y15.98
+
+G1 X13.46 Y15.98
+
+G1 X13.46 Y15.98
+
+G1 X13.46 Y15.98
+
+G1 X13.46 Y15.98
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.4 Y18.18
+M04 S1000
+G1 X13.4 Y18.18
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X12.92 Y18.86
+M04 S1000
+G1 X12.66 Y18.84
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X12.66 Y18.84
+M04 S1000
+G1 X12.62 Y19.12
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X12.62 Y19.12
+M04 S1000
+G1 X12.88 Y19.16
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X12.88 Y19.16
+M04 S1000
+G1 X12.88 Y19.16
+G1 X12.92 Y18.86
+
+G1 X12.92 Y18.86
+
+G1 X12.92 Y18.86
+
+G1 X12.66 Y18.84
+
+G1 X12.66 Y18.84
+
+G1 X12.66 Y18.84
+
+G1 X12.62 Y19.12
+
+G1 X12.62 Y19.12
+
+G1 X12.62 Y19.12
+
+G1 X12.88 Y19.16
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X14.2 Y20.14
+M04 S1000
+G1 X14.2 Y20.56
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X14.2 Y20.56
+M04 S1000
+G1 X14.2 Y20.56
+G1 X9.8 Y22.12
+
+G1 X9.46 Y22.14
+
+G1 X9.46 Y22.14
+
+G1 X8.9 Y21.58
+
+G1 X8.7 Y21.6
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X8.9 Y21.58
+M04 S1000
+G1 X8.98 Y21.44
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X9.8 Y22.12
+M04 S1000
+G1 X9.8 Y22.12
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X14.2 Y20.56
+M04 S1000
+G1 X14.2 Y20.56
+G1 X14.2 Y20.56
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X12.92 Y30.16
+M04 S1000
+G1 X12.66 Y30.14
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X12.66 Y30.14
+M04 S1000
+G1 X12.62 Y30.42
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X12.62 Y30.42
+M04 S1000
+G1 X12.88 Y30.46
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X12.88 Y30.46
+M04 S1000
+G1 X12.88 Y30.46
+G1 X12.92 Y30.16
+
+G1 X12.92 Y30.16
+
+G1 X12.92 Y30.16
+
+G1 X12.66 Y30.14
+
+G1 X12.66 Y30.14
+
+G1 X12.66 Y30.14
+
+G1 X12.62 Y30.42
+
+G1 X12.62 Y30.42
+
+G1 X12.62 Y30.42
+
+G1 X12.88 Y30.46
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X11.5 Y34.64
+M04 S1000
+G1 X11.5 Y34.64
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X12.6 Y36.76
+M04 S1000
+G1 X12.3 Y36.96
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X12.46 Y36.86
+M04 S1000
+G1 X11.56 Y37.76
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X11.56 Y37.76
+M04 S1000
+G1 X11.54 Y47.5
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X11.54 Y47.5
+M04 S1000
+G1 X12.32 Y49.98
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X12.32 Y49.98
+M04 S1000
+G1 X12.32 Y49.98
+G1 X12.72 Y50.0
+
+G1 X13.92 Y50.4
+
+G1 X14.28 Y50.56
+
+G1 X15.0 Y50.76
+
+G1 X14.82 Y50.72
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.0 Y50.76
+M04 S1000
+G1 X15.28 Y50.56
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.28 Y50.56
+M04 S1000
+G1 X15.76 Y50.48
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.76 Y50.48
+M04 S1000
+G1 X22.6 Y50.48
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X22.6 Y50.48
+M04 S1000
+G1 X22.84 Y50.38
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X22.84 Y50.38
+M04 S1000
+G1 X23.84 Y49.36
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X23.84 Y49.36
+M04 S1000
+G1 X23.84 Y49.36
+G1 X24.1 Y49.3
+
+G1 X28.9 Y49.28
+
+G1 X29.1 Y49.34
+
+G1 X29.28 Y49.44
+
+G1 X29.64 Y49.8
+
+G1 X29.92 Y49.86
+
+G1 X29.92 Y49.86
+
+G1 X30.36 Y50.3
+
+G1 X30.54 Y50.4
+
+G1 X31.04 Y50.58
+
+G1 X31.74 Y50.6
+
+G1 X32.72 Y50.58
+
+G1 X33.1 Y50.46
+
+G1 X33.28 Y50.34
+
+G1 X34.06 Y49.6
+
+G1 X34.06 Y49.6
+
+G1 X34.76 Y49.38
+
+G1 X43.4 Y49.38
+
+G1 X44.02 Y49.58
+
+G1 X44.66 Y49.6
+
+G1 X45.12 Y49.96
+
+G1 X45.6 Y50.44
+
+G1 X45.6 Y50.44
+
+G1 X46.24 Y50.46
+
+G1 X46.52 Y50.52
+
+G1 X46.78 Y50.62
+
+G1 X48.0 Y50.62
+
+G1 X48.38 Y50.5
+
+G1 X48.6 Y50.34
+
+G1 X49.36 Y49.6
+
+G1 X49.36 Y49.6
+
+G1 X50.06 Y49.38
+
+G1 X58.64 Y49.38
+
+G1 X59.14 Y49.54
+
+G1 X59.74 Y49.52
+
+G1 X59.92 Y49.56
+
+G1 X60.16 Y49.74
+
+G1 X60.7 Y50.3
+
+G1 X60.86 Y50.4
+
+G1 X61.56 Y50.42
+
+G1 X61.84 Y50.48
+
+G1 X62.04 Y50.56
+
+G1 X72.14 Y50.56
+
+G1 X72.64 Y50.4
+
+G1 X72.92 Y50.22
+
+G1 X72.92 Y50.22
+
+G1 X73.62 Y49.62
+
+G1 X74.28 Y49.56
+
+G1 X75.1 Y49.28
+
+G1 X75.1 Y49.28
+
+G1 X75.42 Y49.06
+
+G1 X75.34 Y48.82
+
+G1 X75.18 Y48.36
+
+G1 X75.0 Y48.22
+
+G1 X74.68 Y48.12
+
+G1 X74.14 Y48.14
+
+G1 X73.94 Y48.28
+
+G1 X73.66 Y48.56
+
+G1 X73.22 Y48.68
+
+G1 X72.64 Y49.18
+
+G1 X72.24 Y49.3
+
+G1 X61.3 Y49.28
+
+G1 X60.94 Y49.16
+
+G1 X60.94 Y49.16
+
+G1 X60.32 Y48.58
+
+G1 X60.32 Y48.58
+
+G1 X59.86 Y48.5
+
+G1 X59.86 Y48.5
+
+G1 X59.5 Y48.2
+
+G1 X59.3 Y48.12
+
+G1 X49.74 Y48.1
+
+G1 X49.48 Y48.18
+
+G1 X49.3 Y48.28
+
+G1 X48.38 Y49.16
+
+G1 X48.38 Y49.16
+
+G1 X47.94 Y49.34
+
+G1 X46.12 Y49.32
+
+G1 X45.72 Y48.98
+
+G1 X45.32 Y48.88
+
+G1 X45.0 Y48.66
+
+G1 X44.78 Y48.64
+
+G1 X44.6 Y48.58
+
+G1 X44.1 Y48.14
+
+G1 X44.1 Y48.14
+
+G1 X34.42 Y48.1
+
+G1 X34.16 Y48.18
+
+G1 X33.98 Y48.3
+
+G1 X33.04 Y49.18
+
+G1 X32.66 Y49.32
+
+G1 X31.66 Y49.32
+
+G1 X30.92 Y49.26
+
+G1 X30.6 Y48.96
+
+G1 X30.12 Y48.84
+
+G1 X30.12 Y48.84
+
+G1 X29.52 Y48.24
+
+G1 X29.1 Y48.2
+
+G1 X28.6 Y48.06
+
+G1 X23.42 Y48.06
+
+G1 X23.2 Y48.14
+
+G1 X22.1 Y49.2
+
+G1 X22.1 Y49.2
+
+G1 X15.6 Y49.2
+
+G1 X15.36 Y49.12
+
+G1 X15.16 Y49.0
+
+G1 X14.94 Y48.44
+
+G1 X14.94 Y48.44
+
+G1 X14.44 Y48.24
+
+G1 X14.44 Y48.24
+
+G1 X13.08 Y46.92
+
+G1 X12.78 Y46.68
+
+G1 X12.78 Y46.68
+
+G1 X12.72 Y45.54
+
+G1 X12.82 Y45.32
+
+G1 X13.08 Y45.0
+
+G1 X13.04 Y44.78
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.08 Y45.0
+M04 S1000
+G1 X12.96 Y44.5
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X12.96 Y44.5
+M04 S1000
+G1 X12.78 Y44.3
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X12.78 Y44.3
+M04 S1000
+G1 X12.72 Y43.96
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X12.72 Y43.96
+M04 S1000
+G1 X12.74 Y43.0
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X12.74 Y43.0
+M04 S1000
+G1 X12.8 Y42.8
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X12.8 Y42.8
+M04 S1000
+G1 X13.02 Y42.48
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.02 Y42.48
+M04 S1000
+G1 X13.02 Y42.48
+G1 X12.74 Y41.56
+
+G1 X12.7 Y40.62
+
+G1 X12.8 Y40.26
+
+G1 X13.1 Y39.92
+
+G1 X13.04 Y39.7
+
+G1 X12.78 Y38.94
+
+G1 X12.78 Y38.48
+
+G1 X12.92 Y38.1
+
+G1 X13.04 Y37.98
+
+G1 X13.44 Y37.86
+
+G1 X14.0 Y37.88
+
+G1 X15.0 Y38.22
+
+G1 X15.26 Y38.88
+
+G1 X15.5 Y39.14
+
+G1 X16.7 Y39.14
+
+G1 X18.46 Y38.54
+
+G1 X18.68 Y38.52
+
+G1 X20.38 Y37.94
+
+G1 X20.66 Y37.88
+
+G1 X29.14 Y37.88
+
+G1 X29.54 Y38.0
+
+G1 X29.8 Y38.14
+
+G1 X30.7 Y39.0
+
+G1 X30.7 Y39.0
+
+G1 X31.0 Y39.14
+
+G1 X31.54 Y39.12
+
+G1 X32.72 Y38.02
+
+G1 X32.72 Y38.02
+
+G1 X44.96 Y38.0
+
+G1 X44.96 Y38.0
+
+G1 X46.18 Y39.1
+
+G1 X46.72 Y39.14
+
+G1 X46.94 Y39.1
+
+G1 X48.2 Y37.9
+
+G1 X48.2 Y37.9
+
+G1 X59.62 Y37.88
+
+G1 X60.02 Y38.0
+
+G1 X60.28 Y38.14
+
+G1 X61.18 Y39.0
+
+G1 X61.18 Y39.0
+
+G1 X61.48 Y39.14
+
+G1 X61.96 Y39.14
+
+G1 X62.12 Y39.12
+
+G1 X64.14 Y38.46
+
+G1 X71.42 Y38.46
+
+G1 X73.1 Y37.9
+
+G1 X74.7 Y37.88
+
+G1 X74.86 Y37.92
+
+G1 X75.08 Y38.16
+
+G1 X75.36 Y38.96
+
+G1 X75.36 Y38.96
+
+G1 X76.04 Y39.14
+
+G1 X76.28 Y39.28
+
+G1 X77.9 Y39.82
+
+G1 X79.98 Y39.84
+
+G1 X80.34 Y40.18
+
+G1 X80.42 Y40.5
+
+G1 X80.4 Y41.74
+
+G1 X80.32 Y42.1
+
+G1 X80.08 Y42.34
+
+G1 X77.86 Y42.34
+
+G1 X77.7 Y42.6
+
+G1 X77.64 Y43.12
+
+G1 X77.54 Y43.48
+
+G1 X77.52 Y43.88
+
+G1 X77.4 Y44.26
+
+G1 X77.1 Y44.62
+
+G1 X77.1 Y44.62
+
+G1 X77.1 Y44.62
+
+G1 X77.46 Y45.66
+
+G1 X77.52 Y45.94
+
+G1 X77.52 Y46.42
+
+G1 X77.46 Y46.7
+
+G1 X77.36 Y46.9
+
+G1 X77.1 Y47.16
+
+G1 X77.1 Y47.16
+
+G1 X77.1 Y47.16
+
+G1 X77.46 Y48.2
+
+G1 X77.52 Y48.48
+
+G1 X77.52 Y48.96
+
+G1 X77.46 Y49.24
+
+G1 X77.36 Y49.44
+
+G1 X77.14 Y49.68
+
+G1 X77.16 Y49.88
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X77.14 Y49.68
+M04 S1000
+G1 X76.94 Y49.64
+G1 X77.46 Y50.74
+
+G1 X77.52 Y51.02
+
+G1 X77.52 Y51.5
+
+G1 X77.46 Y51.78
+
+G1 X77.36 Y51.98
+
+G1 X77.1 Y52.24
+
+G1 X77.1 Y52.24
+
+G1 X77.1 Y52.24
+
+G1 X77.46 Y53.28
+
+G1 X77.52 Y53.56
+
+G1 X77.52 Y54.04
+
+G1 X77.46 Y54.32
+
+G1 X77.36 Y54.52
+
+G1 X77.1 Y54.78
+
+G1 X77.1 Y54.78
+
+G1 X77.1 Y54.78
+
+G1 X77.46 Y55.82
+
+G1 X77.52 Y56.1
+
+G1 X77.52 Y56.58
+
+G1 X77.46 Y56.86
+
+G1 X77.36 Y57.06
+
+G1 X77.14 Y57.3
+
+G1 X77.16 Y57.5
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X77.14 Y57.3
+M04 S1000
+G1 X76.94 Y57.26
+G1 X77.46 Y58.36
+
+G1 X77.52 Y58.64
+
+G1 X77.52 Y59.12
+
+G1 X77.46 Y59.4
+
+G1 X77.36 Y59.6
+
+G1 X77.1 Y59.86
+
+G1 X77.1 Y59.86
+
+G1 X77.1 Y59.86
+
+G1 X77.46 Y60.9
+
+G1 X77.52 Y61.18
+
+G1 X77.52 Y61.66
+
+G1 X77.46 Y61.94
+
+G1 X77.36 Y62.14
+
+G1 X77.1 Y62.4
+
+G1 X77.1 Y62.4
+
+G1 X77.1 Y62.4
+
+G1 X77.5 Y63.6
+
+G1 X77.52 Y64.2
+
+G1 X77.44 Y64.52
+
+G1 X77.06 Y64.88
+
+G1 X77.08 Y65.12
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X77.06 Y64.88
+M04 S1000
+G1 X76.82 Y64.84
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.82 Y64.84
+M04 S1000
+G1 X76.5 Y64.74
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.5 Y64.74
+M04 S1000
+G1 X76.1 Y64.48
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.1 Y64.48
+M04 S1000
+G1 X75.42 Y64.3
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.42 Y64.3
+M04 S1000
+G1 X75.18 Y63.6
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.18 Y63.6
+M04 S1000
+G1 X75.34 Y64.06
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.34 Y64.06
+M04 S1000
+G1 X75.42 Y64.3
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.42 Y64.3
+M04 S1000
+G1 X75.42 Y64.3
+G1 X75.1 Y64.54
+
+G1 X74.26 Y64.82
+
+G1 X73.62 Y64.86
+
+G1 X72.92 Y65.46
+
+G1 X72.92 Y65.46
+
+G1 X72.64 Y65.64
+
+G1 X72.14 Y65.8
+
+G1 X62.04 Y65.8
+
+G1 X61.84 Y65.72
+
+G1 X61.56 Y65.66
+
+G1 X60.78 Y65.58
+
+G1 X59.98 Y64.8
+
+G1 X59.78 Y64.7
+
+G1 X59.34 Y64.58
+
+G1 X51.76 Y64.58
+
+G1 X51.3 Y64.7
+
+G1 X51.12 Y64.82
+
+G1 X50.36 Y65.58
+
+G1 X50.18 Y65.66
+
+G1 X47.42 Y65.66
+
+G1 X46.86 Y65.76
+
+G1 X46.32 Y65.64
+
+G1 X45.84 Y65.66
+
+G1 X45.62 Y65.54
+
+G1 X45.16 Y65.1
+
+G1 X44.9 Y65.04
+
+G1 X44.68 Y64.84
+
+G1 X44.5 Y64.74
+
+G1 X44.06 Y64.62
+
+G1 X37.42 Y64.62
+
+G1 X37.08 Y64.7
+
+G1 X36.9 Y64.82
+
+G1 X35.96 Y65.76
+
+G1 X35.72 Y65.86
+
+G1 X31.58 Y65.82
+
+G1 X31.18 Y65.68
+
+G1 X30.5 Y65.62
+
+G1 X30.5 Y65.62
+
+G1 X30.2 Y65.4
+
+G1 X29.9 Y65.36
+
+G1 X29.24 Y64.72
+
+G1 X29.1 Y64.62
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X29.24 Y64.72
+M04 S1000
+G1 X28.84 Y64.56
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.84 Y64.56
+M04 S1000
+G1 X26.28 Y64.54
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X26.28 Y64.54
+M04 S1000
+G1 X25.98 Y64.62
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X25.98 Y64.62
+M04 S1000
+G1 X25.98 Y64.62
+G1 X24.9 Y65.7
+
+G1 X24.64 Y65.82
+
+G1 X15.72 Y65.82
+
+G1 X15.32 Y65.9
+
+G1 X15.04 Y66.18
+
+G1 X15.24 Y66.82
+
+G1 X15.24 Y66.82
+
+G1 X15.5 Y67.08
+
+G1 X24.56 Y67.08
+
+G1 X25.12 Y66.86
+
+G1 X25.12 Y66.86
+
+G1 X25.96 Y66.06
+
+G1 X26.18 Y65.96
+
+G1 X26.58 Y65.82
+
+G1 X28.62 Y65.82
+
+G1 X28.94 Y65.94
+
+G1 X28.94 Y65.94
+
+G1 X29.36 Y66.28
+
+G1 X29.36 Y66.28
+
+G1 X29.8 Y66.36
+
+G1 X30.16 Y66.64
+
+G1 X30.6 Y66.74
+
+G1 X30.9 Y67.04
+
+G1 X30.9 Y67.04
+
+G1 X35.8 Y67.12
+
+G1 X36.24 Y66.94
+
+G1 X36.24 Y66.94
+
+G1 X37.16 Y66.06
+
+G1 X37.34 Y65.96
+
+G1 X37.6 Y65.9
+
+G1 X44.02 Y65.9
+
+G1 X44.34 Y65.98
+
+G1 X44.76 Y66.02
+
+G1 X45.36 Y66.62
+
+G1 X45.36 Y66.62
+
+G1 X45.84 Y66.74
+
+G1 X46.14 Y67.04
+
+G1 X47.58 Y67.08
+
+G1 X48.16 Y66.92
+
+G1 X49.78 Y66.92
+
+G1 X50.64 Y66.62
+
+G1 X51.24 Y66.06
+
+G1 X51.4 Y65.96
+
+G1 X51.78 Y65.86
+
+G1 X59.32 Y65.86
+
+G1 X59.66 Y65.96
+
+G1 X59.9 Y66.08
+
+G1 X60.52 Y66.64
+
+G1 X61.02 Y66.74
+
+G1 X61.02 Y66.74
+
+G1 X61.38 Y67.04
+
+G1 X61.38 Y67.04
+
+G1 X72.24 Y67.08
+
+G1 X72.64 Y66.96
+
+G1 X73.22 Y66.46
+
+G1 X73.66 Y66.34
+
+G1 X73.94 Y66.06
+
+G1 X74.14 Y65.92
+
+G1 X74.62 Y65.9
+
+G1 X74.98 Y65.98
+
+G1 X75.18 Y66.14
+
+G1 X75.34 Y66.6
+
+G1 X75.42 Y66.84
+
+G1 X75.42 Y66.84
+
+G1 X75.12 Y67.08
+
+G1 X74.36 Y67.34
+
+G1 X74.14 Y67.38
+
+G1 X73.62 Y67.4
+
+G1 X72.92 Y68.0
+
+G1 X72.92 Y68.0
+
+G1 X72.64 Y68.18
+
+G1 X72.14 Y68.34
+
+G1 X61.5 Y68.34
+
+G1 X60.94 Y68.12
+
+G1 X60.4 Y67.64
+
+G1 X60.12 Y67.6
+
+G1 X59.74 Y67.32
+
+G1 X59.16 Y67.14
+
+G1 X51.96 Y67.16
+
+G1 X51.28 Y67.36
+
+G1 X51.28 Y67.36
+
+G1 X50.86 Y67.68
+
+G1 X50.36 Y68.14
+
+G1 X49.8 Y68.34
+
+G1 X46.8 Y68.34
+
+G1 X46.6 Y68.26
+
+G1 X46.32 Y68.2
+
+G1 X45.68 Y68.12
+
+G1 X45.16 Y67.64
+
+G1 X44.9 Y67.58
+
+G1 X44.68 Y67.38
+
+G1 X44.5 Y67.28
+
+G1 X44.06 Y67.14
+
+G1 X37.92 Y67.16
+
+G1 X37.22 Y67.38
+
+G1 X36.46 Y68.12
+
+G1 X36.24 Y68.28
+
+G1 X35.86 Y68.4
+
+G1 X31.58 Y68.34
+
+G1 X31.24 Y68.24
+
+G1 X30.52 Y68.18
+
+G1 X30.36 Y68.08
+
+G1 X29.92 Y67.64
+
+G1 X29.92 Y67.64
+
+G1 X29.64 Y67.58
+
+G1 X29.38 Y67.32
+
+G1 X29.38 Y67.32
+
+G1 X28.68 Y67.26
+
+G1 X28.26 Y67.12
+
+G1 X26.6 Y67.12
+
+G1 X26.22 Y67.22
+
+G1 X26.06 Y67.32
+
+G1 X25.14 Y68.2
+
+G1 X24.78 Y68.36
+
+G1 X15.72 Y68.36
+
+G1 X15.32 Y68.44
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.06 Y68.66
+M04 S1000
+G1 X15.24 Y69.34
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.24 Y69.34
+M04 S1000
+G1 X15.24 Y69.34
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.8 Y69.08
+M04 S1000
+G1 X16.06 Y69.12
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X16.06 Y69.12
+M04 S1000
+G1 X16.06 Y69.12
+G1 X16.1 Y68.82
+
+G1 X15.84 Y68.8
+
+G1 X15.8 Y69.08
+
+G1 X15.8 Y69.08
+
+G1 X15.84 Y68.8
+
+G1 X15.84 Y68.8
+
+G1 X16.1 Y68.82
+
+G1 X16.1 Y68.82
+
+G1 X16.1 Y68.82
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.84 Y68.8
+M04 S1000
+G1 X15.84 Y68.8
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.8 Y69.08
+M04 S1000
+G1 X15.8 Y69.08
+G1 X16.06 Y69.12
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.06 Y68.66
+M04 S1000
+G1 X14.62 Y68.58
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X14.62 Y68.58
+M04 S1000
+G1 X14.44 Y68.46
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X14.44 Y68.46
+M04 S1000
+G1 X14.12 Y68.18
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X14.12 Y68.18
+M04 S1000
+G1 X14.12 Y68.18
+G1 X12.72 Y67.7
+
+G1 X12.38 Y67.7
+
+G1 X12.18 Y67.74
+
+G1 X11.92 Y67.88
+
+G1 X11.74 Y67.94
+
+G1 X11.74 Y67.94
+
+G1 X10.58 Y64.54
+
+G1 X10.58 Y64.54
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X12.22 Y63.38
+M04 S1000
+G1 X12.6 Y64.42
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X12.6 Y64.42
+M04 S1000
+G1 X12.6 Y64.42
+G1 X12.8 Y64.64
+
+G1 X13.02 Y64.76
+
+G1 X13.78 Y65.52
+
+G1 X14.16 Y65.66
+
+G1 X14.44 Y65.92
+
+G1 X14.62 Y66.04
+
+G1 X15.04 Y66.18
+
+G1 X15.04 Y66.18
+
+G1 X15.04 Y66.18
+
+G1 X15.04 Y66.18
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.84 Y66.26
+M04 S1000
+G1 X15.8 Y66.54
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.8 Y66.54
+M04 S1000
+G1 X16.06 Y66.58
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X16.06 Y66.58
+M04 S1000
+G1 X16.06 Y66.58
+G1 X16.1 Y66.28
+
+G1 X15.84 Y66.26
+
+G1 X15.84 Y66.26
+
+G1 X16.1 Y66.28
+
+G1 X16.1 Y66.28
+
+G1 X16.1 Y66.28
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.84 Y66.26
+M04 S1000
+G1 X15.84 Y66.26
+G1 X15.8 Y66.54
+
+G1 X15.8 Y66.54
+
+G1 X15.8 Y66.54
+
+G1 X16.06 Y66.58
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.5 Y64.54
+M04 S1000
+G1 X15.26 Y64.26
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.26 Y64.26
+M04 S1000
+G1 X15.26 Y64.26
+G1 X15.04 Y63.6
+
+G1 X15.32 Y63.36
+
+G1 X15.72 Y63.28
+
+G1 X24.3 Y63.28
+
+G1 X24.66 Y63.12
+
+G1 X25.64 Y62.18
+
+G1 X25.8 Y62.08
+
+G1 X26.14 Y62.0
+
+G1 X28.9 Y62.0
+
+G1 X29.08 Y62.04
+
+G1 X29.42 Y62.2
+
+G1 X30.26 Y63.02
+
+G1 X30.42 Y63.08
+
+G1 X30.76 Y63.18
+
+G1 X30.92 Y63.28
+
+G1 X35.24 Y63.32
+
+G1 X35.68 Y63.14
+
+G1 X36.54 Y62.32
+
+G1 X37.28 Y62.08
+
+G1 X44.06 Y62.08
+
+G1 X44.5 Y62.2
+
+G1 X44.68 Y62.3
+
+G1 X44.9 Y62.5
+
+G1 X45.16 Y62.56
+
+G1 X45.68 Y63.04
+
+G1 X46.32 Y63.12
+
+G1 X46.6 Y63.18
+
+G1 X46.8 Y63.26
+
+G1 X49.6 Y63.26
+
+G1 X50.16 Y63.04
+
+G1 X50.92 Y62.32
+
+G1 X51.66 Y62.08
+
+G1 X59.16 Y62.08
+
+G1 X59.74 Y62.24
+
+G1 X60.12 Y62.52
+
+G1 X60.4 Y62.56
+
+G1 X60.94 Y63.04
+
+G1 X60.94 Y63.04
+
+G1 X61.5 Y63.26
+
+G1 X72.14 Y63.26
+
+G1 X72.64 Y63.1
+
+G1 X72.92 Y62.92
+
+G1 X72.92 Y62.92
+
+G1 X73.62 Y62.32
+
+G1 X74.26 Y62.28
+
+G1 X75.1 Y62.0
+
+G1 X75.42 Y61.76
+
+G1 X75.18 Y61.06
+
+G1 X75.34 Y61.52
+
+G1 X75.42 Y61.76
+
+G1 X76.1 Y61.94
+
+G1 X76.5 Y62.22
+
+G1 X77.1 Y62.4
+
+G1 X77.1 Y62.4
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X77.02 Y61.58
+M04 S1000
+G1 X76.76 Y61.54
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.76 Y61.54
+M04 S1000
+G1 X76.76 Y61.54
+G1 X76.8 Y61.26
+
+G1 X76.8 Y61.26
+
+G1 X77.06 Y61.28
+
+G1 X77.06 Y61.28
+
+G1 X77.02 Y61.58
+
+G1 X77.02 Y61.58
+
+G1 X76.76 Y61.54
+
+G1 X76.8 Y61.26
+
+G1 X77.06 Y61.28
+
+G1 X77.06 Y61.28
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.8 Y61.26
+M04 S1000
+G1 X76.8 Y61.26
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.76 Y61.54
+M04 S1000
+G1 X76.76 Y61.54
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.26 Y62.04
+M04 S1000
+G1 X76.1 Y61.94
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.42 Y61.76
+M04 S1000
+G1 X75.42 Y61.76
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.18 Y61.06
+M04 S1000
+G1 X75.0 Y60.92
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.0 Y60.92
+M04 S1000
+G1 X74.62 Y60.8
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.62 Y60.8
+M04 S1000
+G1 X74.12 Y60.84
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.12 Y60.84
+M04 S1000
+G1 X73.9 Y60.98
+G1 X74.12 Y60.84
+
+G1 X73.66 Y61.26
+
+G1 X73.46 Y61.32
+
+G1 X73.22 Y61.38
+
+G1 X73.22 Y61.38
+
+G1 X73.66 Y61.26
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X73.22 Y61.38
+M04 S1000
+G1 X72.66 Y61.88
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X72.66 Y61.88
+M04 S1000
+G1 X72.66 Y61.88
+G1 X72.24 Y62.0
+
+G1 X61.38 Y61.96
+
+G1 X61.02 Y61.66
+
+G1 X60.58 Y61.56
+
+G1 X59.88 Y60.98
+
+G1 X59.44 Y60.82
+
+G1 X59.66 Y60.88
+
+G1 X59.88 Y60.98
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.44 Y60.82
+M04 S1000
+G1 X51.0 Y60.86
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X51.0 Y60.86
+M04 S1000
+G1 X49.92 Y61.88
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X49.92 Y61.88
+M04 S1000
+G1 X49.68 Y62.0
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X49.68 Y62.0
+M04 S1000
+G1 X46.14 Y61.96
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.14 Y61.96
+M04 S1000
+G1 X45.84 Y61.66
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X45.84 Y61.66
+M04 S1000
+G1 X45.36 Y61.54
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X45.36 Y61.54
+M04 S1000
+G1 X44.76 Y60.94
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X44.76 Y60.94
+M04 S1000
+G1 X44.34 Y60.9
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X44.34 Y60.9
+M04 S1000
+G1 X44.02 Y60.82
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X44.02 Y60.82
+M04 S1000
+G1 X36.96 Y60.82
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X36.96 Y60.82
+M04 S1000
+G1 X36.7 Y60.88
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X36.7 Y60.88
+M04 S1000
+G1 X36.52 Y61.0
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X36.52 Y61.0
+M04 S1000
+G1 X35.66 Y61.86
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X35.66 Y61.86
+M04 S1000
+G1 X35.18 Y62.04
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X35.18 Y62.04
+M04 S1000
+G1 X30.8 Y62.0
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X30.8 Y62.0
+M04 S1000
+G1 X30.44 Y61.84
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X30.44 Y61.84
+M04 S1000
+G1 X29.52 Y60.94
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X29.52 Y60.94
+M04 S1000
+G1 X29.1 Y60.92
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X29.1 Y60.92
+M04 S1000
+G1 X28.56 Y60.74
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.56 Y60.74
+M04 S1000
+G1 X26.12 Y60.74
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X26.12 Y60.74
+M04 S1000
+G1 X25.52 Y60.98
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X25.52 Y60.98
+M04 S1000
+G1 X25.52 Y60.98
+G1 X24.66 Y61.76
+
+G1 X24.66 Y61.76
+
+G1 X24.08 Y62.0
+
+G1 X15.5 Y62.0
+
+G1 X15.26 Y61.72
+
+G1 X15.26 Y61.72
+
+G1 X15.04 Y61.1
+
+G1 X15.32 Y60.82
+
+G1 X15.72 Y60.74
+
+G1 X24.12 Y60.74
+
+G1 X24.54 Y60.56
+
+G1 X25.5 Y59.64
+
+G1 X25.66 Y59.54
+
+G1 X26.0 Y59.46
+
+G1 X28.9 Y59.46
+
+G1 X29.08 Y59.48
+
+G1 X29.32 Y59.62
+
+G1 X29.64 Y59.96
+
+G1 X29.92 Y60.02
+
+G1 X29.92 Y60.02
+
+G1 X30.44 Y60.5
+
+G1 X30.44 Y60.5
+
+G1 X31.04 Y60.74
+
+G1 X30.88 Y60.64
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.04 Y60.74
+M04 S1000
+G1 X35.18 Y60.72
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X35.18 Y60.72
+M04 S1000
+G1 X35.18 Y60.72
+G1 X36.3 Y59.72
+
+G1 X36.46 Y59.62
+
+G1 X36.8 Y59.54
+
+G1 X44.06 Y59.54
+
+G1 X44.5 Y59.66
+
+G1 X44.68 Y59.76
+
+G1 X44.9 Y59.96
+
+G1 X45.16 Y60.02
+
+G1 X45.68 Y60.5
+
+G1 X46.32 Y60.58
+
+G1 X46.6 Y60.64
+
+G1 X46.8 Y60.72
+
+G1 X49.26 Y60.72
+
+G1 X49.76 Y60.52
+
+G1 X50.34 Y59.96
+
+G1 X50.74 Y59.72
+
+G1 X50.74 Y59.72
+
+G1 X51.38 Y59.54
+
+G1 X59.3 Y59.52
+
+G1 X60.02 Y59.78
+
+G1 X60.2 Y59.9
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X60.02 Y59.78
+M04 S1000
+G1 X60.7 Y60.46
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X60.7 Y60.46
+M04 S1000
+G1 X60.86 Y60.56
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X60.86 Y60.56
+M04 S1000
+G1 X61.56 Y60.58
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.56 Y60.58
+M04 S1000
+G1 X61.84 Y60.64
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.84 Y60.64
+M04 S1000
+G1 X62.04 Y60.72
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X62.04 Y60.72
+M04 S1000
+G1 X72.14 Y60.72
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X72.14 Y60.72
+M04 S1000
+G1 X72.64 Y60.56
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X72.64 Y60.56
+M04 S1000
+G1 X72.92 Y60.38
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X72.92 Y60.38
+M04 S1000
+G1 X72.92 Y60.38
+G1 X73.62 Y59.78
+
+G1 X74.26 Y59.74
+
+G1 X75.1 Y59.46
+
+G1 X75.38 Y59.22
+
+G1 X75.18 Y58.52
+
+G1 X75.34 Y58.98
+
+G1 X75.38 Y59.22
+
+G1 X76.1 Y59.4
+
+G1 X76.5 Y59.68
+
+G1 X77.1 Y59.86
+
+G1 X77.1 Y59.86
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X77.02 Y59.04
+M04 S1000
+G1 X76.76 Y59.0
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.76 Y59.0
+M04 S1000
+G1 X76.76 Y59.0
+G1 X76.8 Y58.72
+
+G1 X76.8 Y58.72
+
+G1 X77.06 Y58.74
+
+G1 X77.06 Y58.74
+
+G1 X77.02 Y59.04
+
+G1 X77.02 Y59.04
+
+G1 X76.76 Y59.0
+
+G1 X76.8 Y58.72
+
+G1 X77.06 Y58.74
+
+G1 X77.06 Y58.74
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.8 Y58.72
+M04 S1000
+G1 X76.8 Y58.72
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.76 Y59.0
+M04 S1000
+G1 X76.76 Y59.0
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.26 Y59.5
+M04 S1000
+G1 X76.1 Y59.4
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.58 Y59.24
+M04 S1000
+G1 X75.38 Y59.22
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.18 Y58.52
+M04 S1000
+G1 X75.0 Y58.38
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.0 Y58.38
+M04 S1000
+G1 X74.62 Y58.26
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.62 Y58.26
+M04 S1000
+G1 X74.12 Y58.3
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.12 Y58.3
+M04 S1000
+G1 X73.9 Y58.44
+G1 X74.12 Y58.3
+
+G1 X73.66 Y58.72
+
+G1 X73.46 Y58.78
+
+G1 X73.22 Y58.84
+
+G1 X73.22 Y58.84
+
+G1 X73.66 Y58.72
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X73.22 Y58.84
+M04 S1000
+G1 X72.66 Y59.34
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X72.66 Y59.34
+M04 S1000
+G1 X72.66 Y59.34
+G1 X72.24 Y59.46
+
+G1 X61.28 Y59.46
+
+G1 X60.92 Y59.3
+
+G1 X60.0 Y58.4
+
+G1 X59.58 Y58.36
+
+G1 X59.26 Y58.28
+
+G1 X51.1 Y58.28
+
+G1 X50.66 Y58.44
+
+G1 X50.48 Y58.6
+
+G1 X50.24 Y58.76
+
+G1 X49.96 Y59.02
+
+G1 X49.7 Y59.08
+
+G1 X49.14 Y59.28
+
+G1 X48.16 Y59.3
+
+G1 X47.58 Y59.46
+
+G1 X46.14 Y59.42
+
+G1 X45.84 Y59.12
+
+G1 X45.36 Y59.0
+
+G1 X44.72 Y58.42
+
+G1 X44.48 Y58.34
+
+G1 X44.14 Y58.34
+
+G1 X43.96 Y58.28
+
+G1 X36.48 Y58.28
+
+G1 X36.22 Y58.34
+
+G1 X36.06 Y58.44
+
+G1 X35.22 Y59.28
+
+G1 X35.06 Y59.38
+
+G1 X34.68 Y59.5
+
+G1 X30.92 Y59.42
+
+G1 X30.6 Y59.12
+
+G1 X30.12 Y59.0
+
+G1 X29.52 Y58.4
+
+G1 X29.1 Y58.36
+
+G1 X28.64 Y58.22
+
+G1 X25.96 Y58.22
+
+G1 X25.78 Y58.24
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X25.96 Y58.22
+M04 S1000
+G1 X25.54 Y58.34
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X25.54 Y58.34
+M04 S1000
+G1 X25.32 Y58.44
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X25.32 Y58.44
+M04 S1000
+G1 X24.48 Y59.24
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X24.48 Y59.24
+M04 S1000
+G1 X24.48 Y59.24
+G1 X23.92 Y59.46
+
+G1 X15.5 Y59.46
+
+G1 X15.26 Y59.18
+
+G1 X15.26 Y59.18
+
+G1 X15.04 Y58.56
+
+G1 X15.32 Y58.28
+
+G1 X15.72 Y58.2
+
+G1 X23.98 Y58.16
+
+G1 X25.14 Y57.04
+
+G1 X25.36 Y56.96
+
+G1 X28.26 Y56.96
+
+G1 X28.68 Y57.1
+
+G1 X29.38 Y57.16
+
+G1 X29.38 Y57.16
+
+G1 X29.64 Y57.42
+
+G1 X29.92 Y57.48
+
+G1 X29.92 Y57.48
+
+G1 X30.36 Y57.92
+
+G1 X30.52 Y58.02
+
+G1 X31.24 Y58.08
+
+G1 X31.58 Y58.2
+
+G1 X34.6 Y58.24
+
+G1 X34.96 Y58.12
+
+G1 X35.14 Y58.0
+
+G1 X35.96 Y57.22
+
+G1 X35.96 Y57.22
+
+G1 X36.66 Y57.0
+
+G1 X43.82 Y56.98
+
+G1 X44.38 Y57.16
+
+G1 X44.82 Y57.34
+
+G1 X44.82 Y57.34
+
+G1 X45.7 Y57.98
+
+G1 X46.32 Y58.04
+
+G1 X46.86 Y58.14
+
+G1 X46.86 Y58.14
+
+G1 X47.42 Y58.04
+
+G1 X49.62 Y58.02
+
+G1 X50.06 Y57.7
+
+G1 X50.5 Y57.24
+
+G1 X50.34 Y57.36
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X50.5 Y57.24
+M04 S1000
+G1 X51.24 Y57.0
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X51.24 Y57.0
+M04 S1000
+G1 X59.3 Y57.0
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.3 Y57.0
+M04 S1000
+G1 X59.9 Y57.2
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.9 Y57.2
+M04 S1000
+G1 X60.16 Y57.4
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X60.16 Y57.4
+M04 S1000
+G1 X60.44 Y57.5
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X60.44 Y57.5
+M04 S1000
+G1 X60.94 Y57.98
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X60.94 Y57.98
+M04 S1000
+G1 X60.94 Y57.98
+G1 X61.5 Y58.18
+
+G1 X72.14 Y58.18
+
+G1 X72.64 Y58.02
+
+G1 X72.92 Y57.84
+
+G1 X72.92 Y57.84
+
+G1 X73.62 Y57.24
+
+G1 X74.26 Y57.2
+
+G1 X75.1 Y56.92
+
+G1 X75.42 Y56.68
+
+G1 X75.18 Y55.98
+
+G1 X75.34 Y56.44
+
+G1 X75.42 Y56.68
+
+G1 X76.1 Y56.86
+
+G1 X76.5 Y57.14
+
+G1 X77.14 Y57.3
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X77.02 Y56.5
+M04 S1000
+G1 X76.76 Y56.46
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.76 Y56.46
+M04 S1000
+G1 X76.76 Y56.46
+G1 X76.8 Y56.18
+
+G1 X76.8 Y56.18
+
+G1 X77.06 Y56.2
+
+G1 X77.06 Y56.2
+
+G1 X77.02 Y56.5
+
+G1 X77.02 Y56.5
+
+G1 X76.76 Y56.46
+
+G1 X76.8 Y56.18
+
+G1 X77.06 Y56.2
+
+G1 X77.06 Y56.2
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.8 Y56.18
+M04 S1000
+G1 X76.8 Y56.18
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.76 Y56.46
+M04 S1000
+G1 X76.76 Y56.46
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.26 Y56.96
+M04 S1000
+G1 X76.1 Y56.86
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.42 Y56.68
+M04 S1000
+G1 X75.42 Y56.68
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.18 Y55.98
+M04 S1000
+G1 X75.0 Y55.84
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.0 Y55.84
+M04 S1000
+G1 X74.62 Y55.72
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.62 Y55.72
+M04 S1000
+G1 X74.12 Y55.76
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.12 Y55.76
+M04 S1000
+G1 X73.9 Y55.9
+G1 X74.12 Y55.76
+
+G1 X73.66 Y56.18
+
+G1 X73.46 Y56.24
+
+G1 X73.22 Y56.3
+
+G1 X73.22 Y56.3
+
+G1 X73.66 Y56.18
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X73.22 Y56.3
+M04 S1000
+G1 X72.66 Y56.8
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X72.66 Y56.8
+M04 S1000
+G1 X72.66 Y56.8
+G1 X72.24 Y56.92
+
+G1 X61.38 Y56.88
+
+G1 X61.08 Y56.58
+
+G1 X60.6 Y56.46
+
+G1 X60.0 Y55.86
+
+G1 X59.58 Y55.82
+
+G1 X59.26 Y55.74
+
+G1 X50.94 Y55.74
+
+G1 X50.68 Y55.8
+
+G1 X50.52 Y55.9
+
+G1 X49.64 Y56.76
+
+G1 X49.2 Y56.9
+
+G1 X46.14 Y56.88
+
+G1 X45.74 Y56.48
+
+G1 X45.42 Y56.4
+
+G1 X45.0 Y56.34
+
+G1 X44.54 Y55.9
+
+G1 X44.1 Y55.74
+
+G1 X44.32 Y55.8
+
+G1 X44.54 Y55.9
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X44.1 Y55.74
+M04 S1000
+G1 X36.34 Y55.74
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X36.34 Y55.74
+M04 S1000
+G1 X36.08 Y55.8
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X36.08 Y55.8
+M04 S1000
+G1 X35.92 Y55.9
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X35.92 Y55.9
+M04 S1000
+G1 X35.08 Y56.74
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X35.08 Y56.74
+M04 S1000
+G1 X34.92 Y56.84
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X34.92 Y56.84
+M04 S1000
+G1 X34.54 Y56.96
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X34.54 Y56.96
+M04 S1000
+G1 X30.92 Y56.88
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X30.92 Y56.88
+M04 S1000
+G1 X30.6 Y56.58
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X30.6 Y56.58
+M04 S1000
+G1 X30.16 Y56.48
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X30.16 Y56.48
+M04 S1000
+G1 X29.8 Y56.2
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X29.8 Y56.2
+M04 S1000
+G1 X29.36 Y56.12
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X29.36 Y56.12
+M04 S1000
+G1 X29.36 Y56.12
+G1 X29.0 Y55.8
+
+G1 X28.82 Y55.72
+
+G1 X25.0 Y55.76
+
+G1 X24.68 Y55.9
+
+G1 X23.82 Y56.72
+
+G1 X23.82 Y56.72
+
+G1 X23.28 Y56.92
+
+G1 X15.5 Y56.92
+
+G1 X15.26 Y56.64
+
+G1 X15.26 Y56.64
+
+G1 X15.04 Y56.02
+
+G1 X15.32 Y55.74
+
+G1 X15.72 Y55.66
+
+G1 X23.36 Y55.66
+
+G1 X23.6 Y55.58
+
+G1 X23.78 Y55.46
+
+G1 X24.54 Y54.7
+
+G1 X25.28 Y54.46
+
+G1 X28.16 Y54.46
+
+G1 X28.78 Y54.64
+
+G1 X29.42 Y54.68
+
+G1 X29.92 Y55.18
+
+G1 X30.2 Y55.24
+
+G1 X30.52 Y55.46
+
+G1 X30.52 Y55.46
+
+G1 X30.94 Y55.48
+
+G1 X31.24 Y55.52
+
+G1 X31.48 Y55.62
+
+G1 X32.16 Y55.68
+
+G1 X34.54 Y55.64
+
+G1 X34.54 Y55.64
+
+G1 X35.66 Y54.64
+
+G1 X35.82 Y54.54
+
+G1 X36.16 Y54.46
+
+G1 X43.96 Y54.46
+
+G1 X44.68 Y54.7
+
+G1 X44.86 Y54.82
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X44.68 Y54.7
+M04 S1000
+G1 X45.4 Y55.4
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X45.4 Y55.4
+M04 S1000
+G1 X46.22 Y55.46
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.22 Y55.46
+M04 S1000
+G1 X46.42 Y55.5
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.42 Y55.5
+M04 S1000
+G1 X46.8 Y55.64
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.8 Y55.64
+M04 S1000
+G1 X49.04 Y55.64
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X49.04 Y55.64
+M04 S1000
+G1 X49.6 Y55.42
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X49.6 Y55.42
+M04 S1000
+G1 X50.36 Y54.7
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X50.36 Y54.7
+M04 S1000
+G1 X51.1 Y54.46
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X51.1 Y54.46
+M04 S1000
+G1 X59.3 Y54.46
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.3 Y54.46
+M04 S1000
+G1 X59.74 Y54.58
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.74 Y54.58
+M04 S1000
+G1 X59.92 Y54.68
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.92 Y54.68
+M04 S1000
+G1 X60.14 Y54.88
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X60.14 Y54.88
+M04 S1000
+G1 X60.4 Y54.94
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X60.4 Y54.94
+M04 S1000
+G1 X60.92 Y55.42
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X60.92 Y55.42
+M04 S1000
+G1 X61.56 Y55.5
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.56 Y55.5
+M04 S1000
+G1 X61.84 Y55.56
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.84 Y55.56
+M04 S1000
+G1 X62.04 Y55.64
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X62.04 Y55.64
+M04 S1000
+G1 X72.14 Y55.64
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X72.14 Y55.64
+M04 S1000
+G1 X72.64 Y55.48
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X72.64 Y55.48
+M04 S1000
+G1 X72.92 Y55.3
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X72.92 Y55.3
+M04 S1000
+G1 X72.92 Y55.3
+G1 X73.62 Y54.7
+
+G1 X74.26 Y54.66
+
+G1 X75.1 Y54.38
+
+G1 X75.42 Y54.12
+
+G1 X75.2 Y53.44
+
+G1 X75.0 Y53.3
+
+G1 X74.62 Y53.18
+
+G1 X74.12 Y53.22
+
+G1 X73.9 Y53.36
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.12 Y53.22
+M04 S1000
+G1 X74.12 Y53.22
+G1 X73.66 Y53.64
+
+G1 X73.46 Y53.7
+
+G1 X73.22 Y53.76
+
+G1 X73.22 Y53.76
+
+G1 X73.66 Y53.64
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X73.22 Y53.76
+M04 S1000
+G1 X72.66 Y54.26
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X72.66 Y54.26
+M04 S1000
+G1 X72.66 Y54.26
+G1 X72.24 Y54.38
+
+G1 X61.38 Y54.34
+
+G1 X61.08 Y54.04
+
+G1 X60.6 Y53.92
+
+G1 X60.0 Y53.32
+
+G1 X59.58 Y53.28
+
+G1 X59.26 Y53.2
+
+G1 X50.42 Y53.22
+
+G1 X50.42 Y53.22
+
+G1 X50.42 Y53.22
+
+G1 X49.32 Y54.28
+
+G1 X49.14 Y54.38
+
+G1 X45.94 Y54.38
+
+G1 X45.58 Y54.22
+
+G1 X44.64 Y53.34
+
+G1 X44.34 Y53.28
+
+G1 X44.02 Y53.2
+
+G1 X35.84 Y53.2
+
+G1 X35.58 Y53.26
+
+G1 X35.42 Y53.36
+
+G1 X34.58 Y54.2
+
+G1 X34.42 Y54.3
+
+G1 X34.04 Y54.42
+
+G1 X30.94 Y54.36
+
+G1 X30.72 Y54.3
+
+G1 X30.36 Y54.26
+
+G1 X30.36 Y54.26
+
+G1 X29.84 Y53.78
+
+G1 X29.36 Y53.66
+
+G1 X29.54 Y53.72
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X29.36 Y53.66
+M04 S1000
+G1 X28.98 Y53.28
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.98 Y53.28
+M04 S1000
+G1 X28.64 Y53.14
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.64 Y53.14
+M04 S1000
+G1 X25.22 Y53.1
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X25.22 Y53.1
+M04 S1000
+G1 X24.56 Y53.34
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X24.56 Y53.34
+M04 S1000
+G1 X23.7 Y54.16
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X23.7 Y54.16
+M04 S1000
+G1 X23.7 Y54.16
+G1 X23.12 Y54.38
+
+G1 X15.5 Y54.38
+
+G1 X15.26 Y54.1
+
+G1 X15.26 Y54.1
+
+G1 X14.98 Y53.32
+
+G1 X14.98 Y53.32
+
+G1 X15.28 Y53.1
+
+G1 X15.76 Y53.02
+
+G1 X23.16 Y53.02
+
+G1 X23.46 Y52.9
+
+G1 X24.42 Y51.92
+
+G1 X24.42 Y51.92
+
+G1 X24.66 Y51.84
+
+G1 X28.9 Y51.82
+
+G1 X29.1 Y51.88
+
+G1 X29.32 Y52.0
+
+G1 X30.16 Y52.78
+
+G1 X30.5 Y52.96
+
+G1 X30.94 Y53.12
+
+G1 X31.46 Y53.14
+
+G1 X33.56 Y53.14
+
+G1 X33.82 Y53.04
+
+G1 X34.86 Y51.98
+
+G1 X35.28 Y51.92
+
+G1 X43.88 Y51.92
+
+G1 X44.44 Y52.08
+
+G1 X44.44 Y52.08
+
+G1 X44.82 Y52.34
+
+G1 X45.06 Y52.4
+
+G1 X45.6 Y52.9
+
+G1 X46.18 Y53.1
+
+G1 X48.62 Y53.1
+
+G1 X49.18 Y52.88
+
+G1 X49.94 Y52.16
+
+G1 X50.68 Y51.92
+
+G1 X59.16 Y51.92
+
+G1 X59.74 Y52.08
+
+G1 X60.12 Y52.36
+
+G1 X60.4 Y52.4
+
+G1 X60.92 Y52.88
+
+G1 X61.56 Y52.96
+
+G1 X61.84 Y53.02
+
+G1 X62.04 Y53.1
+
+G1 X72.14 Y53.1
+
+G1 X72.64 Y52.94
+
+G1 X72.92 Y52.76
+
+G1 X72.92 Y52.76
+
+G1 X73.62 Y52.16
+
+G1 X74.26 Y52.12
+
+G1 X75.1 Y51.84
+
+G1 X75.42 Y51.6
+
+G1 X75.18 Y50.9
+
+G1 X75.34 Y51.36
+
+G1 X75.42 Y51.6
+
+G1 X76.1 Y51.78
+
+G1 X76.5 Y52.06
+
+G1 X77.1 Y52.24
+
+G1 X77.1 Y52.24
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X77.02 Y51.42
+M04 S1000
+G1 X76.76 Y51.38
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.76 Y51.38
+M04 S1000
+G1 X76.76 Y51.38
+G1 X76.8 Y51.1
+
+G1 X76.8 Y51.1
+
+G1 X77.06 Y51.12
+
+G1 X77.06 Y51.12
+
+G1 X77.02 Y51.42
+
+G1 X77.02 Y51.42
+
+G1 X76.76 Y51.38
+
+G1 X76.8 Y51.1
+
+G1 X77.06 Y51.12
+
+G1 X77.06 Y51.12
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.8 Y51.1
+M04 S1000
+G1 X76.8 Y51.1
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.76 Y51.38
+M04 S1000
+G1 X76.76 Y51.38
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.26 Y51.88
+M04 S1000
+G1 X76.1 Y51.78
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.42 Y51.6
+M04 S1000
+G1 X75.42 Y51.6
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.18 Y50.9
+M04 S1000
+G1 X75.0 Y50.76
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.0 Y50.76
+M04 S1000
+G1 X74.62 Y50.64
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.62 Y50.64
+M04 S1000
+G1 X74.12 Y50.68
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.12 Y50.68
+M04 S1000
+G1 X73.9 Y50.82
+G1 X74.12 Y50.68
+
+G1 X73.66 Y51.1
+
+G1 X73.46 Y51.16
+
+G1 X73.22 Y51.22
+
+G1 X73.22 Y51.22
+
+G1 X73.66 Y51.1
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X73.22 Y51.22
+M04 S1000
+G1 X72.66 Y51.72
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X72.66 Y51.72
+M04 S1000
+G1 X72.66 Y51.72
+G1 X72.24 Y51.84
+
+G1 X61.38 Y51.8
+
+G1 X61.02 Y51.5
+
+G1 X60.58 Y51.4
+
+G1 X59.88 Y50.82
+
+G1 X59.44 Y50.66
+
+G1 X59.66 Y50.72
+
+G1 X59.88 Y50.82
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.44 Y50.66
+M04 S1000
+G1 X49.86 Y50.68
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X49.86 Y50.68
+M04 S1000
+G1 X49.86 Y50.68
+G1 X48.66 Y51.82
+
+G1 X48.66 Y51.82
+
+G1 X46.12 Y51.82
+
+G1 X46.12 Y51.82
+
+G1 X45.74 Y51.5
+
+G1 X45.54 Y51.42
+
+G1 X45.22 Y51.38
+
+G1 X45.22 Y51.38
+
+G1 X45.74 Y51.5
+
+G1 X45.74 Y51.5
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X45.22 Y51.38
+M04 S1000
+G1 X44.64 Y50.86
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X44.64 Y50.86
+M04 S1000
+G1 X44.1 Y50.66
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X44.1 Y50.66
+M04 S1000
+G1 X34.58 Y50.66
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X34.58 Y50.66
+M04 S1000
+G1 X34.32 Y50.72
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X34.32 Y50.72
+M04 S1000
+G1 X34.16 Y50.82
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X34.16 Y50.82
+M04 S1000
+G1 X33.32 Y51.66
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X33.32 Y51.66
+M04 S1000
+G1 X33.16 Y51.76
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X33.16 Y51.76
+M04 S1000
+G1 X32.78 Y51.88
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X32.78 Y51.88
+M04 S1000
+G1 X31.42 Y51.84
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.42 Y51.84
+M04 S1000
+G1 X30.8 Y51.84
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X30.8 Y51.84
+M04 S1000
+G1 X32.48 Y51.88
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X32.48 Y51.88
+M04 S1000
+G1 X32.78 Y51.88
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.3 Y51.42
+M04 S1000
+G1 X31.04 Y51.38
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.04 Y51.38
+M04 S1000
+G1 X31.04 Y51.38
+G1 X31.08 Y51.1
+
+G1 X31.08 Y51.1
+
+G1 X31.34 Y51.12
+
+G1 X31.34 Y51.12
+
+G1 X31.3 Y51.42
+
+G1 X31.3 Y51.42
+
+G1 X31.04 Y51.38
+
+G1 X31.08 Y51.1
+
+G1 X31.34 Y51.12
+
+G1 X31.34 Y51.12
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.08 Y51.1
+M04 S1000
+G1 X31.08 Y51.1
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.04 Y51.38
+M04 S1000
+G1 X31.04 Y51.38
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X30.8 Y51.84
+M04 S1000
+G1 X30.46 Y51.7
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X30.46 Y51.7
+M04 S1000
+G1 X29.52 Y50.78
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X29.52 Y50.78
+M04 S1000
+G1 X29.1 Y50.76
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X29.1 Y50.76
+M04 S1000
+G1 X28.56 Y50.58
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.56 Y50.58
+M04 S1000
+G1 X24.6 Y50.58
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X24.6 Y50.58
+M04 S1000
+G1 X24.2 Y50.72
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X24.2 Y50.72
+M04 S1000
+G1 X24.0 Y50.82
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X24.0 Y50.82
+M04 S1000
+G1 X23.18 Y51.6
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X23.18 Y51.6
+M04 S1000
+G1 X22.82 Y51.74
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X22.82 Y51.74
+M04 S1000
+G1 X15.68 Y51.76
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.68 Y51.76
+M04 S1000
+G1 X15.3 Y51.62
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.3 Y51.62
+M04 S1000
+G1 X15.3 Y51.62
+G1 X15.0 Y50.76
+
+G1 X15.04 Y50.96
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.84 Y51.02
+M04 S1000
+G1 X15.8 Y51.3
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.8 Y51.3
+M04 S1000
+G1 X16.06 Y51.34
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X16.06 Y51.34
+M04 S1000
+G1 X16.06 Y51.34
+G1 X16.1 Y51.04
+
+G1 X15.84 Y51.02
+
+G1 X15.84 Y51.02
+
+G1 X16.1 Y51.04
+
+G1 X16.1 Y51.04
+
+G1 X16.1 Y51.04
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.84 Y51.02
+M04 S1000
+G1 X15.84 Y51.02
+G1 X15.8 Y51.3
+
+G1 X15.8 Y51.3
+
+G1 X15.8 Y51.3
+
+G1 X16.06 Y51.34
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.84 Y53.56
+M04 S1000
+G1 X15.8 Y53.84
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.8 Y53.84
+M04 S1000
+G1 X16.06 Y53.88
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X16.06 Y53.88
+M04 S1000
+G1 X16.06 Y53.88
+G1 X16.1 Y53.58
+
+G1 X15.84 Y53.56
+
+G1 X15.84 Y53.56
+
+G1 X16.1 Y53.58
+
+G1 X16.1 Y53.58
+
+G1 X16.1 Y53.58
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.84 Y53.56
+M04 S1000
+G1 X15.84 Y53.56
+G1 X15.8 Y53.84
+
+G1 X15.8 Y53.84
+
+G1 X15.8 Y53.84
+
+G1 X16.06 Y53.88
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X14.98 Y53.32
+M04 S1000
+G1 X14.98 Y53.32
+G1 X14.98 Y53.32
+
+G1 X14.44 Y53.16
+
+G1 X13.98 Y52.86
+
+G1 X12.72 Y52.46
+
+G1 X12.32 Y52.46
+
+G1 X12.32 Y52.46
+
+G1 X12.32 Y52.46
+
+G1 X12.24 Y52.06
+
+G1 X12.24 Y50.3
+
+G1 X12.32 Y49.98
+
+G1 X12.56 Y49.96
+
+G1 X12.72 Y50.0
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X12.32 Y49.98
+M04 S1000
+G1 X12.32 Y49.98
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.3 Y51.02
+M04 S1000
+G1 X13.26 Y51.3
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.26 Y51.3
+M04 S1000
+G1 X13.52 Y51.34
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.52 Y51.34
+M04 S1000
+G1 X13.52 Y51.34
+G1 X13.56 Y51.04
+
+G1 X13.3 Y51.02
+
+G1 X13.3 Y51.02
+
+G1 X13.56 Y51.04
+
+G1 X13.56 Y51.04
+
+G1 X13.56 Y51.04
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.3 Y51.02
+M04 S1000
+G1 X13.3 Y51.02
+G1 X13.26 Y51.3
+
+G1 X13.26 Y51.3
+
+G1 X13.26 Y51.3
+
+G1 X13.52 Y51.34
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X12.32 Y52.46
+M04 S1000
+G1 X12.32 Y52.46
+G1 X12.24 Y52.84
+
+G1 X12.24 Y54.6
+
+G1 X12.32 Y55.0
+
+G1 X12.32 Y55.0
+
+G1 X12.32 Y55.0
+
+G1 X12.32 Y55.0
+
+G1 X12.72 Y55.0
+
+G1 X13.98 Y55.42
+
+G1 X14.22 Y55.54
+
+G1 X14.38 Y55.72
+
+G1 X14.62 Y55.88
+
+G1 X15.04 Y56.02
+
+G1 X15.04 Y56.02
+
+G1 X15.04 Y56.02
+
+G1 X15.04 Y56.02
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.84 Y56.1
+M04 S1000
+G1 X15.8 Y56.38
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.8 Y56.38
+M04 S1000
+G1 X16.06 Y56.42
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X16.06 Y56.42
+M04 S1000
+G1 X16.06 Y56.42
+G1 X16.1 Y56.12
+
+G1 X15.84 Y56.1
+
+G1 X15.84 Y56.1
+
+G1 X16.1 Y56.12
+
+G1 X16.1 Y56.12
+
+G1 X16.1 Y56.12
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.84 Y56.1
+M04 S1000
+G1 X15.84 Y56.1
+G1 X15.8 Y56.38
+
+G1 X15.8 Y56.38
+
+G1 X15.8 Y56.38
+
+G1 X16.06 Y56.42
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.84 Y58.64
+M04 S1000
+G1 X15.8 Y58.92
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.8 Y58.92
+M04 S1000
+G1 X16.06 Y58.96
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X16.06 Y58.96
+M04 S1000
+G1 X16.06 Y58.96
+G1 X16.1 Y58.66
+
+G1 X15.84 Y58.64
+
+G1 X15.84 Y58.64
+
+G1 X16.1 Y58.66
+
+G1 X16.1 Y58.66
+
+G1 X16.1 Y58.66
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.84 Y58.64
+M04 S1000
+G1 X15.84 Y58.64
+G1 X15.8 Y58.92
+
+G1 X15.8 Y58.92
+
+G1 X15.8 Y58.92
+
+G1 X16.06 Y58.96
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.04 Y58.56
+M04 S1000
+G1 X15.04 Y58.56
+G1 X15.04 Y58.56
+
+G1 X15.04 Y58.56
+
+G1 X14.62 Y58.42
+
+G1 X14.38 Y58.26
+
+G1 X14.22 Y58.08
+
+G1 X13.98 Y57.96
+
+G1 X12.72 Y57.54
+
+G1 X12.32 Y57.56
+
+G1 X12.32 Y57.56
+
+G1 X12.24 Y57.14
+
+G1 X12.24 Y55.38
+
+G1 X12.32 Y55.0
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.3 Y56.1
+M04 S1000
+G1 X13.26 Y56.38
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.26 Y56.38
+M04 S1000
+G1 X13.52 Y56.42
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.52 Y56.42
+M04 S1000
+G1 X13.52 Y56.42
+G1 X13.56 Y56.12
+
+G1 X13.3 Y56.1
+
+G1 X13.3 Y56.1
+
+G1 X13.56 Y56.12
+
+G1 X13.56 Y56.12
+
+G1 X13.56 Y56.12
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.3 Y56.1
+M04 S1000
+G1 X13.3 Y56.1
+G1 X13.26 Y56.38
+
+G1 X13.26 Y56.38
+
+G1 X13.26 Y56.38
+
+G1 X13.52 Y56.42
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X12.32 Y57.56
+M04 S1000
+G1 X12.32 Y57.56
+G1 X12.32 Y57.56
+
+G1 X12.24 Y57.92
+
+G1 X12.24 Y59.68
+
+G1 X12.3 Y60.12
+
+G1 X12.3 Y60.12
+
+G1 X12.72 Y60.08
+
+G1 X13.98 Y60.5
+
+G1 X14.22 Y60.62
+
+G1 X14.38 Y60.8
+
+G1 X14.62 Y60.96
+
+G1 X15.04 Y61.1
+
+G1 X15.04 Y61.1
+
+G1 X15.04 Y61.1
+
+G1 X15.04 Y61.1
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.84 Y61.18
+M04 S1000
+G1 X15.8 Y61.46
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.8 Y61.46
+M04 S1000
+G1 X16.06 Y61.5
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X16.06 Y61.5
+M04 S1000
+G1 X16.06 Y61.5
+G1 X16.1 Y61.2
+
+G1 X15.84 Y61.18
+
+G1 X15.84 Y61.18
+
+G1 X16.1 Y61.2
+
+G1 X16.1 Y61.2
+
+G1 X16.1 Y61.2
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.84 Y61.18
+M04 S1000
+G1 X15.84 Y61.18
+G1 X15.8 Y61.46
+
+G1 X15.8 Y61.46
+
+G1 X15.8 Y61.46
+
+G1 X16.06 Y61.5
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.84 Y63.72
+M04 S1000
+G1 X15.8 Y64.0
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.8 Y64.0
+M04 S1000
+G1 X16.06 Y64.04
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X16.06 Y64.04
+M04 S1000
+G1 X16.06 Y64.04
+G1 X16.1 Y63.74
+
+G1 X15.84 Y63.72
+
+G1 X15.84 Y63.72
+
+G1 X16.1 Y63.74
+
+G1 X16.1 Y63.74
+
+G1 X16.1 Y63.74
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.84 Y63.72
+M04 S1000
+G1 X15.84 Y63.72
+G1 X15.8 Y64.0
+
+G1 X15.8 Y64.0
+
+G1 X15.8 Y64.0
+
+G1 X16.06 Y64.04
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.5 Y64.54
+M04 S1000
+G1 X24.22 Y64.54
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X24.22 Y64.54
+M04 S1000
+G1 X24.78 Y64.32
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X24.78 Y64.32
+M04 S1000
+G1 X25.62 Y63.52
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X25.62 Y63.52
+M04 S1000
+G1 X25.84 Y63.42
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X25.84 Y63.42
+M04 S1000
+G1 X26.3 Y63.28
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X26.3 Y63.28
+M04 S1000
+G1 X28.74 Y63.28
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.74 Y63.28
+M04 S1000
+G1 X29.32 Y63.48
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X29.32 Y63.48
+M04 S1000
+G1 X30.32 Y64.4
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X30.32 Y64.4
+M04 S1000
+G1 X30.32 Y64.4
+G1 X30.72 Y64.46
+
+G1 X30.94 Y64.54
+
+G1 X35.32 Y64.58
+
+G1 X35.76 Y64.4
+
+G1 X36.68 Y63.52
+
+G1 X36.86 Y63.42
+
+G1 X37.12 Y63.36
+
+G1 X44.02 Y63.36
+
+G1 X44.34 Y63.44
+
+G1 X44.76 Y63.48
+
+G1 X45.36 Y64.08
+
+G1 X45.84 Y64.2
+
+G1 X46.14 Y64.5
+
+G1 X49.82 Y64.52
+
+G1 X50.18 Y64.38
+
+G1 X51.08 Y63.52
+
+G1 X51.24 Y63.42
+
+G1 X51.5 Y63.36
+
+G1 X59.26 Y63.36
+
+G1 X59.58 Y63.44
+
+G1 X60.0 Y63.48
+
+G1 X60.92 Y64.38
+
+G1 X61.28 Y64.54
+
+G1 X72.24 Y64.54
+
+G1 X72.66 Y64.42
+
+G1 X72.66 Y64.42
+
+G1 X73.22 Y63.92
+
+G1 X73.22 Y63.92
+
+G1 X73.46 Y63.86
+
+G1 X73.66 Y63.8
+
+G1 X74.12 Y63.38
+
+G1 X73.9 Y63.52
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.12 Y63.38
+M04 S1000
+G1 X74.62 Y63.34
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.62 Y63.34
+M04 S1000
+G1 X75.0 Y63.46
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.0 Y63.46
+M04 S1000
+G1 X75.18 Y63.6
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.52 Y63.82
+M04 S1000
+G1 X74.26 Y63.8
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.26 Y63.8
+M04 S1000
+G1 X74.22 Y64.08
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.22 Y64.08
+M04 S1000
+G1 X74.48 Y64.12
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.48 Y64.12
+M04 S1000
+G1 X74.48 Y64.12
+G1 X74.52 Y63.82
+
+G1 X74.52 Y63.82
+
+G1 X74.52 Y63.82
+
+G1 X74.26 Y63.8
+
+G1 X74.26 Y63.8
+
+G1 X74.26 Y63.8
+
+G1 X74.22 Y64.08
+
+G1 X74.22 Y64.08
+
+G1 X74.22 Y64.08
+
+G1 X74.48 Y64.12
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.26 Y64.82
+M04 S1000
+G1 X74.26 Y64.82
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.14 Y65.92
+M04 S1000
+G1 X74.14 Y65.92
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.26 Y66.34
+M04 S1000
+G1 X74.22 Y66.62
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.22 Y66.62
+M04 S1000
+G1 X74.48 Y66.66
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.48 Y66.66
+M04 S1000
+G1 X74.48 Y66.66
+G1 X74.52 Y66.36
+
+G1 X74.26 Y66.34
+
+G1 X74.26 Y66.34
+
+G1 X74.52 Y66.36
+
+G1 X74.52 Y66.36
+
+G1 X74.52 Y66.36
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.26 Y66.34
+M04 S1000
+G1 X74.26 Y66.34
+G1 X74.22 Y66.62
+
+G1 X74.22 Y66.62
+
+G1 X74.22 Y66.62
+
+G1 X74.48 Y66.66
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.18 Y66.14
+M04 S1000
+G1 X75.42 Y66.84
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.42 Y66.84
+M04 S1000
+G1 X75.94 Y66.98
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.94 Y66.98
+M04 S1000
+G1 X76.56 Y67.4
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.56 Y67.4
+M04 S1000
+G1 X77.9 Y67.8
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X77.9 Y67.8
+M04 S1000
+G1 X79.66 Y67.24
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X79.66 Y67.24
+M04 S1000
+G1 X79.9 Y67.1
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X79.9 Y67.1
+M04 S1000
+G1 X80.06 Y66.96
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X80.06 Y66.96
+M04 S1000
+G1 X80.18 Y66.74
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X80.18 Y66.74
+M04 S1000
+G1 X80.2 Y66.38
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X80.2 Y66.38
+M04 S1000
+G1 X80.12 Y66.14
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X80.12 Y66.14
+M04 S1000
+G1 X79.76 Y65.8
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X79.76 Y65.8
+M04 S1000
+G1 X79.76 Y65.8
+G1 X79.76 Y65.8
+
+G1 X78.54 Y65.78
+
+G1 X77.66 Y65.78
+
+G1 X77.42 Y65.72
+
+G1 X77.26 Y65.6
+
+G1 X77.06 Y64.88
+
+G1 X76.5 Y64.74
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.26 Y64.58
+M04 S1000
+G1 X76.1 Y64.48
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.76 Y64.08
+M04 S1000
+G1 X77.02 Y64.12
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X77.02 Y64.12
+M04 S1000
+G1 X77.02 Y64.12
+G1 X77.06 Y63.82
+
+G1 X76.8 Y63.8
+
+G1 X76.76 Y64.08
+
+G1 X76.76 Y64.08
+
+G1 X76.8 Y63.8
+
+G1 X76.8 Y63.8
+
+G1 X77.06 Y63.82
+
+G1 X77.06 Y63.82
+
+G1 X77.06 Y63.82
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.8 Y63.8
+M04 S1000
+G1 X76.8 Y63.8
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.76 Y64.08
+M04 S1000
+G1 X76.76 Y64.08
+G1 X77.02 Y64.12
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X78.74 Y63.82
+M04 S1000
+G1 X78.74 Y62.9
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X78.74 Y62.9
+M04 S1000
+G1 X78.78 Y62.7
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X78.78 Y62.7
+M04 S1000
+G1 X80.26 Y58.18
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X80.26 Y58.18
+M04 S1000
+G1 X80.26 Y45.8
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X80.26 Y45.8
+M04 S1000
+G1 X81.7 Y44.34
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X81.7 Y44.34
+M04 S1000
+G1 X81.84 Y44.08
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X81.84 Y44.08
+M04 S1000
+G1 X81.9 Y43.7
+G1 X81.9 Y43.7
+
+G1 X81.92 Y39.54
+
+G1 X81.98 Y39.2
+
+G1 X81.98 Y33.48
+
+G1 X81.88 Y32.9
+
+G1 X80.76 Y29.58
+
+G1 X80.76 Y29.58
+
+G1 X78.72 Y27.52
+
+G1 X77.82 Y24.76
+
+G1 X77.82 Y24.76
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X77.62 Y24.54
+M04 S1000
+G1 X77.26 Y24.46
+G1 X77.26 Y24.46
+
+G1 X76.56 Y24.46
+
+G1 X76.2 Y24.54
+
+G1 X75.96 Y24.7
+
+G1 X73.72 Y26.94
+
+G1 X73.04 Y28.98
+
+G1 X72.9 Y29.22
+
+G1 X71.48 Y30.62
+
+G1 X71.58 Y30.78
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X73.4 Y32.5
+M04 S1000
+G1 X79.86 Y34.64
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X80.36 Y35.48
+M04 S1000
+G1 X80.34 Y36.6
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X79.56 Y36.18
+M04 S1000
+G1 X79.3 Y36.14
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X79.3 Y36.14
+M04 S1000
+G1 X79.3 Y36.14
+G1 X79.34 Y35.86
+
+G1 X79.34 Y35.86
+
+G1 X79.6 Y35.88
+
+G1 X79.6 Y35.88
+
+G1 X79.56 Y36.18
+
+G1 X79.56 Y36.18
+
+G1 X79.3 Y36.14
+
+G1 X79.34 Y35.86
+
+G1 X79.6 Y35.88
+
+G1 X79.6 Y35.88
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X79.34 Y35.86
+M04 S1000
+G1 X79.34 Y35.86
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X79.3 Y36.14
+M04 S1000
+G1 X79.3 Y36.14
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X77.06 Y38.42
+M04 S1000
+G1 X76.8 Y38.4
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.8 Y38.4
+M04 S1000
+G1 X76.76 Y38.68
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.76 Y38.68
+M04 S1000
+G1 X77.02 Y38.72
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X77.02 Y38.72
+M04 S1000
+G1 X77.02 Y38.72
+G1 X77.06 Y38.42
+
+G1 X77.06 Y38.42
+
+G1 X77.06 Y38.42
+
+G1 X76.8 Y38.4
+
+G1 X76.8 Y38.4
+
+G1 X76.8 Y38.4
+
+G1 X76.76 Y38.68
+
+G1 X76.76 Y38.68
+
+G1 X76.76 Y38.68
+
+G1 X77.02 Y38.72
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.36 Y38.96
+M04 S1000
+G1 X75.1 Y39.14
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.1 Y39.14
+M04 S1000
+G1 X74.86 Y39.22
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.86 Y39.22
+M04 S1000
+G1 X74.04 Y39.22
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.04 Y39.22
+M04 S1000
+G1 X73.42 Y39.42
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X73.42 Y39.42
+M04 S1000
+G1 X72.58 Y40.22
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X72.58 Y40.22
+M04 S1000
+G1 X72.58 Y40.22
+G1 X72.14 Y40.4
+
+G1 X62.04 Y40.4
+
+G1 X61.58 Y40.24
+
+G1 X60.94 Y40.16
+
+G1 X60.94 Y40.16
+
+G1 X60.22 Y39.46
+
+G1 X59.5 Y39.2
+
+G1 X49.0 Y39.22
+
+G1 X48.3 Y39.44
+
+G1 X47.48 Y40.2
+
+G1 X47.48 Y40.2
+
+G1 X46.92 Y40.4
+
+G1 X46.32 Y40.4
+
+G1 X45.74 Y40.18
+
+G1 X44.98 Y39.46
+
+G1 X44.26 Y39.22
+
+G1 X33.62 Y39.22
+
+G1 X33.02 Y39.4
+
+G1 X33.02 Y39.4
+
+G1 X32.08 Y40.3
+
+G1 X31.7 Y40.44
+
+G1 X31.4 Y40.46
+
+G1 X31.02 Y40.4
+
+G1 X30.48 Y40.18
+
+G1 X29.6 Y39.32
+
+G1 X29.4 Y39.22
+
+G1 X29.08 Y39.14
+
+G1 X21.4 Y39.14
+
+G1 X21.06 Y39.22
+
+G1 X20.9 Y39.32
+
+G1 X19.92 Y40.26
+
+G1 X19.56 Y40.42
+
+G1 X15.72 Y40.42
+
+G1 X15.32 Y40.52
+
+G1 X15.0 Y40.8
+
+G1 X14.8 Y40.76
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.0 Y40.8
+M04 S1000
+G1 X15.02 Y41.0
+G1 X15.14 Y41.4
+
+G1 X15.34 Y41.52
+
+G1 X15.6 Y41.58
+
+G1 X20.18 Y41.58
+
+G1 X20.18 Y41.58
+
+G1 X21.3 Y40.52
+
+G1 X21.52 Y40.42
+
+G1 X28.9 Y40.42
+
+G1 X29.5 Y40.62
+
+G1 X29.5 Y40.62
+
+G1 X30.48 Y41.52
+
+G1 X30.48 Y41.52
+
+G1 X30.96 Y41.72
+
+G1 X31.92 Y41.7
+
+G1 X32.34 Y41.54
+
+G1 X33.16 Y40.72
+
+G1 X33.4 Y40.54
+
+G1 X33.6 Y40.5
+
+G1 X44.42 Y40.5
+
+G1 X44.66 Y40.56
+
+G1 X44.88 Y40.68
+
+G1 X45.76 Y41.56
+
+G1 X46.08 Y41.68
+
+G1 X47.28 Y41.66
+
+G1 X47.58 Y41.54
+
+G1 X48.56 Y40.58
+
+G1 X48.84 Y40.5
+
+G1 X59.64 Y40.5
+
+G1 X60.08 Y40.66
+
+G1 X60.54 Y41.12
+
+G1 X60.98 Y41.24
+
+G1 X61.42 Y41.64
+
+G1 X61.42 Y41.64
+
+G1 X72.24 Y41.68
+
+G1 X72.64 Y41.56
+
+G1 X72.64 Y41.56
+
+G1 X73.62 Y40.66
+
+G1 X73.78 Y40.56
+
+G1 X74.04 Y40.5
+
+G1 X74.62 Y40.5
+
+G1 X75.0 Y40.6
+
+G1 X75.18 Y40.74
+
+G1 X75.42 Y41.44
+
+G1 X76.1 Y41.62
+
+G1 X76.52 Y41.88
+
+G1 X77.86 Y42.34
+
+G1 X77.7 Y42.6
+
+G1 X77.7 Y42.6
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X77.06 Y43.5
+M04 S1000
+G1 X76.8 Y43.48
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.8 Y43.48
+M04 S1000
+G1 X76.76 Y43.76
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.76 Y43.76
+M04 S1000
+G1 X77.02 Y43.8
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X77.02 Y43.8
+M04 S1000
+G1 X77.02 Y43.8
+G1 X77.06 Y43.5
+
+G1 X77.06 Y43.5
+
+G1 X77.06 Y43.5
+
+G1 X76.8 Y43.48
+
+G1 X76.8 Y43.48
+
+G1 X76.8 Y43.48
+
+G1 X76.76 Y43.76
+
+G1 X76.76 Y43.76
+
+G1 X76.76 Y43.76
+
+G1 X77.02 Y43.8
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X77.4 Y44.26
+M04 S1000
+G1 X77.4 Y44.26
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X77.1 Y44.62
+M04 S1000
+G1 X77.1 Y44.62
+G1 X76.5 Y44.44
+
+G1 X76.1 Y44.16
+
+G1 X75.42 Y43.96
+
+G1 X75.2 Y43.28
+
+G1 X75.0 Y43.14
+
+G1 X74.62 Y43.02
+
+G1 X74.12 Y43.06
+
+G1 X73.9 Y43.2
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.12 Y43.06
+M04 S1000
+G1 X74.12 Y43.06
+G1 X73.66 Y43.48
+
+G1 X73.46 Y43.54
+
+G1 X73.22 Y43.6
+
+G1 X73.22 Y43.6
+
+G1 X73.66 Y43.48
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X73.22 Y43.6
+M04 S1000
+G1 X72.66 Y44.1
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X72.66 Y44.1
+M04 S1000
+G1 X72.66 Y44.1
+G1 X72.24 Y44.22
+
+G1 X61.34 Y44.22
+
+G1 X60.96 Y44.06
+
+G1 X60.96 Y44.06
+
+G1 X60.2 Y43.3
+
+G1 X59.96 Y43.12
+
+G1 X59.62 Y43.08
+
+G1 X59.3 Y43.0
+
+G1 X49.26 Y43.0
+
+G1 X48.92 Y43.1
+
+G1 X48.68 Y43.22
+
+G1 X47.88 Y44.0
+
+G1 X47.7 Y44.12
+
+G1 X47.44 Y44.22
+
+G1 X46.0 Y44.22
+
+G1 X45.74 Y44.16
+
+G1 X45.56 Y44.08
+
+G1 X44.7 Y43.22
+
+G1 X44.5 Y43.1
+
+G1 X44.26 Y43.04
+
+G1 X34.02 Y43.04
+
+G1 X33.76 Y43.1
+
+G1 X33.6 Y43.2
+
+G1 X32.76 Y44.04
+
+G1 X32.6 Y44.14
+
+G1 X32.34 Y44.22
+
+G1 X30.94 Y44.22
+
+G1 X30.72 Y44.14
+
+G1 X30.38 Y44.1
+
+G1 X29.44 Y43.22
+
+G1 X29.2 Y43.1
+
+G1 X28.74 Y42.96
+
+G1 X22.86 Y42.96
+
+G1 X22.4 Y43.12
+
+G1 X21.52 Y44.0
+
+G1 X21.34 Y44.12
+
+G1 X21.08 Y44.22
+
+G1 X15.5 Y44.22
+
+G1 X15.26 Y43.94
+
+G1 X15.26 Y43.94
+
+G1 X14.98 Y43.16
+
+G1 X14.98 Y43.16
+
+G1 X15.3 Y42.94
+
+G1 X15.74 Y42.88
+
+G1 X16.2 Y42.76
+
+G1 X16.6 Y42.76
+
+G1 X16.86 Y42.84
+
+G1 X20.74 Y42.86
+
+G1 X20.96 Y42.76
+
+G1 X21.98 Y41.74
+
+G1 X21.98 Y41.74
+
+G1 X22.28 Y41.68
+
+G1 X28.94 Y41.66
+
+G1 X29.26 Y41.76
+
+G1 X29.46 Y41.88
+
+G1 X30.4 Y42.8
+
+G1 X30.54 Y42.88
+
+G1 X30.92 Y43.0
+
+G1 X32.12 Y43.0
+
+G1 X32.38 Y42.92
+
+G1 X32.54 Y42.82
+
+G1 X33.44 Y41.96
+
+G1 X34.04 Y41.76
+
+G1 X44.08 Y41.76
+
+G1 X44.76 Y41.98
+
+G1 X44.76 Y41.98
+
+G1 X45.44 Y42.62
+
+G1 X45.66 Y42.78
+
+G1 X46.16 Y42.94
+
+G1 X47.18 Y42.94
+
+G1 X47.74 Y42.74
+
+G1 X48.64 Y41.9
+
+G1 X48.64 Y41.9
+
+G1 X49.22 Y41.72
+
+G1 X59.38 Y41.7
+
+G1 X59.86 Y41.86
+
+G1 X60.18 Y42.08
+
+G1 X60.44 Y42.18
+
+G1 X61.0 Y42.74
+
+G1 X61.58 Y42.94
+
+G1 X72.14 Y42.94
+
+G1 X72.64 Y42.78
+
+G1 X72.92 Y42.6
+
+G1 X72.92 Y42.6
+
+G1 X73.6 Y42.02
+
+G1 X73.76 Y41.92
+
+G1 X74.34 Y41.76
+
+G1 X74.86 Y41.76
+
+G1 X75.12 Y41.68
+
+G1 X75.42 Y41.44
+
+G1 X75.34 Y41.2
+
+G1 X75.18 Y40.74
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.52 Y40.96
+M04 S1000
+G1 X74.26 Y40.94
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.26 Y40.94
+M04 S1000
+G1 X74.22 Y41.22
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.22 Y41.22
+M04 S1000
+G1 X74.48 Y41.26
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.48 Y41.26
+M04 S1000
+G1 X74.48 Y41.26
+G1 X74.52 Y40.96
+
+G1 X74.52 Y40.96
+
+G1 X74.52 Y40.96
+
+G1 X74.26 Y40.94
+
+G1 X74.26 Y40.94
+
+G1 X74.26 Y40.94
+
+G1 X74.22 Y41.22
+
+G1 X74.22 Y41.22
+
+G1 X74.22 Y41.22
+
+G1 X74.48 Y41.26
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.42 Y41.44
+M04 S1000
+G1 X75.42 Y41.44
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.1 Y41.62
+M04 S1000
+G1 X76.26 Y41.72
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.76 Y41.22
+M04 S1000
+G1 X77.02 Y41.26
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X77.02 Y41.26
+M04 S1000
+G1 X77.02 Y41.26
+G1 X77.06 Y40.96
+
+G1 X76.8 Y40.94
+
+G1 X76.76 Y41.22
+
+G1 X76.76 Y41.22
+
+G1 X76.8 Y40.94
+
+G1 X76.8 Y40.94
+
+G1 X77.06 Y40.96
+
+G1 X77.06 Y40.96
+
+G1 X77.06 Y40.96
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.8 Y40.94
+M04 S1000
+G1 X76.8 Y40.94
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.76 Y41.22
+M04 S1000
+G1 X76.76 Y41.22
+G1 X77.02 Y41.26
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X79.3 Y41.22
+M04 S1000
+G1 X79.56 Y41.26
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X79.56 Y41.26
+M04 S1000
+G1 X79.56 Y41.26
+G1 X79.6 Y40.96
+
+G1 X79.34 Y40.94
+
+G1 X79.3 Y41.22
+
+G1 X79.3 Y41.22
+
+G1 X79.34 Y40.94
+
+G1 X79.34 Y40.94
+
+G1 X79.6 Y40.96
+
+G1 X79.6 Y40.96
+
+G1 X79.6 Y40.96
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X79.34 Y40.94
+M04 S1000
+G1 X79.34 Y40.94
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X79.3 Y41.22
+M04 S1000
+G1 X79.3 Y41.22
+G1 X79.56 Y41.26
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X80.4 Y41.74
+M04 S1000
+G1 X80.42 Y40.5
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.36 Y38.96
+M04 S1000
+G1 X75.28 Y38.76
+G1 X75.36 Y38.96
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.08 Y38.16
+M04 S1000
+G1 X75.08 Y38.16
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.52 Y38.42
+M04 S1000
+G1 X74.26 Y38.4
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.26 Y38.4
+M04 S1000
+G1 X74.22 Y38.68
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.22 Y38.68
+M04 S1000
+G1 X74.48 Y38.72
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.48 Y38.72
+M04 S1000
+G1 X74.48 Y38.72
+G1 X74.52 Y38.42
+
+G1 X74.52 Y38.42
+
+G1 X74.52 Y38.42
+
+G1 X74.26 Y38.4
+
+G1 X74.26 Y38.4
+
+G1 X74.26 Y38.4
+
+G1 X74.22 Y38.68
+
+G1 X74.22 Y38.68
+
+G1 X74.22 Y38.68
+
+G1 X74.48 Y38.72
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X73.62 Y39.34
+M04 S1000
+G1 X73.42 Y39.42
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.26 Y43.48
+M04 S1000
+G1 X74.22 Y43.76
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.22 Y43.76
+M04 S1000
+G1 X74.48 Y43.8
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.48 Y43.8
+M04 S1000
+G1 X74.48 Y43.8
+G1 X74.52 Y43.5
+
+G1 X74.26 Y43.48
+
+G1 X74.26 Y43.48
+
+G1 X74.52 Y43.5
+
+G1 X74.52 Y43.5
+
+G1 X74.52 Y43.5
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.26 Y43.48
+M04 S1000
+G1 X74.26 Y43.48
+G1 X74.22 Y43.76
+
+G1 X74.22 Y43.76
+
+G1 X74.22 Y43.76
+
+G1 X74.48 Y43.8
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.26 Y44.5
+M04 S1000
+G1 X73.62 Y44.54
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X73.62 Y44.54
+M04 S1000
+G1 X72.92 Y45.14
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X72.92 Y45.14
+M04 S1000
+G1 X72.92 Y45.14
+G1 X72.64 Y45.32
+
+G1 X72.14 Y45.48
+
+G1 X61.42 Y45.48
+
+G1 X60.86 Y45.28
+
+G1 X60.86 Y45.28
+
+G1 X60.52 Y45.04
+
+G1 X60.52 Y45.04
+
+G1 X59.92 Y44.5
+
+G1 X59.92 Y44.5
+
+G1 X59.34 Y44.3
+
+G1 X49.42 Y44.3
+
+G1 X48.72 Y44.52
+
+G1 X47.88 Y45.26
+
+G1 X47.88 Y45.26
+
+G1 X47.34 Y45.48
+
+G1 X46.1 Y45.48
+
+G1 X45.6 Y45.32
+
+G1 X45.26 Y45.12
+
+G1 X44.66 Y44.54
+
+G1 X43.94 Y44.28
+
+G1 X34.28 Y44.3
+
+G1 X33.58 Y44.54
+
+G1 X32.82 Y45.26
+
+G1 X32.82 Y45.26
+
+G1 X32.26 Y45.48
+
+G1 X31.56 Y45.48
+
+G1 X31.36 Y45.4
+
+G1 X31.08 Y45.34
+
+G1 X30.48 Y45.3
+
+G1 X30.48 Y45.3
+
+G1 X30.2 Y45.08
+
+G1 X29.92 Y45.02
+
+G1 X29.26 Y44.38
+
+G1 X28.78 Y44.22
+
+G1 X23.16 Y44.22
+
+G1 X22.82 Y44.3
+
+G1 X22.66 Y44.4
+
+G1 X21.68 Y45.34
+
+G1 X21.32 Y45.5
+
+G1 X15.72 Y45.5
+
+G1 X15.32 Y45.58
+
+G1 X15.04 Y45.86
+
+G1 X15.04 Y45.86
+
+G1 X15.04 Y45.86
+
+G1 X15.26 Y46.48
+
+G1 X15.26 Y46.48
+
+G1 X15.5 Y46.76
+
+G1 X21.24 Y46.76
+
+G1 X21.8 Y46.54
+
+G1 X22.66 Y45.72
+
+G1 X23.32 Y45.5
+
+G1 X28.62 Y45.5
+
+G1 X28.96 Y45.62
+
+G1 X29.36 Y45.96
+
+G1 X29.8 Y46.04
+
+G1 X30.16 Y46.32
+
+G1 X30.6 Y46.42
+
+G1 X30.9 Y46.72
+
+G1 X32.48 Y46.74
+
+G1 X32.84 Y46.6
+
+G1 X33.74 Y45.74
+
+G1 X33.9 Y45.64
+
+G1 X34.16 Y45.58
+
+G1 X44.06 Y45.58
+
+G1 X44.24 Y45.64
+
+G1 X44.6 Y46.02
+
+G1 X45.06 Y46.16
+
+G1 X45.56 Y46.64
+
+G1 X45.56 Y46.64
+
+G1 X45.98 Y46.74
+
+G1 X45.98 Y46.74
+
+G1 X47.92 Y46.76
+
+G1 X48.16 Y46.6
+
+G1 X49.18 Y45.6
+
+G1 X49.18 Y45.6
+
+G1 X59.34 Y45.6
+
+G1 X59.34 Y45.6
+
+G1 X59.8 Y45.96
+
+G1 X59.8 Y45.96
+
+G1 X60.2 Y46.04
+
+G1 X60.2 Y46.04
+
+G1 X60.86 Y46.62
+
+G1 X60.86 Y46.62
+
+G1 X61.2 Y46.68
+
+G1 X61.42 Y46.76
+
+G1 X72.24 Y46.76
+
+G1 X72.66 Y46.64
+
+G1 X72.66 Y46.64
+
+G1 X73.22 Y46.14
+
+G1 X73.22 Y46.14
+
+G1 X73.46 Y46.08
+
+G1 X73.66 Y46.02
+
+G1 X74.12 Y45.6
+
+G1 X73.9 Y45.74
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.12 Y45.6
+M04 S1000
+G1 X74.62 Y45.56
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.62 Y45.56
+M04 S1000
+G1 X75.0 Y45.68
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.0 Y45.68
+M04 S1000
+G1 X75.2 Y45.82
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.2 Y45.82
+M04 S1000
+G1 X75.42 Y46.5
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.42 Y46.5
+M04 S1000
+G1 X75.42 Y46.5
+G1 X76.1 Y46.7
+
+G1 X76.5 Y46.98
+
+G1 X77.1 Y47.16
+
+G1 X77.1 Y47.16
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X77.02 Y46.34
+M04 S1000
+G1 X76.76 Y46.3
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.76 Y46.3
+M04 S1000
+G1 X76.76 Y46.3
+G1 X76.8 Y46.02
+
+G1 X76.8 Y46.02
+
+G1 X77.06 Y46.04
+
+G1 X77.06 Y46.04
+
+G1 X77.02 Y46.34
+
+G1 X77.02 Y46.34
+
+G1 X76.76 Y46.3
+
+G1 X76.8 Y46.02
+
+G1 X77.06 Y46.04
+
+G1 X77.06 Y46.04
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.8 Y46.02
+M04 S1000
+G1 X76.8 Y46.02
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.76 Y46.3
+M04 S1000
+G1 X76.76 Y46.3
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.26 Y46.8
+M04 S1000
+G1 X76.1 Y46.7
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.42 Y46.5
+M04 S1000
+G1 X75.34 Y46.28
+G1 X75.42 Y46.5
+
+G1 X75.1 Y46.76
+
+G1 X74.26 Y47.04
+
+G1 X73.62 Y47.08
+
+G1 X72.92 Y47.68
+
+G1 X72.92 Y47.68
+
+G1 X72.64 Y47.86
+
+G1 X72.14 Y48.02
+
+G1 X61.5 Y48.02
+
+G1 X60.98 Y47.84
+
+G1 X60.68 Y47.62
+
+G1 X60.42 Y47.56
+
+G1 X59.96 Y47.1
+
+G1 X59.78 Y47.02
+
+G1 X59.14 Y47.0
+
+G1 X58.64 Y46.84
+
+G1 X49.9 Y46.84
+
+G1 X49.16 Y47.08
+
+G1 X48.4 Y47.8
+
+G1 X48.4 Y47.8
+
+G1 X47.84 Y48.02
+
+G1 X46.8 Y48.02
+
+G1 X46.6 Y47.94
+
+G1 X46.32 Y47.88
+
+G1 X45.7 Y47.84
+
+G1 X45.48 Y47.72
+
+G1 X45.22 Y47.64
+
+G1 X44.62 Y47.06
+
+G1 X44.02 Y47.04
+
+G1 X43.4 Y46.84
+
+G1 X34.44 Y46.84
+
+G1 X33.96 Y46.98
+
+G1 X33.76 Y47.1
+
+G1 X33.16 Y47.72
+
+G1 X32.96 Y47.86
+
+G1 X32.52 Y48.0
+
+G1 X31.56 Y48.02
+
+G1 X31.36 Y47.94
+
+G1 X31.08 Y47.88
+
+G1 X30.52 Y47.86
+
+G1 X30.36 Y47.76
+
+G1 X29.92 Y47.32
+
+G1 X29.92 Y47.32
+
+G1 X29.64 Y47.26
+
+G1 X29.32 Y46.98
+
+G1 X29.32 Y46.98
+
+G1 X29.32 Y46.98
+
+G1 X28.68 Y46.94
+
+G1 X28.26 Y46.8
+
+G1 X23.28 Y46.8
+
+G1 X22.9 Y46.9
+
+G1 X22.74 Y47.0
+
+G1 X21.82 Y47.88
+
+G1 X21.46 Y48.04
+
+G1 X15.72 Y48.04
+
+G1 X15.32 Y48.14
+
+G1 X14.94 Y48.44
+
+G1 X14.94 Y48.44
+
+G1 X14.94 Y48.44
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.84 Y48.48
+M04 S1000
+G1 X15.8 Y48.76
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.8 Y48.76
+M04 S1000
+G1 X16.06 Y48.8
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X16.06 Y48.8
+M04 S1000
+G1 X16.06 Y48.8
+G1 X16.1 Y48.5
+
+G1 X15.84 Y48.48
+
+G1 X15.84 Y48.48
+
+G1 X16.1 Y48.5
+
+G1 X16.1 Y48.5
+
+G1 X16.1 Y48.5
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.84 Y48.48
+M04 S1000
+G1 X15.84 Y48.48
+G1 X15.8 Y48.76
+
+G1 X15.8 Y48.76
+
+G1 X15.8 Y48.76
+
+G1 X16.06 Y48.8
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.56 Y48.5
+M04 S1000
+G1 X13.3 Y48.48
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.3 Y48.48
+M04 S1000
+G1 X13.26 Y48.76
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.26 Y48.76
+M04 S1000
+G1 X13.52 Y48.8
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.52 Y48.8
+M04 S1000
+G1 X13.52 Y48.8
+G1 X13.56 Y48.5
+
+G1 X13.56 Y48.5
+
+G1 X13.56 Y48.5
+
+G1 X13.3 Y48.48
+
+G1 X13.3 Y48.48
+
+G1 X13.3 Y48.48
+
+G1 X13.26 Y48.76
+
+G1 X13.26 Y48.76
+
+G1 X13.26 Y48.76
+
+G1 X13.52 Y48.8
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X12.78 Y46.68
+M04 S1000
+G1 X12.72 Y45.54
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X12.82 Y45.32
+M04 S1000
+G1 X12.82 Y45.32
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.08 Y45.0
+M04 S1000
+G1 X14.08 Y45.3
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X14.08 Y45.3
+M04 S1000
+G1 X14.38 Y45.56
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X14.38 Y45.56
+M04 S1000
+G1 X14.62 Y45.72
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X14.62 Y45.72
+M04 S1000
+G1 X15.04 Y45.86
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.04 Y45.86
+M04 S1000
+G1 X15.04 Y45.86
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.84 Y45.94
+M04 S1000
+G1 X15.8 Y46.22
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.8 Y46.22
+M04 S1000
+G1 X16.06 Y46.26
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X16.06 Y46.26
+M04 S1000
+G1 X16.06 Y46.26
+G1 X16.1 Y45.96
+
+G1 X15.84 Y45.94
+
+G1 X15.84 Y45.94
+
+G1 X16.1 Y45.96
+
+G1 X16.1 Y45.96
+
+G1 X16.1 Y45.96
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.84 Y45.94
+M04 S1000
+G1 X15.84 Y45.94
+G1 X15.8 Y46.22
+
+G1 X15.8 Y46.22
+
+G1 X15.8 Y46.22
+
+G1 X16.06 Y46.26
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X14.08 Y45.3
+M04 S1000
+G1 X14.08 Y45.3
+G1 X13.32 Y45.04
+
+G1 X13.08 Y45.0
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.3 Y45.94
+M04 S1000
+G1 X13.26 Y46.22
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.26 Y46.22
+M04 S1000
+G1 X13.52 Y46.26
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.52 Y46.26
+M04 S1000
+G1 X13.52 Y46.26
+G1 X13.56 Y45.96
+
+G1 X13.3 Y45.94
+
+G1 X13.3 Y45.94
+
+G1 X13.56 Y45.96
+
+G1 X13.56 Y45.96
+
+G1 X13.56 Y45.96
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.3 Y45.94
+M04 S1000
+G1 X13.3 Y45.94
+G1 X13.26 Y46.22
+
+G1 X13.26 Y46.22
+
+G1 X13.26 Y46.22
+
+G1 X13.52 Y46.26
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X12.78 Y46.68
+M04 S1000
+G1 X12.78 Y46.68
+G1 X12.78 Y46.68
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.26 Y43.68
+M04 S1000
+G1 X13.52 Y43.72
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.52 Y43.72
+M04 S1000
+G1 X13.52 Y43.72
+G1 X13.56 Y43.42
+
+G1 X13.3 Y43.4
+
+G1 X13.26 Y43.68
+
+G1 X13.26 Y43.68
+
+G1 X13.3 Y43.4
+
+G1 X13.3 Y43.4
+
+G1 X13.56 Y43.42
+
+G1 X13.56 Y43.42
+
+G1 X13.56 Y43.42
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.3 Y43.4
+M04 S1000
+G1 X13.3 Y43.4
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.26 Y43.68
+M04 S1000
+G1 X13.26 Y43.68
+G1 X13.52 Y43.72
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.92 Y42.78
+M04 S1000
+G1 X13.02 Y42.48
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.02 Y42.48
+M04 S1000
+G1 X13.26 Y42.56
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.26 Y42.56
+M04 S1000
+G1 X13.92 Y42.78
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.92 Y42.78
+M04 S1000
+G1 X14.28 Y42.94
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X14.28 Y42.94
+M04 S1000
+G1 X14.98 Y43.16
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X14.98 Y43.16
+M04 S1000
+G1 X14.98 Y43.16
+G1 X14.98 Y43.16
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.3 Y42.94
+M04 S1000
+G1 X15.3 Y42.94
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.84 Y43.4
+M04 S1000
+G1 X15.8 Y43.68
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.8 Y43.68
+M04 S1000
+G1 X16.06 Y43.72
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X16.06 Y43.72
+M04 S1000
+G1 X16.06 Y43.72
+G1 X16.1 Y43.42
+
+G1 X15.84 Y43.4
+
+G1 X15.84 Y43.4
+
+G1 X16.1 Y43.42
+
+G1 X16.1 Y43.42
+
+G1 X16.1 Y43.42
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.84 Y43.4
+M04 S1000
+G1 X15.84 Y43.4
+G1 X15.8 Y43.68
+
+G1 X15.8 Y43.68
+
+G1 X15.8 Y43.68
+
+G1 X16.06 Y43.72
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X16.86 Y42.84
+M04 S1000
+G1 X16.86 Y42.84
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X16.06 Y41.18
+M04 S1000
+G1 X15.8 Y41.14
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.8 Y41.14
+M04 S1000
+G1 X15.8 Y41.14
+G1 X15.84 Y40.86
+
+G1 X15.84 Y40.86
+
+G1 X16.1 Y40.88
+
+G1 X16.1 Y40.88
+
+G1 X16.06 Y41.18
+
+G1 X16.06 Y41.18
+
+G1 X15.8 Y41.14
+
+G1 X15.84 Y40.86
+
+G1 X16.1 Y40.88
+
+G1 X16.1 Y40.88
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.84 Y40.86
+M04 S1000
+G1 X15.84 Y40.86
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.8 Y41.14
+M04 S1000
+G1 X15.8 Y41.14
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.0 Y40.8
+M04 S1000
+G1 X14.48 Y40.66
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X14.48 Y40.66
+M04 S1000
+G1 X14.48 Y40.66
+G1 X14.18 Y40.36
+
+G1 X13.98 Y40.2
+
+G1 X13.1 Y39.92
+
+G1 X12.92 Y39.28
+
+G1 X12.82 Y39.1
+
+G1 X12.78 Y38.94
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.26 Y38.6
+M04 S1000
+G1 X13.52 Y38.64
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.52 Y38.64
+M04 S1000
+G1 X13.52 Y38.64
+G1 X13.56 Y38.34
+
+G1 X13.3 Y38.32
+
+G1 X13.26 Y38.6
+
+G1 X13.26 Y38.6
+
+G1 X13.3 Y38.32
+
+G1 X13.3 Y38.32
+
+G1 X13.56 Y38.34
+
+G1 X13.56 Y38.34
+
+G1 X13.56 Y38.34
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.3 Y38.32
+M04 S1000
+G1 X13.3 Y38.32
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.26 Y38.6
+M04 S1000
+G1 X13.26 Y38.6
+G1 X13.52 Y38.64
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X14.0 Y37.88
+M04 S1000
+G1 X14.2 Y37.94
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.0 Y38.22
+M04 S1000
+G1 X15.0 Y38.22
+G1 X15.0 Y38.22
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.26 Y38.88
+M04 S1000
+G1 X15.26 Y38.88
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.8 Y38.6
+M04 S1000
+G1 X16.06 Y38.64
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X16.06 Y38.64
+M04 S1000
+G1 X16.06 Y38.64
+G1 X16.1 Y38.34
+
+G1 X15.84 Y38.32
+
+G1 X15.8 Y38.6
+
+G1 X15.8 Y38.6
+
+G1 X15.84 Y38.32
+
+G1 X15.84 Y38.32
+
+G1 X16.1 Y38.34
+
+G1 X16.1 Y38.34
+
+G1 X16.1 Y38.34
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.84 Y38.32
+M04 S1000
+G1 X15.84 Y38.32
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.8 Y38.6
+M04 S1000
+G1 X15.8 Y38.6
+G1 X16.06 Y38.64
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X17.16 Y36.64
+M04 S1000
+G1 X17.36 Y36.6
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X17.36 Y36.6
+M04 S1000
+G1 X29.72 Y36.6
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X29.72 Y36.6
+M04 S1000
+G1 X30.18 Y36.68
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X30.18 Y36.68
+M04 S1000
+G1 X31.16 Y36.96
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.16 Y36.96
+M04 S1000
+G1 X30.94 Y36.92
+G1 X31.8 Y36.74
+
+G1 X32.18 Y36.68
+
+G1 X42.58 Y36.68
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X43.78 Y38.4
+M04 S1000
+G1 X43.74 Y38.68
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X43.74 Y38.68
+M04 S1000
+G1 X44.0 Y38.72
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X44.0 Y38.72
+M04 S1000
+G1 X44.0 Y38.72
+G1 X44.04 Y38.42
+
+G1 X43.78 Y38.4
+
+G1 X43.78 Y38.4
+
+G1 X44.04 Y38.42
+
+G1 X44.04 Y38.42
+
+G1 X44.04 Y38.42
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X43.78 Y38.4
+M04 S1000
+G1 X43.78 Y38.4
+G1 X43.74 Y38.68
+
+G1 X43.74 Y38.68
+
+G1 X43.74 Y38.68
+
+G1 X44.0 Y38.72
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X44.8 Y39.38
+M04 S1000
+G1 X44.98 Y39.46
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X45.74 Y40.18
+M04 S1000
+G1 X45.74 Y40.18
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.32 Y40.94
+M04 S1000
+G1 X46.28 Y41.22
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.28 Y41.22
+M04 S1000
+G1 X46.54 Y41.26
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.54 Y41.26
+M04 S1000
+G1 X46.54 Y41.26
+G1 X46.58 Y40.96
+
+G1 X46.32 Y40.94
+
+G1 X46.32 Y40.94
+
+G1 X46.58 Y40.96
+
+G1 X46.58 Y40.96
+
+G1 X46.58 Y40.96
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.32 Y40.94
+M04 S1000
+G1 X46.32 Y40.94
+G1 X46.28 Y41.22
+
+G1 X46.28 Y41.22
+
+G1 X46.28 Y41.22
+
+G1 X46.54 Y41.26
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X47.74 Y42.74
+M04 S1000
+G1 X47.74 Y42.74
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.58 Y43.5
+M04 S1000
+G1 X46.32 Y43.48
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.32 Y43.48
+M04 S1000
+G1 X46.28 Y43.76
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.28 Y43.76
+M04 S1000
+G1 X46.54 Y43.8
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.54 Y43.8
+M04 S1000
+G1 X46.54 Y43.8
+G1 X46.58 Y43.5
+
+G1 X46.58 Y43.5
+
+G1 X46.58 Y43.5
+
+G1 X46.32 Y43.48
+
+G1 X46.32 Y43.48
+
+G1 X46.32 Y43.48
+
+G1 X46.28 Y43.76
+
+G1 X46.28 Y43.76
+
+G1 X46.28 Y43.76
+
+G1 X46.54 Y43.8
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X44.66 Y44.54
+M04 S1000
+G1 X44.48 Y44.46
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X43.94 Y44.28
+M04 S1000
+G1 X37.12 Y44.3
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X37.12 Y44.3
+M04 S1000
+G1 X34.28 Y44.3
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X33.78 Y44.46
+M04 S1000
+G1 X33.58 Y44.54
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X32.84 Y46.6
+M04 S1000
+G1 X32.84 Y46.6
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.3 Y46.34
+M04 S1000
+G1 X31.04 Y46.3
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.04 Y46.3
+M04 S1000
+G1 X31.04 Y46.3
+G1 X31.08 Y46.02
+
+G1 X31.08 Y46.02
+
+G1 X31.34 Y46.04
+
+G1 X31.34 Y46.04
+
+G1 X31.3 Y46.34
+
+G1 X31.3 Y46.34
+
+G1 X31.04 Y46.3
+
+G1 X31.08 Y46.02
+
+G1 X31.34 Y46.04
+
+G1 X31.34 Y46.04
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.08 Y46.02
+M04 S1000
+G1 X31.08 Y46.02
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.04 Y46.3
+M04 S1000
+G1 X31.04 Y46.3
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X30.9 Y46.72
+M04 S1000
+G1 X30.9 Y46.72
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X29.36 Y45.96
+M04 S1000
+G1 X29.36 Y45.96
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.8 Y46.04
+M04 S1000
+G1 X28.54 Y46.02
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.54 Y46.02
+M04 S1000
+G1 X28.5 Y46.3
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.5 Y46.3
+M04 S1000
+G1 X28.76 Y46.34
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.76 Y46.34
+M04 S1000
+G1 X28.76 Y46.34
+G1 X28.8 Y46.04
+
+G1 X28.8 Y46.04
+
+G1 X28.8 Y46.04
+
+G1 X28.54 Y46.02
+
+G1 X28.54 Y46.02
+
+G1 X28.54 Y46.02
+
+G1 X28.5 Y46.3
+
+G1 X28.5 Y46.3
+
+G1 X28.5 Y46.3
+
+G1 X28.76 Y46.34
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.78 Y45.54
+M04 S1000
+G1 X28.62 Y45.5
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X29.08 Y44.3
+M04 S1000
+G1 X29.26 Y44.38
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.76 Y43.8
+M04 S1000
+G1 X28.5 Y43.76
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.5 Y43.76
+M04 S1000
+G1 X28.5 Y43.76
+G1 X28.54 Y43.48
+
+G1 X28.54 Y43.48
+
+G1 X28.8 Y43.5
+
+G1 X28.8 Y43.5
+
+G1 X28.76 Y43.8
+
+G1 X28.76 Y43.8
+
+G1 X28.5 Y43.76
+
+G1 X28.54 Y43.48
+
+G1 X28.8 Y43.5
+
+G1 X28.8 Y43.5
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.54 Y43.48
+M04 S1000
+G1 X28.54 Y43.48
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.5 Y43.76
+M04 S1000
+G1 X28.5 Y43.76
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X29.92 Y45.02
+M04 S1000
+G1 X29.92 Y45.02
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X30.38 Y44.1
+M04 S1000
+G1 X30.38 Y44.1
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.04 Y43.76
+M04 S1000
+G1 X31.3 Y43.8
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.3 Y43.8
+M04 S1000
+G1 X31.3 Y43.8
+G1 X31.34 Y43.5
+
+G1 X31.08 Y43.48
+
+G1 X31.04 Y43.76
+
+G1 X31.04 Y43.76
+
+G1 X31.08 Y43.48
+
+G1 X31.08 Y43.48
+
+G1 X31.34 Y43.5
+
+G1 X31.34 Y43.5
+
+G1 X31.34 Y43.5
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.08 Y43.48
+M04 S1000
+G1 X31.08 Y43.48
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.04 Y43.76
+M04 S1000
+G1 X31.04 Y43.76
+G1 X31.3 Y43.8
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X32.18 Y41.64
+M04 S1000
+G1 X32.34 Y41.54
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.3 Y41.26
+M04 S1000
+G1 X31.04 Y41.22
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.04 Y41.22
+M04 S1000
+G1 X31.04 Y41.22
+G1 X31.08 Y40.94
+
+G1 X31.08 Y40.94
+
+G1 X31.34 Y40.96
+
+G1 X31.34 Y40.96
+
+G1 X31.3 Y41.26
+
+G1 X31.3 Y41.26
+
+G1 X31.04 Y41.22
+
+G1 X31.08 Y40.94
+
+G1 X31.34 Y40.96
+
+G1 X31.34 Y40.96
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.08 Y40.94
+M04 S1000
+G1 X31.08 Y40.94
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.04 Y41.22
+M04 S1000
+G1 X31.04 Y41.22
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.02 Y40.4
+M04 S1000
+G1 X31.02 Y40.4
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X30.48 Y40.18
+M04 S1000
+G1 X30.48 Y40.18
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.0 Y39.14
+M04 S1000
+G1 X31.18 Y39.16
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.54 Y39.12
+M04 S1000
+G1 X31.54 Y39.12
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.3 Y38.72
+M04 S1000
+G1 X31.04 Y38.68
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.04 Y38.68
+M04 S1000
+G1 X31.04 Y38.68
+G1 X31.08 Y38.4
+
+G1 X31.08 Y38.4
+
+G1 X31.34 Y38.42
+
+G1 X31.34 Y38.42
+
+G1 X31.3 Y38.72
+
+G1 X31.3 Y38.72
+
+G1 X31.04 Y38.68
+
+G1 X31.08 Y38.4
+
+G1 X31.34 Y38.42
+
+G1 X31.34 Y38.42
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.08 Y38.4
+M04 S1000
+G1 X31.08 Y38.4
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.04 Y38.68
+M04 S1000
+G1 X31.04 Y38.68
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X32.72 Y38.02
+M04 S1000
+G1 X32.72 Y38.02
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.8 Y38.42
+M04 S1000
+G1 X28.54 Y38.4
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.54 Y38.4
+M04 S1000
+G1 X28.5 Y38.68
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.5 Y38.68
+M04 S1000
+G1 X28.76 Y38.72
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.76 Y38.72
+M04 S1000
+G1 X28.76 Y38.72
+G1 X28.8 Y38.42
+
+G1 X28.8 Y38.42
+
+G1 X28.8 Y38.42
+
+G1 X28.54 Y38.4
+
+G1 X28.54 Y38.4
+
+G1 X28.54 Y38.4
+
+G1 X28.5 Y38.68
+
+G1 X28.5 Y38.68
+
+G1 X28.5 Y38.68
+
+G1 X28.76 Y38.72
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.54 Y40.94
+M04 S1000
+G1 X28.5 Y41.22
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.5 Y41.22
+M04 S1000
+G1 X28.76 Y41.26
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.76 Y41.26
+M04 S1000
+G1 X28.76 Y41.26
+G1 X28.8 Y40.96
+
+G1 X28.54 Y40.94
+
+G1 X28.54 Y40.94
+
+G1 X28.8 Y40.96
+
+G1 X28.8 Y40.96
+
+G1 X28.8 Y40.96
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.54 Y40.94
+M04 S1000
+G1 X28.54 Y40.94
+G1 X28.5 Y41.22
+
+G1 X28.5 Y41.22
+
+G1 X28.5 Y41.22
+
+G1 X28.76 Y41.26
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X33.44 Y41.96
+M04 S1000
+G1 X33.44 Y41.96
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X34.44 Y46.84
+M04 S1000
+G1 X37.12 Y46.84
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X37.12 Y46.84
+M04 S1000
+G1 X43.4 Y46.84
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X43.74 Y46.3
+M04 S1000
+G1 X44.0 Y46.34
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X44.0 Y46.34
+M04 S1000
+G1 X44.0 Y46.34
+G1 X44.04 Y46.04
+
+G1 X43.78 Y46.02
+
+G1 X43.74 Y46.3
+
+G1 X43.74 Y46.3
+
+G1 X43.78 Y46.02
+
+G1 X43.78 Y46.02
+
+G1 X44.04 Y46.04
+
+G1 X44.04 Y46.04
+
+G1 X44.04 Y46.04
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X43.78 Y46.02
+M04 S1000
+G1 X43.78 Y46.02
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X43.74 Y46.3
+M04 S1000
+G1 X43.74 Y46.3
+G1 X44.0 Y46.34
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X44.1 Y48.14
+M04 S1000
+G1 X44.1 Y48.14
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X44.04 Y48.58
+M04 S1000
+G1 X43.78 Y48.56
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X43.78 Y48.56
+M04 S1000
+G1 X43.74 Y48.84
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X43.74 Y48.84
+M04 S1000
+G1 X44.0 Y48.88
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X44.0 Y48.88
+M04 S1000
+G1 X44.0 Y48.88
+G1 X44.04 Y48.58
+
+G1 X44.04 Y48.58
+
+G1 X44.04 Y48.58
+
+G1 X43.78 Y48.56
+
+G1 X43.78 Y48.56
+
+G1 X43.78 Y48.56
+
+G1 X43.74 Y48.84
+
+G1 X43.74 Y48.84
+
+G1 X43.74 Y48.84
+
+G1 X44.0 Y48.88
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X45.72 Y48.98
+M04 S1000
+G1 X45.72 Y48.98
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.12 Y49.32
+M04 S1000
+G1 X46.12 Y49.32
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.28 Y48.84
+M04 S1000
+G1 X46.54 Y48.88
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.54 Y48.88
+M04 S1000
+G1 X46.54 Y48.88
+G1 X46.58 Y48.58
+
+G1 X46.32 Y48.56
+
+G1 X46.28 Y48.84
+
+G1 X46.28 Y48.84
+
+G1 X46.32 Y48.56
+
+G1 X46.32 Y48.56
+
+G1 X46.58 Y48.58
+
+G1 X46.58 Y48.58
+
+G1 X46.58 Y48.58
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.32 Y48.56
+M04 S1000
+G1 X46.32 Y48.56
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.28 Y48.84
+M04 S1000
+G1 X46.28 Y48.84
+G1 X46.54 Y48.88
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.32 Y51.1
+M04 S1000
+G1 X46.28 Y51.38
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.28 Y51.38
+M04 S1000
+G1 X46.54 Y51.42
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.54 Y51.42
+M04 S1000
+G1 X46.54 Y51.42
+G1 X46.58 Y51.12
+
+G1 X46.32 Y51.1
+
+G1 X46.32 Y51.1
+
+G1 X46.58 Y51.12
+
+G1 X46.58 Y51.12
+
+G1 X46.58 Y51.12
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.32 Y51.1
+M04 S1000
+G1 X46.32 Y51.1
+G1 X46.28 Y51.38
+
+G1 X46.28 Y51.38
+
+G1 X46.28 Y51.38
+
+G1 X46.54 Y51.42
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X45.6 Y52.9
+M04 S1000
+G1 X45.6 Y52.9
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.32 Y53.64
+M04 S1000
+G1 X46.28 Y53.92
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.28 Y53.92
+M04 S1000
+G1 X46.54 Y53.96
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.54 Y53.96
+M04 S1000
+G1 X46.54 Y53.96
+G1 X46.58 Y53.66
+
+G1 X46.32 Y53.64
+
+G1 X46.32 Y53.64
+
+G1 X46.58 Y53.66
+
+G1 X46.58 Y53.66
+
+G1 X46.58 Y53.66
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.32 Y53.64
+M04 S1000
+G1 X46.32 Y53.64
+G1 X46.28 Y53.92
+
+G1 X46.28 Y53.92
+
+G1 X46.28 Y53.92
+
+G1 X46.54 Y53.96
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X45.58 Y54.22
+M04 S1000
+G1 X45.58 Y54.22
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X45.4 Y55.4
+M04 S1000
+G1 X45.4 Y55.4
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X45.0 Y56.34
+M04 S1000
+G1 X45.0 Y56.34
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X44.04 Y56.2
+M04 S1000
+G1 X43.78 Y56.18
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X43.78 Y56.18
+M04 S1000
+G1 X43.74 Y56.46
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X43.74 Y56.46
+M04 S1000
+G1 X44.0 Y56.5
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X44.0 Y56.5
+M04 S1000
+G1 X44.0 Y56.5
+G1 X44.04 Y56.2
+
+G1 X44.04 Y56.2
+
+G1 X44.04 Y56.2
+
+G1 X43.78 Y56.18
+
+G1 X43.78 Y56.18
+
+G1 X43.78 Y56.18
+
+G1 X43.74 Y56.46
+
+G1 X43.74 Y56.46
+
+G1 X43.74 Y56.46
+
+G1 X44.0 Y56.5
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X44.82 Y57.34
+M04 S1000
+G1 X44.82 Y57.34
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X44.72 Y58.42
+M04 S1000
+G1 X44.72 Y58.42
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X44.04 Y58.74
+M04 S1000
+G1 X43.78 Y58.72
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X43.78 Y58.72
+M04 S1000
+G1 X43.74 Y59.0
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X43.74 Y59.0
+M04 S1000
+G1 X44.0 Y59.04
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X44.0 Y59.04
+M04 S1000
+G1 X44.0 Y59.04
+G1 X44.04 Y58.74
+
+G1 X44.04 Y58.74
+
+G1 X44.04 Y58.74
+
+G1 X43.78 Y58.72
+
+G1 X43.78 Y58.72
+
+G1 X43.78 Y58.72
+
+G1 X43.74 Y59.0
+
+G1 X43.74 Y59.0
+
+G1 X43.74 Y59.0
+
+G1 X44.0 Y59.04
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X45.7 Y57.98
+M04 S1000
+G1 X45.7 Y57.98
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.32 Y58.72
+M04 S1000
+G1 X46.28 Y59.0
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.28 Y59.0
+M04 S1000
+G1 X46.54 Y59.04
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.54 Y59.04
+M04 S1000
+G1 X46.54 Y59.04
+G1 X46.58 Y58.74
+
+G1 X46.32 Y58.72
+
+G1 X46.32 Y58.72
+
+G1 X46.58 Y58.74
+
+G1 X46.58 Y58.74
+
+G1 X46.58 Y58.74
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.32 Y58.72
+M04 S1000
+G1 X46.32 Y58.72
+G1 X46.28 Y59.0
+
+G1 X46.28 Y59.0
+
+G1 X46.28 Y59.0
+
+G1 X46.54 Y59.04
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.14 Y59.42
+M04 S1000
+G1 X46.14 Y59.42
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X45.68 Y60.5
+M04 S1000
+G1 X45.68 Y60.5
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.32 Y61.26
+M04 S1000
+G1 X46.28 Y61.54
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.28 Y61.54
+M04 S1000
+G1 X46.54 Y61.58
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.54 Y61.58
+M04 S1000
+G1 X46.54 Y61.58
+G1 X46.58 Y61.28
+
+G1 X46.32 Y61.26
+
+G1 X46.32 Y61.26
+
+G1 X46.58 Y61.28
+
+G1 X46.58 Y61.28
+
+G1 X46.58 Y61.28
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.32 Y61.26
+M04 S1000
+G1 X46.32 Y61.26
+G1 X46.28 Y61.54
+
+G1 X46.28 Y61.54
+
+G1 X46.28 Y61.54
+
+G1 X46.54 Y61.58
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.14 Y61.96
+M04 S1000
+G1 X46.14 Y61.96
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X45.36 Y61.54
+M04 S1000
+G1 X45.36 Y61.54
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X44.04 Y61.28
+M04 S1000
+G1 X43.78 Y61.26
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X43.78 Y61.26
+M04 S1000
+G1 X43.74 Y61.54
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X43.74 Y61.54
+M04 S1000
+G1 X44.0 Y61.58
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X44.0 Y61.58
+M04 S1000
+G1 X44.0 Y61.58
+G1 X44.04 Y61.28
+
+G1 X44.04 Y61.28
+
+G1 X44.04 Y61.28
+
+G1 X43.78 Y61.26
+
+G1 X43.78 Y61.26
+
+G1 X43.78 Y61.26
+
+G1 X43.74 Y61.54
+
+G1 X43.74 Y61.54
+
+G1 X43.74 Y61.54
+
+G1 X44.0 Y61.58
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X45.68 Y63.04
+M04 S1000
+G1 X45.68 Y63.04
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.32 Y63.8
+M04 S1000
+G1 X46.28 Y64.08
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.28 Y64.08
+M04 S1000
+G1 X46.54 Y64.12
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.54 Y64.12
+M04 S1000
+G1 X46.54 Y64.12
+G1 X46.58 Y63.82
+
+G1 X46.32 Y63.8
+
+G1 X46.32 Y63.8
+
+G1 X46.58 Y63.82
+
+G1 X46.58 Y63.82
+
+G1 X46.58 Y63.82
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.32 Y63.8
+M04 S1000
+G1 X46.32 Y63.8
+G1 X46.28 Y64.08
+
+G1 X46.28 Y64.08
+
+G1 X46.28 Y64.08
+
+G1 X46.54 Y64.12
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.14 Y64.5
+M04 S1000
+G1 X46.14 Y64.5
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X45.36 Y64.08
+M04 S1000
+G1 X45.36 Y64.08
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X44.04 Y63.82
+M04 S1000
+G1 X43.78 Y63.8
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X43.78 Y63.8
+M04 S1000
+G1 X43.74 Y64.08
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X43.74 Y64.08
+M04 S1000
+G1 X44.0 Y64.12
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X44.0 Y64.12
+M04 S1000
+G1 X44.0 Y64.12
+G1 X44.04 Y63.82
+
+G1 X44.04 Y63.82
+
+G1 X44.04 Y63.82
+
+G1 X43.78 Y63.8
+
+G1 X43.78 Y63.8
+
+G1 X43.78 Y63.8
+
+G1 X43.74 Y64.08
+
+G1 X43.74 Y64.08
+
+G1 X43.74 Y64.08
+
+G1 X44.0 Y64.12
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X43.78 Y66.34
+M04 S1000
+G1 X43.74 Y66.62
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X43.74 Y66.62
+M04 S1000
+G1 X44.0 Y66.66
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X44.0 Y66.66
+M04 S1000
+G1 X44.0 Y66.66
+G1 X44.04 Y66.36
+
+G1 X43.78 Y66.34
+
+G1 X43.78 Y66.34
+
+G1 X44.04 Y66.36
+
+G1 X44.04 Y66.36
+
+G1 X44.04 Y66.36
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X43.78 Y66.34
+M04 S1000
+G1 X43.78 Y66.34
+G1 X43.74 Y66.62
+
+G1 X43.74 Y66.62
+
+G1 X43.74 Y66.62
+
+G1 X44.0 Y66.66
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.14 Y67.04
+M04 S1000
+G1 X46.14 Y67.04
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.28 Y66.62
+M04 S1000
+G1 X46.54 Y66.66
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.54 Y66.66
+M04 S1000
+G1 X46.54 Y66.66
+G1 X46.58 Y66.36
+
+G1 X46.32 Y66.34
+
+G1 X46.28 Y66.62
+
+G1 X46.28 Y66.62
+
+G1 X46.32 Y66.34
+
+G1 X46.32 Y66.34
+
+G1 X46.58 Y66.36
+
+G1 X46.58 Y66.36
+
+G1 X46.58 Y66.36
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.32 Y66.34
+M04 S1000
+G1 X46.32 Y66.34
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.28 Y66.62
+M04 S1000
+G1 X46.28 Y66.62
+G1 X46.54 Y66.66
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.86 Y65.76
+M04 S1000
+G1 X46.86 Y65.76
+G1 X46.86 Y65.76
+
+G1 X46.86 Y65.76
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X45.68 Y68.12
+M04 S1000
+G1 X45.68 Y68.12
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.32 Y68.88
+M04 S1000
+G1 X46.28 Y69.16
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.28 Y69.16
+M04 S1000
+G1 X46.54 Y69.2
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.54 Y69.2
+M04 S1000
+G1 X46.54 Y69.2
+G1 X46.58 Y68.9
+
+G1 X46.32 Y68.88
+
+G1 X46.32 Y68.88
+
+G1 X46.58 Y68.9
+
+G1 X46.58 Y68.9
+
+G1 X46.58 Y68.9
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.32 Y68.88
+M04 S1000
+G1 X46.32 Y68.88
+G1 X46.28 Y69.16
+
+G1 X46.28 Y69.16
+
+G1 X46.28 Y69.16
+
+G1 X46.54 Y69.2
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.14 Y69.58
+M04 S1000
+G1 X46.14 Y69.58
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X45.36 Y69.16
+M04 S1000
+G1 X45.36 Y69.16
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X44.68 Y69.92
+M04 S1000
+G1 X44.9 Y70.12
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X44.9 Y70.12
+M04 S1000
+G1 X45.16 Y70.18
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X45.16 Y70.18
+M04 S1000
+G1 X45.68 Y70.66
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X45.68 Y70.66
+M04 S1000
+G1 X46.32 Y70.74
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.32 Y70.74
+M04 S1000
+G1 X46.6 Y70.8
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.6 Y70.8
+M04 S1000
+G1 X46.8 Y70.88
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.8 Y70.88
+M04 S1000
+G1 X50.46 Y70.88
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X50.46 Y70.88
+M04 S1000
+G1 X50.7 Y70.78
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X50.7 Y70.78
+M04 S1000
+G1 X51.62 Y69.86
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X51.62 Y69.86
+M04 S1000
+G1 X51.8 Y69.74
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X51.8 Y69.74
+M04 S1000
+G1 X52.02 Y69.7
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X52.02 Y69.7
+M04 S1000
+G1 X59.3 Y69.7
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.3 Y69.7
+M04 S1000
+G1 X60.02 Y69.94
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X60.02 Y69.94
+M04 S1000
+G1 X60.2 Y70.06
+G1 X60.7 Y70.62
+
+G1 X60.86 Y70.72
+
+G1 X61.56 Y70.74
+
+G1 X61.84 Y70.8
+
+G1 X62.04 Y70.88
+
+G1 X72.14 Y70.88
+
+G1 X72.64 Y70.72
+
+G1 X72.92 Y70.54
+
+G1 X72.92 Y70.54
+
+G1 X73.62 Y69.94
+
+G1 X74.26 Y69.9
+
+G1 X75.1 Y69.62
+
+G1 X75.38 Y69.38
+
+G1 X75.34 Y69.14
+
+G1 X75.18 Y68.68
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.52 Y68.9
+M04 S1000
+G1 X74.26 Y68.88
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.26 Y68.88
+M04 S1000
+G1 X74.22 Y69.16
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.22 Y69.16
+M04 S1000
+G1 X74.48 Y69.2
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.48 Y69.2
+M04 S1000
+G1 X74.48 Y69.2
+G1 X74.52 Y68.9
+
+G1 X74.52 Y68.9
+
+G1 X74.52 Y68.9
+
+G1 X74.26 Y68.88
+
+G1 X74.26 Y68.88
+
+G1 X74.26 Y68.88
+
+G1 X74.22 Y69.16
+
+G1 X74.22 Y69.16
+
+G1 X74.22 Y69.16
+
+G1 X74.48 Y69.2
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.26 Y69.9
+M04 S1000
+G1 X74.26 Y69.9
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.12 Y71.0
+M04 S1000
+G1 X73.9 Y71.14
+G1 X74.62 Y70.96
+
+G1 X75.0 Y71.08
+
+G1 X75.18 Y71.22
+
+G1 X75.42 Y71.92
+
+G1 X76.1 Y72.1
+
+G1 X76.5 Y72.38
+
+G1 X77.1 Y72.56
+
+G1 X77.1 Y72.56
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X77.02 Y71.74
+M04 S1000
+G1 X76.76 Y71.7
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.76 Y71.7
+M04 S1000
+G1 X76.76 Y71.7
+G1 X76.8 Y71.42
+
+G1 X76.8 Y71.42
+
+G1 X77.06 Y71.44
+
+G1 X77.06 Y71.44
+
+G1 X77.02 Y71.74
+
+G1 X77.02 Y71.74
+
+G1 X76.76 Y71.7
+
+G1 X76.8 Y71.42
+
+G1 X77.06 Y71.44
+
+G1 X77.06 Y71.44
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.8 Y71.42
+M04 S1000
+G1 X76.8 Y71.42
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.76 Y71.7
+M04 S1000
+G1 X76.76 Y71.7
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.26 Y72.2
+M04 S1000
+G1 X76.1 Y72.1
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.42 Y71.92
+M04 S1000
+G1 X75.34 Y71.68
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.34 Y71.68
+M04 S1000
+G1 X75.18 Y71.22
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.52 Y71.44
+M04 S1000
+G1 X74.26 Y71.42
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.26 Y71.42
+M04 S1000
+G1 X74.22 Y71.7
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.22 Y71.7
+M04 S1000
+G1 X74.48 Y71.74
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.48 Y71.74
+M04 S1000
+G1 X74.48 Y71.74
+G1 X74.52 Y71.44
+
+G1 X74.52 Y71.44
+
+G1 X74.52 Y71.44
+
+G1 X74.26 Y71.42
+
+G1 X74.26 Y71.42
+
+G1 X74.26 Y71.42
+
+G1 X74.22 Y71.7
+
+G1 X74.22 Y71.7
+
+G1 X74.22 Y71.7
+
+G1 X74.48 Y71.74
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.26 Y72.44
+M04 S1000
+G1 X73.62 Y72.48
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X73.62 Y72.48
+M04 S1000
+G1 X72.92 Y73.08
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X72.92 Y73.08
+M04 S1000
+G1 X72.92 Y73.08
+G1 X72.64 Y73.26
+
+G1 X72.14 Y73.42
+
+G1 X62.04 Y73.42
+
+G1 X61.84 Y73.34
+
+G1 X61.56 Y73.28
+
+G1 X60.92 Y73.2
+
+G1 X60.4 Y72.72
+
+G1 X60.12 Y72.68
+
+G1 X59.74 Y72.4
+
+G1 X59.16 Y72.24
+
+G1 X53.22 Y72.24
+
+G1 X52.48 Y72.48
+
+G1 X51.72 Y73.2
+
+G1 X51.72 Y73.2
+
+G1 X51.16 Y73.42
+
+G1 X46.8 Y73.42
+
+G1 X46.6 Y73.34
+
+G1 X46.32 Y73.28
+
+G1 X45.68 Y73.2
+
+G1 X45.16 Y72.72
+
+G1 X44.9 Y72.66
+
+G1 X44.68 Y72.46
+
+G1 X44.5 Y72.36
+
+G1 X44.06 Y72.22
+
+G1 X38.56 Y72.24
+
+G1 X37.86 Y72.46
+
+G1 X37.86 Y72.46
+
+G1 X37.04 Y73.24
+
+G1 X36.86 Y73.36
+
+G1 X36.5 Y73.48
+
+G1 X31.0 Y73.48
+
+G1 X30.62 Y73.36
+
+G1 X30.46 Y73.26
+
+G1 X29.92 Y72.72
+
+G1 X29.92 Y72.72
+
+G1 X29.64 Y72.66
+
+G1 X29.32 Y72.32
+
+G1 X29.08 Y72.18
+
+G1 X28.9 Y72.16
+
+G1 X26.92 Y72.16
+
+G1 X26.58 Y72.24
+
+G1 X26.42 Y72.34
+
+G1 X25.44 Y73.28
+
+G1 X25.08 Y73.44
+
+G1 X15.72 Y73.44
+
+G1 X15.32 Y73.52
+
+G1 X15.0 Y73.74
+
+G1 X15.0 Y73.74
+
+G1 X15.1 Y74.0
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.0 Y73.74
+M04 S1000
+G1 X15.26 Y74.42
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.26 Y74.42
+M04 S1000
+G1 X15.26 Y74.42
+G1 X15.5 Y74.7
+
+G1 X25.12 Y74.7
+
+G1 X25.66 Y74.48
+
+G1 X26.56 Y73.6
+
+G1 X27.08 Y73.44
+
+G1 X28.56 Y73.44
+
+G1 X29.1 Y73.6
+
+G1 X29.52 Y73.64
+
+G1 X30.44 Y74.54
+
+G1 X30.8 Y74.7
+
+G1 X36.58 Y74.74
+
+G1 X37.02 Y74.56
+
+G1 X37.94 Y73.68
+
+G1 X38.12 Y73.58
+
+G1 X38.38 Y73.52
+
+G1 X44.02 Y73.52
+
+G1 X44.34 Y73.6
+
+G1 X44.76 Y73.64
+
+G1 X45.36 Y74.24
+
+G1 X45.84 Y74.36
+
+G1 X46.14 Y74.66
+
+G1 X51.58 Y74.7
+
+G1 X51.82 Y74.58
+
+G1 X52.9 Y73.56
+
+G1 X52.9 Y73.56
+
+G1 X59.26 Y73.52
+
+G1 X59.58 Y73.6
+
+G1 X60.0 Y73.64
+
+G1 X60.6 Y74.24
+
+G1 X61.08 Y74.36
+
+G1 X61.38 Y74.66
+
+G1 X72.24 Y74.7
+
+G1 X72.66 Y74.58
+
+G1 X72.66 Y74.58
+
+G1 X73.22 Y74.08
+
+G1 X73.22 Y74.08
+
+G1 X73.46 Y74.02
+
+G1 X73.66 Y73.96
+
+G1 X74.12 Y73.54
+
+G1 X73.9 Y73.68
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.12 Y73.54
+M04 S1000
+G1 X74.62 Y73.5
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.62 Y73.5
+M04 S1000
+G1 X75.0 Y73.62
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.0 Y73.62
+M04 S1000
+G1 X75.2 Y73.76
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.2 Y73.76
+M04 S1000
+G1 X75.42 Y74.44
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.42 Y74.44
+M04 S1000
+G1 X75.42 Y74.44
+G1 X76.1 Y74.64
+
+G1 X76.5 Y74.92
+
+G1 X77.14 Y75.08
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X77.02 Y74.28
+M04 S1000
+G1 X76.76 Y74.24
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.76 Y74.24
+M04 S1000
+G1 X76.76 Y74.24
+G1 X76.8 Y73.96
+
+G1 X76.8 Y73.96
+
+G1 X77.06 Y73.98
+
+G1 X77.06 Y73.98
+
+G1 X77.02 Y74.28
+
+G1 X77.02 Y74.28
+
+G1 X76.76 Y74.24
+
+G1 X76.8 Y73.96
+
+G1 X77.06 Y73.98
+
+G1 X77.06 Y73.98
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.8 Y73.96
+M04 S1000
+G1 X76.8 Y73.96
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.76 Y74.24
+M04 S1000
+G1 X76.76 Y74.24
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.26 Y74.74
+M04 S1000
+G1 X76.1 Y74.64
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.42 Y74.44
+M04 S1000
+G1 X75.34 Y74.22
+G1 X75.42 Y74.44
+
+G1 X75.1 Y74.7
+
+G1 X74.26 Y74.98
+
+G1 X73.62 Y75.02
+
+G1 X72.92 Y75.62
+
+G1 X72.92 Y75.62
+
+G1 X72.64 Y75.8
+
+G1 X72.14 Y75.96
+
+G1 X61.5 Y75.96
+
+G1 X60.94 Y75.76
+
+G1 X60.94 Y75.76
+
+G1 X60.44 Y75.28
+
+G1 X60.16 Y75.18
+
+G1 X59.9 Y74.98
+
+G1 X59.3 Y74.78
+
+G1 X53.56 Y74.78
+
+G1 X52.82 Y75.02
+
+G1 X52.06 Y75.74
+
+G1 X52.06 Y75.74
+
+G1 X51.5 Y75.96
+
+G1 X46.8 Y75.96
+
+G1 X46.6 Y75.88
+
+G1 X46.32 Y75.82
+
+G1 X45.68 Y75.74
+
+G1 X45.16 Y75.26
+
+G1 X44.9 Y75.2
+
+G1 X44.68 Y75.0
+
+G1 X44.5 Y74.9
+
+G1 X44.06 Y74.78
+
+G1 X38.7 Y74.78
+
+G1 X38.36 Y74.86
+
+G1 X38.2 Y74.96
+
+G1 X37.26 Y75.88
+
+G1 X36.98 Y76.0
+
+G1 X31.58 Y75.98
+
+G1 X31.12 Y75.84
+
+G1 X30.34 Y75.78
+
+G1 X29.44 Y74.9
+
+G1 X29.08 Y74.74
+
+G1 X28.9 Y74.7
+
+G1 X27.18 Y74.7
+
+G1 X26.84 Y74.78
+
+G1 X26.66 Y74.9
+
+G1 X25.68 Y75.86
+
+G1 X16.2 Y75.86
+
+G1 X15.9 Y75.9
+
+G1 X15.48 Y76.02
+
+G1 X15.04 Y76.28
+
+G1 X15.04 Y76.28
+
+G1 X15.1 Y76.54
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.04 Y76.28
+M04 S1000
+G1 X15.26 Y76.96
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.26 Y76.96
+M04 S1000
+G1 X15.26 Y76.96
+G1 X15.5 Y77.24
+
+G1 X16.44 Y77.24
+
+G1 X17.38 Y76.9
+
+G1 X17.74 Y76.82
+
+G1 X26.06 Y76.8
+
+G1 X26.7 Y76.2
+
+G1 X27.3 Y75.98
+
+G1 X28.72 Y75.98
+
+G1 X29.18 Y76.12
+
+G1 X29.42 Y76.24
+
+G1 X30.1 Y76.8
+
+G1 X30.1 Y76.8
+
+G1 X30.54 Y76.9
+
+G1 X30.9 Y77.2
+
+G1 X37.08 Y77.28
+
+G1 X37.46 Y77.16
+
+G1 X37.62 Y77.06
+
+G1 X38.46 Y76.22
+
+G1 X38.62 Y76.12
+
+G1 X38.88 Y76.06
+
+G1 X44.02 Y76.06
+
+G1 X44.34 Y76.14
+
+G1 X44.76 Y76.18
+
+G1 X45.36 Y76.78
+
+G1 X45.84 Y76.9
+
+G1 X46.08 Y77.16
+
+G1 X46.3 Y77.28
+
+G1 X51.6 Y77.28
+
+G1 X51.98 Y77.16
+
+G1 X52.14 Y77.06
+
+G1 X52.98 Y76.22
+
+G1 X53.14 Y76.12
+
+G1 X53.4 Y76.06
+
+G1 X59.26 Y76.06
+
+G1 X59.58 Y76.14
+
+G1 X60.0 Y76.18
+
+G1 X60.92 Y77.08
+
+G1 X61.28 Y77.24
+
+G1 X72.24 Y77.24
+
+G1 X72.66 Y77.12
+
+G1 X72.66 Y77.12
+
+G1 X73.22 Y76.62
+
+G1 X73.22 Y76.62
+
+G1 X73.46 Y76.56
+
+G1 X73.66 Y76.5
+
+G1 X74.12 Y76.08
+
+G1 X73.9 Y76.22
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.12 Y76.08
+M04 S1000
+G1 X74.62 Y76.04
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.62 Y76.04
+M04 S1000
+G1 X75.0 Y76.16
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.0 Y76.16
+M04 S1000
+G1 X75.18 Y76.3
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.18 Y76.3
+M04 S1000
+G1 X75.42 Y77.0
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.42 Y77.0
+M04 S1000
+G1 X76.1 Y77.18
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.1 Y77.18
+M04 S1000
+G1 X76.5 Y77.46
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.5 Y77.46
+M04 S1000
+G1 X77.1 Y77.64
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X77.1 Y77.64
+M04 S1000
+G1 X77.1 Y77.64
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X77.02 Y76.82
+M04 S1000
+G1 X76.76 Y76.78
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.76 Y76.78
+M04 S1000
+G1 X76.76 Y76.78
+G1 X76.8 Y76.5
+
+G1 X76.8 Y76.5
+
+G1 X77.06 Y76.52
+
+G1 X77.06 Y76.52
+
+G1 X77.02 Y76.82
+
+G1 X77.02 Y76.82
+
+G1 X76.76 Y76.78
+
+G1 X76.8 Y76.5
+
+G1 X77.06 Y76.52
+
+G1 X77.06 Y76.52
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.8 Y76.5
+M04 S1000
+G1 X76.8 Y76.5
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.76 Y76.78
+M04 S1000
+G1 X76.76 Y76.78
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.26 Y77.28
+M04 S1000
+G1 X76.1 Y77.18
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.42 Y77.0
+M04 S1000
+G1 X75.34 Y76.76
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.34 Y76.76
+M04 S1000
+G1 X75.18 Y76.3
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.52 Y76.52
+M04 S1000
+G1 X74.26 Y76.5
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.26 Y76.5
+M04 S1000
+G1 X74.22 Y76.78
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.22 Y76.78
+M04 S1000
+G1 X74.48 Y76.82
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.48 Y76.82
+M04 S1000
+G1 X74.48 Y76.82
+G1 X74.52 Y76.52
+
+G1 X74.52 Y76.52
+
+G1 X74.52 Y76.52
+
+G1 X74.26 Y76.5
+
+G1 X74.26 Y76.5
+
+G1 X74.26 Y76.5
+
+G1 X74.22 Y76.78
+
+G1 X74.22 Y76.78
+
+G1 X74.22 Y76.78
+
+G1 X74.48 Y76.82
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.26 Y77.52
+M04 S1000
+G1 X73.62 Y77.56
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X73.62 Y77.56
+M04 S1000
+G1 X72.92 Y78.16
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X72.92 Y78.16
+M04 S1000
+G1 X72.92 Y78.16
+G1 X72.64 Y78.34
+
+G1 X72.14 Y78.5
+
+G1 X61.36 Y78.5
+
+G1 X60.78 Y78.28
+
+G1 X59.94 Y77.48
+
+G1 X59.34 Y77.28
+
+G1 X53.68 Y77.28
+
+G1 X53.06 Y77.48
+
+G1 X52.12 Y78.38
+
+G1 X52.12 Y78.38
+
+G1 X51.68 Y78.56
+
+G1 X46.78 Y78.56
+
+G1 X46.32 Y78.42
+
+G1 X45.76 Y78.36
+
+G1 X45.16 Y77.8
+
+G1 X44.9 Y77.74
+
+G1 X44.68 Y77.54
+
+G1 X44.5 Y77.44
+
+G1 X44.06 Y77.32
+
+G1 X39.18 Y77.32
+
+G1 X38.44 Y77.56
+
+G1 X37.58 Y78.38
+
+G1 X37.58 Y78.38
+
+G1 X37.14 Y78.56
+
+G1 X31.04 Y78.52
+
+G1 X30.44 Y78.28
+
+G1 X30.44 Y78.28
+
+G1 X29.9 Y77.8
+
+G1 X29.58 Y77.74
+
+G1 X29.16 Y77.36
+
+G1 X28.76 Y77.24
+
+G1 X27.32 Y77.24
+
+G1 X26.98 Y77.32
+
+G1 X26.8 Y77.42
+
+G1 X26.44 Y77.76
+
+G1 X18.26 Y77.78
+
+G1 X18.1 Y77.8
+
+G1 X17.6 Y78.32
+
+G1 X17.32 Y78.48
+
+G1 X17.32 Y78.48
+
+G1 X15.72 Y78.52
+
+G1 X15.32 Y78.6
+
+G1 X15.0 Y78.82
+
+G1 X15.0 Y78.82
+
+G1 X15.1 Y79.08
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.0 Y78.82
+M04 S1000
+G1 X15.26 Y79.5
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.26 Y79.5
+M04 S1000
+G1 X15.26 Y79.5
+G1 X15.5 Y79.78
+
+G1 X17.5 Y79.78
+
+G1 X17.86 Y79.62
+
+G1 X18.72 Y78.78
+
+G1 X19.02 Y78.72
+
+G1 X26.88 Y78.7
+
+G1 X26.88 Y78.7
+
+G1 X27.5 Y78.52
+
+G1 X28.56 Y78.52
+
+G1 X29.1 Y78.7
+
+G1 X29.52 Y78.72
+
+G1 X30.44 Y79.62
+
+G1 X30.8 Y79.78
+
+G1 X37.22 Y79.82
+
+G1 X37.66 Y79.64
+
+G1 X38.58 Y78.76
+
+G1 X38.76 Y78.66
+
+G1 X39.02 Y78.6
+
+G1 X44.02 Y78.6
+
+G1 X44.34 Y78.68
+
+G1 X44.76 Y78.72
+
+G1 X45.36 Y79.32
+
+G1 X45.84 Y79.44
+
+G1 X46.14 Y79.74
+
+G1 X51.88 Y79.76
+
+G1 X52.24 Y79.62
+
+G1 X53.48 Y78.42
+
+G1 X58.1 Y78.4
+
+G1 X58.38 Y78.46
+
+G1 X58.64 Y78.56
+
+G1 X59.34 Y78.56
+
+G1 X59.74 Y78.66
+
+G1 X60.04 Y78.86
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.88 Y78.76
+M04 S1000
+G1 X60.8 Y79.64
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X60.8 Y79.64
+M04 S1000
+G1 X60.8 Y79.64
+G1 X61.2 Y79.7
+
+G1 X61.42 Y79.78
+
+G1 X72.24 Y79.78
+
+G1 X72.66 Y79.66
+
+G1 X72.66 Y79.66
+
+G1 X73.22 Y79.16
+
+G1 X73.22 Y79.16
+
+G1 X73.46 Y79.1
+
+G1 X73.66 Y79.04
+
+G1 X74.12 Y78.62
+
+G1 X73.9 Y78.76
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.12 Y78.62
+M04 S1000
+G1 X74.62 Y78.58
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.62 Y78.58
+M04 S1000
+G1 X75.0 Y78.7
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.0 Y78.7
+M04 S1000
+G1 X75.2 Y78.84
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.2 Y78.84
+M04 S1000
+G1 X75.42 Y79.52
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.42 Y79.52
+M04 S1000
+G1 X75.42 Y79.52
+G1 X76.1 Y79.72
+
+G1 X76.5 Y80.0
+
+G1 X77.1 Y80.18
+
+G1 X77.1 Y80.18
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X77.02 Y79.36
+M04 S1000
+G1 X76.76 Y79.32
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.76 Y79.32
+M04 S1000
+G1 X76.76 Y79.32
+G1 X76.8 Y79.04
+
+G1 X76.8 Y79.04
+
+G1 X77.06 Y79.06
+
+G1 X77.06 Y79.06
+
+G1 X77.02 Y79.36
+
+G1 X77.02 Y79.36
+
+G1 X76.76 Y79.32
+
+G1 X76.8 Y79.04
+
+G1 X77.06 Y79.06
+
+G1 X77.06 Y79.06
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.8 Y79.04
+M04 S1000
+G1 X76.8 Y79.04
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.76 Y79.32
+M04 S1000
+G1 X76.76 Y79.32
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.26 Y79.82
+M04 S1000
+G1 X76.1 Y79.72
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.42 Y79.52
+M04 S1000
+G1 X75.34 Y79.3
+G1 X75.42 Y79.52
+
+G1 X75.1 Y79.78
+
+G1 X74.26 Y80.06
+
+G1 X73.62 Y80.1
+
+G1 X72.92 Y80.7
+
+G1 X72.92 Y80.7
+
+G1 X72.64 Y80.88
+
+G1 X72.14 Y81.04
+
+G1 X61.5 Y81.04
+
+G1 X60.98 Y80.86
+
+G1 X60.68 Y80.64
+
+G1 X60.4 Y80.6
+
+G1 X60.4 Y80.6
+
+G1 X59.88 Y80.12
+
+G1 X59.14 Y79.86
+
+G1 X57.82 Y79.86
+
+G1 X57.32 Y79.7
+
+G1 X54.34 Y79.7
+
+G1 X53.12 Y80.1
+
+G1 X52.36 Y80.82
+
+G1 X52.36 Y80.82
+
+G1 X51.8 Y81.04
+
+G1 X46.26 Y81.04
+
+G1 X45.7 Y80.84
+
+G1 X45.7 Y80.84
+
+G1 X45.2 Y80.36
+
+G1 X44.92 Y80.26
+
+G1 X44.66 Y80.06
+
+G1 X44.06 Y79.86
+
+G1 X39.34 Y79.86
+
+G1 X39.0 Y79.94
+
+G1 X38.84 Y80.04
+
+G1 X37.72 Y81.04
+
+G1 X37.72 Y81.04
+
+G1 X37.72 Y81.04
+
+G1 X31.58 Y81.06
+
+G1 X31.32 Y80.96
+
+G1 X31.0 Y80.9
+
+G1 X30.34 Y80.86
+
+G1 X29.44 Y79.98
+
+G1 X29.22 Y79.86
+
+G1 X28.9 Y79.76
+
+G1 X19.58 Y79.78
+
+G1 X19.34 Y79.86
+
+G1 X19.34 Y79.86
+
+G1 X18.14 Y81.02
+
+G1 X18.14 Y81.02
+
+G1 X15.72 Y81.06
+
+G1 X15.32 Y81.14
+
+G1 X15.02 Y81.38
+
+G1 X15.02 Y81.38
+
+G1 X15.1 Y81.62
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.02 Y81.38
+M04 S1000
+G1 X15.26 Y82.04
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.26 Y82.04
+M04 S1000
+G1 X15.26 Y82.04
+G1 X15.5 Y82.32
+
+G1 X18.14 Y82.32
+
+G1 X18.66 Y82.12
+
+G1 X19.6 Y81.24
+
+G1 X19.6 Y81.24
+
+G1 X20.16 Y81.06
+
+G1 X28.72 Y81.06
+
+G1 X29.32 Y81.26
+
+G1 X29.32 Y81.26
+
+G1 X30.1 Y81.88
+
+G1 X30.1 Y81.88
+
+G1 X30.54 Y81.98
+
+G1 X30.9 Y82.28
+
+G1 X37.72 Y82.36
+
+G1 X38.2 Y82.18
+
+G1 X39.06 Y81.32
+
+G1 X39.24 Y81.2
+
+G1 X39.5 Y81.14
+
+G1 X44.02 Y81.14
+
+G1 X44.34 Y81.22
+
+G1 X44.76 Y81.26
+
+G1 X45.68 Y82.16
+
+G1 X46.04 Y82.32
+
+G1 X52.4 Y82.28
+
+G1 X52.4 Y82.28
+
+G1 X53.62 Y81.16
+
+G1 X53.62 Y81.16
+
+G1 X59.3 Y81.14
+
+G1 X59.68 Y81.28
+
+G1 X60.02 Y81.56
+
+G1 X60.3 Y81.6
+
+G1 X60.94 Y82.18
+
+G1 X61.3 Y82.32
+
+G1 X72.24 Y82.32
+
+G1 X72.66 Y82.2
+
+G1 X72.66 Y82.2
+
+G1 X73.22 Y81.7
+
+G1 X73.22 Y81.7
+
+G1 X73.46 Y81.64
+
+G1 X73.66 Y81.58
+
+G1 X74.12 Y81.16
+
+G1 X73.9 Y81.3
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.12 Y81.16
+M04 S1000
+G1 X74.62 Y81.12
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.62 Y81.12
+M04 S1000
+G1 X75.0 Y81.24
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.0 Y81.24
+M04 S1000
+G1 X75.18 Y81.38
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.18 Y81.38
+M04 S1000
+G1 X75.42 Y82.08
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.42 Y82.08
+M04 S1000
+G1 X76.1 Y82.26
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.1 Y82.26
+M04 S1000
+G1 X76.5 Y82.54
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.5 Y82.54
+M04 S1000
+G1 X77.1 Y82.72
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X77.1 Y82.72
+M04 S1000
+G1 X77.1 Y82.72
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X77.02 Y81.9
+M04 S1000
+G1 X76.76 Y81.86
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.76 Y81.86
+M04 S1000
+G1 X76.76 Y81.86
+G1 X76.8 Y81.58
+
+G1 X76.8 Y81.58
+
+G1 X77.06 Y81.6
+
+G1 X77.06 Y81.6
+
+G1 X77.02 Y81.9
+
+G1 X77.02 Y81.9
+
+G1 X76.76 Y81.86
+
+G1 X76.8 Y81.58
+
+G1 X77.06 Y81.6
+
+G1 X77.06 Y81.6
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.8 Y81.58
+M04 S1000
+G1 X76.8 Y81.58
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.76 Y81.86
+M04 S1000
+G1 X76.76 Y81.86
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.26 Y82.36
+M04 S1000
+G1 X76.1 Y82.26
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.42 Y82.08
+M04 S1000
+G1 X75.34 Y81.84
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.34 Y81.84
+M04 S1000
+G1 X75.18 Y81.38
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.52 Y81.6
+M04 S1000
+G1 X74.26 Y81.58
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.26 Y81.58
+M04 S1000
+G1 X74.22 Y81.86
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.22 Y81.86
+M04 S1000
+G1 X74.48 Y81.9
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.48 Y81.9
+M04 S1000
+G1 X74.48 Y81.9
+G1 X74.52 Y81.6
+
+G1 X74.52 Y81.6
+
+G1 X74.52 Y81.6
+
+G1 X74.26 Y81.58
+
+G1 X74.26 Y81.58
+
+G1 X74.26 Y81.58
+
+G1 X74.22 Y81.86
+
+G1 X74.22 Y81.86
+
+G1 X74.22 Y81.86
+
+G1 X74.48 Y81.9
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.26 Y82.6
+M04 S1000
+G1 X73.62 Y82.64
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X73.62 Y82.64
+M04 S1000
+G1 X72.92 Y83.24
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X72.92 Y83.24
+M04 S1000
+G1 X72.92 Y83.24
+G1 X72.64 Y83.42
+
+G1 X72.14 Y83.58
+
+G1 X62.04 Y83.58
+
+G1 X61.84 Y83.5
+
+G1 X61.56 Y83.44
+
+G1 X60.86 Y83.42
+
+G1 X60.7 Y83.32
+
+G1 X60.16 Y82.76
+
+G1 X59.92 Y82.6
+
+G1 X59.74 Y82.56
+
+G1 X59.5 Y82.56
+
+G1 X59.0 Y82.4
+
+G1 X54.34 Y82.4
+
+G1 X53.6 Y82.64
+
+G1 X53.44 Y82.76
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X53.6 Y82.64
+M04 S1000
+G1 X52.94 Y83.32
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X52.94 Y83.32
+M04 S1000
+G1 X52.7 Y83.44
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X52.7 Y83.44
+M04 S1000
+G1 X47.42 Y83.44
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X47.42 Y83.44
+M04 S1000
+G1 X47.14 Y83.5
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X47.14 Y83.5
+M04 S1000
+G1 X46.94 Y83.58
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.94 Y83.58
+M04 S1000
+G1 X46.12 Y83.58
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.12 Y83.58
+M04 S1000
+G1 X45.54 Y83.36
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X45.54 Y83.36
+M04 S1000
+G1 X44.78 Y82.64
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X44.78 Y82.64
+M04 S1000
+G1 X44.06 Y82.4
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X44.06 Y82.4
+M04 S1000
+G1 X39.82 Y82.4
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X39.82 Y82.4
+M04 S1000
+G1 X39.08 Y82.64
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X39.08 Y82.64
+M04 S1000
+G1 X38.22 Y83.46
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X38.22 Y83.46
+M04 S1000
+G1 X38.22 Y83.46
+G1 X37.78 Y83.64
+
+G1 X31.08 Y83.6
+
+G1 X30.46 Y83.38
+
+G1 X30.46 Y83.38
+
+G1 X29.9 Y82.88
+
+G1 X29.64 Y82.84
+
+G1 X29.26 Y82.56
+
+G1 X28.68 Y82.4
+
+G1 X20.28 Y82.4
+
+G1 X20.0 Y82.46
+
+G1 X19.84 Y82.56
+
+G1 X18.88 Y83.52
+
+G1 X18.72 Y83.6
+
+G1 X15.72 Y83.6
+
+G1 X15.32 Y83.68
+
+G1 X15.0 Y83.9
+
+G1 X15.0 Y83.9
+
+G1 X15.1 Y84.16
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.0 Y83.9
+M04 S1000
+G1 X15.26 Y84.58
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.26 Y84.58
+M04 S1000
+G1 X15.26 Y84.58
+G1 X15.5 Y84.86
+
+G1 X19.18 Y84.86
+
+G1 X19.42 Y84.76
+
+G1 X20.5 Y83.7
+
+G1 X20.5 Y83.7
+
+G1 X28.78 Y83.68
+
+G1 X29.1 Y83.76
+
+G1 X29.52 Y83.8
+
+G1 X30.44 Y84.7
+
+G1 X30.8 Y84.86
+
+G1 X37.86 Y84.9
+
+G1 X38.3 Y84.72
+
+G1 X39.22 Y83.84
+
+G1 X39.4 Y83.74
+
+G1 X39.66 Y83.68
+
+G1 X44.22 Y83.68
+
+G1 X44.46 Y83.74
+
+G1 X44.64 Y83.84
+
+G1 X45.54 Y84.72
+
+G1 X45.54 Y84.72
+
+G1 X45.96 Y84.78
+
+G1 X46.3 Y84.9
+
+G1 X47.74 Y84.9
+
+G1 X48.16 Y84.76
+
+G1 X52.06 Y84.76
+
+G1 X52.72 Y84.52
+
+G1 X53.14 Y84.42
+
+G1 X53.14 Y84.42
+
+G1 X53.78 Y83.84
+
+G1 X53.94 Y83.74
+
+G1 X54.2 Y83.68
+
+G1 X59.44 Y83.68
+
+G1 X59.88 Y83.84
+
+G1 X60.58 Y84.42
+
+G1 X60.58 Y84.42
+
+G1 X61.02 Y84.52
+
+G1 X61.38 Y84.82
+
+G1 X72.24 Y84.86
+
+G1 X72.66 Y84.74
+
+G1 X72.66 Y84.74
+
+G1 X73.22 Y84.24
+
+G1 X73.22 Y84.24
+
+G1 X73.46 Y84.18
+
+G1 X73.66 Y84.12
+
+G1 X74.12 Y83.7
+
+G1 X73.9 Y83.84
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.12 Y83.7
+M04 S1000
+G1 X74.62 Y83.66
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.62 Y83.66
+M04 S1000
+G1 X75.0 Y83.78
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.0 Y83.78
+M04 S1000
+G1 X75.2 Y83.92
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.2 Y83.92
+M04 S1000
+G1 X75.42 Y84.6
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.42 Y84.6
+M04 S1000
+G1 X75.42 Y84.6
+G1 X76.1 Y84.8
+
+G1 X76.5 Y85.08
+
+G1 X77.14 Y85.24
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X77.02 Y84.44
+M04 S1000
+G1 X76.76 Y84.4
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.76 Y84.4
+M04 S1000
+G1 X76.76 Y84.4
+G1 X76.8 Y84.12
+
+G1 X76.8 Y84.12
+
+G1 X77.06 Y84.14
+
+G1 X77.06 Y84.14
+
+G1 X77.02 Y84.44
+
+G1 X77.02 Y84.44
+
+G1 X76.76 Y84.4
+
+G1 X76.8 Y84.12
+
+G1 X77.06 Y84.14
+
+G1 X77.06 Y84.14
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.8 Y84.12
+M04 S1000
+G1 X76.8 Y84.12
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.76 Y84.4
+M04 S1000
+G1 X76.76 Y84.4
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.26 Y84.9
+M04 S1000
+G1 X76.1 Y84.8
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.42 Y84.6
+M04 S1000
+G1 X75.34 Y84.38
+G1 X75.42 Y84.6
+
+G1 X75.1 Y84.86
+
+G1 X74.26 Y85.14
+
+G1 X73.62 Y85.18
+
+G1 X72.92 Y85.78
+
+G1 X72.92 Y85.78
+
+G1 X72.64 Y85.96
+
+G1 X72.14 Y86.12
+
+G1 X61.5 Y86.12
+
+G1 X60.94 Y85.9
+
+G1 X60.4 Y85.42
+
+G1 X60.12 Y85.38
+
+G1 X59.74 Y85.1
+
+G1 X59.16 Y84.92
+
+G1 X54.5 Y84.94
+
+G1 X53.82 Y85.14
+
+G1 X53.82 Y85.14
+
+G1 X53.5 Y85.36
+
+G1 X53.26 Y85.52
+
+G1 X52.78 Y85.98
+
+G1 X52.28 Y86.18
+
+G1 X46.78 Y86.18
+
+G1 X46.32 Y86.04
+
+G1 X45.78 Y86.0
+
+G1 X45.78 Y86.0
+
+G1 X45.44 Y85.72
+
+G1 X45.16 Y85.68
+
+G1 X44.58 Y85.16
+
+G1 X44.58 Y85.16
+
+G1 X43.9 Y84.94
+
+G1 X39.96 Y84.94
+
+G1 X39.62 Y85.02
+
+G1 X39.44 Y85.14
+
+G1 X38.5 Y86.08
+
+G1 X38.26 Y86.18
+
+G1 X31.58 Y86.14
+
+G1 X31.32 Y86.04
+
+G1 X31.04 Y85.98
+
+G1 X30.34 Y85.94
+
+G1 X29.44 Y85.06
+
+G1 X29.22 Y84.94
+
+G1 X28.9 Y84.86
+
+G1 X21.26 Y84.86
+
+G1 X20.92 Y84.94
+
+G1 X20.76 Y85.04
+
+G1 X19.78 Y85.98
+
+G1 X19.78 Y85.98
+
+G1 X16.2 Y86.02
+
+G1 X15.9 Y86.06
+
+G1 X15.48 Y86.18
+
+G1 X15.04 Y86.44
+
+G1 X15.04 Y86.44
+
+G1 X15.1 Y86.7
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.04 Y86.44
+M04 S1000
+G1 X15.26 Y87.12
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.26 Y87.12
+M04 S1000
+G1 X15.26 Y87.12
+G1 X15.5 Y87.4
+
+G1 X16.16 Y87.4
+
+G1 X16.34 Y87.32
+
+G1 X16.6 Y87.08
+
+G1 X17.04 Y86.98
+
+G1 X20.14 Y86.94
+
+G1 X20.86 Y86.32
+
+G1 X20.86 Y86.32
+
+G1 X21.42 Y86.14
+
+G1 X28.72 Y86.14
+
+G1 X29.32 Y86.34
+
+G1 X29.32 Y86.34
+
+G1 X30.1 Y86.96
+
+G1 X30.1 Y86.96
+
+G1 X30.54 Y87.06
+
+G1 X30.9 Y87.36
+
+G1 X38.34 Y87.44
+
+G1 X38.72 Y87.32
+
+G1 X38.88 Y87.22
+
+G1 X39.72 Y86.36
+
+G1 X39.56 Y86.48
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X39.72 Y86.36
+M04 S1000
+G1 X40.04 Y86.22
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X40.04 Y86.22
+M04 S1000
+G1 X44.1 Y86.24
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X44.1 Y86.24
+M04 S1000
+G1 X44.1 Y86.24
+G1 X44.56 Y86.6
+
+G1 X45.04 Y86.68
+
+G1 X45.4 Y86.96
+
+G1 X45.84 Y87.06
+
+G1 X46.14 Y87.36
+
+G1 X52.52 Y87.4
+
+G1 X52.86 Y87.24
+
+G1 X52.86 Y87.24
+
+G1 X53.78 Y86.38
+
+G1 X54.36 Y86.22
+
+G1 X59.26 Y86.22
+
+G1 X59.58 Y86.3
+
+G1 X60.0 Y86.34
+
+G1 X60.92 Y87.24
+
+G1 X61.28 Y87.4
+
+G1 X72.24 Y87.4
+
+G1 X72.66 Y87.28
+
+G1 X72.66 Y87.28
+
+G1 X73.22 Y86.78
+
+G1 X73.22 Y86.78
+
+G1 X73.46 Y86.72
+
+G1 X73.66 Y86.66
+
+G1 X74.12 Y86.24
+
+G1 X73.9 Y86.38
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.12 Y86.24
+M04 S1000
+G1 X74.62 Y86.2
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.62 Y86.2
+M04 S1000
+G1 X75.0 Y86.32
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.0 Y86.32
+M04 S1000
+G1 X75.18 Y86.46
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.18 Y86.46
+M04 S1000
+G1 X75.42 Y87.16
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.42 Y87.16
+M04 S1000
+G1 X76.1 Y87.34
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.1 Y87.34
+M04 S1000
+G1 X76.5 Y87.62
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.5 Y87.62
+M04 S1000
+G1 X77.1 Y87.8
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X77.1 Y87.8
+M04 S1000
+G1 X77.1 Y87.8
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X77.02 Y86.98
+M04 S1000
+G1 X76.76 Y86.94
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.76 Y86.94
+M04 S1000
+G1 X76.76 Y86.94
+G1 X76.8 Y86.66
+
+G1 X76.8 Y86.66
+
+G1 X77.06 Y86.68
+
+G1 X77.06 Y86.68
+
+G1 X77.02 Y86.98
+
+G1 X77.02 Y86.98
+
+G1 X76.76 Y86.94
+
+G1 X76.8 Y86.66
+
+G1 X77.06 Y86.68
+
+G1 X77.06 Y86.68
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.8 Y86.66
+M04 S1000
+G1 X76.8 Y86.66
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.76 Y86.94
+M04 S1000
+G1 X76.76 Y86.94
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.26 Y87.44
+M04 S1000
+G1 X76.1 Y87.34
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.42 Y87.16
+M04 S1000
+G1 X75.34 Y86.92
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.34 Y86.92
+M04 S1000
+G1 X75.18 Y86.46
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.52 Y86.68
+M04 S1000
+G1 X74.26 Y86.66
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.26 Y86.66
+M04 S1000
+G1 X74.22 Y86.94
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.22 Y86.94
+M04 S1000
+G1 X74.48 Y86.98
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.48 Y86.98
+M04 S1000
+G1 X74.48 Y86.98
+G1 X74.52 Y86.68
+
+G1 X74.52 Y86.68
+
+G1 X74.52 Y86.68
+
+G1 X74.26 Y86.66
+
+G1 X74.26 Y86.66
+
+G1 X74.26 Y86.66
+
+G1 X74.22 Y86.94
+
+G1 X74.22 Y86.94
+
+G1 X74.22 Y86.94
+
+G1 X74.48 Y86.98
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.26 Y87.68
+M04 S1000
+G1 X73.62 Y87.72
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X73.62 Y87.72
+M04 S1000
+G1 X72.92 Y88.32
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X72.92 Y88.32
+M04 S1000
+G1 X72.92 Y88.32
+G1 X72.64 Y88.5
+
+G1 X72.14 Y88.66
+
+G1 X61.36 Y88.66
+
+G1 X60.78 Y88.44
+
+G1 X60.02 Y87.72
+
+G1 X59.3 Y87.46
+
+G1 X54.5 Y87.48
+
+G1 X53.8 Y87.7
+
+G1 X52.98 Y88.46
+
+G1 X52.98 Y88.46
+
+G1 X52.42 Y88.66
+
+G1 X46.8 Y88.66
+
+G1 X46.6 Y88.58
+
+G1 X46.32 Y88.52
+
+G1 X45.68 Y88.44
+
+G1 X45.16 Y87.96
+
+G1 X44.94 Y87.92
+
+G1 X44.62 Y87.68
+
+G1 X44.46 Y87.62
+
+G1 X43.9 Y87.64
+
+G1 X43.4 Y87.48
+
+G1 X40.46 Y87.48
+
+G1 X39.76 Y87.7
+
+G1 X39.76 Y87.7
+
+G1 X38.94 Y88.48
+
+G1 X38.76 Y88.6
+
+G1 X38.4 Y88.72
+
+G1 X31.1 Y88.68
+
+G1 X30.44 Y88.44
+
+G1 X29.9 Y87.96
+
+G1 X29.62 Y87.9
+
+G1 X29.16 Y87.52
+
+G1 X28.76 Y87.4
+
+G1 X21.46 Y87.4
+
+G1 X20.94 Y87.54
+
+G1 X20.56 Y87.88
+
+G1 X20.56 Y87.88
+
+G1 X17.36 Y87.96
+
+G1 X17.36 Y87.96
+
+G1 X16.76 Y88.52
+
+G1 X16.62 Y88.6
+
+G1 X16.36 Y88.68
+
+G1 X15.6 Y88.7
+
+G1 X15.32 Y88.78
+
+G1 X15.08 Y89.0
+
+G1 X14.9 Y88.98
+
+G1 X15.08 Y89.0
+
+G1 X15.1 Y89.24
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.08 Y89.0
+M04 S1000
+G1 X15.26 Y89.66
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.26 Y89.66
+M04 S1000
+G1 X15.26 Y89.66
+G1 X15.5 Y89.94
+
+G1 X16.3 Y89.94
+
+G1 X16.86 Y89.72
+
+G1 X17.2 Y89.44
+
+G1 X17.72 Y88.94
+
+G1 X17.72 Y88.94
+
+G1 X20.94 Y88.86
+
+G1 X21.56 Y88.68
+
+G1 X28.56 Y88.68
+
+G1 X29.1 Y88.84
+
+G1 X29.52 Y88.88
+
+G1 X30.44 Y89.78
+
+G1 X30.8 Y89.94
+
+G1 X38.5 Y89.98
+
+G1 X38.94 Y89.8
+
+G1 X39.84 Y88.92
+
+G1 X40.18 Y88.78
+
+G1 X44.02 Y88.76
+
+G1 X44.34 Y88.86
+
+G1 X44.74 Y88.9
+
+G1 X45.36 Y89.48
+
+G1 X45.84 Y89.6
+
+G1 X46.14 Y89.9
+
+G1 X53.14 Y89.92
+
+G1 X54.3 Y88.78
+
+G1 X54.46 Y88.76
+
+G1 X59.46 Y88.76
+
+G1 X59.7 Y88.82
+
+G1 X59.88 Y88.92
+
+G1 X60.8 Y89.8
+
+G1 X60.8 Y89.8
+
+G1 X61.2 Y89.86
+
+G1 X61.42 Y89.94
+
+G1 X72.24 Y89.94
+
+G1 X72.66 Y89.82
+
+G1 X72.66 Y89.82
+
+G1 X73.22 Y89.32
+
+G1 X73.22 Y89.32
+
+G1 X73.46 Y89.26
+
+G1 X73.66 Y89.2
+
+G1 X74.12 Y88.78
+
+G1 X73.9 Y88.92
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.12 Y88.78
+M04 S1000
+G1 X74.62 Y88.74
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.62 Y88.74
+M04 S1000
+G1 X75.0 Y88.86
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.0 Y88.86
+M04 S1000
+G1 X75.18 Y89.0
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.18 Y89.0
+M04 S1000
+G1 X75.38 Y89.7
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.38 Y89.7
+M04 S1000
+G1 X76.1 Y89.88
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.1 Y89.88
+M04 S1000
+G1 X76.5 Y90.16
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.5 Y90.16
+M04 S1000
+G1 X77.1 Y90.34
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X77.1 Y90.34
+M04 S1000
+G1 X77.1 Y90.34
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X77.02 Y89.52
+M04 S1000
+G1 X76.76 Y89.48
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.76 Y89.48
+M04 S1000
+G1 X76.76 Y89.48
+G1 X76.8 Y89.2
+
+G1 X76.8 Y89.2
+
+G1 X77.06 Y89.22
+
+G1 X77.06 Y89.22
+
+G1 X77.02 Y89.52
+
+G1 X77.02 Y89.52
+
+G1 X76.76 Y89.48
+
+G1 X76.8 Y89.2
+
+G1 X77.06 Y89.22
+
+G1 X77.06 Y89.22
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.8 Y89.2
+M04 S1000
+G1 X76.8 Y89.2
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.76 Y89.48
+M04 S1000
+G1 X76.76 Y89.48
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.26 Y89.98
+M04 S1000
+G1 X76.1 Y89.88
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.58 Y89.72
+M04 S1000
+G1 X75.38 Y89.7
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.38 Y89.7
+M04 S1000
+G1 X75.34 Y89.46
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.34 Y89.46
+M04 S1000
+G1 X75.18 Y89.0
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.52 Y89.22
+M04 S1000
+G1 X74.26 Y89.2
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.26 Y89.2
+M04 S1000
+G1 X74.22 Y89.48
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.22 Y89.48
+M04 S1000
+G1 X74.48 Y89.52
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.48 Y89.52
+M04 S1000
+G1 X74.48 Y89.52
+G1 X74.52 Y89.22
+
+G1 X74.52 Y89.22
+
+G1 X74.52 Y89.22
+
+G1 X74.26 Y89.2
+
+G1 X74.26 Y89.2
+
+G1 X74.26 Y89.2
+
+G1 X74.22 Y89.48
+
+G1 X74.22 Y89.48
+
+G1 X74.22 Y89.48
+
+G1 X74.48 Y89.52
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.26 Y90.22
+M04 S1000
+G1 X73.62 Y90.26
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X73.62 Y90.26
+M04 S1000
+G1 X72.92 Y90.86
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X72.92 Y90.86
+M04 S1000
+G1 X72.92 Y90.86
+G1 X72.64 Y91.04
+
+G1 X72.14 Y91.2
+
+G1 X61.5 Y91.2
+
+G1 X60.98 Y91.02
+
+G1 X60.68 Y90.8
+
+G1 X60.4 Y90.76
+
+G1 X60.4 Y90.76
+
+G1 X59.88 Y90.28
+
+G1 X59.88 Y90.28
+
+G1 X59.14 Y90.02
+
+G1 X55.04 Y90.06
+
+G1 X55.04 Y90.06
+
+G1 X54.74 Y90.2
+
+G1 X53.86 Y91.08
+
+G1 X53.56 Y91.2
+
+G1 X46.26 Y91.2
+
+G1 X45.68 Y90.98
+
+G1 X45.16 Y90.5
+
+G1 X44.94 Y90.46
+
+G1 X44.68 Y90.24
+
+G1 X44.5 Y90.14
+
+G1 X44.16 Y90.04
+
+G1 X40.6 Y90.02
+
+G1 X40.26 Y90.1
+
+G1 X40.08 Y90.22
+
+G1 X39.14 Y91.16
+
+G1 X38.9 Y91.26
+
+G1 X31.0 Y91.22
+
+G1 X30.42 Y91.04
+
+G1 X30.12 Y90.88
+
+G1 X29.32 Y90.1
+
+G1 X29.1 Y89.98
+
+G1 X28.9 Y89.94
+
+G1 X18.38 Y89.94
+
+G1 X18.2 Y89.96
+
+G1 X18.0 Y90.08
+
+G1 X17.08 Y91.04
+
+G1 X16.84 Y91.2
+
+G1 X16.84 Y91.2
+
+G1 X15.6 Y91.24
+
+G1 X15.32 Y91.32
+
+G1 X15.02 Y91.54
+
+G1 X15.02 Y91.54
+
+G1 X15.1 Y91.78
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.02 Y91.54
+M04 S1000
+G1 X15.26 Y92.2
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.26 Y92.2
+M04 S1000
+G1 X15.26 Y92.2
+G1 X15.5 Y92.48
+
+G1 X16.72 Y92.48
+
+G1 X17.28 Y92.26
+
+G1 X18.12 Y91.46
+
+G1 X18.3 Y91.36
+
+G1 X18.8 Y91.22
+
+G1 X28.54 Y91.22
+
+G1 X29.16 Y91.42
+
+G1 X29.58 Y91.76
+
+G1 X29.9 Y91.9
+
+G1 X30.38 Y92.36
+
+G1 X30.72 Y92.4
+
+G1 X30.94 Y92.46
+
+G1 X36.86 Y92.5
+
+G1 X38.98 Y92.52
+
+G1 X39.36 Y92.4
+
+G1 X39.52 Y92.3
+
+G1 X40.36 Y91.46
+
+G1 X40.52 Y91.36
+
+G1 X40.78 Y91.3
+
+G1 X44.02 Y91.3
+
+G1 X44.34 Y91.38
+
+G1 X44.74 Y91.44
+
+G1 X45.68 Y92.32
+
+G1 X46.04 Y92.48
+
+G1 X53.78 Y92.48
+
+G1 X54.14 Y92.32
+
+G1 X55.02 Y91.46
+
+G1 X55.38 Y91.32
+
+G1 X59.34 Y91.3
+
+G1 X59.68 Y91.44
+
+G1 X60.02 Y91.72
+
+G1 X60.3 Y91.76
+
+G1 X60.94 Y92.34
+
+G1 X61.3 Y92.48
+
+G1 X72.24 Y92.48
+
+G1 X72.66 Y92.36
+
+G1 X72.66 Y92.36
+
+G1 X73.22 Y91.86
+
+G1 X73.22 Y91.86
+
+G1 X73.46 Y91.8
+
+G1 X73.66 Y91.74
+
+G1 X74.12 Y91.32
+
+G1 X73.9 Y91.46
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.12 Y91.32
+M04 S1000
+G1 X74.62 Y91.28
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.62 Y91.28
+M04 S1000
+G1 X75.0 Y91.4
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.0 Y91.4
+M04 S1000
+G1 X75.18 Y91.54
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.18 Y91.54
+M04 S1000
+G1 X75.42 Y92.24
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.42 Y92.24
+M04 S1000
+G1 X76.1 Y92.42
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.1 Y92.42
+M04 S1000
+G1 X76.5 Y92.7
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.5 Y92.7
+M04 S1000
+G1 X77.14 Y92.86
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X77.02 Y92.06
+M04 S1000
+G1 X76.76 Y92.02
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.76 Y92.02
+M04 S1000
+G1 X76.76 Y92.02
+G1 X76.8 Y91.74
+
+G1 X76.8 Y91.74
+
+G1 X77.06 Y91.76
+
+G1 X77.06 Y91.76
+
+G1 X77.02 Y92.06
+
+G1 X77.02 Y92.06
+
+G1 X76.76 Y92.02
+
+G1 X76.8 Y91.74
+
+G1 X77.06 Y91.76
+
+G1 X77.06 Y91.76
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.8 Y91.74
+M04 S1000
+G1 X76.8 Y91.74
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.76 Y92.02
+M04 S1000
+G1 X76.76 Y92.02
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.26 Y92.52
+M04 S1000
+G1 X76.1 Y92.42
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.42 Y92.24
+M04 S1000
+G1 X75.34 Y92.0
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.34 Y92.0
+M04 S1000
+G1 X75.18 Y91.54
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.52 Y91.76
+M04 S1000
+G1 X74.26 Y91.74
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.26 Y91.74
+M04 S1000
+G1 X74.22 Y92.02
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.22 Y92.02
+M04 S1000
+G1 X74.48 Y92.06
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.48 Y92.06
+M04 S1000
+G1 X74.48 Y92.06
+G1 X74.52 Y91.76
+
+G1 X74.52 Y91.76
+
+G1 X74.52 Y91.76
+
+G1 X74.26 Y91.74
+
+G1 X74.26 Y91.74
+
+G1 X74.26 Y91.74
+
+G1 X74.22 Y92.02
+
+G1 X74.22 Y92.02
+
+G1 X74.22 Y92.02
+
+G1 X74.48 Y92.06
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.26 Y92.76
+M04 S1000
+G1 X73.62 Y92.8
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X73.62 Y92.8
+M04 S1000
+G1 X72.92 Y93.4
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X72.92 Y93.4
+M04 S1000
+G1 X72.92 Y93.4
+G1 X72.64 Y93.58
+
+G1 X72.14 Y93.74
+
+G1 X62.04 Y93.74
+
+G1 X61.84 Y93.66
+
+G1 X61.56 Y93.6
+
+G1 X60.86 Y93.58
+
+G1 X60.7 Y93.48
+
+G1 X60.16 Y92.92
+
+G1 X59.92 Y92.76
+
+G1 X59.74 Y92.72
+
+G1 X59.5 Y92.72
+
+G1 X59.0 Y92.56
+
+G1 X55.7 Y92.56
+
+G1 X55.02 Y92.8
+
+G1 X54.26 Y93.52
+
+G1 X54.26 Y93.52
+
+G1 X53.7 Y93.74
+
+G1 X46.8 Y93.74
+
+G1 X46.6 Y93.66
+
+G1 X46.32 Y93.6
+
+G1 X45.54 Y93.52
+
+G1 X44.82 Y92.82
+
+G1 X44.62 Y92.72
+
+G1 X44.16 Y92.56
+
+G1 X41.1 Y92.56
+
+G1 X40.4 Y92.78
+
+G1 X40.4 Y92.78
+
+G1 X39.58 Y93.56
+
+G1 X39.4 Y93.68
+
+G1 X39.04 Y93.8
+
+G1 X31.58 Y93.76
+
+G1 X31.2 Y93.62
+
+G1 X30.52 Y93.58
+
+G1 X30.2 Y93.34
+
+G1 X29.92 Y93.28
+
+G1 X29.4 Y92.8
+
+G1 X29.2 Y92.76
+
+G1 X28.88 Y92.56
+
+G1 X28.58 Y92.48
+
+G1 X28.88 Y92.56
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.58 Y92.48
+M04 S1000
+G1 X18.78 Y92.48
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X18.78 Y92.48
+M04 S1000
+G1 X18.44 Y92.56
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X18.44 Y92.56
+M04 S1000
+G1 X18.26 Y92.68
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X18.26 Y92.68
+M04 S1000
+G1 X17.28 Y93.64
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X17.28 Y93.64
+M04 S1000
+G1 X16.2 Y93.64
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X16.2 Y93.64
+M04 S1000
+G1 X15.9 Y93.68
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.9 Y93.68
+M04 S1000
+G1 X15.32 Y93.84
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.32 Y93.84
+M04 S1000
+G1 X15.0 Y94.06
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.0 Y94.06
+M04 S1000
+G1 X15.0 Y94.06
+G1 X15.1 Y94.32
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.0 Y94.06
+M04 S1000
+G1 X15.26 Y94.74
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.26 Y94.74
+M04 S1000
+G1 X15.26 Y94.74
+G1 X15.5 Y95.02
+
+G1 X16.16 Y95.02
+
+G1 X16.34 Y94.94
+
+G1 X16.58 Y94.72
+
+G1 X16.76 Y94.66
+
+G1 X17.04 Y94.6
+
+G1 X17.66 Y94.56
+
+G1 X17.66 Y94.56
+
+G1 X18.34 Y93.96
+
+G1 X18.34 Y93.96
+
+G1 X18.96 Y93.76
+
+G1 X28.4 Y93.74
+
+G1 X28.6 Y93.8
+
+G1 X29.04 Y93.88
+
+G1 X29.28 Y94.0
+
+G1 X29.52 Y94.22
+
+G1 X29.86 Y94.3
+
+G1 X30.14 Y94.56
+
+G1 X30.6 Y94.68
+
+G1 X30.9 Y94.98
+
+G1 X39.24 Y95.0
+
+G1 X39.6 Y94.86
+
+G1 X40.5 Y94.0
+
+G1 X40.66 Y93.9
+
+G1 X40.92 Y93.84
+
+G1 X44.3 Y93.86
+
+G1 X44.62 Y94.0
+
+G1 X44.62 Y94.0
+
+G1 X45.34 Y94.58
+
+G1 X45.8 Y94.68
+
+G1 X46.14 Y94.98
+
+G1 X54.34 Y95.0
+
+G1 X55.52 Y93.88
+
+G1 X59.44 Y93.82
+
+G1 X59.86 Y94.0
+
+G1 X60.58 Y94.58
+
+G1 X60.58 Y94.58
+
+G1 X61.02 Y94.68
+
+G1 X61.38 Y94.98
+
+G1 X72.24 Y95.02
+
+G1 X72.66 Y94.9
+
+G1 X72.66 Y94.9
+
+G1 X73.22 Y94.4
+
+G1 X73.22 Y94.4
+
+G1 X73.46 Y94.34
+
+G1 X73.66 Y94.28
+
+G1 X74.12 Y93.86
+
+G1 X73.9 Y94.0
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.12 Y93.86
+M04 S1000
+G1 X74.62 Y93.82
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.62 Y93.82
+M04 S1000
+G1 X75.0 Y93.94
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.0 Y93.94
+M04 S1000
+G1 X75.2 Y94.08
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.2 Y94.08
+M04 S1000
+G1 X75.42 Y94.76
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.42 Y94.76
+M04 S1000
+G1 X75.42 Y94.76
+G1 X76.1 Y94.96
+
+G1 X76.5 Y95.24
+
+G1 X77.14 Y95.4
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X77.02 Y94.6
+M04 S1000
+G1 X76.76 Y94.56
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.76 Y94.56
+M04 S1000
+G1 X76.76 Y94.56
+G1 X76.8 Y94.28
+
+G1 X76.8 Y94.28
+
+G1 X77.06 Y94.3
+
+G1 X77.06 Y94.3
+
+G1 X77.02 Y94.6
+
+G1 X77.02 Y94.6
+
+G1 X76.76 Y94.56
+
+G1 X76.8 Y94.28
+
+G1 X77.06 Y94.3
+
+G1 X77.06 Y94.3
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.8 Y94.28
+M04 S1000
+G1 X76.8 Y94.28
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.76 Y94.56
+M04 S1000
+G1 X76.76 Y94.56
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.26 Y95.06
+M04 S1000
+G1 X76.1 Y94.96
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.42 Y94.76
+M04 S1000
+G1 X75.34 Y94.54
+G1 X75.42 Y94.76
+
+G1 X75.1 Y95.02
+
+G1 X74.26 Y95.3
+
+G1 X73.62 Y95.34
+
+G1 X72.92 Y95.94
+
+G1 X72.92 Y95.94
+
+G1 X72.64 Y96.12
+
+G1 X72.14 Y96.28
+
+G1 X61.5 Y96.28
+
+G1 X60.94 Y96.06
+
+G1 X60.4 Y95.58
+
+G1 X60.12 Y95.54
+
+G1 X59.72 Y95.26
+
+G1 X59.92 Y95.38
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.72 Y95.26
+M04 S1000
+G1 X59.16 Y95.1
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.16 Y95.1
+M04 S1000
+G1 X56.26 Y95.1
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X56.26 Y95.1
+M04 S1000
+G1 X55.58 Y95.34
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X55.58 Y95.34
+M04 S1000
+G1 X54.82 Y96.06
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X54.82 Y96.06
+M04 S1000
+G1 X54.82 Y96.06
+G1 X54.26 Y96.28
+
+G1 X46.26 Y96.28
+
+G1 X45.7 Y96.06
+
+G1 X45.16 Y95.58
+
+G1 X44.88 Y95.54
+
+G1 X44.48 Y95.26
+
+G1 X44.68 Y95.38
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X44.48 Y95.26
+M04 S1000
+G1 X43.96 Y95.1
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X43.96 Y95.1
+M04 S1000
+G1 X41.24 Y95.08
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X41.24 Y95.08
+M04 S1000
+G1 X40.88 Y95.18
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X40.88 Y95.18
+M04 S1000
+G1 X40.72 Y95.28
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X40.72 Y95.28
+M04 S1000
+G1 X39.8 Y96.2
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X39.8 Y96.2
+M04 S1000
+G1 X39.52 Y96.32
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X39.52 Y96.32
+M04 S1000
+G1 X38.98 Y96.34
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X38.98 Y96.34
+M04 S1000
+G1 X38.7 Y96.28
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X38.7 Y96.28
+M04 S1000
+G1 X31.02 Y96.28
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.02 Y96.28
+M04 S1000
+G1 X30.46 Y96.08
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X30.46 Y96.08
+M04 S1000
+G1 X30.46 Y96.08
+G1 X29.96 Y95.6
+
+G1 X29.62 Y95.5
+
+G1 X29.22 Y95.2
+
+G1 X28.64 Y95.02
+
+G1 X29.22 Y95.2
+
+G1 X29.22 Y95.2
+
+G1 X29.22 Y95.2
+
+G1 X29.22 Y95.2
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.64 Y95.02
+M04 S1000
+G1 X18.92 Y95.02
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X18.92 Y95.02
+M04 S1000
+G1 X18.62 Y95.12
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X18.62 Y95.12
+M04 S1000
+G1 X18.16 Y95.52
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X18.16 Y95.52
+M04 S1000
+G1 X17.56 Y95.54
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X17.56 Y95.54
+M04 S1000
+G1 X17.3 Y95.6
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X17.3 Y95.6
+M04 S1000
+G1 X16.68 Y96.18
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X16.68 Y96.18
+M04 S1000
+G1 X16.68 Y96.18
+G1 X16.36 Y96.3
+
+G1 X15.6 Y96.32
+
+G1 X15.32 Y96.4
+
+G1 X15.0 Y96.6
+
+G1 X15.0 Y96.6
+
+G1 X15.1 Y96.86
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.0 Y96.6
+M04 S1000
+G1 X15.26 Y97.28
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.26 Y97.28
+M04 S1000
+G1 X15.26 Y97.28
+G1 X15.5 Y97.56
+
+G1 X16.3 Y97.56
+
+G1 X16.86 Y97.34
+
+G1 X17.72 Y96.56
+
+G1 X17.72 Y96.56
+
+G1 X18.74 Y96.48
+
+G1 X19.28 Y96.3
+
+G1 X28.56 Y96.3
+
+G1 X29.1 Y96.46
+
+G1 X29.52 Y96.5
+
+G1 X30.44 Y97.4
+
+G1 X30.8 Y97.56
+
+G1 X39.62 Y97.6
+
+G1 X40.06 Y97.42
+
+G1 X40.98 Y96.54
+
+G1 X41.16 Y96.44
+
+G1 X41.42 Y96.38
+
+G1 X44.02 Y96.38
+
+G1 X44.34 Y96.46
+
+G1 X44.76 Y96.5
+
+G1 X45.68 Y97.4
+
+G1 X46.04 Y97.56
+
+G1 X54.48 Y97.56
+
+G1 X54.84 Y97.4
+
+G1 X55.74 Y96.52
+
+G1 X55.58 Y96.64
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X55.74 Y96.52
+M04 S1000
+G1 X56.06 Y96.38
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X56.06 Y96.38
+M04 S1000
+G1 X59.26 Y96.38
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.26 Y96.38
+M04 S1000
+G1 X59.58 Y96.48
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.58 Y96.48
+M04 S1000
+G1 X59.98 Y96.52
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.98 Y96.52
+M04 S1000
+G1 X60.92 Y97.4
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X60.92 Y97.4
+M04 S1000
+G1 X61.28 Y97.56
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.28 Y97.56
+M04 S1000
+G1 X72.36 Y97.56
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X72.36 Y97.56
+M04 S1000
+G1 X72.72 Y97.4
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X72.72 Y97.4
+M04 S1000
+G1 X73.2 Y96.94
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X73.2 Y96.94
+M04 S1000
+G1 X73.46 Y96.88
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X73.46 Y96.88
+M04 S1000
+G1 X73.66 Y96.82
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X73.66 Y96.82
+M04 S1000
+G1 X74.12 Y96.4
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.12 Y96.4
+M04 S1000
+G1 X73.9 Y96.54
+G1 X74.62 Y96.36
+
+G1 X75.0 Y96.48
+
+G1 X75.18 Y96.62
+
+G1 X75.42 Y97.32
+
+G1 X76.1 Y97.5
+
+G1 X76.5 Y97.78
+
+G1 X77.1 Y97.96
+
+G1 X77.1 Y97.96
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X77.02 Y97.14
+M04 S1000
+G1 X76.76 Y97.1
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.76 Y97.1
+M04 S1000
+G1 X76.76 Y97.1
+G1 X76.8 Y96.82
+
+G1 X76.8 Y96.82
+
+G1 X77.06 Y96.84
+
+G1 X77.06 Y96.84
+
+G1 X77.02 Y97.14
+
+G1 X77.02 Y97.14
+
+G1 X76.76 Y97.1
+
+G1 X76.8 Y96.82
+
+G1 X77.06 Y96.84
+
+G1 X77.06 Y96.84
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.8 Y96.82
+M04 S1000
+G1 X76.8 Y96.82
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.76 Y97.1
+M04 S1000
+G1 X76.76 Y97.1
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.26 Y97.6
+M04 S1000
+G1 X76.1 Y97.5
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.42 Y97.32
+M04 S1000
+G1 X75.34 Y97.08
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.34 Y97.08
+M04 S1000
+G1 X75.18 Y96.62
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.52 Y96.84
+M04 S1000
+G1 X74.26 Y96.82
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.26 Y96.82
+M04 S1000
+G1 X74.22 Y97.1
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.22 Y97.1
+M04 S1000
+G1 X74.48 Y97.14
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.48 Y97.14
+M04 S1000
+G1 X74.48 Y97.14
+G1 X74.52 Y96.84
+
+G1 X74.52 Y96.84
+
+G1 X74.52 Y96.84
+
+G1 X74.26 Y96.82
+
+G1 X74.26 Y96.82
+
+G1 X74.26 Y96.82
+
+G1 X74.22 Y97.1
+
+G1 X74.22 Y97.1
+
+G1 X74.22 Y97.1
+
+G1 X74.48 Y97.14
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.26 Y97.84
+M04 S1000
+G1 X73.62 Y97.86
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X73.62 Y97.86
+M04 S1000
+G1 X72.84 Y98.6
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X72.84 Y98.6
+M04 S1000
+G1 X72.84 Y98.6
+G1 X72.28 Y98.82
+
+G1 X61.2 Y98.82
+
+G1 X60.82 Y98.7
+
+G1 X60.66 Y98.6
+
+G1 X59.92 Y97.86
+
+G1 X59.72 Y97.76
+
+G1 X59.3 Y97.64
+
+G1 X59.48 Y97.66
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.3 Y97.64
+M04 S1000
+G1 X56.34 Y97.66
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X56.34 Y97.66
+M04 S1000
+G1 X56.08 Y97.8
+G1 X56.08 Y97.8
+
+G1 X55.26 Y98.64
+
+G1 X54.98 Y98.8
+
+G1 X45.96 Y98.82
+
+G1 X45.52 Y98.66
+
+G1 X45.52 Y98.66
+
+G1 X44.68 Y97.86
+
+G1 X44.54 Y97.76
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X44.68 Y97.86
+M04 S1000
+G1 X44.24 Y97.68
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X44.24 Y97.68
+M04 S1000
+G1 X44.06 Y97.64
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X44.06 Y97.64
+M04 S1000
+G1 X41.72 Y97.64
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X41.72 Y97.64
+M04 S1000
+G1 X40.98 Y97.88
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X40.98 Y97.88
+M04 S1000
+G1 X40.12 Y98.7
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X40.12 Y98.7
+M04 S1000
+G1 X40.12 Y98.7
+G1 X39.68 Y98.88
+
+G1 X31.1 Y98.84
+
+G1 X30.74 Y98.82
+
+G1 X30.28 Y98.66
+
+G1 X29.32 Y97.72
+
+G1 X29.1 Y97.6
+
+G1 X28.9 Y97.56
+
+G1 X18.38 Y97.56
+
+G1 X18.04 Y97.64
+
+G1 X17.88 Y97.74
+
+G1 X16.94 Y98.66
+
+G1 X16.76 Y98.76
+
+G1 X16.5 Y98.84
+
+G1 X15.6 Y98.84
+
+G1 X15.32 Y98.94
+
+G1 X14.96 Y99.24
+
+G1 X14.96 Y99.24
+
+G1 X14.96 Y99.24
+
+G1 X15.22 Y99.92
+
+G1 X15.22 Y99.92
+
+G1 X15.64 Y100.06
+
+G1 X17.3 Y100.04
+
+G1 X17.14 Y100.04
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X17.3 Y100.04
+M04 S1000
+G1 X19.2 Y99.42
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X19.2 Y99.42
+M04 S1000
+G1 X26.54 Y99.42
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X26.54 Y99.42
+M04 S1000
+G1 X28.06 Y98.9
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.06 Y98.9
+M04 S1000
+G1 X28.34 Y98.84
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.34 Y98.84
+M04 S1000
+G1 X28.54 Y98.84
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.54 Y98.84
+M04 S1000
+G1 X28.78 Y98.9
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.78 Y98.9
+M04 S1000
+G1 X28.98 Y99.0
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.98 Y99.0
+M04 S1000
+G1 X30.08 Y100.06
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X30.08 Y100.06
+M04 S1000
+G1 X40.4 Y100.1
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X40.4 Y100.1
+M04 S1000
+G1 X41.58 Y98.94
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X41.58 Y98.94
+M04 S1000
+G1 X41.58 Y98.94
+G1 X44.12 Y98.94
+
+G1 X44.12 Y98.94
+
+G1 X45.32 Y100.06
+
+G1 X55.62 Y100.1
+
+G1 X55.84 Y100.06
+
+G1 X57.14 Y99.62
+
+G1 X57.38 Y99.38
+
+G1 X58.62 Y98.98
+
+G1 X58.9 Y98.92
+
+G1 X59.36 Y98.94
+
+G1 X59.36 Y98.94
+
+G1 X60.56 Y100.06
+
+G1 X72.92 Y100.06
+
+G1 X74.02 Y98.98
+
+G1 X74.22 Y98.92
+
+G1 X74.62 Y98.92
+
+G1 X74.98 Y99.0
+
+G1 X75.2 Y99.16
+
+G1 X75.56 Y100.38
+
+G1 X75.56 Y100.38
+
+G1 X75.56 Y100.38
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.48 Y99.68
+M04 S1000
+G1 X74.22 Y99.64
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.22 Y99.64
+M04 S1000
+G1 X74.22 Y99.64
+G1 X74.26 Y99.36
+
+G1 X74.26 Y99.36
+
+G1 X74.52 Y99.38
+
+G1 X74.52 Y99.38
+
+G1 X74.48 Y99.68
+
+G1 X74.48 Y99.68
+
+G1 X74.22 Y99.64
+
+G1 X74.26 Y99.36
+
+G1 X74.52 Y99.38
+
+G1 X74.52 Y99.38
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.26 Y99.36
+M04 S1000
+G1 X74.26 Y99.36
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.22 Y99.64
+M04 S1000
+G1 X74.22 Y99.64
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X72.92 Y100.06
+M04 S1000
+G1 X72.92 Y100.06
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.26 Y97.84
+M04 S1000
+G1 X75.1 Y97.56
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.1 Y97.56
+M04 S1000
+G1 X75.42 Y97.32
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.42 Y97.32
+M04 S1000
+G1 X75.42 Y97.32
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.26 Y97.84
+M04 S1000
+G1 X74.26 Y97.84
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X73.66 Y96.82
+M04 S1000
+G1 X73.2 Y96.94
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X72.72 Y97.4
+M04 S1000
+G1 X72.72 Y97.4
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.12 Y96.4
+M04 S1000
+G1 X74.12 Y96.4
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.26 Y95.3
+M04 S1000
+G1 X74.26 Y95.3
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.48 Y94.6
+M04 S1000
+G1 X74.22 Y94.56
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.22 Y94.56
+M04 S1000
+G1 X74.22 Y94.56
+G1 X74.26 Y94.28
+
+G1 X74.26 Y94.28
+
+G1 X74.52 Y94.3
+
+G1 X74.52 Y94.3
+
+G1 X74.48 Y94.6
+
+G1 X74.48 Y94.6
+
+G1 X74.22 Y94.56
+
+G1 X74.26 Y94.28
+
+G1 X74.52 Y94.3
+
+G1 X74.52 Y94.3
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.26 Y94.28
+M04 S1000
+G1 X74.26 Y94.28
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.22 Y94.56
+M04 S1000
+G1 X74.22 Y94.56
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X73.66 Y94.28
+M04 S1000
+G1 X73.22 Y94.4
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.12 Y93.86
+M04 S1000
+G1 X74.12 Y93.86
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.26 Y92.76
+M04 S1000
+G1 X75.1 Y92.48
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.1 Y92.48
+M04 S1000
+G1 X75.42 Y92.24
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.42 Y92.24
+M04 S1000
+G1 X75.42 Y92.24
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.26 Y92.76
+M04 S1000
+G1 X74.26 Y92.76
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X73.66 Y91.74
+M04 S1000
+G1 X73.22 Y91.86
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.12 Y91.32
+M04 S1000
+G1 X74.12 Y91.32
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.26 Y90.22
+M04 S1000
+G1 X75.1 Y89.94
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.1 Y89.94
+M04 S1000
+G1 X75.38 Y89.7
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.26 Y90.22
+M04 S1000
+G1 X74.26 Y90.22
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X73.66 Y89.2
+M04 S1000
+G1 X73.22 Y89.32
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.12 Y88.78
+M04 S1000
+G1 X74.12 Y88.78
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.26 Y87.68
+M04 S1000
+G1 X75.1 Y87.4
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.1 Y87.4
+M04 S1000
+G1 X75.42 Y87.16
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.42 Y87.16
+M04 S1000
+G1 X75.42 Y87.16
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.26 Y87.68
+M04 S1000
+G1 X74.26 Y87.68
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X73.66 Y86.66
+M04 S1000
+G1 X73.22 Y86.78
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.12 Y86.24
+M04 S1000
+G1 X74.12 Y86.24
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.26 Y85.14
+M04 S1000
+G1 X74.26 Y85.14
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.48 Y84.44
+M04 S1000
+G1 X74.22 Y84.4
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.22 Y84.4
+M04 S1000
+G1 X74.22 Y84.4
+G1 X74.26 Y84.12
+
+G1 X74.26 Y84.12
+
+G1 X74.52 Y84.14
+
+G1 X74.52 Y84.14
+
+G1 X74.48 Y84.44
+
+G1 X74.48 Y84.44
+
+G1 X74.22 Y84.4
+
+G1 X74.26 Y84.12
+
+G1 X74.52 Y84.14
+
+G1 X74.52 Y84.14
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.26 Y84.12
+M04 S1000
+G1 X74.26 Y84.12
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.22 Y84.4
+M04 S1000
+G1 X74.22 Y84.4
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X73.66 Y84.12
+M04 S1000
+G1 X73.22 Y84.24
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.12 Y83.7
+M04 S1000
+G1 X74.12 Y83.7
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.26 Y82.6
+M04 S1000
+G1 X75.1 Y82.32
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.1 Y82.32
+M04 S1000
+G1 X75.42 Y82.08
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.42 Y82.08
+M04 S1000
+G1 X75.42 Y82.08
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.26 Y82.6
+M04 S1000
+G1 X74.26 Y82.6
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X73.66 Y81.58
+M04 S1000
+G1 X73.22 Y81.7
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.12 Y81.16
+M04 S1000
+G1 X74.12 Y81.16
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.26 Y80.06
+M04 S1000
+G1 X74.26 Y80.06
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.48 Y79.36
+M04 S1000
+G1 X74.22 Y79.32
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.22 Y79.32
+M04 S1000
+G1 X74.22 Y79.32
+G1 X74.26 Y79.04
+
+G1 X74.26 Y79.04
+
+G1 X74.52 Y79.06
+
+G1 X74.52 Y79.06
+
+G1 X74.48 Y79.36
+
+G1 X74.48 Y79.36
+
+G1 X74.22 Y79.32
+
+G1 X74.26 Y79.04
+
+G1 X74.52 Y79.06
+
+G1 X74.52 Y79.06
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.26 Y79.04
+M04 S1000
+G1 X74.26 Y79.04
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.22 Y79.32
+M04 S1000
+G1 X74.22 Y79.32
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X73.66 Y79.04
+M04 S1000
+G1 X73.22 Y79.16
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.12 Y78.62
+M04 S1000
+G1 X74.12 Y78.62
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.26 Y77.52
+M04 S1000
+G1 X75.1 Y77.24
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.1 Y77.24
+M04 S1000
+G1 X75.42 Y77.0
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.42 Y77.0
+M04 S1000
+G1 X75.42 Y77.0
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.26 Y77.52
+M04 S1000
+G1 X74.26 Y77.52
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X73.66 Y76.5
+M04 S1000
+G1 X73.22 Y76.62
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.12 Y76.08
+M04 S1000
+G1 X74.12 Y76.08
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.26 Y74.98
+M04 S1000
+G1 X74.26 Y74.98
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.48 Y74.28
+M04 S1000
+G1 X74.22 Y74.24
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.22 Y74.24
+M04 S1000
+G1 X74.22 Y74.24
+G1 X74.26 Y73.96
+
+G1 X74.26 Y73.96
+
+G1 X74.52 Y73.98
+
+G1 X74.52 Y73.98
+
+G1 X74.48 Y74.28
+
+G1 X74.48 Y74.28
+
+G1 X74.22 Y74.24
+
+G1 X74.26 Y73.96
+
+G1 X74.52 Y73.98
+
+G1 X74.52 Y73.98
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.26 Y73.96
+M04 S1000
+G1 X74.26 Y73.96
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.22 Y74.24
+M04 S1000
+G1 X74.22 Y74.24
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X73.66 Y73.96
+M04 S1000
+G1 X73.22 Y74.08
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.12 Y73.54
+M04 S1000
+G1 X74.12 Y73.54
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.26 Y72.44
+M04 S1000
+G1 X75.1 Y72.16
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.1 Y72.16
+M04 S1000
+G1 X75.42 Y71.92
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.42 Y71.92
+M04 S1000
+G1 X75.42 Y71.92
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.26 Y72.44
+M04 S1000
+G1 X74.26 Y72.44
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X73.66 Y71.42
+M04 S1000
+G1 X73.46 Y71.48
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X73.46 Y71.48
+M04 S1000
+G1 X73.22 Y71.54
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X73.22 Y71.54
+M04 S1000
+G1 X73.22 Y71.54
+G1 X73.66 Y71.42
+
+G1 X74.12 Y71.0
+
+G1 X74.12 Y71.0
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X73.22 Y71.54
+M04 S1000
+G1 X72.66 Y72.04
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X72.66 Y72.04
+M04 S1000
+G1 X72.66 Y72.04
+G1 X72.24 Y72.16
+
+G1 X61.38 Y72.12
+
+G1 X61.02 Y71.82
+
+G1 X60.58 Y71.72
+
+G1 X59.88 Y71.14
+
+G1 X59.44 Y70.98
+
+G1 X59.66 Y71.04
+
+G1 X59.88 Y71.14
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.44 Y70.98
+M04 S1000
+G1 X52.48 Y70.98
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X52.48 Y70.98
+M04 S1000
+G1 X52.32 Y71.0
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X52.32 Y71.0
+M04 S1000
+G1 X51.16 Y72.14
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X51.16 Y72.14
+M04 S1000
+G1 X46.14 Y72.12
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.14 Y72.12
+M04 S1000
+G1 X45.84 Y71.82
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X45.84 Y71.82
+M04 S1000
+G1 X45.36 Y71.7
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X45.36 Y71.7
+M04 S1000
+G1 X44.76 Y71.1
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X44.76 Y71.1
+M04 S1000
+G1 X44.34 Y71.06
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X44.34 Y71.06
+M04 S1000
+G1 X44.02 Y70.98
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X44.02 Y70.98
+M04 S1000
+G1 X38.24 Y70.98
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X38.24 Y70.98
+M04 S1000
+G1 X37.98 Y71.04
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X37.98 Y71.04
+M04 S1000
+G1 X37.82 Y71.14
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X37.82 Y71.14
+M04 S1000
+G1 X36.98 Y71.98
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X36.98 Y71.98
+M04 S1000
+G1 X36.82 Y72.08
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X36.82 Y72.08
+M04 S1000
+G1 X36.44 Y72.2
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X36.44 Y72.2
+M04 S1000
+G1 X31.06 Y72.2
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.06 Y72.2
+M04 S1000
+G1 X30.84 Y72.08
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X30.84 Y72.08
+M04 S1000
+G1 X30.6 Y71.82
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X30.6 Y71.82
+M04 S1000
+G1 X30.12 Y71.7
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X30.12 Y71.7
+M04 S1000
+G1 X29.52 Y71.1
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X29.52 Y71.1
+M04 S1000
+G1 X29.1 Y71.08
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X29.1 Y71.08
+M04 S1000
+G1 X28.56 Y70.9
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.56 Y70.9
+M04 S1000
+G1 X26.96 Y70.9
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X26.96 Y70.9
+M04 S1000
+G1 X26.32 Y71.12
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X26.32 Y71.12
+M04 S1000
+G1 X26.32 Y71.12
+G1 X25.46 Y71.94
+
+G1 X24.86 Y72.16
+
+G1 X15.5 Y72.16
+
+G1 X15.26 Y71.88
+
+G1 X15.26 Y71.88
+
+G1 X15.02 Y71.22
+
+G1 X15.32 Y70.98
+
+G1 X15.72 Y70.9
+
+G1 X24.9 Y70.9
+
+G1 X25.32 Y70.72
+
+G1 X26.28 Y69.8
+
+G1 X26.44 Y69.7
+
+G1 X26.78 Y69.62
+
+G1 X28.9 Y69.62
+
+G1 X29.08 Y69.64
+
+G1 X29.32 Y69.78
+
+G1 X29.64 Y70.12
+
+G1 X29.92 Y70.18
+
+G1 X29.92 Y70.18
+
+G1 X30.36 Y70.62
+
+G1 X30.52 Y70.72
+
+G1 X31.24 Y70.78
+
+G1 X31.58 Y70.9
+
+G1 X36.36 Y70.94
+
+G1 X36.6 Y70.84
+
+G1 X37.54 Y69.9
+
+G1 X37.72 Y69.78
+
+G1 X38.06 Y69.7
+
+G1 X44.06 Y69.7
+
+G1 X44.5 Y69.82
+
+G1 X44.68 Y69.92
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X44.0 Y69.2
+M04 S1000
+G1 X43.74 Y69.16
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X43.74 Y69.16
+M04 S1000
+G1 X43.74 Y69.16
+G1 X43.78 Y68.88
+
+G1 X43.78 Y68.88
+
+G1 X44.04 Y68.9
+
+G1 X44.04 Y68.9
+
+G1 X44.0 Y69.2
+
+G1 X44.0 Y69.2
+
+G1 X43.74 Y69.16
+
+G1 X43.78 Y68.88
+
+G1 X44.04 Y68.9
+
+G1 X44.04 Y68.9
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X43.78 Y68.88
+M04 S1000
+G1 X43.78 Y68.88
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X43.74 Y69.16
+M04 S1000
+G1 X43.74 Y69.16
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X43.78 Y71.42
+M04 S1000
+G1 X43.74 Y71.7
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X43.74 Y71.7
+M04 S1000
+G1 X44.0 Y71.74
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X44.0 Y71.74
+M04 S1000
+G1 X44.0 Y71.74
+G1 X44.04 Y71.44
+
+G1 X43.78 Y71.42
+
+G1 X43.78 Y71.42
+
+G1 X44.04 Y71.44
+
+G1 X44.04 Y71.44
+
+G1 X44.04 Y71.44
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X43.78 Y71.42
+M04 S1000
+G1 X43.78 Y71.42
+G1 X43.74 Y71.7
+
+G1 X43.74 Y71.7
+
+G1 X43.74 Y71.7
+
+G1 X44.0 Y71.74
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X45.36 Y71.7
+M04 S1000
+G1 X45.36 Y71.7
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.14 Y72.12
+M04 S1000
+G1 X46.14 Y72.12
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.28 Y71.7
+M04 S1000
+G1 X46.54 Y71.74
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.54 Y71.74
+M04 S1000
+G1 X46.54 Y71.74
+G1 X46.58 Y71.44
+
+G1 X46.32 Y71.42
+
+G1 X46.28 Y71.7
+
+G1 X46.28 Y71.7
+
+G1 X46.32 Y71.42
+
+G1 X46.32 Y71.42
+
+G1 X46.58 Y71.44
+
+G1 X46.58 Y71.44
+
+G1 X46.58 Y71.44
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.32 Y71.42
+M04 S1000
+G1 X46.32 Y71.42
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.28 Y71.7
+M04 S1000
+G1 X46.28 Y71.7
+G1 X46.54 Y71.74
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X45.68 Y70.66
+M04 S1000
+G1 X45.68 Y70.66
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X45.68 Y73.2
+M04 S1000
+G1 X45.68 Y73.2
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.32 Y73.96
+M04 S1000
+G1 X46.28 Y74.24
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.28 Y74.24
+M04 S1000
+G1 X46.54 Y74.28
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.54 Y74.28
+M04 S1000
+G1 X46.54 Y74.28
+G1 X46.58 Y73.98
+
+G1 X46.32 Y73.96
+
+G1 X46.32 Y73.96
+
+G1 X46.58 Y73.98
+
+G1 X46.58 Y73.98
+
+G1 X46.58 Y73.98
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.32 Y73.96
+M04 S1000
+G1 X46.32 Y73.96
+G1 X46.28 Y74.24
+
+G1 X46.28 Y74.24
+
+G1 X46.28 Y74.24
+
+G1 X46.54 Y74.28
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.14 Y74.66
+M04 S1000
+G1 X46.14 Y74.66
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X45.36 Y74.24
+M04 S1000
+G1 X45.36 Y74.24
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X44.04 Y73.98
+M04 S1000
+G1 X43.78 Y73.96
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X43.78 Y73.96
+M04 S1000
+G1 X43.74 Y74.24
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X43.74 Y74.24
+M04 S1000
+G1 X44.0 Y74.28
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X44.0 Y74.28
+M04 S1000
+G1 X44.0 Y74.28
+G1 X44.04 Y73.98
+
+G1 X44.04 Y73.98
+
+G1 X44.04 Y73.98
+
+G1 X43.78 Y73.96
+
+G1 X43.78 Y73.96
+
+G1 X43.78 Y73.96
+
+G1 X43.74 Y74.24
+
+G1 X43.74 Y74.24
+
+G1 X43.74 Y74.24
+
+G1 X44.0 Y74.28
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X45.68 Y75.74
+M04 S1000
+G1 X45.68 Y75.74
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.32 Y76.5
+M04 S1000
+G1 X46.28 Y76.78
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.28 Y76.78
+M04 S1000
+G1 X46.54 Y76.82
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.54 Y76.82
+M04 S1000
+G1 X46.54 Y76.82
+G1 X46.58 Y76.52
+
+G1 X46.32 Y76.5
+
+G1 X46.32 Y76.5
+
+G1 X46.58 Y76.52
+
+G1 X46.58 Y76.52
+
+G1 X46.58 Y76.52
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.32 Y76.5
+M04 S1000
+G1 X46.32 Y76.5
+G1 X46.28 Y76.78
+
+G1 X46.28 Y76.78
+
+G1 X46.28 Y76.78
+
+G1 X46.54 Y76.82
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X45.36 Y76.78
+M04 S1000
+G1 X45.36 Y76.78
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X44.04 Y76.52
+M04 S1000
+G1 X43.78 Y76.5
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X43.78 Y76.5
+M04 S1000
+G1 X43.74 Y76.78
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X43.74 Y76.78
+M04 S1000
+G1 X44.0 Y76.82
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X44.0 Y76.82
+M04 S1000
+G1 X44.0 Y76.82
+G1 X44.04 Y76.52
+
+G1 X44.04 Y76.52
+
+G1 X44.04 Y76.52
+
+G1 X43.78 Y76.5
+
+G1 X43.78 Y76.5
+
+G1 X43.78 Y76.5
+
+G1 X43.74 Y76.78
+
+G1 X43.74 Y76.78
+
+G1 X43.74 Y76.78
+
+G1 X44.0 Y76.82
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X43.78 Y79.04
+M04 S1000
+G1 X43.74 Y79.32
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X43.74 Y79.32
+M04 S1000
+G1 X44.0 Y79.36
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X44.0 Y79.36
+M04 S1000
+G1 X44.0 Y79.36
+G1 X44.04 Y79.06
+
+G1 X43.78 Y79.04
+
+G1 X43.78 Y79.04
+
+G1 X44.04 Y79.06
+
+G1 X44.04 Y79.06
+
+G1 X44.04 Y79.06
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X43.78 Y79.04
+M04 S1000
+G1 X43.78 Y79.04
+G1 X43.74 Y79.32
+
+G1 X43.74 Y79.32
+
+G1 X43.74 Y79.32
+
+G1 X44.0 Y79.36
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X44.48 Y79.98
+M04 S1000
+G1 X44.66 Y80.06
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X45.36 Y79.32
+M04 S1000
+G1 X45.36 Y79.32
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.14 Y79.74
+M04 S1000
+G1 X46.14 Y79.74
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.28 Y79.32
+M04 S1000
+G1 X46.54 Y79.36
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.54 Y79.36
+M04 S1000
+G1 X46.54 Y79.36
+G1 X46.58 Y79.06
+
+G1 X46.32 Y79.04
+
+G1 X46.28 Y79.32
+
+G1 X46.28 Y79.32
+
+G1 X46.32 Y79.04
+
+G1 X46.32 Y79.04
+
+G1 X46.58 Y79.06
+
+G1 X46.58 Y79.06
+
+G1 X46.58 Y79.06
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.32 Y79.04
+M04 S1000
+G1 X46.32 Y79.04
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.28 Y79.32
+M04 S1000
+G1 X46.28 Y79.32
+G1 X46.54 Y79.36
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X45.76 Y78.36
+M04 S1000
+G1 X45.76 Y78.36
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.32 Y81.58
+M04 S1000
+G1 X46.28 Y81.86
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.28 Y81.86
+M04 S1000
+G1 X46.54 Y81.9
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.54 Y81.9
+M04 S1000
+G1 X46.54 Y81.9
+G1 X46.58 Y81.6
+
+G1 X46.32 Y81.58
+
+G1 X46.32 Y81.58
+
+G1 X46.58 Y81.6
+
+G1 X46.58 Y81.6
+
+G1 X46.58 Y81.6
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.32 Y81.58
+M04 S1000
+G1 X46.32 Y81.58
+G1 X46.28 Y81.86
+
+G1 X46.28 Y81.86
+
+G1 X46.28 Y81.86
+
+G1 X46.54 Y81.9
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X45.68 Y82.16
+M04 S1000
+G1 X45.68 Y82.16
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X44.78 Y82.64
+M04 S1000
+G1 X44.6 Y82.56
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X44.0 Y81.9
+M04 S1000
+G1 X43.74 Y81.86
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X43.74 Y81.86
+M04 S1000
+G1 X43.74 Y81.86
+G1 X43.78 Y81.58
+
+G1 X43.78 Y81.58
+
+G1 X44.04 Y81.6
+
+G1 X44.04 Y81.6
+
+G1 X44.0 Y81.9
+
+G1 X44.0 Y81.9
+
+G1 X43.74 Y81.86
+
+G1 X43.78 Y81.58
+
+G1 X44.04 Y81.6
+
+G1 X44.04 Y81.6
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X43.78 Y81.58
+M04 S1000
+G1 X43.78 Y81.58
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X43.74 Y81.86
+M04 S1000
+G1 X43.74 Y81.86
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X43.78 Y84.12
+M04 S1000
+G1 X43.74 Y84.4
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X43.74 Y84.4
+M04 S1000
+G1 X44.0 Y84.44
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X44.0 Y84.44
+M04 S1000
+G1 X44.0 Y84.44
+G1 X44.04 Y84.14
+
+G1 X43.78 Y84.12
+
+G1 X43.78 Y84.12
+
+G1 X44.04 Y84.14
+
+G1 X44.04 Y84.14
+
+G1 X44.04 Y84.14
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X43.78 Y84.12
+M04 S1000
+G1 X43.78 Y84.12
+G1 X43.74 Y84.4
+
+G1 X43.74 Y84.4
+
+G1 X43.74 Y84.4
+
+G1 X44.0 Y84.44
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X45.16 Y85.68
+M04 S1000
+G1 X45.16 Y85.68
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X44.56 Y86.6
+M04 S1000
+G1 X44.56 Y86.6
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X44.04 Y86.68
+M04 S1000
+G1 X43.78 Y86.66
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X43.78 Y86.66
+M04 S1000
+G1 X43.74 Y86.94
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X43.74 Y86.94
+M04 S1000
+G1 X44.0 Y86.98
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X44.0 Y86.98
+M04 S1000
+G1 X44.0 Y86.98
+G1 X44.04 Y86.68
+
+G1 X44.04 Y86.68
+
+G1 X44.04 Y86.68
+
+G1 X43.78 Y86.66
+
+G1 X43.78 Y86.66
+
+G1 X43.78 Y86.66
+
+G1 X43.74 Y86.94
+
+G1 X43.74 Y86.94
+
+G1 X43.74 Y86.94
+
+G1 X44.0 Y86.98
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X44.1 Y86.24
+M04 S1000
+G1 X44.1 Y86.24
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.32 Y86.66
+M04 S1000
+G1 X46.28 Y86.94
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.28 Y86.94
+M04 S1000
+G1 X46.54 Y86.98
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.54 Y86.98
+M04 S1000
+G1 X46.54 Y86.98
+G1 X46.58 Y86.68
+
+G1 X46.32 Y86.66
+
+G1 X46.32 Y86.66
+
+G1 X46.58 Y86.68
+
+G1 X46.58 Y86.68
+
+G1 X46.58 Y86.68
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.32 Y86.66
+M04 S1000
+G1 X46.32 Y86.66
+G1 X46.28 Y86.94
+
+G1 X46.28 Y86.94
+
+G1 X46.28 Y86.94
+
+G1 X46.54 Y86.98
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.14 Y87.36
+M04 S1000
+G1 X46.14 Y87.36
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X45.68 Y88.44
+M04 S1000
+G1 X45.68 Y88.44
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.32 Y89.2
+M04 S1000
+G1 X46.28 Y89.48
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.28 Y89.48
+M04 S1000
+G1 X46.54 Y89.52
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.54 Y89.52
+M04 S1000
+G1 X46.54 Y89.52
+G1 X46.58 Y89.22
+
+G1 X46.32 Y89.2
+
+G1 X46.32 Y89.2
+
+G1 X46.58 Y89.22
+
+G1 X46.58 Y89.22
+
+G1 X46.58 Y89.22
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.32 Y89.2
+M04 S1000
+G1 X46.32 Y89.2
+G1 X46.28 Y89.48
+
+G1 X46.28 Y89.48
+
+G1 X46.28 Y89.48
+
+G1 X46.54 Y89.52
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.14 Y89.9
+M04 S1000
+G1 X46.14 Y89.9
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X45.36 Y89.48
+M04 S1000
+G1 X45.36 Y89.48
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X44.74 Y88.9
+M04 S1000
+G1 X44.74 Y88.9
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X44.04 Y89.22
+M04 S1000
+G1 X43.78 Y89.2
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X43.78 Y89.2
+M04 S1000
+G1 X43.74 Y89.48
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X43.74 Y89.48
+M04 S1000
+G1 X44.0 Y89.52
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X44.0 Y89.52
+M04 S1000
+G1 X44.0 Y89.52
+G1 X44.04 Y89.22
+
+G1 X44.04 Y89.22
+
+G1 X44.04 Y89.22
+
+G1 X43.78 Y89.2
+
+G1 X43.78 Y89.2
+
+G1 X43.78 Y89.2
+
+G1 X43.74 Y89.48
+
+G1 X43.74 Y89.48
+
+G1 X43.74 Y89.48
+
+G1 X44.0 Y89.52
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X44.74 Y91.44
+M04 S1000
+G1 X44.74 Y91.44
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X44.04 Y91.76
+M04 S1000
+G1 X43.78 Y91.74
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X43.78 Y91.74
+M04 S1000
+G1 X43.74 Y92.02
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X43.74 Y92.02
+M04 S1000
+G1 X44.0 Y92.06
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X44.0 Y92.06
+M04 S1000
+G1 X44.0 Y92.06
+G1 X44.04 Y91.76
+
+G1 X44.04 Y91.76
+
+G1 X44.04 Y91.76
+
+G1 X43.78 Y91.74
+
+G1 X43.78 Y91.74
+
+G1 X43.78 Y91.74
+
+G1 X43.74 Y92.02
+
+G1 X43.74 Y92.02
+
+G1 X43.74 Y92.02
+
+G1 X44.0 Y92.06
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X45.68 Y92.32
+M04 S1000
+G1 X45.68 Y92.32
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.28 Y92.02
+M04 S1000
+G1 X46.54 Y92.06
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.54 Y92.06
+M04 S1000
+G1 X46.54 Y92.06
+G1 X46.58 Y91.76
+
+G1 X46.32 Y91.74
+
+G1 X46.28 Y92.02
+
+G1 X46.28 Y92.02
+
+G1 X46.32 Y91.74
+
+G1 X46.32 Y91.74
+
+G1 X46.58 Y91.76
+
+G1 X46.58 Y91.76
+
+G1 X46.58 Y91.76
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.32 Y91.74
+M04 S1000
+G1 X46.32 Y91.74
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.28 Y92.02
+M04 S1000
+G1 X46.28 Y92.02
+G1 X46.54 Y92.06
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X45.68 Y90.98
+M04 S1000
+G1 X45.68 Y90.98
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X45.54 Y93.52
+M04 S1000
+G1 X45.54 Y93.52
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X45.34 Y94.58
+M04 S1000
+G1 X45.8 Y94.68
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.14 Y94.98
+M04 S1000
+G1 X46.14 Y94.98
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.28 Y94.56
+M04 S1000
+G1 X46.54 Y94.6
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.54 Y94.6
+M04 S1000
+G1 X46.54 Y94.6
+G1 X46.58 Y94.3
+
+G1 X46.32 Y94.28
+
+G1 X46.28 Y94.56
+
+G1 X46.28 Y94.56
+
+G1 X46.32 Y94.28
+
+G1 X46.32 Y94.28
+
+G1 X46.58 Y94.3
+
+G1 X46.58 Y94.3
+
+G1 X46.58 Y94.3
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.32 Y94.28
+M04 S1000
+G1 X46.32 Y94.28
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.28 Y94.56
+M04 S1000
+G1 X46.28 Y94.56
+G1 X46.54 Y94.6
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X45.34 Y94.58
+M04 S1000
+G1 X45.34 Y94.58
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X44.04 Y94.3
+M04 S1000
+G1 X43.78 Y94.28
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X43.78 Y94.28
+M04 S1000
+G1 X43.74 Y94.56
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X43.74 Y94.56
+M04 S1000
+G1 X44.0 Y94.6
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X44.0 Y94.6
+M04 S1000
+G1 X44.0 Y94.6
+G1 X44.04 Y94.3
+
+G1 X44.04 Y94.3
+
+G1 X44.04 Y94.3
+
+G1 X43.78 Y94.28
+
+G1 X43.78 Y94.28
+
+G1 X43.78 Y94.28
+
+G1 X43.74 Y94.56
+
+G1 X43.74 Y94.56
+
+G1 X43.74 Y94.56
+
+G1 X44.0 Y94.6
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X43.78 Y96.82
+M04 S1000
+G1 X43.74 Y97.1
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X43.74 Y97.1
+M04 S1000
+G1 X44.0 Y97.14
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X44.0 Y97.14
+M04 S1000
+G1 X44.0 Y97.14
+G1 X44.04 Y96.84
+
+G1 X43.78 Y96.82
+
+G1 X43.78 Y96.82
+
+G1 X44.04 Y96.84
+
+G1 X44.04 Y96.84
+
+G1 X44.04 Y96.84
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X43.78 Y96.82
+M04 S1000
+G1 X43.78 Y96.82
+G1 X43.74 Y97.1
+
+G1 X43.74 Y97.1
+
+G1 X43.74 Y97.1
+
+G1 X44.0 Y97.14
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X45.68 Y97.4
+M04 S1000
+G1 X45.68 Y97.4
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.28 Y97.1
+M04 S1000
+G1 X46.54 Y97.14
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.54 Y97.14
+M04 S1000
+G1 X46.54 Y97.14
+G1 X46.58 Y96.84
+
+G1 X46.32 Y96.82
+
+G1 X46.28 Y97.1
+
+G1 X46.28 Y97.1
+
+G1 X46.32 Y96.82
+
+G1 X46.32 Y96.82
+
+G1 X46.58 Y96.84
+
+G1 X46.58 Y96.84
+
+G1 X46.58 Y96.84
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.32 Y96.82
+M04 S1000
+G1 X46.32 Y96.82
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.28 Y97.1
+M04 S1000
+G1 X46.28 Y97.1
+G1 X46.54 Y97.14
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X45.7 Y96.06
+M04 S1000
+G1 X45.7 Y96.06
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X44.12 Y98.94
+M04 S1000
+G1 X44.12 Y98.94
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X44.04 Y99.38
+M04 S1000
+G1 X43.78 Y99.36
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X43.78 Y99.36
+M04 S1000
+G1 X43.74 Y99.64
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X43.74 Y99.64
+M04 S1000
+G1 X44.0 Y99.68
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X44.0 Y99.68
+M04 S1000
+G1 X44.0 Y99.68
+G1 X44.04 Y99.38
+
+G1 X44.04 Y99.38
+
+G1 X44.04 Y99.38
+
+G1 X43.78 Y99.36
+
+G1 X43.78 Y99.36
+
+G1 X43.78 Y99.36
+
+G1 X43.74 Y99.64
+
+G1 X43.74 Y99.64
+
+G1 X43.74 Y99.64
+
+G1 X44.0 Y99.68
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X45.32 Y100.06
+M04 S1000
+G1 X45.32 Y100.06
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.28 Y99.64
+M04 S1000
+G1 X46.54 Y99.68
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.54 Y99.68
+M04 S1000
+G1 X46.54 Y99.68
+G1 X46.58 Y99.38
+
+G1 X46.32 Y99.36
+
+G1 X46.28 Y99.64
+
+G1 X46.28 Y99.64
+
+G1 X46.32 Y99.36
+
+G1 X46.32 Y99.36
+
+G1 X46.58 Y99.38
+
+G1 X46.58 Y99.38
+
+G1 X46.58 Y99.38
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.32 Y99.36
+M04 S1000
+G1 X46.32 Y99.36
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.28 Y99.64
+M04 S1000
+G1 X46.28 Y99.64
+G1 X46.54 Y99.68
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X41.18 Y97.8
+M04 S1000
+G1 X40.98 Y97.88
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X40.06 Y97.42
+M04 S1000
+G1 X40.06 Y97.42
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X39.6 Y94.86
+M04 S1000
+G1 X39.6 Y94.86
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X38.98 Y92.52
+M04 S1000
+G1 X30.94 Y92.46
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.04 Y92.02
+M04 S1000
+G1 X31.3 Y92.06
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.3 Y92.06
+M04 S1000
+G1 X31.3 Y92.06
+G1 X31.34 Y91.76
+
+G1 X31.08 Y91.74
+
+G1 X31.04 Y92.02
+
+G1 X31.04 Y92.02
+
+G1 X31.08 Y91.74
+
+G1 X31.08 Y91.74
+
+G1 X31.34 Y91.76
+
+G1 X31.34 Y91.76
+
+G1 X31.34 Y91.76
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.08 Y91.74
+M04 S1000
+G1 X31.08 Y91.74
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.04 Y92.02
+M04 S1000
+G1 X31.04 Y92.02
+G1 X31.3 Y92.06
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X30.38 Y92.36
+M04 S1000
+G1 X30.38 Y92.36
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X29.92 Y93.28
+M04 S1000
+G1 X29.92 Y93.28
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X29.04 Y93.88
+M04 S1000
+G1 X28.4 Y93.74
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.54 Y94.28
+M04 S1000
+G1 X28.5 Y94.56
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.5 Y94.56
+M04 S1000
+G1 X28.76 Y94.6
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.76 Y94.6
+M04 S1000
+G1 X28.76 Y94.6
+G1 X28.8 Y94.3
+
+G1 X28.54 Y94.28
+
+G1 X28.54 Y94.28
+
+G1 X28.8 Y94.3
+
+G1 X28.8 Y94.3
+
+G1 X28.8 Y94.3
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.54 Y94.28
+M04 S1000
+G1 X28.54 Y94.28
+G1 X28.5 Y94.56
+
+G1 X28.5 Y94.56
+
+G1 X28.5 Y94.56
+
+G1 X28.76 Y94.6
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X30.14 Y94.56
+M04 S1000
+G1 X30.14 Y94.56
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X30.9 Y94.98
+M04 S1000
+G1 X30.9 Y94.98
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.04 Y94.56
+M04 S1000
+G1 X31.3 Y94.6
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.3 Y94.6
+M04 S1000
+G1 X31.3 Y94.6
+G1 X31.34 Y94.3
+
+G1 X31.08 Y94.28
+
+G1 X31.04 Y94.56
+
+G1 X31.04 Y94.56
+
+G1 X31.08 Y94.28
+
+G1 X31.08 Y94.28
+
+G1 X31.34 Y94.3
+
+G1 X31.34 Y94.3
+
+G1 X31.34 Y94.3
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.08 Y94.28
+M04 S1000
+G1 X31.08 Y94.28
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.04 Y94.56
+M04 S1000
+G1 X31.04 Y94.56
+G1 X31.3 Y94.6
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.08 Y96.82
+M04 S1000
+G1 X31.04 Y97.1
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.04 Y97.1
+M04 S1000
+G1 X31.3 Y97.14
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.3 Y97.14
+M04 S1000
+G1 X31.3 Y97.14
+G1 X31.34 Y96.84
+
+G1 X31.08 Y96.82
+
+G1 X31.08 Y96.82
+
+G1 X31.34 Y96.84
+
+G1 X31.34 Y96.84
+
+G1 X31.34 Y96.84
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.08 Y96.82
+M04 S1000
+G1 X31.08 Y96.82
+G1 X31.04 Y97.1
+
+G1 X31.04 Y97.1
+
+G1 X31.04 Y97.1
+
+G1 X31.3 Y97.14
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X30.44 Y97.4
+M04 S1000
+G1 X30.44 Y97.4
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X30.28 Y98.66
+M04 S1000
+G1 X30.28 Y98.66
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.08 Y99.36
+M04 S1000
+G1 X31.04 Y99.64
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.04 Y99.64
+M04 S1000
+G1 X31.3 Y99.68
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.3 Y99.68
+M04 S1000
+G1 X31.3 Y99.68
+G1 X31.34 Y99.38
+
+G1 X31.08 Y99.36
+
+G1 X31.08 Y99.36
+
+G1 X31.34 Y99.38
+
+G1 X31.34 Y99.38
+
+G1 X31.34 Y99.38
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.08 Y99.36
+M04 S1000
+G1 X31.08 Y99.36
+G1 X31.04 Y99.64
+
+G1 X31.04 Y99.64
+
+G1 X31.04 Y99.64
+
+G1 X31.3 Y99.68
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X30.08 Y100.06
+M04 S1000
+G1 X30.08 Y100.06
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.76 Y99.68
+M04 S1000
+G1 X28.5 Y99.64
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.5 Y99.64
+M04 S1000
+G1 X28.5 Y99.64
+G1 X28.54 Y99.36
+
+G1 X28.54 Y99.36
+
+G1 X28.8 Y99.38
+
+G1 X28.8 Y99.38
+
+G1 X28.76 Y99.68
+
+G1 X28.76 Y99.68
+
+G1 X28.5 Y99.64
+
+G1 X28.54 Y99.36
+
+G1 X28.8 Y99.38
+
+G1 X28.8 Y99.38
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.54 Y99.36
+M04 S1000
+G1 X28.54 Y99.36
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.5 Y99.64
+M04 S1000
+G1 X28.5 Y99.64
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.76 Y97.14
+M04 S1000
+G1 X28.5 Y97.1
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.5 Y97.1
+M04 S1000
+G1 X28.5 Y97.1
+G1 X28.54 Y96.82
+
+G1 X28.54 Y96.82
+
+G1 X28.8 Y96.84
+
+G1 X28.8 Y96.84
+
+G1 X28.76 Y97.14
+
+G1 X28.76 Y97.14
+
+G1 X28.5 Y97.1
+
+G1 X28.54 Y96.82
+
+G1 X28.8 Y96.84
+
+G1 X28.8 Y96.84
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.54 Y96.82
+M04 S1000
+G1 X28.54 Y96.82
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.5 Y97.1
+M04 S1000
+G1 X28.5 Y97.1
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.76 Y92.06
+M04 S1000
+G1 X28.5 Y92.02
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.5 Y92.02
+M04 S1000
+G1 X28.5 Y92.02
+G1 X28.54 Y91.74
+
+G1 X28.54 Y91.74
+
+G1 X28.8 Y91.76
+
+G1 X28.8 Y91.76
+
+G1 X28.76 Y92.06
+
+G1 X28.76 Y92.06
+
+G1 X28.5 Y92.02
+
+G1 X28.54 Y91.74
+
+G1 X28.8 Y91.76
+
+G1 X28.8 Y91.76
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.54 Y91.74
+M04 S1000
+G1 X28.54 Y91.74
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.5 Y92.02
+M04 S1000
+G1 X28.5 Y92.02
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X29.16 Y91.42
+M04 S1000
+G1 X29.16 Y91.42
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.76 Y89.52
+M04 S1000
+G1 X28.5 Y89.48
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.5 Y89.48
+M04 S1000
+G1 X28.5 Y89.48
+G1 X28.54 Y89.2
+
+G1 X28.54 Y89.2
+
+G1 X28.8 Y89.22
+
+G1 X28.8 Y89.22
+
+G1 X28.76 Y89.52
+
+G1 X28.76 Y89.52
+
+G1 X28.5 Y89.48
+
+G1 X28.54 Y89.2
+
+G1 X28.8 Y89.22
+
+G1 X28.8 Y89.22
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.54 Y89.2
+M04 S1000
+G1 X28.54 Y89.2
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.5 Y89.48
+M04 S1000
+G1 X28.5 Y89.48
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X30.44 Y89.78
+M04 S1000
+G1 X30.44 Y89.78
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.04 Y89.48
+M04 S1000
+G1 X31.3 Y89.52
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.3 Y89.52
+M04 S1000
+G1 X31.3 Y89.52
+G1 X31.34 Y89.22
+
+G1 X31.08 Y89.2
+
+G1 X31.04 Y89.48
+
+G1 X31.04 Y89.48
+
+G1 X31.08 Y89.2
+
+G1 X31.08 Y89.2
+
+G1 X31.34 Y89.22
+
+G1 X31.34 Y89.22
+
+G1 X31.34 Y89.22
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.08 Y89.2
+M04 S1000
+G1 X31.08 Y89.2
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.04 Y89.48
+M04 S1000
+G1 X31.04 Y89.48
+G1 X31.3 Y89.52
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X30.44 Y88.44
+M04 S1000
+G1 X30.44 Y88.44
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X29.9 Y87.96
+M04 S1000
+G1 X29.9 Y87.96
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X29.16 Y87.52
+M04 S1000
+G1 X29.16 Y87.52
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.76 Y86.98
+M04 S1000
+G1 X28.5 Y86.94
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.5 Y86.94
+M04 S1000
+G1 X28.5 Y86.94
+G1 X28.54 Y86.66
+
+G1 X28.54 Y86.66
+
+G1 X28.8 Y86.68
+
+G1 X28.8 Y86.68
+
+G1 X28.76 Y86.98
+
+G1 X28.76 Y86.98
+
+G1 X28.5 Y86.94
+
+G1 X28.54 Y86.66
+
+G1 X28.8 Y86.68
+
+G1 X28.8 Y86.68
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.54 Y86.66
+M04 S1000
+G1 X28.54 Y86.66
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.5 Y86.94
+M04 S1000
+G1 X28.5 Y86.94
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X30.1 Y86.96
+M04 S1000
+G1 X30.1 Y86.96
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X30.9 Y87.36
+M04 S1000
+G1 X30.9 Y87.36
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.04 Y86.94
+M04 S1000
+G1 X31.3 Y86.98
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.3 Y86.98
+M04 S1000
+G1 X31.3 Y86.98
+G1 X31.34 Y86.68
+
+G1 X31.08 Y86.66
+
+G1 X31.04 Y86.94
+
+G1 X31.04 Y86.94
+
+G1 X31.08 Y86.66
+
+G1 X31.08 Y86.66
+
+G1 X31.34 Y86.68
+
+G1 X31.34 Y86.68
+
+G1 X31.34 Y86.68
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.08 Y86.66
+M04 S1000
+G1 X31.08 Y86.66
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.04 Y86.94
+M04 S1000
+G1 X31.04 Y86.94
+G1 X31.3 Y86.98
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X30.34 Y85.94
+M04 S1000
+G1 X30.34 Y85.94
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X30.44 Y84.7
+M04 S1000
+G1 X30.44 Y84.7
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.04 Y84.4
+M04 S1000
+G1 X31.3 Y84.44
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.3 Y84.44
+M04 S1000
+G1 X31.3 Y84.44
+G1 X31.34 Y84.14
+
+G1 X31.08 Y84.12
+
+G1 X31.04 Y84.4
+
+G1 X31.04 Y84.4
+
+G1 X31.08 Y84.12
+
+G1 X31.08 Y84.12
+
+G1 X31.34 Y84.14
+
+G1 X31.34 Y84.14
+
+G1 X31.34 Y84.14
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.08 Y84.12
+M04 S1000
+G1 X31.08 Y84.12
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.04 Y84.4
+M04 S1000
+G1 X31.04 Y84.4
+G1 X31.3 Y84.44
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X30.9 Y82.28
+M04 S1000
+G1 X30.9 Y82.28
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.04 Y81.86
+M04 S1000
+G1 X31.3 Y81.9
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.3 Y81.9
+M04 S1000
+G1 X31.3 Y81.9
+G1 X31.34 Y81.6
+
+G1 X31.08 Y81.58
+
+G1 X31.04 Y81.86
+
+G1 X31.04 Y81.86
+
+G1 X31.08 Y81.58
+
+G1 X31.08 Y81.58
+
+G1 X31.34 Y81.6
+
+G1 X31.34 Y81.6
+
+G1 X31.34 Y81.6
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.08 Y81.58
+M04 S1000
+G1 X31.08 Y81.58
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.04 Y81.86
+M04 S1000
+G1 X31.04 Y81.86
+G1 X31.3 Y81.9
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X30.1 Y81.88
+M04 S1000
+G1 X30.1 Y81.88
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X29.44 Y82.68
+M04 S1000
+G1 X29.26 Y82.56
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.76 Y81.9
+M04 S1000
+G1 X28.5 Y81.86
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.5 Y81.86
+M04 S1000
+G1 X28.5 Y81.86
+G1 X28.54 Y81.58
+
+G1 X28.54 Y81.58
+
+G1 X28.8 Y81.6
+
+G1 X28.8 Y81.6
+
+G1 X28.76 Y81.9
+
+G1 X28.76 Y81.9
+
+G1 X28.5 Y81.86
+
+G1 X28.54 Y81.58
+
+G1 X28.8 Y81.6
+
+G1 X28.8 Y81.6
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.54 Y81.58
+M04 S1000
+G1 X28.54 Y81.58
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.5 Y81.86
+M04 S1000
+G1 X28.5 Y81.86
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X30.34 Y80.86
+M04 S1000
+G1 X30.34 Y80.86
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X30.44 Y79.62
+M04 S1000
+G1 X30.44 Y79.62
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.04 Y79.32
+M04 S1000
+G1 X31.3 Y79.36
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.3 Y79.36
+M04 S1000
+G1 X31.3 Y79.36
+G1 X31.34 Y79.06
+
+G1 X31.08 Y79.04
+
+G1 X31.04 Y79.32
+
+G1 X31.04 Y79.32
+
+G1 X31.08 Y79.04
+
+G1 X31.08 Y79.04
+
+G1 X31.34 Y79.06
+
+G1 X31.34 Y79.06
+
+G1 X31.34 Y79.06
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.08 Y79.04
+M04 S1000
+G1 X31.08 Y79.04
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.04 Y79.32
+M04 S1000
+G1 X31.04 Y79.32
+G1 X31.3 Y79.36
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X29.9 Y77.8
+M04 S1000
+G1 X29.9 Y77.8
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X29.16 Y77.36
+M04 S1000
+G1 X29.16 Y77.36
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.76 Y76.82
+M04 S1000
+G1 X28.5 Y76.78
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.5 Y76.78
+M04 S1000
+G1 X28.5 Y76.78
+G1 X28.54 Y76.5
+
+G1 X28.54 Y76.5
+
+G1 X28.8 Y76.52
+
+G1 X28.8 Y76.52
+
+G1 X28.76 Y76.82
+
+G1 X28.76 Y76.82
+
+G1 X28.5 Y76.78
+
+G1 X28.54 Y76.5
+
+G1 X28.8 Y76.52
+
+G1 X28.8 Y76.52
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.54 Y76.5
+M04 S1000
+G1 X28.54 Y76.5
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.5 Y76.78
+M04 S1000
+G1 X28.5 Y76.78
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X30.1 Y76.8
+M04 S1000
+G1 X30.1 Y76.8
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X30.9 Y77.2
+M04 S1000
+G1 X30.9 Y77.2
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.04 Y76.78
+M04 S1000
+G1 X31.3 Y76.82
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.3 Y76.82
+M04 S1000
+G1 X31.3 Y76.82
+G1 X31.34 Y76.52
+
+G1 X31.08 Y76.5
+
+G1 X31.04 Y76.78
+
+G1 X31.04 Y76.78
+
+G1 X31.08 Y76.5
+
+G1 X31.08 Y76.5
+
+G1 X31.34 Y76.52
+
+G1 X31.34 Y76.52
+
+G1 X31.34 Y76.52
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.08 Y76.5
+M04 S1000
+G1 X31.08 Y76.5
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.04 Y76.78
+M04 S1000
+G1 X31.04 Y76.78
+G1 X31.3 Y76.82
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X30.34 Y75.78
+M04 S1000
+G1 X30.34 Y75.78
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X30.44 Y74.54
+M04 S1000
+G1 X30.44 Y74.54
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.04 Y74.24
+M04 S1000
+G1 X31.3 Y74.28
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.3 Y74.28
+M04 S1000
+G1 X31.3 Y74.28
+G1 X31.34 Y73.98
+
+G1 X31.08 Y73.96
+
+G1 X31.04 Y74.24
+
+G1 X31.04 Y74.24
+
+G1 X31.08 Y73.96
+
+G1 X31.08 Y73.96
+
+G1 X31.34 Y73.98
+
+G1 X31.34 Y73.98
+
+G1 X31.34 Y73.98
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.08 Y73.96
+M04 S1000
+G1 X31.08 Y73.96
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.04 Y74.24
+M04 S1000
+G1 X31.04 Y74.24
+G1 X31.3 Y74.28
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.8 Y73.98
+M04 S1000
+G1 X28.54 Y73.96
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.54 Y73.96
+M04 S1000
+G1 X28.5 Y74.24
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.5 Y74.24
+M04 S1000
+G1 X28.76 Y74.28
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.76 Y74.28
+M04 S1000
+G1 X28.76 Y74.28
+G1 X28.8 Y73.98
+
+G1 X28.8 Y73.98
+
+G1 X28.8 Y73.98
+
+G1 X28.54 Y73.96
+
+G1 X28.54 Y73.96
+
+G1 X28.54 Y73.96
+
+G1 X28.5 Y74.24
+
+G1 X28.5 Y74.24
+
+G1 X28.5 Y74.24
+
+G1 X28.76 Y74.28
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X26.56 Y73.6
+M04 S1000
+G1 X26.56 Y73.6
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X25.44 Y73.28
+M04 S1000
+G1 X25.44 Y73.28
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X25.66 Y74.48
+M04 S1000
+G1 X25.5 Y74.58
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X26.7 Y76.2
+M04 S1000
+G1 X26.7 Y76.2
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X26.06 Y76.8
+M04 S1000
+G1 X26.06 Y76.8
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.54 Y79.04
+M04 S1000
+G1 X28.5 Y79.32
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.5 Y79.32
+M04 S1000
+G1 X28.76 Y79.36
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.76 Y79.36
+M04 S1000
+G1 X28.76 Y79.36
+G1 X28.8 Y79.06
+
+G1 X28.54 Y79.04
+
+G1 X28.54 Y79.04
+
+G1 X28.8 Y79.06
+
+G1 X28.8 Y79.06
+
+G1 X28.8 Y79.06
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.54 Y79.04
+M04 S1000
+G1 X28.54 Y79.04
+G1 X28.5 Y79.32
+
+G1 X28.5 Y79.32
+
+G1 X28.5 Y79.32
+
+G1 X28.76 Y79.36
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.54 Y84.12
+M04 S1000
+G1 X28.5 Y84.4
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.5 Y84.4
+M04 S1000
+G1 X28.76 Y84.44
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.76 Y84.44
+M04 S1000
+G1 X28.76 Y84.44
+G1 X28.8 Y84.14
+
+G1 X28.54 Y84.12
+
+G1 X28.54 Y84.12
+
+G1 X28.8 Y84.14
+
+G1 X28.8 Y84.14
+
+G1 X28.8 Y84.14
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.54 Y84.12
+M04 S1000
+G1 X28.54 Y84.12
+G1 X28.5 Y84.4
+
+G1 X28.5 Y84.4
+
+G1 X28.5 Y84.4
+
+G1 X28.76 Y84.44
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X20.94 Y87.54
+M04 S1000
+G1 X20.94 Y87.54
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X20.14 Y86.94
+M04 S1000
+G1 X20.14 Y86.94
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X20.94 Y88.86
+M04 S1000
+G1 X20.94 Y88.86
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X17.72 Y88.94
+M04 S1000
+G1 X17.72 Y88.94
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X16.86 Y89.72
+M04 S1000
+G1 X16.86 Y89.72
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X16.06 Y89.44
+M04 S1000
+G1 X15.8 Y89.4
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.8 Y89.4
+M04 S1000
+G1 X15.8 Y89.4
+G1 X15.84 Y89.12
+
+G1 X15.84 Y89.12
+
+G1 X16.1 Y89.14
+
+G1 X16.1 Y89.14
+
+G1 X16.06 Y89.44
+
+G1 X16.06 Y89.44
+
+G1 X15.8 Y89.4
+
+G1 X15.84 Y89.12
+
+G1 X16.1 Y89.14
+
+G1 X16.1 Y89.14
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.84 Y89.12
+M04 S1000
+G1 X15.84 Y89.12
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.8 Y89.4
+M04 S1000
+G1 X15.8 Y89.4
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X14.9 Y88.98
+M04 S1000
+G1 X14.62 Y88.9
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X14.62 Y88.9
+M04 S1000
+G1 X14.44 Y88.78
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X14.44 Y88.78
+M04 S1000
+G1 X14.1 Y88.48
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X14.1 Y88.48
+M04 S1000
+G1 X14.28 Y88.58
+G1 X12.72 Y88.02
+
+G1 X11.78 Y87.98
+
+G1 X11.78 Y85.44
+
+G1 X11.78 Y82.9
+
+G1 X11.78 Y80.36
+
+G1 X11.78 Y77.82
+
+G1 X11.78 Y75.3
+
+G1 X11.78 Y72.74
+
+G1 X11.78 Y70.22
+
+G1 X11.74 Y67.94
+
+G1 X11.92 Y67.88
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.3 Y68.8
+M04 S1000
+G1 X13.26 Y69.08
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.26 Y69.08
+M04 S1000
+G1 X13.52 Y69.12
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.52 Y69.12
+M04 S1000
+G1 X13.52 Y69.12
+G1 X13.56 Y68.82
+
+G1 X13.3 Y68.8
+
+G1 X13.3 Y68.8
+
+G1 X13.56 Y68.82
+
+G1 X13.56 Y68.82
+
+G1 X13.56 Y68.82
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.3 Y68.8
+M04 S1000
+G1 X13.3 Y68.8
+G1 X13.26 Y69.08
+
+G1 X13.26 Y69.08
+
+G1 X13.26 Y69.08
+
+G1 X13.52 Y69.12
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X12.72 Y70.24
+M04 S1000
+G1 X11.78 Y70.22
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X11.78 Y70.22
+M04 S1000
+G1 X11.78 Y70.22
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X12.72 Y70.24
+M04 S1000
+G1 X14.12 Y70.72
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X14.12 Y70.72
+M04 S1000
+G1 X14.12 Y70.72
+G1 X14.44 Y71.0
+
+G1 X14.62 Y71.12
+
+G1 X15.02 Y71.22
+
+G1 X15.02 Y71.22
+
+G1 X15.1 Y71.46
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.02 Y71.22
+M04 S1000
+G1 X15.02 Y71.22
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.84 Y71.34
+M04 S1000
+G1 X15.8 Y71.62
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.8 Y71.62
+M04 S1000
+G1 X16.06 Y71.66
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X16.06 Y71.66
+M04 S1000
+G1 X16.06 Y71.66
+G1 X16.1 Y71.36
+
+G1 X15.84 Y71.34
+
+G1 X15.84 Y71.34
+
+G1 X16.1 Y71.36
+
+G1 X16.1 Y71.36
+
+G1 X16.1 Y71.36
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.84 Y71.34
+M04 S1000
+G1 X15.84 Y71.34
+G1 X15.8 Y71.62
+
+G1 X15.8 Y71.62
+
+G1 X15.8 Y71.62
+
+G1 X16.06 Y71.66
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.84 Y73.88
+M04 S1000
+G1 X15.8 Y74.16
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.8 Y74.16
+M04 S1000
+G1 X16.06 Y74.2
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X16.06 Y74.2
+M04 S1000
+G1 X16.06 Y74.2
+G1 X16.1 Y73.9
+
+G1 X15.84 Y73.88
+
+G1 X15.84 Y73.88
+
+G1 X16.1 Y73.9
+
+G1 X16.1 Y73.9
+
+G1 X16.1 Y73.9
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.84 Y73.88
+M04 S1000
+G1 X15.84 Y73.88
+G1 X15.8 Y74.16
+
+G1 X15.8 Y74.16
+
+G1 X15.8 Y74.16
+
+G1 X16.06 Y74.2
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.0 Y73.74
+M04 S1000
+G1 X15.0 Y73.74
+G1 X14.62 Y73.66
+
+G1 X14.44 Y73.54
+
+G1 X14.12 Y73.26
+
+G1 X14.12 Y73.26
+
+G1 X12.72 Y72.78
+
+G1 X11.78 Y72.74
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.26 Y71.62
+M04 S1000
+G1 X13.52 Y71.66
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.52 Y71.66
+M04 S1000
+G1 X13.52 Y71.66
+G1 X13.56 Y71.36
+
+G1 X13.3 Y71.34
+
+G1 X13.26 Y71.62
+
+G1 X13.26 Y71.62
+
+G1 X13.3 Y71.34
+
+G1 X13.3 Y71.34
+
+G1 X13.56 Y71.36
+
+G1 X13.56 Y71.36
+
+G1 X13.56 Y71.36
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.3 Y71.34
+M04 S1000
+G1 X13.3 Y71.34
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.26 Y71.62
+M04 S1000
+G1 X13.26 Y71.62
+G1 X13.52 Y71.66
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.3 Y73.88
+M04 S1000
+G1 X13.26 Y74.16
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.26 Y74.16
+M04 S1000
+G1 X13.52 Y74.2
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.52 Y74.2
+M04 S1000
+G1 X13.52 Y74.2
+G1 X13.56 Y73.9
+
+G1 X13.3 Y73.88
+
+G1 X13.3 Y73.88
+
+G1 X13.56 Y73.9
+
+G1 X13.56 Y73.9
+
+G1 X13.56 Y73.9
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.3 Y73.88
+M04 S1000
+G1 X13.3 Y73.88
+G1 X13.26 Y74.16
+
+G1 X13.26 Y74.16
+
+G1 X13.26 Y74.16
+
+G1 X13.52 Y74.2
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X12.72 Y75.32
+M04 S1000
+G1 X11.78 Y75.3
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X11.78 Y75.3
+M04 S1000
+G1 X11.78 Y75.3
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X12.72 Y75.32
+M04 S1000
+G1 X14.1 Y75.78
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X14.1 Y75.78
+M04 S1000
+G1 X14.28 Y75.88
+G1 X14.44 Y76.08
+
+G1 X14.62 Y76.2
+
+G1 X15.04 Y76.28
+
+G1 X15.04 Y76.28
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.84 Y76.42
+M04 S1000
+G1 X15.8 Y76.7
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.8 Y76.7
+M04 S1000
+G1 X16.06 Y76.74
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X16.06 Y76.74
+M04 S1000
+G1 X16.06 Y76.74
+G1 X16.1 Y76.44
+
+G1 X15.84 Y76.42
+
+G1 X15.84 Y76.42
+
+G1 X16.1 Y76.44
+
+G1 X16.1 Y76.44
+
+G1 X16.1 Y76.44
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.84 Y76.42
+M04 S1000
+G1 X15.84 Y76.42
+G1 X15.8 Y76.7
+
+G1 X15.8 Y76.7
+
+G1 X15.8 Y76.7
+
+G1 X16.06 Y76.74
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X16.44 Y77.24
+M04 S1000
+G1 X16.76 Y77.12
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X16.76 Y77.12
+M04 S1000
+G1 X17.38 Y76.9
+G1 X16.76 Y77.12
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X16.1 Y78.98
+M04 S1000
+G1 X15.84 Y78.96
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.84 Y78.96
+M04 S1000
+G1 X15.8 Y79.24
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.8 Y79.24
+M04 S1000
+G1 X16.06 Y79.28
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X16.06 Y79.28
+M04 S1000
+G1 X16.06 Y79.28
+G1 X16.1 Y78.98
+
+G1 X16.1 Y78.98
+
+G1 X16.1 Y78.98
+
+G1 X15.84 Y78.96
+
+G1 X15.84 Y78.96
+
+G1 X15.84 Y78.96
+
+G1 X15.8 Y79.24
+
+G1 X15.8 Y79.24
+
+G1 X15.8 Y79.24
+
+G1 X16.06 Y79.28
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.0 Y78.82
+M04 S1000
+G1 X15.0 Y78.82
+G1 X14.62 Y78.74
+
+G1 X14.44 Y78.62
+
+G1 X14.12 Y78.34
+
+G1 X14.12 Y78.34
+
+G1 X12.72 Y77.86
+
+G1 X11.78 Y77.82
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.26 Y76.7
+M04 S1000
+G1 X13.52 Y76.74
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.52 Y76.74
+M04 S1000
+G1 X13.52 Y76.74
+G1 X13.56 Y76.44
+
+G1 X13.3 Y76.42
+
+G1 X13.26 Y76.7
+
+G1 X13.26 Y76.7
+
+G1 X13.3 Y76.42
+
+G1 X13.3 Y76.42
+
+G1 X13.56 Y76.44
+
+G1 X13.56 Y76.44
+
+G1 X13.56 Y76.44
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.3 Y76.42
+M04 S1000
+G1 X13.3 Y76.42
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.26 Y76.7
+M04 S1000
+G1 X13.26 Y76.7
+G1 X13.52 Y76.74
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.3 Y78.96
+M04 S1000
+G1 X13.26 Y79.24
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.26 Y79.24
+M04 S1000
+G1 X13.52 Y79.28
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.52 Y79.28
+M04 S1000
+G1 X13.52 Y79.28
+G1 X13.56 Y78.98
+
+G1 X13.3 Y78.96
+
+G1 X13.3 Y78.96
+
+G1 X13.56 Y78.98
+
+G1 X13.56 Y78.98
+
+G1 X13.56 Y78.98
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.3 Y78.96
+M04 S1000
+G1 X13.3 Y78.96
+G1 X13.26 Y79.24
+
+G1 X13.26 Y79.24
+
+G1 X13.26 Y79.24
+
+G1 X13.52 Y79.28
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X12.72 Y80.4
+M04 S1000
+G1 X11.78 Y80.36
+G1 X14.12 Y80.88
+
+G1 X14.12 Y80.88
+
+G1 X14.44 Y81.16
+
+G1 X14.62 Y81.28
+
+G1 X15.02 Y81.38
+
+G1 X15.02 Y81.38
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.84 Y81.5
+M04 S1000
+G1 X15.8 Y81.78
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.8 Y81.78
+M04 S1000
+G1 X16.06 Y81.82
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X16.06 Y81.82
+M04 S1000
+G1 X16.06 Y81.82
+G1 X16.1 Y81.52
+
+G1 X15.84 Y81.5
+
+G1 X15.84 Y81.5
+
+G1 X16.1 Y81.52
+
+G1 X16.1 Y81.52
+
+G1 X16.1 Y81.52
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.84 Y81.5
+M04 S1000
+G1 X15.84 Y81.5
+G1 X15.8 Y81.78
+
+G1 X15.8 Y81.78
+
+G1 X15.8 Y81.78
+
+G1 X16.06 Y81.82
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.84 Y84.04
+M04 S1000
+G1 X15.8 Y84.32
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.8 Y84.32
+M04 S1000
+G1 X16.06 Y84.36
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X16.06 Y84.36
+M04 S1000
+G1 X16.06 Y84.36
+G1 X16.1 Y84.06
+
+G1 X15.84 Y84.04
+
+G1 X15.84 Y84.04
+
+G1 X16.1 Y84.06
+
+G1 X16.1 Y84.06
+
+G1 X16.1 Y84.06
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.84 Y84.04
+M04 S1000
+G1 X15.84 Y84.04
+G1 X15.8 Y84.32
+
+G1 X15.8 Y84.32
+
+G1 X15.8 Y84.32
+
+G1 X16.06 Y84.36
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.0 Y83.9
+M04 S1000
+G1 X15.0 Y83.9
+G1 X14.62 Y83.82
+
+G1 X14.44 Y83.7
+
+G1 X14.12 Y83.42
+
+G1 X14.12 Y83.42
+
+G1 X12.72 Y82.94
+
+G1 X11.78 Y82.9
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.26 Y81.78
+M04 S1000
+G1 X13.52 Y81.82
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.52 Y81.82
+M04 S1000
+G1 X13.52 Y81.82
+G1 X13.56 Y81.52
+
+G1 X13.3 Y81.5
+
+G1 X13.26 Y81.78
+
+G1 X13.26 Y81.78
+
+G1 X13.3 Y81.5
+
+G1 X13.3 Y81.5
+
+G1 X13.56 Y81.52
+
+G1 X13.56 Y81.52
+
+G1 X13.56 Y81.52
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.3 Y81.5
+M04 S1000
+G1 X13.3 Y81.5
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.26 Y81.78
+M04 S1000
+G1 X13.26 Y81.78
+G1 X13.52 Y81.82
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.3 Y84.04
+M04 S1000
+G1 X13.26 Y84.32
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.26 Y84.32
+M04 S1000
+G1 X13.52 Y84.36
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.52 Y84.36
+M04 S1000
+G1 X13.52 Y84.36
+G1 X13.56 Y84.06
+
+G1 X13.3 Y84.04
+
+G1 X13.3 Y84.04
+
+G1 X13.56 Y84.06
+
+G1 X13.56 Y84.06
+
+G1 X13.56 Y84.06
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.3 Y84.04
+M04 S1000
+G1 X13.3 Y84.04
+G1 X13.26 Y84.32
+
+G1 X13.26 Y84.32
+
+G1 X13.26 Y84.32
+
+G1 X13.52 Y84.36
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X12.72 Y85.48
+M04 S1000
+G1 X11.78 Y85.44
+G1 X14.12 Y85.96
+
+G1 X14.12 Y85.96
+
+G1 X14.44 Y86.24
+
+G1 X14.62 Y86.36
+
+G1 X15.04 Y86.44
+
+G1 X15.04 Y86.44
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.84 Y86.58
+M04 S1000
+G1 X15.8 Y86.86
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.8 Y86.86
+M04 S1000
+G1 X16.06 Y86.9
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X16.06 Y86.9
+M04 S1000
+G1 X16.06 Y86.9
+G1 X16.1 Y86.6
+
+G1 X15.84 Y86.58
+
+G1 X15.84 Y86.58
+
+G1 X16.1 Y86.6
+
+G1 X16.1 Y86.6
+
+G1 X16.1 Y86.6
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.84 Y86.58
+M04 S1000
+G1 X15.84 Y86.58
+G1 X15.8 Y86.86
+
+G1 X15.8 Y86.86
+
+G1 X15.8 Y86.86
+
+G1 X16.06 Y86.9
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.56 Y86.6
+M04 S1000
+G1 X13.3 Y86.58
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.3 Y86.58
+M04 S1000
+G1 X13.26 Y86.86
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.26 Y86.86
+M04 S1000
+G1 X13.52 Y86.9
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.52 Y86.9
+M04 S1000
+G1 X13.52 Y86.9
+G1 X13.56 Y86.6
+
+G1 X13.56 Y86.6
+
+G1 X13.56 Y86.6
+
+G1 X13.3 Y86.58
+
+G1 X13.3 Y86.58
+
+G1 X13.3 Y86.58
+
+G1 X13.26 Y86.86
+
+G1 X13.26 Y86.86
+
+G1 X13.26 Y86.86
+
+G1 X13.52 Y86.9
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X11.78 Y87.98
+M04 S1000
+G1 X11.78 Y90.52
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X11.78 Y90.52
+M04 S1000
+G1 X12.72 Y90.56
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X12.72 Y90.56
+M04 S1000
+G1 X14.12 Y91.04
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X14.12 Y91.04
+M04 S1000
+G1 X14.12 Y91.04
+G1 X14.44 Y91.32
+
+G1 X14.62 Y91.44
+
+G1 X15.02 Y91.54
+
+G1 X15.02 Y91.54
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.84 Y91.66
+M04 S1000
+G1 X15.8 Y91.94
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.8 Y91.94
+M04 S1000
+G1 X16.06 Y91.98
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X16.06 Y91.98
+M04 S1000
+G1 X16.06 Y91.98
+G1 X16.1 Y91.68
+
+G1 X15.84 Y91.66
+
+G1 X15.84 Y91.66
+
+G1 X16.1 Y91.68
+
+G1 X16.1 Y91.68
+
+G1 X16.1 Y91.68
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.84 Y91.66
+M04 S1000
+G1 X15.84 Y91.66
+G1 X15.8 Y91.94
+
+G1 X15.8 Y91.94
+
+G1 X15.8 Y91.94
+
+G1 X16.06 Y91.98
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X17.28 Y92.26
+M04 S1000
+G1 X17.28 Y92.26
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X16.1 Y94.22
+M04 S1000
+G1 X15.84 Y94.2
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.84 Y94.2
+M04 S1000
+G1 X15.8 Y94.48
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.8 Y94.48
+M04 S1000
+G1 X16.06 Y94.52
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X16.06 Y94.52
+M04 S1000
+G1 X16.06 Y94.52
+G1 X16.1 Y94.22
+
+G1 X16.1 Y94.22
+
+G1 X16.1 Y94.22
+
+G1 X15.84 Y94.2
+
+G1 X15.84 Y94.2
+
+G1 X15.84 Y94.2
+
+G1 X15.8 Y94.48
+
+G1 X15.8 Y94.48
+
+G1 X15.8 Y94.48
+
+G1 X16.06 Y94.52
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.0 Y94.06
+M04 S1000
+G1 X15.0 Y94.06
+G1 X14.62 Y93.98
+
+G1 X14.44 Y93.86
+
+G1 X14.12 Y93.58
+
+G1 X14.12 Y93.58
+
+G1 X12.72 Y93.1
+
+G1 X11.78 Y93.06
+
+G1 X11.78 Y90.52
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.26 Y89.4
+M04 S1000
+G1 X13.52 Y89.44
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.52 Y89.44
+M04 S1000
+G1 X13.52 Y89.44
+G1 X13.56 Y89.14
+
+G1 X13.3 Y89.12
+
+G1 X13.26 Y89.4
+
+G1 X13.26 Y89.4
+
+G1 X13.3 Y89.12
+
+G1 X13.3 Y89.12
+
+G1 X13.56 Y89.14
+
+G1 X13.56 Y89.14
+
+G1 X13.56 Y89.14
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.3 Y89.12
+M04 S1000
+G1 X13.3 Y89.12
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.26 Y89.4
+M04 S1000
+G1 X13.26 Y89.4
+G1 X13.52 Y89.44
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.3 Y91.66
+M04 S1000
+G1 X13.26 Y91.94
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.26 Y91.94
+M04 S1000
+G1 X13.52 Y91.98
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.52 Y91.98
+M04 S1000
+G1 X13.52 Y91.98
+G1 X13.56 Y91.68
+
+G1 X13.3 Y91.66
+
+G1 X13.3 Y91.66
+
+G1 X13.56 Y91.68
+
+G1 X13.56 Y91.68
+
+G1 X13.56 Y91.68
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.3 Y91.66
+M04 S1000
+G1 X13.3 Y91.66
+G1 X13.26 Y91.94
+
+G1 X13.26 Y91.94
+
+G1 X13.26 Y91.94
+
+G1 X13.52 Y91.98
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X11.78 Y93.06
+M04 S1000
+G1 X11.78 Y95.6
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X11.78 Y95.6
+M04 S1000
+G1 X12.72 Y95.64
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X12.72 Y95.64
+M04 S1000
+G1 X14.12 Y96.12
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X14.12 Y96.12
+M04 S1000
+G1 X14.12 Y96.12
+G1 X14.44 Y96.4
+
+G1 X14.62 Y96.52
+
+G1 X15.0 Y96.6
+
+G1 X15.0 Y96.6
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.84 Y96.74
+M04 S1000
+G1 X15.8 Y97.02
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.8 Y97.02
+M04 S1000
+G1 X16.06 Y97.06
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X16.06 Y97.06
+M04 S1000
+G1 X16.06 Y97.06
+G1 X16.1 Y96.76
+
+G1 X15.84 Y96.74
+
+G1 X15.84 Y96.74
+
+G1 X16.1 Y96.76
+
+G1 X16.1 Y96.76
+
+G1 X16.1 Y96.76
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.84 Y96.74
+M04 S1000
+G1 X15.84 Y96.74
+G1 X15.8 Y97.02
+
+G1 X15.8 Y97.02
+
+G1 X15.8 Y97.02
+
+G1 X16.06 Y97.06
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X16.86 Y97.34
+M04 S1000
+G1 X16.86 Y97.34
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X17.72 Y96.56
+M04 S1000
+G1 X17.72 Y96.56
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X18.62 Y95.12
+M04 S1000
+G1 X18.62 Y95.12
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X16.1 Y99.3
+M04 S1000
+G1 X15.84 Y99.28
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.84 Y99.28
+M04 S1000
+G1 X15.8 Y99.56
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.8 Y99.56
+M04 S1000
+G1 X16.06 Y99.6
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X16.06 Y99.6
+M04 S1000
+G1 X16.06 Y99.6
+G1 X16.1 Y99.3
+
+G1 X16.1 Y99.3
+
+G1 X16.1 Y99.3
+
+G1 X15.84 Y99.28
+
+G1 X15.84 Y99.28
+
+G1 X15.84 Y99.28
+
+G1 X15.8 Y99.56
+
+G1 X15.8 Y99.56
+
+G1 X15.8 Y99.56
+
+G1 X16.06 Y99.6
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.22 Y99.92
+M04 S1000
+G1 X15.22 Y99.92
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X14.96 Y99.24
+M04 S1000
+G1 X14.96 Y99.24
+G1 X14.48 Y99.08
+
+G1 X14.48 Y99.08
+
+G1 X13.98 Y98.62
+
+G1 X12.72 Y98.16
+
+G1 X11.78 Y98.14
+
+G1 X11.78 Y95.6
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.26 Y94.48
+M04 S1000
+G1 X13.52 Y94.52
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.52 Y94.52
+M04 S1000
+G1 X13.52 Y94.52
+G1 X13.56 Y94.22
+
+G1 X13.3 Y94.2
+
+G1 X13.26 Y94.48
+
+G1 X13.26 Y94.48
+
+G1 X13.3 Y94.2
+
+G1 X13.3 Y94.2
+
+G1 X13.56 Y94.22
+
+G1 X13.56 Y94.22
+
+G1 X13.56 Y94.22
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.3 Y94.2
+M04 S1000
+G1 X13.3 Y94.2
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.26 Y94.48
+M04 S1000
+G1 X13.26 Y94.48
+G1 X13.52 Y94.52
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.3 Y96.74
+M04 S1000
+G1 X13.26 Y97.02
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.26 Y97.02
+M04 S1000
+G1 X13.52 Y97.06
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.52 Y97.06
+M04 S1000
+G1 X13.52 Y97.06
+G1 X13.56 Y96.76
+
+G1 X13.3 Y96.74
+
+G1 X13.3 Y96.74
+
+G1 X13.56 Y96.76
+
+G1 X13.56 Y96.76
+
+G1 X13.56 Y96.76
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.3 Y96.74
+M04 S1000
+G1 X13.3 Y96.74
+G1 X13.26 Y97.02
+
+G1 X13.26 Y97.02
+
+G1 X13.26 Y97.02
+
+G1 X13.52 Y97.06
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.8 Y98.54
+M04 S1000
+G1 X13.98 Y98.62
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.56 Y99.3
+M04 S1000
+G1 X13.3 Y99.28
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.3 Y99.28
+M04 S1000
+G1 X13.26 Y99.56
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.26 Y99.56
+M04 S1000
+G1 X13.52 Y99.6
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.52 Y99.6
+M04 S1000
+G1 X13.52 Y99.6
+G1 X13.56 Y99.3
+
+G1 X13.56 Y99.3
+
+G1 X13.56 Y99.3
+
+G1 X13.3 Y99.28
+
+G1 X13.3 Y99.28
+
+G1 X13.3 Y99.28
+
+G1 X13.26 Y99.56
+
+G1 X13.26 Y99.56
+
+G1 X13.26 Y99.56
+
+G1 X13.52 Y99.6
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X12.16 Y100.24
+M04 S1000
+G1 X12.26 Y100.42
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X12.26 Y100.42
+M04 S1000
+G1 X12.26 Y100.42
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X11.76 Y99.1
+M04 S1000
+G1 X11.78 Y98.14
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.32 Y98.94
+M04 S1000
+G1 X15.32 Y98.94
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X17.86 Y79.62
+M04 S1000
+G1 X17.86 Y79.62
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X25.16 Y70.82
+M04 S1000
+G1 X25.32 Y70.72
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X25.26 Y69.4
+M04 S1000
+G1 X25.26 Y69.4
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X25.14 Y68.2
+M04 S1000
+G1 X25.14 Y68.2
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.54 Y68.88
+M04 S1000
+G1 X28.5 Y69.16
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.5 Y69.16
+M04 S1000
+G1 X28.76 Y69.2
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.76 Y69.2
+M04 S1000
+G1 X28.76 Y69.2
+G1 X28.8 Y68.9
+
+G1 X28.54 Y68.88
+
+G1 X28.54 Y68.88
+
+G1 X28.8 Y68.9
+
+G1 X28.8 Y68.9
+
+G1 X28.8 Y68.9
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.54 Y68.88
+M04 S1000
+G1 X28.54 Y68.88
+G1 X28.5 Y69.16
+
+G1 X28.5 Y69.16
+
+G1 X28.5 Y69.16
+
+G1 X28.76 Y69.2
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X30.12 Y69.16
+M04 S1000
+G1 X30.12 Y69.16
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X30.9 Y69.58
+M04 S1000
+G1 X30.9 Y69.58
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.04 Y69.16
+M04 S1000
+G1 X31.3 Y69.2
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.3 Y69.2
+M04 S1000
+G1 X31.3 Y69.2
+G1 X31.34 Y68.9
+
+G1 X31.08 Y68.88
+
+G1 X31.04 Y69.16
+
+G1 X31.04 Y69.16
+
+G1 X31.08 Y68.88
+
+G1 X31.08 Y68.88
+
+G1 X31.34 Y68.9
+
+G1 X31.34 Y68.9
+
+G1 X31.34 Y68.9
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.08 Y68.88
+M04 S1000
+G1 X31.08 Y68.88
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.04 Y69.16
+M04 S1000
+G1 X31.04 Y69.16
+G1 X31.3 Y69.2
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.58 Y68.34
+M04 S1000
+G1 X35.28 Y68.4
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X35.28 Y68.4
+M04 S1000
+G1 X35.86 Y68.4
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X37.22 Y67.38
+M04 S1000
+G1 X37.22 Y67.38
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X35.76 Y64.4
+M04 S1000
+G1 X35.76 Y64.4
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X35.68 Y63.14
+M04 S1000
+G1 X35.68 Y63.14
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X36.54 Y62.32
+M04 S1000
+G1 X36.74 Y62.24
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X35.18 Y60.72
+M04 S1000
+G1 X35.18 Y60.72
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X34.68 Y59.5
+M04 S1000
+G1 X32.08 Y59.48
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X32.08 Y59.48
+M04 S1000
+G1 X30.92 Y59.42
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X30.92 Y59.42
+M04 S1000
+G1 X30.92 Y59.42
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.04 Y59.0
+M04 S1000
+G1 X31.3 Y59.04
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.3 Y59.04
+M04 S1000
+G1 X31.3 Y59.04
+G1 X31.34 Y58.74
+
+G1 X31.08 Y58.72
+
+G1 X31.04 Y59.0
+
+G1 X31.04 Y59.0
+
+G1 X31.08 Y58.72
+
+G1 X31.08 Y58.72
+
+G1 X31.34 Y58.74
+
+G1 X31.34 Y58.74
+
+G1 X31.34 Y58.74
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.08 Y58.72
+M04 S1000
+G1 X31.08 Y58.72
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.04 Y59.0
+M04 S1000
+G1 X31.04 Y59.0
+G1 X31.3 Y59.04
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X30.12 Y59.0
+M04 S1000
+G1 X30.12 Y59.0
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.8 Y58.74
+M04 S1000
+G1 X28.54 Y58.72
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.54 Y58.72
+M04 S1000
+G1 X28.5 Y59.0
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.5 Y59.0
+M04 S1000
+G1 X28.76 Y59.04
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.76 Y59.04
+M04 S1000
+G1 X28.76 Y59.04
+G1 X28.8 Y58.74
+
+G1 X28.8 Y58.74
+
+G1 X28.8 Y58.74
+
+G1 X28.54 Y58.72
+
+G1 X28.54 Y58.72
+
+G1 X28.54 Y58.72
+
+G1 X28.5 Y59.0
+
+G1 X28.5 Y59.0
+
+G1 X28.5 Y59.0
+
+G1 X28.76 Y59.04
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.54 Y61.26
+M04 S1000
+G1 X28.5 Y61.54
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.5 Y61.54
+M04 S1000
+G1 X28.76 Y61.58
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.76 Y61.58
+M04 S1000
+G1 X28.76 Y61.58
+G1 X28.8 Y61.28
+
+G1 X28.54 Y61.26
+
+G1 X28.54 Y61.26
+
+G1 X28.8 Y61.28
+
+G1 X28.8 Y61.28
+
+G1 X28.8 Y61.28
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.54 Y61.26
+M04 S1000
+G1 X28.54 Y61.26
+G1 X28.5 Y61.54
+
+G1 X28.5 Y61.54
+
+G1 X28.5 Y61.54
+
+G1 X28.76 Y61.58
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X30.44 Y61.84
+M04 S1000
+G1 X30.44 Y61.84
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.04 Y61.54
+M04 S1000
+G1 X31.3 Y61.58
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.3 Y61.58
+M04 S1000
+G1 X31.3 Y61.58
+G1 X31.34 Y61.28
+
+G1 X31.08 Y61.26
+
+G1 X31.04 Y61.54
+
+G1 X31.04 Y61.54
+
+G1 X31.08 Y61.26
+
+G1 X31.08 Y61.26
+
+G1 X31.34 Y61.28
+
+G1 X31.34 Y61.28
+
+G1 X31.34 Y61.28
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.08 Y61.26
+M04 S1000
+G1 X31.08 Y61.26
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.04 Y61.54
+M04 S1000
+G1 X31.04 Y61.54
+G1 X31.3 Y61.58
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.08 Y63.8
+M04 S1000
+G1 X31.04 Y64.08
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.04 Y64.08
+M04 S1000
+G1 X31.3 Y64.12
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.3 Y64.12
+M04 S1000
+G1 X31.3 Y64.12
+G1 X31.34 Y63.82
+
+G1 X31.08 Y63.8
+
+G1 X31.08 Y63.8
+
+G1 X31.34 Y63.82
+
+G1 X31.34 Y63.82
+
+G1 X31.34 Y63.82
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.08 Y63.8
+M04 S1000
+G1 X31.08 Y63.8
+G1 X31.04 Y64.08
+
+G1 X31.04 Y64.08
+
+G1 X31.04 Y64.08
+
+G1 X31.3 Y64.12
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X29.32 Y63.48
+M04 S1000
+G1 X29.32 Y63.48
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.8 Y63.82
+M04 S1000
+G1 X28.54 Y63.8
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.54 Y63.8
+M04 S1000
+G1 X28.5 Y64.08
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.5 Y64.08
+M04 S1000
+G1 X28.76 Y64.12
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.76 Y64.12
+M04 S1000
+G1 X28.76 Y64.12
+G1 X28.8 Y63.82
+
+G1 X28.8 Y63.82
+
+G1 X28.8 Y63.82
+
+G1 X28.54 Y63.8
+
+G1 X28.54 Y63.8
+
+G1 X28.54 Y63.8
+
+G1 X28.5 Y64.08
+
+G1 X28.5 Y64.08
+
+G1 X28.5 Y64.08
+
+G1 X28.76 Y64.12
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.54 Y66.34
+M04 S1000
+G1 X28.5 Y66.62
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.5 Y66.62
+M04 S1000
+G1 X28.76 Y66.66
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.76 Y66.66
+M04 S1000
+G1 X28.76 Y66.66
+G1 X28.8 Y66.36
+
+G1 X28.54 Y66.34
+
+G1 X28.54 Y66.34
+
+G1 X28.8 Y66.36
+
+G1 X28.8 Y66.36
+
+G1 X28.8 Y66.36
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.54 Y66.34
+M04 S1000
+G1 X28.54 Y66.34
+G1 X28.5 Y66.62
+
+G1 X28.5 Y66.62
+
+G1 X28.5 Y66.62
+
+G1 X28.76 Y66.66
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.04 Y66.62
+M04 S1000
+G1 X31.3 Y66.66
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.3 Y66.66
+M04 S1000
+G1 X31.3 Y66.66
+G1 X31.34 Y66.36
+
+G1 X31.08 Y66.34
+
+G1 X31.04 Y66.62
+
+G1 X31.04 Y66.62
+
+G1 X31.08 Y66.34
+
+G1 X31.08 Y66.34
+
+G1 X31.34 Y66.36
+
+G1 X31.34 Y66.36
+
+G1 X31.34 Y66.36
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.08 Y66.34
+M04 S1000
+G1 X31.08 Y66.34
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.04 Y66.62
+M04 S1000
+G1 X31.04 Y66.62
+G1 X31.3 Y66.66
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.08 Y71.42
+M04 S1000
+G1 X31.04 Y71.7
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.04 Y71.7
+M04 S1000
+G1 X31.3 Y71.74
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.3 Y71.74
+M04 S1000
+G1 X31.3 Y71.74
+G1 X31.34 Y71.44
+
+G1 X31.08 Y71.42
+
+G1 X31.08 Y71.42
+
+G1 X31.34 Y71.44
+
+G1 X31.34 Y71.44
+
+G1 X31.34 Y71.44
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.08 Y71.42
+M04 S1000
+G1 X31.08 Y71.42
+G1 X31.04 Y71.7
+
+G1 X31.04 Y71.7
+
+G1 X31.04 Y71.7
+
+G1 X31.3 Y71.74
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X30.12 Y71.7
+M04 S1000
+G1 X30.12 Y71.7
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.8 Y71.44
+M04 S1000
+G1 X28.54 Y71.42
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.54 Y71.42
+M04 S1000
+G1 X28.5 Y71.7
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.5 Y71.7
+M04 S1000
+G1 X28.76 Y71.74
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.76 Y71.74
+M04 S1000
+G1 X28.76 Y71.74
+G1 X28.8 Y71.44
+
+G1 X28.8 Y71.44
+
+G1 X28.8 Y71.44
+
+G1 X28.54 Y71.42
+
+G1 X28.54 Y71.42
+
+G1 X28.54 Y71.42
+
+G1 X28.5 Y71.7
+
+G1 X28.5 Y71.7
+
+G1 X28.5 Y71.7
+
+G1 X28.76 Y71.74
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X24.78 Y64.32
+M04 S1000
+G1 X24.78 Y64.32
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X24.66 Y63.12
+M04 S1000
+G1 X24.66 Y63.12
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X24.38 Y60.66
+M04 S1000
+G1 X24.54 Y60.56
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X23.98 Y58.16
+M04 S1000
+G1 X23.98 Y58.16
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X25.0 Y55.76
+M04 S1000
+G1 X25.0 Y55.76
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X24.54 Y54.7
+M04 S1000
+G1 X24.74 Y54.62
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X24.56 Y53.34
+M04 S1000
+G1 X24.76 Y53.26
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X23.18 Y51.6
+M04 S1000
+G1 X23.18 Y51.6
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X21.82 Y47.88
+M04 S1000
+G1 X21.82 Y47.88
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X21.8 Y46.54
+M04 S1000
+G1 X21.8 Y46.54
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X22.66 Y45.72
+M04 S1000
+G1 X22.86 Y45.64
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X21.68 Y45.34
+M04 S1000
+G1 X21.68 Y45.34
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X22.4 Y43.12
+M04 S1000
+G1 X22.64 Y43.02
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X22.64 Y43.02
+M04 S1000
+G1 X22.86 Y42.96
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X21.52 Y40.42
+M04 S1000
+G1 X21.3 Y40.52
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X19.92 Y40.26
+M04 S1000
+G1 X19.92 Y40.26
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X17.16 Y36.64
+M04 S1000
+G1 X13.08 Y36.64
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.08 Y36.64
+M04 S1000
+G1 X12.6 Y36.76
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X11.56 Y37.76
+M04 S1000
+G1 X11.56 Y37.76
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.1 Y39.92
+M04 S1000
+G1 X13.1 Y39.92
+G1 X13.32 Y39.96
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.8 Y40.12
+M04 S1000
+G1 X13.98 Y40.2
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.56 Y40.88
+M04 S1000
+G1 X13.3 Y40.86
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.3 Y40.86
+M04 S1000
+G1 X13.26 Y41.14
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.26 Y41.14
+M04 S1000
+G1 X13.52 Y41.18
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.52 Y41.18
+M04 S1000
+G1 X13.52 Y41.18
+G1 X13.56 Y40.88
+
+G1 X13.56 Y40.88
+
+G1 X13.56 Y40.88
+
+G1 X13.3 Y40.86
+
+G1 X13.3 Y40.86
+
+G1 X13.3 Y40.86
+
+G1 X13.26 Y41.14
+
+G1 X13.26 Y41.14
+
+G1 X13.26 Y41.14
+
+G1 X13.52 Y41.18
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.3 Y53.56
+M04 S1000
+G1 X13.26 Y53.84
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.26 Y53.84
+M04 S1000
+G1 X13.52 Y53.88
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.52 Y53.88
+M04 S1000
+G1 X13.52 Y53.88
+G1 X13.56 Y53.58
+
+G1 X13.3 Y53.56
+
+G1 X13.3 Y53.56
+
+G1 X13.56 Y53.58
+
+G1 X13.56 Y53.58
+
+G1 X13.56 Y53.58
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.3 Y53.56
+M04 S1000
+G1 X13.3 Y53.56
+G1 X13.26 Y53.84
+
+G1 X13.26 Y53.84
+
+G1 X13.26 Y53.84
+
+G1 X13.52 Y53.88
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.3 Y58.64
+M04 S1000
+G1 X13.26 Y58.92
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.26 Y58.92
+M04 S1000
+G1 X13.52 Y58.96
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.52 Y58.96
+M04 S1000
+G1 X13.52 Y58.96
+G1 X13.56 Y58.66
+
+G1 X13.3 Y58.64
+
+G1 X13.3 Y58.64
+
+G1 X13.56 Y58.66
+
+G1 X13.56 Y58.66
+
+G1 X13.56 Y58.66
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.3 Y58.64
+M04 S1000
+G1 X13.3 Y58.64
+G1 X13.26 Y58.92
+
+G1 X13.26 Y58.92
+
+G1 X13.26 Y58.92
+
+G1 X13.52 Y58.96
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X12.3 Y60.12
+M04 S1000
+G1 X12.3 Y60.12
+G1 X12.24 Y60.46
+
+G1 X12.24 Y62.22
+
+G1 X12.3 Y62.66
+
+G1 X12.22 Y63.0
+
+G1 X12.22 Y63.38
+
+G1 X12.3 Y62.66
+
+G1 X12.3 Y62.66
+
+G1 X12.3 Y62.66
+
+G1 X12.72 Y62.62
+
+G1 X13.98 Y63.04
+
+G1 X14.22 Y63.16
+
+G1 X14.38 Y63.34
+
+G1 X14.62 Y63.5
+
+G1 X15.04 Y63.6
+
+G1 X15.04 Y63.6
+
+G1 X15.1 Y63.84
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X15.04 Y63.6
+M04 S1000
+G1 X15.04 Y63.6
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.56 Y63.74
+M04 S1000
+G1 X13.3 Y63.72
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.3 Y63.72
+M04 S1000
+G1 X13.26 Y64.0
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.26 Y64.0
+M04 S1000
+G1 X13.52 Y64.04
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.52 Y64.04
+M04 S1000
+G1 X13.52 Y64.04
+G1 X13.56 Y63.74
+
+G1 X13.56 Y63.74
+
+G1 X13.56 Y63.74
+
+G1 X13.3 Y63.72
+
+G1 X13.3 Y63.72
+
+G1 X13.3 Y63.72
+
+G1 X13.26 Y64.0
+
+G1 X13.26 Y64.0
+
+G1 X13.26 Y64.0
+
+G1 X13.52 Y64.04
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X12.3 Y62.66
+M04 S1000
+G1 X12.3 Y62.66
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.26 Y61.46
+M04 S1000
+G1 X13.52 Y61.5
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.52 Y61.5
+M04 S1000
+G1 X13.52 Y61.5
+G1 X13.56 Y61.2
+
+G1 X13.3 Y61.18
+
+G1 X13.26 Y61.46
+
+G1 X13.26 Y61.46
+
+G1 X13.3 Y61.18
+
+G1 X13.3 Y61.18
+
+G1 X13.56 Y61.2
+
+G1 X13.56 Y61.2
+
+G1 X13.56 Y61.2
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.3 Y61.18
+M04 S1000
+G1 X13.3 Y61.18
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.26 Y61.46
+M04 S1000
+G1 X13.26 Y61.46
+G1 X13.52 Y61.5
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.3 Y66.26
+M04 S1000
+G1 X13.26 Y66.54
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.26 Y66.54
+M04 S1000
+G1 X13.52 Y66.58
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.52 Y66.58
+M04 S1000
+G1 X13.52 Y66.58
+G1 X13.56 Y66.28
+
+G1 X13.3 Y66.26
+
+G1 X13.3 Y66.26
+
+G1 X13.56 Y66.28
+
+G1 X13.56 Y66.28
+
+G1 X13.56 Y66.28
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X13.3 Y66.26
+M04 S1000
+G1 X13.3 Y66.26
+G1 X13.26 Y66.54
+
+G1 X13.26 Y66.54
+
+G1 X13.26 Y66.54
+
+G1 X13.52 Y66.58
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.5 Y56.46
+M04 S1000
+G1 X28.76 Y56.5
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.76 Y56.5
+M04 S1000
+G1 X28.76 Y56.5
+G1 X28.8 Y56.2
+
+G1 X28.54 Y56.18
+
+G1 X28.5 Y56.46
+
+G1 X28.5 Y56.46
+
+G1 X28.54 Y56.18
+
+G1 X28.54 Y56.18
+
+G1 X28.8 Y56.2
+
+G1 X28.8 Y56.2
+
+G1 X28.8 Y56.2
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.54 Y56.18
+M04 S1000
+G1 X28.54 Y56.18
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.5 Y56.46
+M04 S1000
+G1 X28.5 Y56.46
+G1 X28.76 Y56.5
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X29.92 Y55.18
+M04 S1000
+G1 X29.92 Y55.18
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X30.52 Y55.46
+M04 S1000
+G1 X31.24 Y55.52
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.48 Y55.62
+M04 S1000
+G1 X31.48 Y55.62
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.34 Y56.2
+M04 S1000
+G1 X31.08 Y56.18
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.08 Y56.18
+M04 S1000
+G1 X31.04 Y56.46
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.04 Y56.46
+M04 S1000
+G1 X31.3 Y56.5
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.3 Y56.5
+M04 S1000
+G1 X31.3 Y56.5
+G1 X31.34 Y56.2
+
+G1 X31.34 Y56.2
+
+G1 X31.34 Y56.2
+
+G1 X31.08 Y56.18
+
+G1 X31.08 Y56.18
+
+G1 X31.08 Y56.18
+
+G1 X31.04 Y56.46
+
+G1 X31.04 Y56.46
+
+G1 X31.04 Y56.46
+
+G1 X31.3 Y56.5
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X30.92 Y56.88
+M04 S1000
+G1 X30.92 Y56.88
+G1 X32.04 Y56.94
+
+G1 X34.54 Y56.96
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X34.54 Y55.64
+M04 S1000
+G1 X34.54 Y55.64
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X34.04 Y54.42
+M04 S1000
+G1 X31.9 Y54.4
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.9 Y54.4
+M04 S1000
+G1 X30.94 Y54.36
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.04 Y53.92
+M04 S1000
+G1 X31.3 Y53.96
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.3 Y53.96
+M04 S1000
+G1 X31.3 Y53.96
+G1 X31.34 Y53.66
+
+G1 X31.08 Y53.64
+
+G1 X31.04 Y53.92
+
+G1 X31.04 Y53.92
+
+G1 X31.08 Y53.64
+
+G1 X31.08 Y53.64
+
+G1 X31.34 Y53.66
+
+G1 X31.34 Y53.66
+
+G1 X31.34 Y53.66
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.08 Y53.64
+M04 S1000
+G1 X31.08 Y53.64
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.04 Y53.92
+M04 S1000
+G1 X31.04 Y53.92
+G1 X31.3 Y53.96
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X29.84 Y53.78
+M04 S1000
+G1 X29.84 Y53.78
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.8 Y53.66
+M04 S1000
+G1 X28.54 Y53.64
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.54 Y53.64
+M04 S1000
+G1 X28.5 Y53.92
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.5 Y53.92
+M04 S1000
+G1 X28.76 Y53.96
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.76 Y53.96
+M04 S1000
+G1 X28.76 Y53.96
+G1 X28.8 Y53.66
+
+G1 X28.8 Y53.66
+
+G1 X28.8 Y53.66
+
+G1 X28.54 Y53.64
+
+G1 X28.54 Y53.64
+
+G1 X28.54 Y53.64
+
+G1 X28.5 Y53.92
+
+G1 X28.5 Y53.92
+
+G1 X28.5 Y53.92
+
+G1 X28.76 Y53.96
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.64 Y53.14
+M04 S1000
+G1 X28.64 Y53.14
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.76 Y51.42
+M04 S1000
+G1 X28.5 Y51.38
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.5 Y51.38
+M04 S1000
+G1 X28.5 Y51.38
+G1 X28.54 Y51.1
+
+G1 X28.54 Y51.1
+
+G1 X28.8 Y51.12
+
+G1 X28.8 Y51.12
+
+G1 X28.76 Y51.42
+
+G1 X28.76 Y51.42
+
+G1 X28.5 Y51.38
+
+G1 X28.54 Y51.1
+
+G1 X28.8 Y51.12
+
+G1 X28.8 Y51.12
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.54 Y51.1
+M04 S1000
+G1 X28.54 Y51.1
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.5 Y51.38
+M04 S1000
+G1 X28.5 Y51.38
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X30.46 Y51.7
+M04 S1000
+G1 X30.46 Y51.7
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X30.54 Y50.4
+M04 S1000
+G1 X30.54 Y50.4
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X30.92 Y49.26
+M04 S1000
+G1 X30.92 Y49.26
+G1 X32.66 Y49.32
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X33.04 Y49.18
+M04 S1000
+G1 X33.04 Y49.18
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.3 Y48.88
+M04 S1000
+G1 X31.04 Y48.84
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.04 Y48.84
+M04 S1000
+G1 X31.04 Y48.84
+G1 X31.08 Y48.56
+
+G1 X31.08 Y48.56
+
+G1 X31.34 Y48.58
+
+G1 X31.34 Y48.58
+
+G1 X31.3 Y48.88
+
+G1 X31.3 Y48.88
+
+G1 X31.04 Y48.84
+
+G1 X31.08 Y48.56
+
+G1 X31.34 Y48.58
+
+G1 X31.34 Y48.58
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.08 Y48.56
+M04 S1000
+G1 X31.08 Y48.56
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X31.04 Y48.84
+M04 S1000
+G1 X31.04 Y48.84
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.8 Y48.58
+M04 S1000
+G1 X28.54 Y48.56
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.54 Y48.56
+M04 S1000
+G1 X28.5 Y48.84
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.5 Y48.84
+M04 S1000
+G1 X28.76 Y48.88
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X28.76 Y48.88
+M04 S1000
+G1 X28.76 Y48.88
+G1 X28.8 Y48.58
+
+G1 X28.8 Y48.58
+
+G1 X28.8 Y48.58
+
+G1 X28.54 Y48.56
+
+G1 X28.54 Y48.56
+
+G1 X28.54 Y48.56
+
+G1 X28.5 Y48.84
+
+G1 X28.5 Y48.84
+
+G1 X28.5 Y48.84
+
+G1 X28.76 Y48.88
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X43.78 Y51.1
+M04 S1000
+G1 X43.74 Y51.38
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X43.74 Y51.38
+M04 S1000
+G1 X44.0 Y51.42
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X44.0 Y51.42
+M04 S1000
+G1 X44.0 Y51.42
+G1 X44.04 Y51.12
+
+G1 X43.78 Y51.1
+
+G1 X43.78 Y51.1
+
+G1 X44.04 Y51.12
+
+G1 X44.04 Y51.12
+
+G1 X44.04 Y51.12
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X43.78 Y51.1
+M04 S1000
+G1 X43.78 Y51.1
+G1 X43.74 Y51.38
+
+G1 X43.74 Y51.38
+
+G1 X43.74 Y51.38
+
+G1 X44.0 Y51.42
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X44.64 Y50.86
+M04 S1000
+G1 X44.64 Y50.86
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X44.64 Y53.34
+M04 S1000
+G1 X44.64 Y53.34
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X44.04 Y53.66
+M04 S1000
+G1 X43.78 Y53.64
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X43.78 Y53.64
+M04 S1000
+G1 X43.74 Y53.92
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X43.74 Y53.92
+M04 S1000
+G1 X44.0 Y53.96
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X44.0 Y53.96
+M04 S1000
+G1 X44.0 Y53.96
+G1 X44.04 Y53.66
+
+G1 X44.04 Y53.66
+
+G1 X44.04 Y53.66
+
+G1 X43.78 Y53.64
+
+G1 X43.78 Y53.64
+
+G1 X43.78 Y53.64
+
+G1 X43.74 Y53.92
+
+G1 X43.74 Y53.92
+
+G1 X43.74 Y53.92
+
+G1 X44.0 Y53.96
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.32 Y56.18
+M04 S1000
+G1 X46.28 Y56.46
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.28 Y56.46
+M04 S1000
+G1 X46.54 Y56.5
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.54 Y56.5
+M04 S1000
+G1 X46.54 Y56.5
+G1 X46.58 Y56.2
+
+G1 X46.32 Y56.18
+
+G1 X46.32 Y56.18
+
+G1 X46.58 Y56.2
+
+G1 X46.58 Y56.2
+
+G1 X46.58 Y56.2
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.32 Y56.18
+M04 S1000
+G1 X46.32 Y56.18
+G1 X46.28 Y56.46
+
+G1 X46.28 Y56.46
+
+G1 X46.28 Y56.46
+
+G1 X46.54 Y56.5
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.14 Y56.88
+M04 S1000
+G1 X46.14 Y56.88
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.86 Y58.14
+M04 S1000
+G1 X46.86 Y58.14
+G1 X46.86 Y58.14
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X49.14 Y59.28
+M04 S1000
+G1 X49.96 Y59.02
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X49.96 Y59.02
+M04 S1000
+G1 X49.96 Y59.02
+G1 X50.66 Y58.44
+
+G1 X50.88 Y58.34
+
+G1 X51.1 Y58.28
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X50.74 Y59.72
+M04 S1000
+G1 X50.74 Y59.72
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X51.0 Y60.86
+M04 S1000
+G1 X51.0 Y60.86
+G1 X51.0 Y60.86
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X49.76 Y60.52
+M04 S1000
+G1 X49.76 Y60.52
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X50.92 Y62.32
+M04 S1000
+G1 X51.12 Y62.24
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X50.16 Y63.04
+M04 S1000
+G1 X50.16 Y63.04
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X50.18 Y64.38
+M04 S1000
+G1 X50.18 Y64.38
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X50.36 Y68.14
+M04 S1000
+G1 X50.36 Y68.14
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X50.4 Y69.46
+M04 S1000
+G1 X50.4 Y69.46
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X51.16 Y72.14
+M04 S1000
+G1 X51.16 Y72.14
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X52.48 Y72.48
+M04 S1000
+G1 X52.68 Y72.4
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X52.9 Y73.56
+M04 S1000
+G1 X52.9 Y73.56
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X53.02 Y74.94
+M04 S1000
+G1 X52.82 Y75.02
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X53.26 Y77.4
+M04 S1000
+G1 X53.06 Y77.48
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X53.48 Y78.42
+M04 S1000
+G1 X53.48 Y78.42
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X53.32 Y80.02
+M04 S1000
+G1 X53.12 Y80.1
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X52.24 Y79.62
+M04 S1000
+G1 X52.24 Y79.62
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X53.62 Y81.16
+M04 S1000
+G1 X53.62 Y81.16
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X53.5 Y85.36
+M04 S1000
+G1 X53.5 Y85.36
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X53.8 Y87.7
+M04 S1000
+G1 X53.8 Y87.7
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X53.14 Y89.92
+M04 S1000
+G1 X53.14 Y89.92
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X54.14 Y92.32
+M04 S1000
+G1 X54.14 Y92.32
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X55.02 Y92.8
+M04 S1000
+G1 X55.22 Y92.72
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X55.52 Y93.88
+M04 S1000
+G1 X55.52 Y93.88
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X55.78 Y95.26
+M04 S1000
+G1 X55.58 Y95.34
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X54.34 Y95.0
+M04 S1000
+G1 X54.34 Y95.0
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X54.84 Y97.4
+M04 S1000
+G1 X54.84 Y97.4
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X54.98 Y98.8
+M04 S1000
+G1 X54.98 Y98.8
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.02 Y99.36
+M04 S1000
+G1 X58.98 Y99.64
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X58.98 Y99.64
+M04 S1000
+G1 X59.24 Y99.68
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.24 Y99.68
+M04 S1000
+G1 X59.24 Y99.68
+G1 X59.28 Y99.38
+
+G1 X59.02 Y99.36
+
+G1 X59.02 Y99.36
+
+G1 X59.28 Y99.38
+
+G1 X59.28 Y99.38
+
+G1 X59.28 Y99.38
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.02 Y99.36
+M04 S1000
+G1 X59.02 Y99.36
+G1 X58.98 Y99.64
+
+G1 X58.98 Y99.64
+
+G1 X58.98 Y99.64
+
+G1 X59.24 Y99.68
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.36 Y98.94
+M04 S1000
+G1 X59.36 Y98.94
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X60.56 Y100.06
+M04 S1000
+G1 X60.56 Y100.06
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.52 Y99.64
+M04 S1000
+G1 X61.78 Y99.68
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.78 Y99.68
+M04 S1000
+G1 X61.78 Y99.68
+G1 X61.82 Y99.38
+
+G1 X61.56 Y99.36
+
+G1 X61.52 Y99.64
+
+G1 X61.52 Y99.64
+
+G1 X61.56 Y99.36
+
+G1 X61.56 Y99.36
+
+G1 X61.82 Y99.38
+
+G1 X61.82 Y99.38
+
+G1 X61.82 Y99.38
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.56 Y99.36
+M04 S1000
+G1 X61.56 Y99.36
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.52 Y99.64
+M04 S1000
+G1 X61.52 Y99.64
+G1 X61.78 Y99.68
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X60.92 Y97.4
+M04 S1000
+G1 X60.92 Y97.4
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.52 Y97.1
+M04 S1000
+G1 X61.78 Y97.14
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.78 Y97.14
+M04 S1000
+G1 X61.78 Y97.14
+G1 X61.82 Y96.84
+
+G1 X61.56 Y96.82
+
+G1 X61.52 Y97.1
+
+G1 X61.52 Y97.1
+
+G1 X61.56 Y96.82
+
+G1 X61.56 Y96.82
+
+G1 X61.82 Y96.84
+
+G1 X61.82 Y96.84
+
+G1 X61.82 Y96.84
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.56 Y96.82
+M04 S1000
+G1 X61.56 Y96.82
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.52 Y97.1
+M04 S1000
+G1 X61.52 Y97.1
+G1 X61.78 Y97.14
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X60.94 Y96.06
+M04 S1000
+G1 X60.94 Y96.06
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.98 Y96.52
+M04 S1000
+G1 X59.98 Y96.52
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.28 Y96.84
+M04 S1000
+G1 X59.02 Y96.82
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.02 Y96.82
+M04 S1000
+G1 X58.98 Y97.1
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X58.98 Y97.1
+M04 S1000
+G1 X59.24 Y97.14
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.24 Y97.14
+M04 S1000
+G1 X59.24 Y97.14
+G1 X59.28 Y96.84
+
+G1 X59.28 Y96.84
+
+G1 X59.28 Y96.84
+
+G1 X59.02 Y96.82
+
+G1 X59.02 Y96.82
+
+G1 X59.02 Y96.82
+
+G1 X58.98 Y97.1
+
+G1 X58.98 Y97.1
+
+G1 X58.98 Y97.1
+
+G1 X59.24 Y97.14
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.24 Y94.6
+M04 S1000
+G1 X58.98 Y94.56
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X58.98 Y94.56
+M04 S1000
+G1 X58.98 Y94.56
+G1 X59.02 Y94.28
+
+G1 X59.02 Y94.28
+
+G1 X59.28 Y94.3
+
+G1 X59.28 Y94.3
+
+G1 X59.24 Y94.6
+
+G1 X59.24 Y94.6
+
+G1 X58.98 Y94.56
+
+G1 X59.02 Y94.28
+
+G1 X59.28 Y94.3
+
+G1 X59.28 Y94.3
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.02 Y94.28
+M04 S1000
+G1 X59.02 Y94.28
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X58.98 Y94.56
+M04 S1000
+G1 X58.98 Y94.56
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.86 Y94.0
+M04 S1000
+G1 X59.86 Y94.0
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X60.58 Y94.58
+M04 S1000
+G1 X60.58 Y94.58
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.38 Y94.98
+M04 S1000
+G1 X61.38 Y94.98
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.52 Y94.56
+M04 S1000
+G1 X61.78 Y94.6
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.78 Y94.6
+M04 S1000
+G1 X61.78 Y94.6
+G1 X61.82 Y94.3
+
+G1 X61.56 Y94.28
+
+G1 X61.52 Y94.56
+
+G1 X61.52 Y94.56
+
+G1 X61.56 Y94.28
+
+G1 X61.56 Y94.28
+
+G1 X61.82 Y94.3
+
+G1 X61.82 Y94.3
+
+G1 X61.82 Y94.3
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.56 Y94.28
+M04 S1000
+G1 X61.56 Y94.28
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.52 Y94.56
+M04 S1000
+G1 X61.52 Y94.56
+G1 X61.78 Y94.6
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X60.94 Y92.34
+M04 S1000
+G1 X60.94 Y92.34
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.52 Y92.02
+M04 S1000
+G1 X61.78 Y92.06
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.78 Y92.06
+M04 S1000
+G1 X61.78 Y92.06
+G1 X61.82 Y91.76
+
+G1 X61.56 Y91.74
+
+G1 X61.52 Y92.02
+
+G1 X61.52 Y92.02
+
+G1 X61.56 Y91.74
+
+G1 X61.56 Y91.74
+
+G1 X61.82 Y91.76
+
+G1 X61.82 Y91.76
+
+G1 X61.82 Y91.76
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.56 Y91.74
+M04 S1000
+G1 X61.56 Y91.74
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.52 Y92.02
+M04 S1000
+G1 X61.52 Y92.02
+G1 X61.78 Y92.06
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X60.3 Y91.76
+M04 S1000
+G1 X60.3 Y91.76
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.28 Y91.76
+M04 S1000
+G1 X59.02 Y91.74
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.02 Y91.74
+M04 S1000
+G1 X58.98 Y92.02
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X58.98 Y92.02
+M04 S1000
+G1 X59.24 Y92.06
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.24 Y92.06
+M04 S1000
+G1 X59.24 Y92.06
+G1 X59.28 Y91.76
+
+G1 X59.28 Y91.76
+
+G1 X59.28 Y91.76
+
+G1 X59.02 Y91.74
+
+G1 X59.02 Y91.74
+
+G1 X59.02 Y91.74
+
+G1 X58.98 Y92.02
+
+G1 X58.98 Y92.02
+
+G1 X58.98 Y92.02
+
+G1 X59.24 Y92.06
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.24 Y89.52
+M04 S1000
+G1 X58.98 Y89.48
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X58.98 Y89.48
+M04 S1000
+G1 X58.98 Y89.48
+G1 X59.02 Y89.2
+
+G1 X59.02 Y89.2
+
+G1 X59.28 Y89.22
+
+G1 X59.28 Y89.22
+
+G1 X59.24 Y89.52
+
+G1 X59.24 Y89.52
+
+G1 X58.98 Y89.48
+
+G1 X59.02 Y89.2
+
+G1 X59.28 Y89.22
+
+G1 X59.28 Y89.22
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.02 Y89.2
+M04 S1000
+G1 X59.02 Y89.2
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X58.98 Y89.48
+M04 S1000
+G1 X58.98 Y89.48
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.84 Y87.64
+M04 S1000
+G1 X60.02 Y87.72
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X60.92 Y87.24
+M04 S1000
+G1 X60.92 Y87.24
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.52 Y86.94
+M04 S1000
+G1 X61.78 Y86.98
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.78 Y86.98
+M04 S1000
+G1 X61.78 Y86.98
+G1 X61.82 Y86.68
+
+G1 X61.56 Y86.66
+
+G1 X61.52 Y86.94
+
+G1 X61.52 Y86.94
+
+G1 X61.56 Y86.66
+
+G1 X61.56 Y86.66
+
+G1 X61.82 Y86.68
+
+G1 X61.82 Y86.68
+
+G1 X61.82 Y86.68
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.56 Y86.66
+M04 S1000
+G1 X61.56 Y86.66
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.52 Y86.94
+M04 S1000
+G1 X61.52 Y86.94
+G1 X61.78 Y86.98
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X60.94 Y85.9
+M04 S1000
+G1 X60.94 Y85.9
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.38 Y84.82
+M04 S1000
+G1 X61.38 Y84.82
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.52 Y84.4
+M04 S1000
+G1 X61.78 Y84.44
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.78 Y84.44
+M04 S1000
+G1 X61.78 Y84.44
+G1 X61.82 Y84.14
+
+G1 X61.56 Y84.12
+
+G1 X61.52 Y84.4
+
+G1 X61.52 Y84.4
+
+G1 X61.56 Y84.12
+
+G1 X61.56 Y84.12
+
+G1 X61.82 Y84.14
+
+G1 X61.82 Y84.14
+
+G1 X61.82 Y84.14
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.56 Y84.12
+M04 S1000
+G1 X61.56 Y84.12
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.52 Y84.4
+M04 S1000
+G1 X61.52 Y84.4
+G1 X61.78 Y84.44
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X60.58 Y84.42
+M04 S1000
+G1 X60.58 Y84.42
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.88 Y83.84
+M04 S1000
+G1 X59.66 Y83.74
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.66 Y83.74
+M04 S1000
+G1 X59.44 Y83.68
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.28 Y84.14
+M04 S1000
+G1 X59.02 Y84.12
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.02 Y84.12
+M04 S1000
+G1 X58.98 Y84.4
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X58.98 Y84.4
+M04 S1000
+G1 X59.24 Y84.44
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.24 Y84.44
+M04 S1000
+G1 X59.24 Y84.44
+G1 X59.28 Y84.14
+
+G1 X59.28 Y84.14
+
+G1 X59.28 Y84.14
+
+G1 X59.02 Y84.12
+
+G1 X59.02 Y84.12
+
+G1 X59.02 Y84.12
+
+G1 X58.98 Y84.4
+
+G1 X58.98 Y84.4
+
+G1 X58.98 Y84.4
+
+G1 X59.24 Y84.44
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.74 Y85.1
+M04 S1000
+G1 X59.92 Y85.22
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.28 Y86.68
+M04 S1000
+G1 X59.02 Y86.66
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.02 Y86.66
+M04 S1000
+G1 X58.98 Y86.94
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X58.98 Y86.94
+M04 S1000
+G1 X59.24 Y86.98
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.24 Y86.98
+M04 S1000
+G1 X59.24 Y86.98
+G1 X59.28 Y86.68
+
+G1 X59.28 Y86.68
+
+G1 X59.28 Y86.68
+
+G1 X59.02 Y86.66
+
+G1 X59.02 Y86.66
+
+G1 X59.02 Y86.66
+
+G1 X58.98 Y86.94
+
+G1 X58.98 Y86.94
+
+G1 X58.98 Y86.94
+
+G1 X59.24 Y86.98
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X60.78 Y88.44
+M04 S1000
+G1 X60.78 Y88.44
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.56 Y89.2
+M04 S1000
+G1 X61.52 Y89.48
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.52 Y89.48
+M04 S1000
+G1 X61.78 Y89.52
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.78 Y89.52
+M04 S1000
+G1 X61.78 Y89.52
+G1 X61.82 Y89.22
+
+G1 X61.56 Y89.2
+
+G1 X61.56 Y89.2
+
+G1 X61.82 Y89.22
+
+G1 X61.82 Y89.22
+
+G1 X61.82 Y89.22
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.56 Y89.2
+M04 S1000
+G1 X61.56 Y89.2
+G1 X61.52 Y89.48
+
+G1 X61.52 Y89.48
+
+G1 X61.52 Y89.48
+
+G1 X61.78 Y89.52
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X55.38 Y91.32
+M04 S1000
+G1 X55.38 Y91.32
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X58.98 Y81.86
+M04 S1000
+G1 X59.24 Y81.9
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.24 Y81.9
+M04 S1000
+G1 X59.24 Y81.9
+G1 X59.28 Y81.6
+
+G1 X59.02 Y81.58
+
+G1 X58.98 Y81.86
+
+G1 X58.98 Y81.86
+
+G1 X59.02 Y81.58
+
+G1 X59.02 Y81.58
+
+G1 X59.28 Y81.6
+
+G1 X59.28 Y81.6
+
+G1 X59.28 Y81.6
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.02 Y81.58
+M04 S1000
+G1 X59.02 Y81.58
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X58.98 Y81.86
+M04 S1000
+G1 X58.98 Y81.86
+G1 X59.24 Y81.9
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X60.3 Y81.6
+M04 S1000
+G1 X60.3 Y81.6
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X60.94 Y82.18
+M04 S1000
+G1 X60.94 Y82.18
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.52 Y81.86
+M04 S1000
+G1 X61.78 Y81.9
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.78 Y81.9
+M04 S1000
+G1 X61.78 Y81.9
+G1 X61.82 Y81.6
+
+G1 X61.56 Y81.58
+
+G1 X61.52 Y81.86
+
+G1 X61.52 Y81.86
+
+G1 X61.56 Y81.58
+
+G1 X61.56 Y81.58
+
+G1 X61.82 Y81.6
+
+G1 X61.82 Y81.6
+
+G1 X61.82 Y81.6
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.56 Y81.58
+M04 S1000
+G1 X61.56 Y81.58
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.52 Y81.86
+M04 S1000
+G1 X61.52 Y81.86
+G1 X61.78 Y81.9
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.78 Y79.36
+M04 S1000
+G1 X61.52 Y79.32
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.52 Y79.32
+M04 S1000
+G1 X61.52 Y79.32
+G1 X61.56 Y79.04
+
+G1 X61.56 Y79.04
+
+G1 X61.82 Y79.06
+
+G1 X61.82 Y79.06
+
+G1 X61.78 Y79.36
+
+G1 X61.78 Y79.36
+
+G1 X61.52 Y79.32
+
+G1 X61.56 Y79.04
+
+G1 X61.82 Y79.06
+
+G1 X61.82 Y79.06
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.56 Y79.04
+M04 S1000
+G1 X61.56 Y79.04
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.52 Y79.32
+M04 S1000
+G1 X61.52 Y79.32
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X60.78 Y78.28
+M04 S1000
+G1 X60.78 Y78.28
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.94 Y77.48
+M04 S1000
+G1 X59.76 Y77.4
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.24 Y76.82
+M04 S1000
+G1 X58.98 Y76.78
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X58.98 Y76.78
+M04 S1000
+G1 X58.98 Y76.78
+G1 X59.02 Y76.5
+
+G1 X59.02 Y76.5
+
+G1 X59.28 Y76.52
+
+G1 X59.28 Y76.52
+
+G1 X59.24 Y76.82
+
+G1 X59.24 Y76.82
+
+G1 X58.98 Y76.78
+
+G1 X59.02 Y76.5
+
+G1 X59.28 Y76.52
+
+G1 X59.28 Y76.52
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.02 Y76.5
+M04 S1000
+G1 X59.02 Y76.5
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X58.98 Y76.78
+M04 S1000
+G1 X58.98 Y76.78
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X60.92 Y77.08
+M04 S1000
+G1 X60.92 Y77.08
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.52 Y76.78
+M04 S1000
+G1 X61.78 Y76.82
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.78 Y76.82
+M04 S1000
+G1 X61.78 Y76.82
+G1 X61.82 Y76.52
+
+G1 X61.56 Y76.5
+
+G1 X61.52 Y76.78
+
+G1 X61.52 Y76.78
+
+G1 X61.56 Y76.5
+
+G1 X61.56 Y76.5
+
+G1 X61.82 Y76.52
+
+G1 X61.82 Y76.52
+
+G1 X61.82 Y76.52
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.56 Y76.5
+M04 S1000
+G1 X61.56 Y76.5
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.52 Y76.78
+M04 S1000
+G1 X61.52 Y76.78
+G1 X61.78 Y76.82
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.38 Y74.66
+M04 S1000
+G1 X61.38 Y74.66
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.52 Y74.24
+M04 S1000
+G1 X61.78 Y74.28
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.78 Y74.28
+M04 S1000
+G1 X61.78 Y74.28
+G1 X61.82 Y73.98
+
+G1 X61.56 Y73.96
+
+G1 X61.52 Y74.24
+
+G1 X61.52 Y74.24
+
+G1 X61.56 Y73.96
+
+G1 X61.56 Y73.96
+
+G1 X61.82 Y73.98
+
+G1 X61.82 Y73.98
+
+G1 X61.82 Y73.98
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.56 Y73.96
+M04 S1000
+G1 X61.56 Y73.96
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.52 Y74.24
+M04 S1000
+G1 X61.52 Y74.24
+G1 X61.78 Y74.28
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X60.6 Y74.24
+M04 S1000
+G1 X60.6 Y74.24
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.9 Y74.98
+M04 S1000
+G1 X59.72 Y74.9
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.24 Y74.28
+M04 S1000
+G1 X58.98 Y74.24
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X58.98 Y74.24
+M04 S1000
+G1 X58.98 Y74.24
+G1 X59.02 Y73.96
+
+G1 X59.02 Y73.96
+
+G1 X59.28 Y73.98
+
+G1 X59.28 Y73.98
+
+G1 X59.24 Y74.28
+
+G1 X59.24 Y74.28
+
+G1 X58.98 Y74.24
+
+G1 X59.02 Y73.96
+
+G1 X59.28 Y73.98
+
+G1 X59.28 Y73.98
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.02 Y73.96
+M04 S1000
+G1 X59.02 Y73.96
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X58.98 Y74.24
+M04 S1000
+G1 X58.98 Y74.24
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.92 Y72.52
+M04 S1000
+G1 X59.74 Y72.4
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.24 Y71.74
+M04 S1000
+G1 X58.98 Y71.7
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X58.98 Y71.7
+M04 S1000
+G1 X58.98 Y71.7
+G1 X59.02 Y71.42
+
+G1 X59.02 Y71.42
+
+G1 X59.28 Y71.44
+
+G1 X59.28 Y71.44
+
+G1 X59.24 Y71.74
+
+G1 X59.24 Y71.74
+
+G1 X58.98 Y71.7
+
+G1 X59.02 Y71.42
+
+G1 X59.28 Y71.44
+
+G1 X59.28 Y71.44
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.02 Y71.42
+M04 S1000
+G1 X59.02 Y71.42
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X58.98 Y71.7
+M04 S1000
+G1 X58.98 Y71.7
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X60.58 Y71.72
+M04 S1000
+G1 X60.58 Y71.72
+G1 X60.58 Y71.72
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.38 Y72.12
+M04 S1000
+G1 X61.38 Y72.12
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.52 Y71.7
+M04 S1000
+G1 X61.78 Y71.74
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.78 Y71.74
+M04 S1000
+G1 X61.78 Y71.74
+G1 X61.82 Y71.44
+
+G1 X61.56 Y71.42
+
+G1 X61.52 Y71.7
+
+G1 X61.52 Y71.7
+
+G1 X61.56 Y71.42
+
+G1 X61.56 Y71.42
+
+G1 X61.82 Y71.44
+
+G1 X61.82 Y71.44
+
+G1 X61.82 Y71.44
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.56 Y71.42
+M04 S1000
+G1 X61.56 Y71.42
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.52 Y71.7
+M04 S1000
+G1 X61.52 Y71.7
+G1 X61.78 Y71.74
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X60.92 Y73.2
+M04 S1000
+G1 X60.92 Y73.2
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X60.92 Y69.46
+M04 S1000
+G1 X60.92 Y69.46
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.52 Y69.16
+M04 S1000
+G1 X61.78 Y69.2
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.78 Y69.2
+M04 S1000
+G1 X61.78 Y69.2
+G1 X61.82 Y68.9
+
+G1 X61.56 Y68.88
+
+G1 X61.52 Y69.16
+
+G1 X61.52 Y69.16
+
+G1 X61.56 Y68.88
+
+G1 X61.56 Y68.88
+
+G1 X61.82 Y68.9
+
+G1 X61.82 Y68.9
+
+G1 X61.82 Y68.9
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.56 Y68.88
+M04 S1000
+G1 X61.56 Y68.88
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.52 Y69.16
+M04 S1000
+G1 X61.52 Y69.16
+G1 X61.78 Y69.2
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X60.94 Y68.12
+M04 S1000
+G1 X60.94 Y68.12
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.92 Y67.44
+M04 S1000
+G1 X59.74 Y67.32
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.24 Y66.66
+M04 S1000
+G1 X58.98 Y66.62
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X58.98 Y66.62
+M04 S1000
+G1 X58.98 Y66.62
+G1 X59.02 Y66.34
+
+G1 X59.02 Y66.34
+
+G1 X59.28 Y66.36
+
+G1 X59.28 Y66.36
+
+G1 X59.24 Y66.66
+
+G1 X59.24 Y66.66
+
+G1 X58.98 Y66.62
+
+G1 X59.02 Y66.34
+
+G1 X59.28 Y66.36
+
+G1 X59.28 Y66.36
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.02 Y66.34
+M04 S1000
+G1 X59.02 Y66.34
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X58.98 Y66.62
+M04 S1000
+G1 X58.98 Y66.62
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X60.52 Y66.64
+M04 S1000
+G1 X60.52 Y66.64
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.52 Y66.62
+M04 S1000
+G1 X61.78 Y66.66
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.78 Y66.66
+M04 S1000
+G1 X61.78 Y66.66
+G1 X61.82 Y66.36
+
+G1 X61.56 Y66.34
+
+G1 X61.52 Y66.62
+
+G1 X61.52 Y66.62
+
+G1 X61.56 Y66.34
+
+G1 X61.56 Y66.34
+
+G1 X61.82 Y66.36
+
+G1 X61.82 Y66.36
+
+G1 X61.82 Y66.36
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.56 Y66.34
+M04 S1000
+G1 X61.56 Y66.34
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.52 Y66.62
+M04 S1000
+G1 X61.52 Y66.62
+G1 X61.78 Y66.66
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X60.78 Y65.58
+M04 S1000
+G1 X60.78 Y65.58
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X60.92 Y64.38
+M04 S1000
+G1 X60.92 Y64.38
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.52 Y64.08
+M04 S1000
+G1 X61.78 Y64.12
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.78 Y64.12
+M04 S1000
+G1 X61.78 Y64.12
+G1 X61.82 Y63.82
+
+G1 X61.56 Y63.8
+
+G1 X61.52 Y64.08
+
+G1 X61.52 Y64.08
+
+G1 X61.56 Y63.8
+
+G1 X61.56 Y63.8
+
+G1 X61.82 Y63.82
+
+G1 X61.82 Y63.82
+
+G1 X61.82 Y63.82
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.56 Y63.8
+M04 S1000
+G1 X61.56 Y63.8
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.52 Y64.08
+M04 S1000
+G1 X61.52 Y64.08
+G1 X61.78 Y64.12
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.38 Y61.96
+M04 S1000
+G1 X61.38 Y61.96
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.52 Y61.54
+M04 S1000
+G1 X61.78 Y61.58
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.78 Y61.58
+M04 S1000
+G1 X61.78 Y61.58
+G1 X61.82 Y61.28
+
+G1 X61.56 Y61.26
+
+G1 X61.52 Y61.54
+
+G1 X61.52 Y61.54
+
+G1 X61.56 Y61.26
+
+G1 X61.56 Y61.26
+
+G1 X61.82 Y61.28
+
+G1 X61.82 Y61.28
+
+G1 X61.82 Y61.28
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.56 Y61.26
+M04 S1000
+G1 X61.56 Y61.26
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.52 Y61.54
+M04 S1000
+G1 X61.52 Y61.54
+G1 X61.78 Y61.58
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X60.58 Y61.56
+M04 S1000
+G1 X60.58 Y61.56
+G1 X60.58 Y61.56
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.92 Y62.36
+M04 S1000
+G1 X59.74 Y62.24
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.24 Y61.58
+M04 S1000
+G1 X58.98 Y61.54
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X58.98 Y61.54
+M04 S1000
+G1 X58.98 Y61.54
+G1 X59.02 Y61.26
+
+G1 X59.02 Y61.26
+
+G1 X59.28 Y61.28
+
+G1 X59.28 Y61.28
+
+G1 X59.24 Y61.58
+
+G1 X59.24 Y61.58
+
+G1 X58.98 Y61.54
+
+G1 X59.02 Y61.26
+
+G1 X59.28 Y61.28
+
+G1 X59.28 Y61.28
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.02 Y61.26
+M04 S1000
+G1 X59.02 Y61.26
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X58.98 Y61.54
+M04 S1000
+G1 X58.98 Y61.54
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.02 Y63.8
+M04 S1000
+G1 X58.98 Y64.08
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X58.98 Y64.08
+M04 S1000
+G1 X59.24 Y64.12
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.24 Y64.12
+M04 S1000
+G1 X59.24 Y64.12
+G1 X59.28 Y63.82
+
+G1 X59.02 Y63.8
+
+G1 X59.02 Y63.8
+
+G1 X59.28 Y63.82
+
+G1 X59.28 Y63.82
+
+G1 X59.28 Y63.82
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.02 Y63.8
+M04 S1000
+G1 X59.02 Y63.8
+G1 X58.98 Y64.08
+
+G1 X58.98 Y64.08
+
+G1 X58.98 Y64.08
+
+G1 X59.24 Y64.12
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.02 Y68.88
+M04 S1000
+G1 X58.98 Y69.16
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X58.98 Y69.16
+M04 S1000
+G1 X59.24 Y69.2
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.24 Y69.2
+M04 S1000
+G1 X59.24 Y69.2
+G1 X59.28 Y68.9
+
+G1 X59.02 Y68.88
+
+G1 X59.02 Y68.88
+
+G1 X59.28 Y68.9
+
+G1 X59.28 Y68.9
+
+G1 X59.28 Y68.9
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.02 Y68.88
+M04 S1000
+G1 X59.02 Y68.88
+G1 X58.98 Y69.16
+
+G1 X58.98 Y69.16
+
+G1 X58.98 Y69.16
+
+G1 X59.24 Y69.2
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.02 Y79.04
+M04 S1000
+G1 X58.98 Y79.32
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X58.98 Y79.32
+M04 S1000
+G1 X59.24 Y79.36
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.24 Y79.36
+M04 S1000
+G1 X59.24 Y79.36
+G1 X59.28 Y79.06
+
+G1 X59.02 Y79.04
+
+G1 X59.02 Y79.04
+
+G1 X59.28 Y79.06
+
+G1 X59.28 Y79.06
+
+G1 X59.28 Y79.06
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.02 Y79.04
+M04 S1000
+G1 X59.02 Y79.04
+G1 X58.98 Y79.32
+
+G1 X58.98 Y79.32
+
+G1 X58.98 Y79.32
+
+G1 X59.24 Y79.36
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.88 Y80.12
+M04 S1000
+G1 X59.88 Y80.12
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.58 Y84.14
+M04 S1000
+G1 X46.32 Y84.12
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.32 Y84.12
+M04 S1000
+G1 X46.28 Y84.4
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.28 Y84.4
+M04 S1000
+G1 X46.54 Y84.44
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.54 Y84.44
+M04 S1000
+G1 X46.54 Y84.44
+G1 X46.58 Y84.14
+
+G1 X46.58 Y84.14
+
+G1 X46.58 Y84.14
+
+G1 X46.32 Y84.12
+
+G1 X46.32 Y84.12
+
+G1 X46.32 Y84.12
+
+G1 X46.28 Y84.4
+
+G1 X46.28 Y84.4
+
+G1 X46.28 Y84.4
+
+G1 X46.54 Y84.44
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X45.54 Y83.36
+M04 S1000
+G1 X45.54 Y83.36
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X39.28 Y82.56
+M04 S1000
+G1 X39.08 Y82.64
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X38.3 Y84.72
+M04 S1000
+G1 X38.3 Y84.72
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X40.18 Y88.78
+M04 S1000
+G1 X40.18 Y88.78
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X38.94 Y89.8
+M04 S1000
+G1 X38.94 Y89.8
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X37.66 Y79.64
+M04 S1000
+G1 X37.66 Y79.64
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X38.44 Y77.56
+M04 S1000
+G1 X38.64 Y77.48
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X37.02 Y74.56
+M04 S1000
+G1 X37.02 Y74.56
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X49.64 Y56.76
+M04 S1000
+G1 X49.64 Y56.76
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X49.6 Y55.42
+M04 S1000
+G1 X49.6 Y55.42
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X50.36 Y54.7
+M04 S1000
+G1 X50.56 Y54.62
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X49.18 Y52.88
+M04 S1000
+G1 X49.18 Y52.88
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X49.94 Y52.16
+M04 S1000
+G1 X50.14 Y52.08
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X49.16 Y47.08
+M04 S1000
+G1 X49.36 Y47.0
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X49.18 Y45.6
+M04 S1000
+G1 X49.18 Y45.6
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X48.72 Y44.52
+M04 S1000
+G1 X48.72 Y44.52
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.58 Y46.04
+M04 S1000
+G1 X46.32 Y46.02
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.32 Y46.02
+M04 S1000
+G1 X46.28 Y46.3
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.28 Y46.3
+M04 S1000
+G1 X46.54 Y46.34
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.54 Y46.34
+M04 S1000
+G1 X46.54 Y46.34
+G1 X46.58 Y46.04
+
+G1 X46.58 Y46.04
+
+G1 X46.58 Y46.04
+
+G1 X46.32 Y46.02
+
+G1 X46.32 Y46.02
+
+G1 X46.32 Y46.02
+
+G1 X46.28 Y46.3
+
+G1 X46.28 Y46.3
+
+G1 X46.28 Y46.3
+
+G1 X46.54 Y46.34
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X44.0 Y43.8
+M04 S1000
+G1 X43.74 Y43.76
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X43.74 Y43.76
+M04 S1000
+G1 X43.74 Y43.76
+G1 X43.78 Y43.48
+
+G1 X43.78 Y43.48
+
+G1 X44.04 Y43.5
+
+G1 X44.04 Y43.5
+
+G1 X44.0 Y43.8
+
+G1 X44.0 Y43.8
+
+G1 X43.74 Y43.76
+
+G1 X43.78 Y43.48
+
+G1 X44.04 Y43.5
+
+G1 X44.04 Y43.5
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X43.78 Y43.48
+M04 S1000
+G1 X43.78 Y43.48
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X43.74 Y43.76
+M04 S1000
+G1 X43.74 Y43.76
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X44.0 Y41.26
+M04 S1000
+G1 X43.74 Y41.22
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X43.74 Y41.22
+M04 S1000
+G1 X43.74 Y41.22
+G1 X43.78 Y40.94
+
+G1 X43.78 Y40.94
+
+G1 X44.04 Y40.96
+
+G1 X44.04 Y40.96
+
+G1 X44.0 Y41.26
+
+G1 X44.0 Y41.26
+
+G1 X43.74 Y41.22
+
+G1 X43.78 Y40.94
+
+G1 X44.04 Y40.96
+
+G1 X44.04 Y40.96
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X43.78 Y40.94
+M04 S1000
+G1 X43.78 Y40.94
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X43.74 Y41.22
+M04 S1000
+G1 X43.74 Y41.22
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.18 Y39.1
+M04 S1000
+G1 X46.18 Y39.1
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.28 Y38.68
+M04 S1000
+G1 X46.54 Y38.72
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.54 Y38.72
+M04 S1000
+G1 X46.54 Y38.72
+G1 X46.58 Y38.42
+
+G1 X46.32 Y38.4
+
+G1 X46.28 Y38.68
+
+G1 X46.28 Y38.68
+
+G1 X46.32 Y38.4
+
+G1 X46.32 Y38.4
+
+G1 X46.58 Y38.42
+
+G1 X46.58 Y38.42
+
+G1 X46.58 Y38.42
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.32 Y38.4
+M04 S1000
+G1 X46.32 Y38.4
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X46.28 Y38.68
+M04 S1000
+G1 X46.28 Y38.68
+G1 X46.54 Y38.72
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X44.96 Y38.0
+M04 S1000
+G1 X44.96 Y38.0
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X48.2 Y37.9
+M04 S1000
+G1 X48.2 Y37.9
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X48.3 Y39.44
+M04 S1000
+G1 X48.3 Y39.44
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X48.56 Y40.58
+M04 S1000
+G1 X48.56 Y40.58
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X58.98 Y41.22
+M04 S1000
+G1 X59.24 Y41.26
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.24 Y41.26
+M04 S1000
+G1 X59.24 Y41.26
+G1 X59.28 Y40.96
+
+G1 X59.02 Y40.94
+
+G1 X58.98 Y41.22
+
+G1 X58.98 Y41.22
+
+G1 X59.02 Y40.94
+
+G1 X59.02 Y40.94
+
+G1 X59.28 Y40.96
+
+G1 X59.28 Y40.96
+
+G1 X59.28 Y40.96
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.02 Y40.94
+M04 S1000
+G1 X59.02 Y40.94
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X58.98 Y41.22
+M04 S1000
+G1 X58.98 Y41.22
+G1 X59.24 Y41.26
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.64 Y40.5
+M04 S1000
+G1 X59.86 Y40.56
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.86 Y40.56
+M04 S1000
+G1 X60.08 Y40.66
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X60.54 Y41.12
+M04 S1000
+G1 X60.54 Y41.12
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.52 Y41.22
+M04 S1000
+G1 X61.78 Y41.26
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.78 Y41.26
+M04 S1000
+G1 X61.78 Y41.26
+G1 X61.82 Y40.96
+
+G1 X61.56 Y40.94
+
+G1 X61.52 Y41.22
+
+G1 X61.52 Y41.22
+
+G1 X61.56 Y40.94
+
+G1 X61.56 Y40.94
+
+G1 X61.82 Y40.96
+
+G1 X61.82 Y40.96
+
+G1 X61.82 Y40.96
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.56 Y40.94
+M04 S1000
+G1 X61.56 Y40.94
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.52 Y41.22
+M04 S1000
+G1 X61.52 Y41.22
+G1 X61.78 Y41.26
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.0 Y42.74
+M04 S1000
+G1 X61.0 Y42.74
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.56 Y43.48
+M04 S1000
+G1 X61.52 Y43.76
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.52 Y43.76
+M04 S1000
+G1 X61.78 Y43.8
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.78 Y43.8
+M04 S1000
+G1 X61.78 Y43.8
+G1 X61.82 Y43.5
+
+G1 X61.56 Y43.48
+
+G1 X61.56 Y43.48
+
+G1 X61.82 Y43.5
+
+G1 X61.82 Y43.5
+
+G1 X61.82 Y43.5
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.56 Y43.48
+M04 S1000
+G1 X61.56 Y43.48
+G1 X61.52 Y43.76
+
+G1 X61.52 Y43.76
+
+G1 X61.52 Y43.76
+
+G1 X61.78 Y43.8
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.56 Y46.02
+M04 S1000
+G1 X61.52 Y46.3
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.52 Y46.3
+M04 S1000
+G1 X61.78 Y46.34
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.78 Y46.34
+M04 S1000
+G1 X61.78 Y46.34
+G1 X61.82 Y46.04
+
+G1 X61.56 Y46.02
+
+G1 X61.56 Y46.02
+
+G1 X61.82 Y46.04
+
+G1 X61.82 Y46.04
+
+G1 X61.82 Y46.04
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.56 Y46.02
+M04 S1000
+G1 X61.56 Y46.02
+G1 X61.52 Y46.3
+
+G1 X61.52 Y46.3
+
+G1 X61.52 Y46.3
+
+G1 X61.78 Y46.34
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.56 Y48.56
+M04 S1000
+G1 X61.52 Y48.84
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.52 Y48.84
+M04 S1000
+G1 X61.78 Y48.88
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.78 Y48.88
+M04 S1000
+G1 X61.78 Y48.88
+G1 X61.82 Y48.58
+
+G1 X61.56 Y48.56
+
+G1 X61.56 Y48.56
+
+G1 X61.82 Y48.58
+
+G1 X61.82 Y48.58
+
+G1 X61.82 Y48.58
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.56 Y48.56
+M04 S1000
+G1 X61.56 Y48.56
+G1 X61.52 Y48.84
+
+G1 X61.52 Y48.84
+
+G1 X61.52 Y48.84
+
+G1 X61.78 Y48.88
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.56 Y51.1
+M04 S1000
+G1 X61.52 Y51.38
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.52 Y51.38
+M04 S1000
+G1 X61.78 Y51.42
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.78 Y51.42
+M04 S1000
+G1 X61.78 Y51.42
+G1 X61.82 Y51.12
+
+G1 X61.56 Y51.1
+
+G1 X61.56 Y51.1
+
+G1 X61.82 Y51.12
+
+G1 X61.82 Y51.12
+
+G1 X61.82 Y51.12
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.56 Y51.1
+M04 S1000
+G1 X61.56 Y51.1
+G1 X61.52 Y51.38
+
+G1 X61.52 Y51.38
+
+G1 X61.52 Y51.38
+
+G1 X61.78 Y51.42
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.38 Y51.8
+M04 S1000
+G1 X61.38 Y51.8
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X60.58 Y51.4
+M04 S1000
+G1 X60.58 Y51.4
+G1 X60.58 Y51.4
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.92 Y52.2
+M04 S1000
+G1 X59.74 Y52.08
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.24 Y51.42
+M04 S1000
+G1 X58.98 Y51.38
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X58.98 Y51.38
+M04 S1000
+G1 X58.98 Y51.38
+G1 X59.02 Y51.1
+
+G1 X59.02 Y51.1
+
+G1 X59.28 Y51.12
+
+G1 X59.28 Y51.12
+
+G1 X59.24 Y51.42
+
+G1 X59.24 Y51.42
+
+G1 X58.98 Y51.38
+
+G1 X59.02 Y51.1
+
+G1 X59.28 Y51.12
+
+G1 X59.28 Y51.12
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.02 Y51.1
+M04 S1000
+G1 X59.02 Y51.1
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X58.98 Y51.38
+M04 S1000
+G1 X58.98 Y51.38
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.02 Y53.64
+M04 S1000
+G1 X58.98 Y53.92
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X58.98 Y53.92
+M04 S1000
+G1 X59.24 Y53.96
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.24 Y53.96
+M04 S1000
+G1 X59.24 Y53.96
+G1 X59.28 Y53.66
+
+G1 X59.02 Y53.64
+
+G1 X59.02 Y53.64
+
+G1 X59.28 Y53.66
+
+G1 X59.28 Y53.66
+
+G1 X59.28 Y53.66
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.02 Y53.64
+M04 S1000
+G1 X59.02 Y53.64
+G1 X58.98 Y53.92
+
+G1 X58.98 Y53.92
+
+G1 X58.98 Y53.92
+
+G1 X59.24 Y53.96
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X60.6 Y53.92
+M04 S1000
+G1 X60.6 Y53.92
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.38 Y54.34
+M04 S1000
+G1 X61.38 Y54.34
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.52 Y53.92
+M04 S1000
+G1 X61.78 Y53.96
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.78 Y53.96
+M04 S1000
+G1 X61.78 Y53.96
+G1 X61.82 Y53.66
+
+G1 X61.56 Y53.64
+
+G1 X61.52 Y53.92
+
+G1 X61.52 Y53.92
+
+G1 X61.56 Y53.64
+
+G1 X61.56 Y53.64
+
+G1 X61.82 Y53.66
+
+G1 X61.82 Y53.66
+
+G1 X61.82 Y53.66
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.56 Y53.64
+M04 S1000
+G1 X61.56 Y53.64
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.52 Y53.92
+M04 S1000
+G1 X61.52 Y53.92
+G1 X61.78 Y53.96
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X60.92 Y52.88
+M04 S1000
+G1 X60.92 Y52.88
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X60.92 Y55.42
+M04 S1000
+G1 X60.92 Y55.42
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.56 Y56.18
+M04 S1000
+G1 X61.52 Y56.46
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.52 Y56.46
+M04 S1000
+G1 X61.78 Y56.5
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.78 Y56.5
+M04 S1000
+G1 X61.78 Y56.5
+G1 X61.82 Y56.2
+
+G1 X61.56 Y56.18
+
+G1 X61.56 Y56.18
+
+G1 X61.82 Y56.2
+
+G1 X61.82 Y56.2
+
+G1 X61.82 Y56.2
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.56 Y56.18
+M04 S1000
+G1 X61.56 Y56.18
+G1 X61.52 Y56.46
+
+G1 X61.52 Y56.46
+
+G1 X61.52 Y56.46
+
+G1 X61.78 Y56.5
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.38 Y56.88
+M04 S1000
+G1 X61.38 Y56.88
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X60.6 Y56.46
+M04 S1000
+G1 X60.6 Y56.46
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.9 Y57.2
+M04 S1000
+G1 X59.72 Y57.12
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.24 Y56.5
+M04 S1000
+G1 X58.98 Y56.46
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X58.98 Y56.46
+M04 S1000
+G1 X58.98 Y56.46
+G1 X59.02 Y56.18
+
+G1 X59.02 Y56.18
+
+G1 X59.28 Y56.2
+
+G1 X59.28 Y56.2
+
+G1 X59.24 Y56.5
+
+G1 X59.24 Y56.5
+
+G1 X58.98 Y56.46
+
+G1 X59.02 Y56.18
+
+G1 X59.28 Y56.2
+
+G1 X59.28 Y56.2
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.02 Y56.18
+M04 S1000
+G1 X59.02 Y56.18
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X58.98 Y56.46
+M04 S1000
+G1 X58.98 Y56.46
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.02 Y58.72
+M04 S1000
+G1 X58.98 Y59.0
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X58.98 Y59.0
+M04 S1000
+G1 X59.24 Y59.04
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.24 Y59.04
+M04 S1000
+G1 X59.24 Y59.04
+G1 X59.28 Y58.74
+
+G1 X59.02 Y58.72
+
+G1 X59.02 Y58.72
+
+G1 X59.28 Y58.74
+
+G1 X59.28 Y58.74
+
+G1 X59.28 Y58.74
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.02 Y58.72
+M04 S1000
+G1 X59.02 Y58.72
+G1 X58.98 Y59.0
+
+G1 X58.98 Y59.0
+
+G1 X58.98 Y59.0
+
+G1 X59.24 Y59.04
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X60.92 Y59.3
+M04 S1000
+G1 X60.92 Y59.3
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.52 Y59.0
+M04 S1000
+G1 X61.78 Y59.04
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.78 Y59.04
+M04 S1000
+G1 X61.78 Y59.04
+G1 X61.82 Y58.74
+
+G1 X61.56 Y58.72
+
+G1 X61.52 Y59.0
+
+G1 X61.52 Y59.0
+
+G1 X61.56 Y58.72
+
+G1 X61.56 Y58.72
+
+G1 X61.82 Y58.74
+
+G1 X61.82 Y58.74
+
+G1 X61.82 Y58.74
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.56 Y58.72
+M04 S1000
+G1 X61.56 Y58.72
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.52 Y59.0
+M04 S1000
+G1 X61.52 Y59.0
+G1 X61.78 Y59.04
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.24 Y48.88
+M04 S1000
+G1 X58.98 Y48.84
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X58.98 Y48.84
+M04 S1000
+G1 X58.98 Y48.84
+G1 X59.02 Y48.56
+
+G1 X59.02 Y48.56
+
+G1 X59.28 Y48.58
+
+G1 X59.28 Y48.58
+
+G1 X59.24 Y48.88
+
+G1 X59.24 Y48.88
+
+G1 X58.98 Y48.84
+
+G1 X59.02 Y48.56
+
+G1 X59.28 Y48.58
+
+G1 X59.28 Y48.58
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.02 Y48.56
+M04 S1000
+G1 X59.02 Y48.56
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X58.98 Y48.84
+M04 S1000
+G1 X58.98 Y48.84
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.24 Y46.34
+M04 S1000
+G1 X58.98 Y46.3
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X58.98 Y46.3
+M04 S1000
+G1 X58.98 Y46.3
+G1 X59.02 Y46.02
+
+G1 X59.02 Y46.02
+
+G1 X59.28 Y46.04
+
+G1 X59.28 Y46.04
+
+G1 X59.24 Y46.34
+
+G1 X59.24 Y46.34
+
+G1 X58.98 Y46.3
+
+G1 X59.02 Y46.02
+
+G1 X59.28 Y46.04
+
+G1 X59.28 Y46.04
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.02 Y46.02
+M04 S1000
+G1 X59.02 Y46.02
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X58.98 Y46.3
+M04 S1000
+G1 X58.98 Y46.3
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.34 Y45.6
+M04 S1000
+G1 X59.34 Y45.6
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.24 Y43.8
+M04 S1000
+G1 X58.98 Y43.76
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X58.98 Y43.76
+M04 S1000
+G1 X58.98 Y43.76
+G1 X59.02 Y43.48
+
+G1 X59.02 Y43.48
+
+G1 X59.28 Y43.5
+
+G1 X59.28 Y43.5
+
+G1 X59.24 Y43.8
+
+G1 X59.24 Y43.8
+
+G1 X58.98 Y43.76
+
+G1 X59.02 Y43.48
+
+G1 X59.28 Y43.5
+
+G1 X59.28 Y43.5
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.02 Y43.48
+M04 S1000
+G1 X59.02 Y43.48
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X58.98 Y43.76
+M04 S1000
+G1 X58.98 Y43.76
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X60.18 Y42.08
+M04 S1000
+G1 X60.18 Y42.08
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X60.4 Y39.58
+M04 S1000
+G1 X60.22 Y39.46
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.24 Y38.72
+M04 S1000
+G1 X58.98 Y38.68
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X58.98 Y38.68
+M04 S1000
+G1 X58.98 Y38.68
+G1 X59.02 Y38.4
+
+G1 X59.02 Y38.4
+
+G1 X59.28 Y38.42
+
+G1 X59.28 Y38.42
+
+G1 X59.24 Y38.72
+
+G1 X59.24 Y38.72
+
+G1 X58.98 Y38.68
+
+G1 X59.02 Y38.4
+
+G1 X59.28 Y38.42
+
+G1 X59.28 Y38.42
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X59.02 Y38.4
+M04 S1000
+G1 X59.02 Y38.4
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X58.98 Y38.68
+M04 S1000
+G1 X58.98 Y38.68
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.52 Y38.68
+M04 S1000
+G1 X61.78 Y38.72
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.78 Y38.72
+M04 S1000
+G1 X61.78 Y38.72
+G1 X61.82 Y38.42
+
+G1 X61.56 Y38.4
+
+G1 X61.52 Y38.68
+
+G1 X61.52 Y38.68
+
+G1 X61.56 Y38.4
+
+G1 X61.56 Y38.4
+
+G1 X61.82 Y38.42
+
+G1 X61.82 Y38.42
+
+G1 X61.82 Y38.42
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.56 Y38.4
+M04 S1000
+G1 X61.56 Y38.4
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X61.52 Y38.68
+M04 S1000
+G1 X61.52 Y38.68
+G1 X61.78 Y38.72
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X73.22 Y46.14
+M04 S1000
+G1 X73.66 Y46.02
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.26 Y46.02
+M04 S1000
+G1 X74.22 Y46.3
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.22 Y46.3
+M04 S1000
+G1 X74.48 Y46.34
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.48 Y46.34
+M04 S1000
+G1 X74.48 Y46.34
+G1 X74.52 Y46.04
+
+G1 X74.26 Y46.02
+
+G1 X74.26 Y46.02
+
+G1 X74.52 Y46.04
+
+G1 X74.52 Y46.04
+
+G1 X74.52 Y46.04
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.26 Y46.02
+M04 S1000
+G1 X74.26 Y46.02
+G1 X74.22 Y46.3
+
+G1 X74.22 Y46.3
+
+G1 X74.22 Y46.3
+
+G1 X74.48 Y46.34
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.26 Y47.04
+M04 S1000
+G1 X74.26 Y47.04
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.14 Y48.14
+M04 S1000
+G1 X74.14 Y48.14
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.26 Y48.56
+M04 S1000
+G1 X74.22 Y48.84
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.22 Y48.84
+M04 S1000
+G1 X74.48 Y48.88
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.48 Y48.88
+M04 S1000
+G1 X74.48 Y48.88
+G1 X74.52 Y48.58
+
+G1 X74.26 Y48.56
+
+G1 X74.26 Y48.56
+
+G1 X74.52 Y48.58
+
+G1 X74.52 Y48.58
+
+G1 X74.52 Y48.58
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.26 Y48.56
+M04 S1000
+G1 X74.26 Y48.56
+G1 X74.22 Y48.84
+
+G1 X74.22 Y48.84
+
+G1 X74.22 Y48.84
+
+G1 X74.48 Y48.88
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.28 Y49.56
+M04 S1000
+G1 X74.28 Y49.56
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X73.66 Y48.56
+M04 S1000
+G1 X73.46 Y48.62
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X73.46 Y48.62
+M04 S1000
+G1 X73.22 Y48.68
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X73.22 Y48.68
+M04 S1000
+G1 X73.22 Y48.68
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X72.64 Y49.18
+M04 S1000
+G1 X72.64 Y49.18
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.26 Y51.1
+M04 S1000
+G1 X74.22 Y51.38
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.22 Y51.38
+M04 S1000
+G1 X74.48 Y51.42
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.48 Y51.42
+M04 S1000
+G1 X74.48 Y51.42
+G1 X74.52 Y51.12
+
+G1 X74.26 Y51.1
+
+G1 X74.26 Y51.1
+
+G1 X74.52 Y51.12
+
+G1 X74.52 Y51.12
+
+G1 X74.52 Y51.12
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.26 Y51.1
+M04 S1000
+G1 X74.26 Y51.1
+G1 X74.22 Y51.38
+
+G1 X74.22 Y51.38
+
+G1 X74.22 Y51.38
+
+G1 X74.48 Y51.42
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.26 Y52.12
+M04 S1000
+G1 X74.26 Y52.12
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.26 Y53.64
+M04 S1000
+G1 X74.22 Y53.92
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.22 Y53.92
+M04 S1000
+G1 X74.48 Y53.96
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.48 Y53.96
+M04 S1000
+G1 X74.48 Y53.96
+G1 X74.52 Y53.66
+
+G1 X74.26 Y53.64
+
+G1 X74.26 Y53.64
+
+G1 X74.52 Y53.66
+
+G1 X74.52 Y53.66
+
+G1 X74.52 Y53.66
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.26 Y53.64
+M04 S1000
+G1 X74.26 Y53.64
+G1 X74.22 Y53.92
+
+G1 X74.22 Y53.92
+
+G1 X74.22 Y53.92
+
+G1 X74.48 Y53.96
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.26 Y54.66
+M04 S1000
+G1 X74.26 Y54.66
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.42 Y54.12
+M04 S1000
+G1 X75.42 Y54.12
+G1 X76.1 Y54.32
+
+G1 X76.5 Y54.6
+
+G1 X77.1 Y54.78
+
+G1 X77.1 Y54.78
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X77.02 Y53.96
+M04 S1000
+G1 X76.76 Y53.92
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.76 Y53.92
+M04 S1000
+G1 X76.76 Y53.92
+G1 X76.8 Y53.64
+
+G1 X76.8 Y53.64
+
+G1 X77.06 Y53.66
+
+G1 X77.06 Y53.66
+
+G1 X77.02 Y53.96
+
+G1 X77.02 Y53.96
+
+G1 X76.76 Y53.92
+
+G1 X76.8 Y53.64
+
+G1 X77.06 Y53.66
+
+G1 X77.06 Y53.66
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.8 Y53.64
+M04 S1000
+G1 X76.8 Y53.64
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.76 Y53.92
+M04 S1000
+G1 X76.76 Y53.92
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.26 Y54.42
+M04 S1000
+G1 X76.1 Y54.32
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.42 Y54.12
+M04 S1000
+G1 X75.34 Y53.9
+G1 X75.42 Y54.12
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.52 Y56.2
+M04 S1000
+G1 X74.26 Y56.18
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.26 Y56.18
+M04 S1000
+G1 X74.22 Y56.46
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.22 Y56.46
+M04 S1000
+G1 X74.48 Y56.5
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.48 Y56.5
+M04 S1000
+G1 X74.48 Y56.5
+G1 X74.52 Y56.2
+
+G1 X74.52 Y56.2
+
+G1 X74.52 Y56.2
+
+G1 X74.26 Y56.18
+
+G1 X74.26 Y56.18
+
+G1 X74.26 Y56.18
+
+G1 X74.22 Y56.46
+
+G1 X74.22 Y56.46
+
+G1 X74.22 Y56.46
+
+G1 X74.48 Y56.5
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.26 Y57.2
+M04 S1000
+G1 X74.26 Y57.2
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.26 Y58.72
+M04 S1000
+G1 X74.22 Y59.0
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.22 Y59.0
+M04 S1000
+G1 X74.48 Y59.04
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.48 Y59.04
+M04 S1000
+G1 X74.48 Y59.04
+G1 X74.52 Y58.74
+
+G1 X74.26 Y58.72
+
+G1 X74.26 Y58.72
+
+G1 X74.52 Y58.74
+
+G1 X74.52 Y58.74
+
+G1 X74.52 Y58.74
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.26 Y58.72
+M04 S1000
+G1 X74.26 Y58.72
+G1 X74.22 Y59.0
+
+G1 X74.22 Y59.0
+
+G1 X74.22 Y59.0
+
+G1 X74.48 Y59.04
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.26 Y59.74
+M04 S1000
+G1 X74.26 Y59.74
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.26 Y61.26
+M04 S1000
+G1 X74.22 Y61.54
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.22 Y61.54
+M04 S1000
+G1 X74.48 Y61.58
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.48 Y61.58
+M04 S1000
+G1 X74.48 Y61.58
+G1 X74.52 Y61.28
+
+G1 X74.26 Y61.26
+
+G1 X74.26 Y61.26
+
+G1 X74.52 Y61.28
+
+G1 X74.52 Y61.28
+
+G1 X74.52 Y61.28
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.26 Y61.26
+M04 S1000
+G1 X74.26 Y61.26
+G1 X74.22 Y61.54
+
+G1 X74.22 Y61.54
+
+G1 X74.22 Y61.54
+
+G1 X74.48 Y61.58
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.26 Y62.28
+M04 S1000
+G1 X74.26 Y62.28
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.12 Y63.38
+M04 S1000
+G1 X74.12 Y63.38
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X73.66 Y63.8
+M04 S1000
+G1 X73.22 Y63.92
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X73.66 Y66.34
+M04 S1000
+G1 X73.46 Y66.4
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X73.46 Y66.4
+M04 S1000
+G1 X73.22 Y66.46
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X73.22 Y66.46
+M04 S1000
+G1 X73.22 Y66.46
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X72.64 Y66.96
+M04 S1000
+G1 X72.64 Y66.96
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.12 Y68.46
+M04 S1000
+G1 X74.12 Y68.46
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X73.66 Y68.88
+M04 S1000
+G1 X73.22 Y69.0
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.38 Y69.38
+M04 S1000
+G1 X75.58 Y69.4
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.1 Y69.56
+M04 S1000
+G1 X76.26 Y69.66
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.76 Y69.16
+M04 S1000
+G1 X77.02 Y69.2
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X77.02 Y69.2
+M04 S1000
+G1 X77.02 Y69.2
+G1 X77.06 Y68.9
+
+G1 X76.8 Y68.88
+
+G1 X76.76 Y69.16
+
+G1 X76.76 Y69.16
+
+G1 X76.8 Y68.88
+
+G1 X76.8 Y68.88
+
+G1 X77.06 Y68.9
+
+G1 X77.06 Y68.9
+
+G1 X77.06 Y68.9
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.8 Y68.88
+M04 S1000
+G1 X76.8 Y68.88
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.76 Y69.16
+M04 S1000
+G1 X76.76 Y69.16
+G1 X77.02 Y69.2
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X77.08 Y70.04
+M04 S1000
+G1 X77.08 Y70.04
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X77.9 Y67.8
+M04 S1000
+G1 X77.9 Y67.8
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.56 Y67.4
+M04 S1000
+G1 X76.36 Y67.26
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.36 Y67.26
+M04 S1000
+G1 X75.94 Y66.98
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.76 Y66.62
+M04 S1000
+G1 X77.02 Y66.66
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X77.02 Y66.66
+M04 S1000
+G1 X77.02 Y66.66
+G1 X77.06 Y66.36
+
+G1 X76.8 Y66.34
+
+G1 X76.76 Y66.62
+
+G1 X76.76 Y66.62
+
+G1 X76.8 Y66.34
+
+G1 X76.8 Y66.34
+
+G1 X77.06 Y66.36
+
+G1 X77.06 Y66.36
+
+G1 X77.06 Y66.36
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.8 Y66.34
+M04 S1000
+G1 X76.8 Y66.34
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.76 Y66.62
+M04 S1000
+G1 X76.76 Y66.62
+G1 X77.02 Y66.66
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X78.54 Y65.78
+M04 S1000
+G1 X78.54 Y65.78
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X79.34 Y66.34
+M04 S1000
+G1 X79.3 Y66.62
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X79.3 Y66.62
+M04 S1000
+G1 X79.56 Y66.66
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X79.56 Y66.66
+M04 S1000
+G1 X79.56 Y66.66
+G1 X79.6 Y66.36
+
+G1 X79.34 Y66.34
+
+G1 X79.34 Y66.34
+
+G1 X79.6 Y66.36
+
+G1 X79.6 Y66.36
+
+G1 X79.6 Y66.36
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X79.34 Y66.34
+M04 S1000
+G1 X79.34 Y66.34
+G1 X79.3 Y66.62
+
+G1 X79.3 Y66.62
+
+G1 X79.3 Y66.62
+
+G1 X79.56 Y66.66
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X80.02 Y64.18
+M04 S1000
+G1 X80.94 Y63.9
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X80.94 Y63.9
+M04 S1000
+G1 X81.56 Y63.82
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X81.56 Y63.82
+M04 S1000
+G1 X82.94 Y63.82
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X82.94 Y63.82
+M04 S1000
+G1 X83.24 Y63.9
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X83.24 Y63.9
+M04 S1000
+G1 X83.24 Y63.9
+G1 X92.34 Y72.94
+
+G1 X92.54 Y72.94
+
+G1 X92.5 Y0.04
+
+G1 X92.5 Y0.04
+
+G1 X66.66 Y0.0
+
+G1 X57.08 Y9.52
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X69.18 Y25.06
+M04 S1000
+G1 X69.14 Y25.34
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X69.14 Y25.34
+M04 S1000
+G1 X69.4 Y25.38
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X69.4 Y25.38
+M04 S1000
+G1 X69.4 Y25.38
+G1 X69.44 Y25.08
+
+G1 X69.18 Y25.06
+
+G1 X69.18 Y25.06
+
+G1 X69.44 Y25.08
+
+G1 X69.44 Y25.08
+
+G1 X69.44 Y25.08
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X69.18 Y25.06
+M04 S1000
+G1 X69.18 Y25.06
+G1 X69.14 Y25.34
+
+G1 X69.14 Y25.34
+
+G1 X69.14 Y25.34
+
+G1 X69.4 Y25.38
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.76 Y25.34
+M04 S1000
+G1 X77.02 Y25.38
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X77.02 Y25.38
+M04 S1000
+G1 X77.02 Y25.38
+G1 X77.06 Y25.08
+
+G1 X76.8 Y25.06
+
+G1 X76.76 Y25.34
+
+G1 X76.76 Y25.34
+
+G1 X76.8 Y25.06
+
+G1 X76.8 Y25.06
+
+G1 X77.06 Y25.08
+
+G1 X77.06 Y25.08
+
+G1 X77.06 Y25.08
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.8 Y25.06
+M04 S1000
+G1 X76.8 Y25.06
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.76 Y25.34
+M04 S1000
+G1 X76.76 Y25.34
+G1 X77.02 Y25.38
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.34 Y43.74
+M04 S1000
+G1 X75.42 Y43.96
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.42 Y43.96
+M04 S1000
+G1 X75.42 Y43.96
+G1 X75.42 Y43.96
+
+G1 X75.1 Y44.22
+
+G1 X74.26 Y44.5
+
+G1 X74.26 Y44.5
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X74.12 Y45.6
+M04 S1000
+G1 X74.12 Y45.6
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.1 Y44.16
+M04 S1000
+G1 X76.26 Y44.26
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.18 Y48.36
+M04 S1000
+G1 X75.42 Y49.06
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.42 Y49.06
+M04 S1000
+G1 X76.1 Y49.24
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.1 Y49.24
+M04 S1000
+G1 X76.5 Y49.52
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.5 Y49.52
+M04 S1000
+G1 X77.14 Y49.68
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X77.02 Y48.88
+M04 S1000
+G1 X76.76 Y48.84
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.76 Y48.84
+M04 S1000
+G1 X76.76 Y48.84
+G1 X76.8 Y48.56
+
+G1 X76.8 Y48.56
+
+G1 X77.06 Y48.58
+
+G1 X77.06 Y48.58
+
+G1 X77.02 Y48.88
+
+G1 X77.02 Y48.88
+
+G1 X76.76 Y48.84
+
+G1 X76.8 Y48.56
+
+G1 X77.06 Y48.58
+
+G1 X77.06 Y48.58
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.8 Y48.56
+M04 S1000
+G1 X76.8 Y48.56
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.76 Y48.84
+M04 S1000
+G1 X76.76 Y48.84
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X76.26 Y49.34
+M04 S1000
+G1 X76.1 Y49.24
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X75.42 Y49.06
+M04 S1000
+G1 X75.42 Y49.06
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X79.34 Y63.18
+M04 S1000
+G1 X79.3 Y63.46
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X79.3 Y63.46
+M04 S1000
+G1 X79.56 Y63.5
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X79.56 Y63.5
+M04 S1000
+G1 X79.56 Y63.5
+G1 X79.6 Y63.2
+
+G1 X79.34 Y63.18
+
+G1 X79.34 Y63.18
+
+G1 X79.6 Y63.2
+
+G1 X79.6 Y63.2
+
+G1 X79.6 Y63.2
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X79.34 Y63.18
+M04 S1000
+G1 X79.34 Y63.18
+G1 X79.3 Y63.46
+
+G1 X79.3 Y63.46
+
+G1 X79.3 Y63.46
+
+G1 X79.56 Y63.5
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X80.02 Y64.18
+M04 S1000
+G1 X78.86 Y64.12
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X78.86 Y64.12
+M04 S1000
+G1 X78.86 Y64.12
+G1 X78.74 Y63.82
+
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X83.24 Y63.9
+M04 S1000
+G1 X92.54 Y73.2
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X92.54 Y73.2
+M04 S1000
+G1 X92.52 Y111.82
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X92.52 Y111.82
+M04 S1000
+G1 X0.02 Y111.82
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X0.02 Y111.82
+M04 S1000
+G1 X0.02 Y27.3
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X0.02 Y27.3
+M04 S1000
+G1 X1.9 Y25.42
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X40.4 Y100.1
+M04 S1000
+G1 X40.4 Y100.1
+M05
+ 
+G0 Z2
+(Block-name: block)
+(Block-expand: 0)
+(Block-enable: 1)
+G01 F120
+G0 X92.54 Y73.2
+M04 S1000
+G1 X92.54 Y73.2
+M05
+G0 Z2
+G0 X0.5 Y0.5

@@ -3,8 +3,12 @@
 #include <opencv2/highgui.hpp>
 #include <opencv2/imgproc.hpp>
 #include <iostream>
+#include <fstream>
 #include <list>
 #include <algorithm>
+#include <sstream>
+#include <string>
+
 using namespace cv;
 using namespace std;
 
@@ -173,9 +177,39 @@ void ScanImageAndReduceC(Mat &I,Mat &image)
 
 };
 
+void DrillHoles(Mat &image)
+{
+    std::ifstream infile("drill.dcf");
+    std::string rline;
+    int start;
+    int vector[5];
+
+    while (std::getline(infile, rline))
+    {
+        start=0;
+        for (int t=0; t<5; t++) 
+        {
+            std::size_t found = rline.find(",");
+            vector[t]=std::stoi(rline.substr(start,found));
+            rline = rline.substr(found+1);
+        }
+
+        if ((vector[0]==vector[2]) && (vector[1]==vector[3]))
+        {
+            circle(image, Point(vector[0],vector[1]), vector[4], Vec3b(0,0,0), -1);
+        } else
+        {
+            line(image, Point(vector[0],vector[1]), Point(vector[2],vector[3]), Vec3b(0,0,0), vector[4]);
+        }
+        
+
+    }
+
+}
+
 int main( int argc, char** argv )
 {
-    bool file_is_ready = true;
+    bool file_is_ready = false;
 
     Mat image,city;
 
@@ -205,17 +239,19 @@ int main( int argc, char** argv )
         city = imread("cpp_image.png");
     }
 
+    DrillHoles(city);
+
     Mat detected_edges;
     Canny( city, detected_edges, 50, 150, 7 );
     
     Mat element = getStructuringElement( MORPH_RECT,Size( 2*5 + 1, 2*5+1 ),Point( 5, 5 ) );
     dilate( detected_edges, detected_edges, element );
     erode( detected_edges, detected_edges, element );
-    imwrite( "aout.png", detected_edges );
 
-    namedWindow( "Display window", WINDOW_GUI_NORMAL ); // Create a window for display.
-    resizeWindow("Display window", 1024, 1237);
+    imwrite( "aout.png", detected_edges );      
+    //contours = find_contours(edged, 240,fully_connected='high',positive_orientation='low')
+
     imshow( "Display window", detected_edges );                // Show our image inside it.
-    waitKey(2000);
+    waitKey(20000);
     return 0;
 }
