@@ -239,7 +239,7 @@ int main( int argc, char** argv )
         city = imread("cpp_image.png");
     }
 
-    DrillHoles(city);
+    //DrillHoles(city);
 
     Mat detected_edges;
     Canny( city, detected_edges, 50, 150, 7 );
@@ -252,6 +252,6 @@ int main( int argc, char** argv )
     //contours = find_contours(edged, 240,fully_connected='high',positive_orientation='low')
 
     imshow( "Display window", detected_edges );                // Show our image inside it.
-    waitKey(20000);
+    waitKey(2000);
     return 0;
 }
