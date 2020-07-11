@@ -25,5 +25,13 @@ OpenCV libraries (version 4.2 used)
 ### Errors
 
 Opencv follow contour sometimes does not make closed contours. This is a problem in PCB making, as it would short-circuit PCB tracks. 
-However, as shown the inter-contour distance tolerance is of 0.066mm. I have a laser cutter with an engraving width of 0.2mm (i.e. a
+However, as shown the inter-contour distance tolerance is of 0.0685mm. I have a laser cutter with an engraving width of 0.2mm (i.e. a
 possible 0.1mm engraving width on the centre of track to a track coninciding from left or right side)
+
+![alt text](https://github.com/micsche/kicad-laser-min/tree/master/images/error-1.png "")
+
+![alt text](https://github.com/micsche/kicad-laser-min/tree/master/images/error-2.png "")
+
+OpenCV follow contours creates two contours from both sides. ToDo: find own findcontour method. No real problem here, rather than
+double time to process pcb.
+![alt text](https://github.com/micsche/kicad-laser-min/tree/master/images/error-3.png "")
