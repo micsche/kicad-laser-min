@@ -24,7 +24,7 @@
             "type": "cppdbg",
             "request": "launch",
             "program": "${fileDirname}/${fileBasenameNoExtension}",
-            "args": [],
+            "args": ["tinals"],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],
