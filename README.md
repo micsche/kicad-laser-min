@@ -28,7 +28,7 @@ Opencv follow contour sometimes does not make closed contours. This is a problem
 However, as shown the inter-contour distance tolerance is of 0.0685mm. I have a laser cutter with an engraving width of 0.2mm (i.e. a
 possible 0.1mm engraving width on the centre of track to a track coninciding from left or right side)
 
-![Contours do not touch](https://github.com/micsche/kicad-laser-min/tree/master/images/error-1.png "Logo Title Text 1")
+![Contours do not touch](https://github.com/micsche/kicad-laser-min/tree/master/images/error-1.png)
 
 ![However Distance is small enough to still function](https://github.com/micsche/kicad-laser-min/tree/master/images/error-2.png "Logo Title Text 2")
 
