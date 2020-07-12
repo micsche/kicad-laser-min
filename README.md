@@ -22,18 +22,18 @@ From left to right - BW Image of tracks, Colourized Dilation of tracks, Edge Det
 The application is provided as is. I tested it with my own generated pcbs and worked well. However, your testing is also appreciated.
 Please review outputs, especially gcode (as I am not an expert on any of the file formats used).
 
-`KICAD Version used :
+```KICAD Version used :
     Application: Pcbnew
     Version: 5.1.6-c6e7f7d~86~ubuntu18.04.1, release build
-`
+```
 
 ### Usage
 
-`Usage: 
+```Usage: 
     Option: -m         Process map.png directly
             -f         Process Front Copper Layer. (default Bottom Copper Layer)
             -p<pxmm>   Change pixels per mm (default 30)
-`
+```
 
 ### Files
 kicadpcb2contour.cpp
