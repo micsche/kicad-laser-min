@@ -5,13 +5,12 @@ of minimum laser travel.
 
 ### Operation
 The application uses a line Voronoi segmentation technique on the BW image of one layer of PCB. The Voronoi algorithm has been implemented in C++
-by colorizing each track a different color. The tracks are then dilated until adgacent regions meet. Then an edge detection algorithm will get the contours
-of the tracks. These contours will effectively be the paths where PCB isolation will take place. A contour following algorithm will transform the edge
-into gcode. 
+by colorizing each track a different color. Each track is dilated until regions meet. Finally, an edge detection algorithm will produce the contours.
+This is the PCB region isolation. A contour following algorithm will transform the edge into gcode. 
 
-The KICAD pcb to image conversion uses <pxmm> scale (which defaults to 30 pixels per mm).
+The KICAD pcb to image conversion uses `<pxmm>` scale (which defaults to 30 pixels per mm).
 
-Edge dilation takes time (why it is implemented in C++). The time is dependant on the <pxmm> scale.
+Edge dilation takes time (why it is implemented in C++). The time is dependant on the `<pxmm>` scale.
 
 Drill holes for pads and vias will be added to the end gcode. The holes will be original size. 
 Please note that the holes are circular (too much work to create oval gcode).
@@ -23,18 +22,18 @@ From left to right - BW Image of tracks, Colourized Dilation of tracks, Edge Det
 The application is provided as is. I tested it with my own generated pcbs and worked well. However, your testing is also appreciated.
 Please review outputs, especially gcode (as I am not an expert on any of the file formats used).
 
-KICAD Version used :
+`KICAD Version used :
     Application: Pcbnew
     Version: 5.1.6-c6e7f7d~86~ubuntu18.04.1, release build
-
+`
 
 ### Usage
 
-Usage: 
+`Usage: 
     Option: -m         Process map.png directly
             -f         Process Front Copper Layer. (default Bottom Copper Layer)
             -p<pxmm>   Change pixels per mm (default 30)
-
+`
 
 ### Files
 kicadpcb2contour.cpp
