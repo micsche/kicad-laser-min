@@ -24,7 +24,7 @@
             "type": "cppdbg",
             "request": "launch",
             "program": "${fileDirname}/${fileBasenameNoExtension}",
-            "args": ["tinals"],
+            "args": ["testpcb.kicad_pcb"],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],

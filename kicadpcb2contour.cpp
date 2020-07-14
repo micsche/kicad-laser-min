@@ -7,6 +7,7 @@
     cpp_image.png - Colour track expansion
 */
 
+//#define DEBUG
 
 #include <opencv2/core.hpp>
 #include <opencv2/imgcodecs.hpp>
@@ -22,7 +23,6 @@
 
 using namespace cv;
 using namespace std;
-
 
 int pxmm = 30; // Tunable parameter resolves pixels per mm. Larger value slower calculation. Lower values coarser contours.
 
@@ -162,14 +162,19 @@ void get_one_vals(std::string line, std::string *value)
 }
 
 // GET Vias and Pads dimension
-int readviapad(String filename)
-{
+int readviapad(String filename,String sLayer)
+{        
+    #ifdef DEBUG 
+        cout << "readviapad" << endl; 
+    #endif
+
     std::string line;
     ifstream myfile (filename);
     float x1,y1,angle;
 
     if (myfile.is_open())
     {
+                
         while (! myfile.eof() )
         {
             getline (myfile,line);
@@ -177,7 +182,7 @@ int readviapad(String filename)
             replace( line.begin(), line.end(), ')', ' '); // remove ')' from line
 
             // (at indicate footprint location
-            if ((line.find("(at")!=string::npos) & (std::count(line.begin(), line.end(), '(')==1))
+            if ((line.find("(at ")!=string::npos) & (std::count(line.begin(), line.end(), '(')==1))
             {
                 angle=0;
                 if (count(line.begin(), line.end(), ' ') == 4)
@@ -227,7 +232,12 @@ int readviapad(String filename)
 
             // pad information
             if ((line.find("pad")!=string::npos) && (line.find("layers")!=string::npos))
+            if ((line.find(sLayer)!=string::npos) || (line.find("*.Cu")!=string::npos))
             {
+                #ifdef DEBUG
+                    cout << line << endl;
+                #endif
+
                 unsigned first,last=0,padtype;
                 float centrex,centrey,width,height,holex,holey,cx,cy;
                 string token;
@@ -251,7 +261,13 @@ int readviapad(String filename)
                         centrey=cx*sin(angle)+cy*cos(angle)+y1;
                     }
 
-                    if (token.substr(0,4)=="size") { get_two_vals(token,&width, &height); }
+                    if (token.substr(0,4)=="size") 
+                    { 
+                        get_two_vals(token,&cx,&cy); 
+                        width  = abs(cx*cos(angle)-cy*sin(angle));
+                        height = abs(cx*sin(angle)+cy*cos(angle));
+                    }
+
                     if (token.substr(0,5)=="drill") 
                     {   
                         if (count(token.begin(), token.end(), ' ')==3)
@@ -276,6 +292,11 @@ int readviapad(String filename)
                         ipadseg[ipadpos][SIZEY]=height;
                         ipadseg[ipadpos][HOLEX]=holex;
                         ipadseg[ipadpos][HOLEY]=holey;
+                        
+                        boardminx=min(centrex,boardminx);
+                        boardminy=min(centrey,boardminy);
+                        boardmaxx=max(centrex,boardmaxx);
+                        boardmaxy=max(centrey,boardmaxy);
 
                         ipadpos++;
                     }
@@ -285,41 +306,28 @@ int readviapad(String filename)
             }
         }
 
-        /* Store via and pad as 
-                PADTYPE,
-                CENTRE X, CENTRE Y, 
-                X SIZE OF PAD, Y SIZE OF PAD
-                X SIZE of DRILL HOLE, Y SIZE of DRILL HOLE
-        
-            move origin of pcb board to boardminx,boardminy
-            scale up using Pixels per mm
-        */
-        for (unsigned int li=0; li<ipadpos; li++)
-        {
-            ipad[li][PADTYPE]   = int(ipadseg[li][PADTYPE]); 
-            ipad[li][LOCX]      = int((ipadseg[li][LOCX]-boardminx)*pxmm);
-            ipad[li][LOCY]      = int((ipadseg[li][LOCY]-boardminy)*pxmm);
-            
-            ipad[li][SIZEX]     = int((ipadseg[li][SIZEX]*pxmm/2));
-            ipad[li][SIZEY]     = int((ipadseg[li][SIZEY]*pxmm/2));
-
-            ipad[li][HOLEX]     = int((ipadseg[li][HOLEX])*pxmm);
-            ipad[li][HOLEY]     = int((ipadseg[li][HOLEY])*pxmm);
-
-        }
-
         cout << ipadpos << " vias/pads read." << endl;
     }
     else
-    {
+    {  
+        #ifdef DEBUG 
+            cout << "Problem File" << endl; 
+        #endif
         return ENOENT;
     }
     return 0;
 }
 
+
+
 // GET Tracks
 int readkicad(String filename, String sLayer)
-{   std::string line;
+{   
+    #ifdef DEBUG 
+        cout << "readkicad" << endl; 
+    #endif
+    
+    std::string line;
     std::string layer;
     float x1,y1,x2,y2,width;
 
@@ -395,6 +403,17 @@ int readkicad(String filename, String sLayer)
     {
         return ENOENT;
     }
+
+
+  return 0;
+}
+
+void scale_down()
+{
+    #ifdef DEBUG 
+        cout << "scaledown" << endl; 
+    #endif
+
     boardmaxx+=2; // Increment slightly boardmaxx
     boardminx-=2; // Decrement slightly boardinx
     boardmaxy+=2; // Increment slightly boardmaxy
@@ -402,6 +421,28 @@ int readkicad(String filename, String sLayer)
 
     image_width = int(boardmaxx-boardminx)*pxmm;
     image_height = int(boardmaxy-boardminy)*pxmm;
+
+    /* Store via and pad as 
+            PADTYPE,
+            CENTRE X, CENTRE Y, 
+            X SIZE OF PAD, Y SIZE OF PAD
+            X SIZE of DRILL HOLE, Y SIZE of DRILL HOLE
+    
+        move origin of pcb board to boardminx,boardminy
+        scale up using Pixels per mm
+    */
+    for (unsigned int li=0; li<ipadpos; li++)
+    {
+        ipad[li][PADTYPE]   = int(ipadseg[li][PADTYPE]); 
+        ipad[li][LOCX]      = int((ipadseg[li][LOCX]-boardminx)*pxmm);
+        ipad[li][LOCY]      = int((ipadseg[li][LOCY]-boardminy)*pxmm);
+        
+        ipad[li][SIZEX]     = int((ipadseg[li][SIZEX]*pxmm/2));
+        ipad[li][SIZEY]     = int((ipadseg[li][SIZEY]*pxmm/2));
+
+        ipad[li][HOLEX]     = int((ipadseg[li][HOLEX])*pxmm);
+        ipad[li][HOLEY]     = int((ipadseg[li][HOLEY])*pxmm);
+    }
 
     /* Store track segment line
         X1,Y1,X2,Y2, Width
@@ -420,13 +461,14 @@ int readkicad(String filename, String sLayer)
 
         iline[li][4]=int((linesegment[li][LINEWIDTH])*pxmm);
     }
-
-  return 0;
 }
 
 //Create image
 void showpic()
 {
+    #ifdef DEBUG 
+        cout << "showpic" << endl; 
+    #endif
     Mat city = Mat::zeros(Size(image_width,image_height),CV_8UC3);
 
     for (int i=0; i<linesegpos; i++)
@@ -450,7 +492,8 @@ void showpic()
                     Scalar(255,255,255),
                     -1, 
                     LINE_8,
-                    0);           
+                    0);
+
         }   
     }
 
@@ -608,7 +651,12 @@ void ScanImageAndReduceC(Mat &I,Mat &image)
 };
 
 int getcontourexpansion()
-{   Mat image,city;
+{   
+    #ifdef DEBUG 
+            cout << "getcontourexpansions" << endl; 
+    #endif
+
+    Mat image,city;
     bool file_is_ready = false;
 
     if (!file_is_ready)
@@ -656,6 +704,10 @@ void gcode_print(String gout)
  */
 int tracecontourexpansion()
 {
+    #ifdef DEBUG 
+        cout << "tracecontourexpansion" << endl; 
+    #endif
+
     // threshold function
     Mat outImg,drImg;
     bool found = true;
@@ -739,7 +791,10 @@ int tracecontourexpansion()
 // Assumption holes are circular
 
 void trace_drillholes()
-{
+{    
+    #ifdef DEBUG 
+        cout << "drillholes" << endl; 
+    #endif
     float x1,x2,yy,r;
 
     for (unsigned int li=0; li<ipadpos; li++)
@@ -769,7 +824,7 @@ int main(int argc, char** argv)
 
     if ((argc<2) | (argc>4))
     {
-        cout << "Usage: " << argv[0] << "<filename> " <<  endl;
+        cout << "Usage: " << argv[0] << " <filename> " <<  endl;
         cout << "\tOption: -m         Process map.png directly" << endl;
         cout << "\t        -f         Process Front Copper Layer." << endl;
         cout << "\t        -p<pxmm>   Change pixels per mm (default 30)" << endl;
@@ -777,6 +832,12 @@ int main(int argc, char** argv)
 
         if (argc>4) return E2BIG;
         return EINVAL;
+    }
+
+    if ((argc>2) & (argv[1][0]=='-')) // first parameter should be a filename
+    {
+        cout << "First parameter should be a KiCad PCBnew filename." << endl;
+        return ENOENT;
     }
 
     // Check filename exists
@@ -792,7 +853,7 @@ int main(int argc, char** argv)
     if (argc>2)
     {
         for (int i=2; i<argc; i++)  
-        {   
+        {   cout << i << " " << argv[i] << endl;
             if (argv[i][0]=='-')
             {
                 switch (argv[i][1])
@@ -854,18 +915,28 @@ int main(int argc, char** argv)
                         cout << "Invalid Argument for " << argv[0] << endl;
                         return ENOENT;
                 }
+                
             }
             else
             {
                 cout << "Invalid Argument for " << argv[0] << endl;
                 return ENOENT;
             }
+            
         }
     }
 
-    if (process==false) readkicad(filename, sLayer);  // read pcb tracks
-    readviapad(filename); // read pad/via information
-    if (process==false) showpic();    // output bw image map.png
+    if (process==false)
+    {
+        readkicad(filename, sLayer);  // read pcb tracks
+
+        readviapad(filename, sLayer); // read pad/via information
+
+        if (ipadpos==0) return 0;
+        scale_down();
+
+        showpic();    // output bw image map.png
+    }
 
     getcontourexpansion(); // Expand tracks and find edge boundary of expansion
     tracecontourexpansion();
