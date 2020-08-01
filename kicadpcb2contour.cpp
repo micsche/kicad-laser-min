@@ -36,6 +36,7 @@ bool color_pool[31*31*31];
 #define K_RECT 1
 #define K_ELLPSE 2
 #define K_CIRCLE 3
+#define K_ROUNDRECT 4
 
 #define PADTYPE 0
 #define LOCX 1
@@ -44,6 +45,7 @@ bool color_pool[31*31*31];
 #define SIZEY 4
 #define HOLEX 5
 #define HOLEY 6
+#define RRATIO 7
 
 #define LINEX1 0
 #define LINEY1 1
@@ -60,8 +62,8 @@ float linesegment[50000][5];
 unsigned int iline[50000][5];
 unsigned int linesegpos=0;
 
-float ipadseg[50000][7];
-unsigned int ipad[50000][7];
+float ipadseg[50000][8];
+unsigned int ipad[50000][8];
 unsigned int ipadpos=0;
 
 std::string gcode="";
@@ -234,12 +236,13 @@ int readviapad(String filename,String sLayer)
             if ((line.find("pad")!=string::npos) && (line.find("layers")!=string::npos))
             if ((line.find(sLayer)!=string::npos) || (line.find("*.Cu")!=string::npos))
             {
+                
                 #ifdef DEBUG
                     cout << line << endl;
                 #endif
 
                 unsigned first,last=0,padtype;
-                float centrex,centrey,width,height,holex,holey,cx,cy;
+                float centrex,centrey,width,height,holex,holey,cx,cy,rratio;
                 string token;
         
                 while (last<255)
@@ -248,10 +251,15 @@ int readviapad(String filename,String sLayer)
                     last = line.substr(first+1).find("(");
                     token = line.substr (first+1,last-first);
 
+                    #ifdef DEBUG
+                        cout << token << endl;
+                    #endif
+
                     if (token.find("pad")!=string::npos)
                     {   padtype=K_CIRCLE;
                         if (token.find("oval")!=string::npos) padtype=K_ELLPSE;
                         if (token.find("rect")!=string::npos) padtype=K_RECT;
+                        if (token.find("round")!=string::npos) padtype=K_ROUNDRECT;
                     }
 
                     if (token.substr(0,2)=="at") 
@@ -282,27 +290,37 @@ int readviapad(String filename,String sLayer)
                         }                        
                     }
 
+                    if (token.substr(0,9)=="roundrect")
+                    {
+                        get_one_valf(token,&rratio);
+                    }
+
                     if (token.substr(0,5)=="layer") 
                     {
-                        holey=holex;
-                        ipadseg[ipadpos][PADTYPE]=padtype;
-                        ipadseg[ipadpos][LOCX]=centrex;
-                        ipadseg[ipadpos][LOCY]=centrey;
-                        ipadseg[ipadpos][SIZEX]=width;
-                        ipadseg[ipadpos][SIZEY]=height;
-                        ipadseg[ipadpos][HOLEX]=holex;
-                        ipadseg[ipadpos][HOLEY]=holey;
-                        
-                        boardminx=min(centrex,boardminx);
-                        boardminy=min(centrey,boardminy);
-                        boardmaxx=max(centrex,boardmaxx);
-                        boardmaxy=max(centrey,boardmaxy);
-
-                        ipadpos++;
+                            // Nothing
                     }
                     
                     line = line.substr(last+1);
                 }
+                // End of reading one line
+                holex = min(holex,holey); // Lets take the smallest value since we dont know how to make ellipse gcode
+                holey=holex;
+                
+                ipadseg[ipadpos][PADTYPE]=padtype;
+                ipadseg[ipadpos][LOCX]=centrex;
+                ipadseg[ipadpos][LOCY]=centrey;
+                ipadseg[ipadpos][SIZEX]=width;
+                ipadseg[ipadpos][SIZEY]=height;
+                ipadseg[ipadpos][HOLEX]=holex;
+                ipadseg[ipadpos][HOLEY]=holey;
+                ipadseg[ipadpos][RRATIO]=rratio;
+                
+                boardminx=min(centrex,boardminx);
+                boardminy=min(centrey,boardminy);
+                boardmaxx=max(centrex,boardmaxx);
+                boardmaxy=max(centrey,boardmaxy);
+                ipadpos++;
+
             }
         }
 
