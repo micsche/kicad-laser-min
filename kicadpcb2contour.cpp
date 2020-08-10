@@ -37,6 +37,7 @@ bool color_pool[31*31*31];
 #define K_ELLPSE 2
 #define K_CIRCLE 3
 #define K_ROUNDRECT 4
+#define K_LINE 5
 
 #define PADTYPE 0
 #define LOCX 1
@@ -53,6 +54,14 @@ bool color_pool[31*31*31];
 #define LINEY2 3
 #define LINEWIDTH 4
 
+#define EDGETYPE 0
+#define EDGESTARTX 1
+#define EDGESTARTY 2
+#define EDGEENDX 3
+#define EDGEENDY 4
+#define EDGEWIDTH 5
+
+
 Mat detected_edges;
 
 using namespace std;
@@ -65,6 +74,11 @@ unsigned int linesegpos=0;
 float ipadseg[50000][8];
 unsigned int ipad[50000][8];
 unsigned int ipadpos=0;
+
+float edgecuts[10000][6];
+unsigned int iedgecuts[10000][6];
+unsigned int edgecutpos=0;
+
 
 std::string gcode="";
 unsigned int blockcounter=0;
@@ -161,6 +175,95 @@ void get_one_vals(std::string line, std::string *value)
         } 
         posit++;
     }
+}
+
+int readedge(String filename)
+{
+    #ifdef DEBUG 
+        cout << "Edge  Cuts" << endl; 
+    #endif
+
+    std::string line;
+    ifstream myfile (filename);
+    float x1,y1,x2,y2,width;
+    float minx,miny,maxx,maxy,radius;
+    int line_type;
+
+    if (myfile.is_open())
+    {
+                
+        while (! myfile.eof() )
+        {
+            getline (myfile,line);
+            while (line[0]==' ') line.erase(0,1);  // remove initial whitespaces
+            replace( line.begin(), line.end(), ')', ' '); // remove ')' from line
+
+            // (at indicate footprint location
+            if ((line.find("Edge.Cuts")!=string::npos) && (line.find("gr_")!=string::npos))
+            {
+                unsigned first,last=0;
+                float centrex,centrey,width,height,holex,holey;
+                string token;
+        
+                while (last<255)
+                {
+                    first = line.find("(");
+                    last = line.substr(first+1).find("(");
+                    token = line.substr (first+1,last-first);
+
+                    line = line.substr(last+1);
+
+                    if (token.find("gr_line")!=string::npos) line_type=K_LINE;
+                    if (token.find("gr_circle")!=string::npos) line_type=K_CIRCLE;
+                    
+                    if ((token.find("start")!=string::npos) || (token.find("center")!=string::npos))
+                    {   
+                        get_two_vals(token,&x1,&y1);
+                    }
+
+                    if ((token.find("end")!=string::npos))
+                    {
+                        get_two_vals(token,&x2,&y2);
+                    }
+
+                    if ((token.find("width")!=string::npos))
+                    {
+                        get_one_valf(token, &width);
+                    }
+                }
+
+                edgecuts[edgecutpos][EDGETYPE]=line_type;
+                edgecuts[edgecutpos][EDGESTARTX]=x1;
+                edgecuts[edgecutpos][EDGESTARTY]=y1;
+                edgecuts[edgecutpos][EDGEENDX]=x2;
+                edgecuts[edgecutpos][EDGEENDY]=y2;
+                edgecuts[edgecutpos][EDGEWIDTH]=width;
+                edgecutpos++;
+
+                if (line_type==K_LINE)
+                {
+                    minx = min(x1,x2);
+                    maxx = max(x1,x2);
+                    miny = min(y1,y2);
+                    maxy = max(y1,y2);
+
+                } else if (line_type==K_CIRCLE)
+                {
+                    radius = sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2));
+                    minx = x1 - radius;
+                    maxx = x1 + radius;
+                    miny = y1 - radius;
+                    maxy = y1 + radius;
+                }
+
+                boardminx=min(minx,boardminx);
+                boardminy=min(miny,boardminy);
+                boardmaxx=max(maxx,boardmaxx);
+                boardmaxy=max(maxy,boardmaxy);
+            }
+        }
+    }
+    return 0;
 }
 
 // GET Vias and Pads dimension
@@ -479,6 +582,27 @@ void scale_down()
 
         iline[li][4]=int((linesegment[li][LINEWIDTH])*pxmm);
     }
+
+    /* Store edge Cuts
+        X1,Y1,X2,Y2, Width
+        
+        move origin of pcb board to boardminx,boardminy
+        scale up using Pixels per mm
+    */
+
+    for (unsigned int li=0; li<edgecutpos; li++)
+    {
+        iedgecuts[li][EDGETYPE]   = int(edgecuts[li][EDGETYPE]);
+
+        iedgecuts[li][EDGESTARTX] = int((edgecuts[li][EDGESTARTX]-boardminx)*pxmm);
+        iedgecuts[li][EDGEENDX]   = int((edgecuts[li][EDGEENDX]-boardminx)*pxmm);
+
+        iedgecuts[li][EDGESTARTY] = int((edgecuts[li][EDGESTARTY]-boardminy)*pxmm);
+        iedgecuts[li][EDGEENDY]   = int((edgecuts[li][EDGEENDY]-boardminy)*pxmm);
+
+        iedgecuts[li][EDGEWIDTH]  = int((edgecuts[li][EDGEWIDTH])*pxmm);
+    }
+
 }
 
 //Create image
@@ -516,6 +640,56 @@ void showpic()
     }
 
     imwrite( "map.png", city );
+
+    // Create EDGE MASK
+    if (edgecutpos>0)
+    {
+    
+        city = Mat::zeros(Size(image_width,image_height),CV_8UC3);
+        int x1,y1,x2,y2,radius,width;
+
+        for (int i=0; i<edgecutpos; i++)
+        {   width=1;
+            
+            width = iedgecuts[i][EDGEWIDTH];
+            width = max (1,width);
+            
+            if (iedgecuts[i][EDGETYPE]==K_LINE)
+            {
+                line(city,Point2d(iedgecuts[i][EDGESTARTX],iedgecuts[i][EDGESTARTY]), 
+                    Point2d(iedgecuts[i][EDGEENDX],iedgecuts[i][EDGEENDY]),
+                    Scalar(255,255,255),width);
+
+            } else if (iedgecuts[i][EDGETYPE]==K_CIRCLE) {
+                x1=iedgecuts[i][EDGESTARTX];
+                x2=iedgecuts[i][EDGEENDX];
+                y1=iedgecuts[i][EDGESTARTY];
+                y2=iedgecuts[i][EDGEENDY];
+                radius = sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2));
+                circle(city, Point2d(x1,y1),radius,Scalar(255,255,255),width);
+            }
+        }
+        
+        int i=0;
+        
+        while ((city.at<Vec3b>(Point(i,image_height >> 1))==Vec3b(0,0,0)) && (i<image_width)) i++; //find 1st edge
+        x1=i;
+
+        while ((city.at<Vec3b>(Point(i,image_height >> 1))!=Vec3b(0,0,0)) && (i<image_width)) i++; // traverse edge
+        while ((city.at<Vec3b>(Point(i,image_height >> 1))==Vec3b(0,0,0)) && (i<image_width)) i++; // find 2nd edge
+        x2=i;
+        
+        if (x2<image_width)
+        {
+            floodFill(city, Point2d((x2+x1) >> 1,image_height >> 1), Scalar(255,255,255));
+            imwrite( "mask.png", city );
+        }
+        else
+        {
+            cout << "Error parsing Edge Cut shape." << endl;
+        }
+    }
+    
 }
 
 //pseudo random color pick
@@ -674,7 +848,7 @@ int getcontourexpansion()
             cout << "getcontourexpansions" << endl; 
     #endif
 
-    Mat image,city;
+    Mat image,city,output;
     bool file_is_ready = false;
 
     if (!file_is_ready)
@@ -686,10 +860,25 @@ int getcontourexpansion()
             cout <<  "Could not open or find the image" << std::endl ;
             return -1;
         }
-        
+
         city = Mat::zeros(Size(image.cols,image.rows),CV_8UC3);
 
         ScanImageAndReduceC(image,city);   // Dilate tracks until all tracks meet at middle. Then find edge.
+
+        
+        String maskName = "mask.png";
+        std::ifstream maskfile(maskName);
+
+        if (maskfile.good())
+        {
+            Mat mask = imread( samples::findFile( maskName ), IMREAD_COLOR ); // Read the file
+            if( image.empty() )                      // Check for invalid input
+            {
+                Mat mask(Size(image.cols,image.rows),CV_8UC3, Scalar(255,255,255));
+            }
+
+            bitwise_and(city,mask,city);                                    // Mask out Edge Cuts
+        }
         imwrite( "cpp_image.png", city );  // Output to cpp_image.png
     }
     else
@@ -946,9 +1135,13 @@ int main(int argc, char** argv)
 
     if (process==false)
     {
+        remove("mask.png"); // remove mask.png
+
         readkicad(filename, sLayer);  // read pcb tracks
 
         readviapad(filename, sLayer); // read pad/via information
+
+        readedge(filename); //read Edge Cuts
 
         if (ipadpos==0) return 0;
         scale_down();
