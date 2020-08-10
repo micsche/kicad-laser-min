@@ -43,6 +43,7 @@ kicadpcb2contour.cpp
     cpp_image.png - your mind on LSD. The colorised image dilation of PCB tracks.
     trace.png     - Edge detection of the dilated image
     kic.gcode     - Final gcode
+    mask.png      - Mask of PCB to handle Edge cuts
 
 
 
