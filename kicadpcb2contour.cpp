@@ -20,6 +20,7 @@
 #include <algorithm>
 #include <sstream>
 #include <string>
+#include <math.h>
 
 using namespace cv;
 using namespace std;
@@ -38,6 +39,7 @@ bool color_pool[31*31*31];
 #define K_CIRCLE 3
 #define K_ROUNDRECT 4
 #define K_LINE 5
+#define K_ARC 6
 
 #define PADTYPE 0
 #define LOCX 1
@@ -61,6 +63,7 @@ bool color_pool[31*31*31];
 #define EDGEENDX 3
 #define EDGEENDY 4
 #define EDGEWIDTH 5
+#define EDGEANGLE 6
 
 
 Mat detected_edges;
@@ -87,8 +90,8 @@ float ipadseg[50000][9];
 unsigned int ipad[50000][9];
 unsigned int ipadpos=0;
 
-float edgecuts[10000][6];
-unsigned int iedgecuts[10000][6];
+float edgecuts[10000][7];
+unsigned int iedgecuts[10000][7];
 unsigned int edgecutpos=0;
 
 
@@ -239,7 +242,7 @@ int readedge(String filename)
             if ((line.find("Edge.Cuts")!=string::npos) && (line.find("gr_")!=string::npos))
             {
                 unsigned first,last=0;
-                float centrex,centrey,width,height,holex,holey;
+                float centrex,centrey,width,height,holex,holey,angle;
                 string token;
 
                 while (last<255)
@@ -252,6 +255,7 @@ int readedge(String filename)
 
                     if (token.find("gr_line")!=string::npos) line_type=K_LINE;
                     if (token.find("gr_circle")!=string::npos) line_type=K_CIRCLE;
+                    if (token.find("gr_arc")!=string::npos) line_type=K_ARC;
 
                     if ((token.find("start")!=string::npos) || (token.find("center")!=string::npos))
                     {
@@ -267,6 +271,11 @@ int readedge(String filename)
                     {
                         get_one_valf(token, &width);
                     }
+
+                    if ((token.find("angle")!=string::npos))
+                    {
+                        get_one_valf(token, &angle);
+                    }
                 }
 
                 edgecuts[edgecutpos][EDGETYPE]=line_type;
@@ -275,6 +284,8 @@ int readedge(String filename)
                 edgecuts[edgecutpos][EDGEENDX]=x2;
                 edgecuts[edgecutpos][EDGEENDY]=y2;
                 edgecuts[edgecutpos][EDGEWIDTH]=width;
+                edgecuts[edgecutpos][EDGEANGLE]=angle;
+
                 edgecutpos++;
 
                 if (line_type==K_LINE)
@@ -284,7 +295,7 @@ int readedge(String filename)
                     miny = min(y1,y2);
                     maxy = max(y1,y2);
 
-                } else if (line_type==K_CIRCLE)
+                } else if ((line_type==K_ARC) | (line_type==K_CIRCLE))
                 {
                     radius = sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2));
                     minx = x1 - radius;
@@ -710,19 +721,20 @@ void showpic()
     {
 
         city = Mat::zeros(Size(image_width,image_height),CV_8UC3);
-        int x1,y1,x2,y2,radius,width;
+        int x1,y1,x2,y2,radius,width, startAngle, endAngle;
+        float dx,dy;
 
         for (int i=0; i<edgecutpos; i++)
         {   width=1;
 
             width = iedgecuts[i][EDGEWIDTH];
-            width = max (1,width);
+            width = max (2,width);
 
             if (iedgecuts[i][EDGETYPE]==K_LINE)
             {
                 line(city,Point2d(iedgecuts[i][EDGESTARTX],iedgecuts[i][EDGESTARTY]),
                     Point2d(iedgecuts[i][EDGEENDX],iedgecuts[i][EDGEENDY]),
-                    Scalar(255,255,255),width);
+                    color,width);
 
             } else if (iedgecuts[i][EDGETYPE]==K_CIRCLE) {
                 x1=iedgecuts[i][EDGESTARTX];
@@ -730,7 +742,35 @@ void showpic()
                 y1=iedgecuts[i][EDGESTARTY];
                 y2=iedgecuts[i][EDGEENDY];
                 radius = sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2));
-                circle(city, Point2d(x1,y1),radius,Scalar(255,255,255),width);
+                circle(city, Point2d(x1,y1),radius,color,width);
+            } else if (iedgecuts[i][EDGETYPE]==K_ARC) {
+                x1=iedgecuts[i][EDGESTARTX];
+                x2=iedgecuts[i][EDGEENDX];
+                y1=iedgecuts[i][EDGESTARTY];
+                y2=iedgecuts[i][EDGEENDY];
+                radius = sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2));
+
+                dy = y2-y1;
+                dx = x2-x1;
+                if (dx!=0)
+                {
+                  startAngle =  atan(dy/dx)*180/3.14159265;
+
+                  if (dx<0)
+                  {
+                    startAngle = 180+startAngle;
+                  }
+                  endAngle = startAngle+edgecuts[i][EDGEANGLE];
+
+                } else
+                {
+                  if (dy>0) startAngle = 90; else startAngle = 180;
+                  endAngle = startAngle-edgecuts[i][EDGEANGLE];
+                  cout << startAngle << ":" << dx << "x" << dy << "=" << edgecuts[i][EDGEANGLE] << endl;
+                }
+
+                ellipse(city,Point2d(x1,y1),Size2f(radius,radius),0,startAngle,endAngle,color,width);
+
             }
         }
 
