@@ -103,27 +103,7 @@ unsigned image_height,image_width;
 
 void rounded_rectangle( Mat& src, Point topLeft, Point bottomRight, const Scalar lineColor, const int thickness, const int lineType , const int cornerRadius)
 {
-    /* corners:
-     * p1 - p2
-     * |     |
-     * p4 - p3
-     */
-    Point p1 = topLeft;
-    Point p2 = Point (bottomRight.x, topLeft.y);
-    Point p3 = bottomRight;
-    Point p4 = Point (topLeft.x, bottomRight.y);
 
-    // draw straight lines
-    line(src, Point (p1.x+cornerRadius,p1.y), Point (p2.x-cornerRadius,p2.y), lineColor, thickness, lineType);
-    line(src, Point (p2.x,p2.y+cornerRadius), Point (p3.x,p3.y-cornerRadius), lineColor, thickness, lineType);
-    line(src, Point (p4.x+cornerRadius,p4.y), Point (p3.x-cornerRadius,p3.y), lineColor, thickness, lineType);
-    line(src, Point (p1.x,p1.y+cornerRadius), Point (p4.x,p4.y-cornerRadius), lineColor, thickness, lineType);
-
-    // draw arcs
-    ellipse( src, p1+Point(cornerRadius, cornerRadius), Size( cornerRadius, cornerRadius ), 180.0, 0, 90, lineColor, thickness, lineType );
-    ellipse( src, p2+Point(-cornerRadius, cornerRadius), Size( cornerRadius, cornerRadius ), 270.0, 0, 90, lineColor, thickness, lineType );
-    ellipse( src, p3+Point(-cornerRadius, -cornerRadius), Size( cornerRadius, cornerRadius ), 0.0, 0, 90, lineColor, thickness, lineType );
-    ellipse( src, p4+Point(cornerRadius, -cornerRadius), Size( cornerRadius, cornerRadius ), 90.0, 0, 90, lineColor, thickness, lineType );
 }
 
 bool is_number(const std::string& s)
@@ -215,6 +195,15 @@ void get_one_vals(std::string line, std::string *value)
         }
         posit++;
     }
+}
+
+void rotate_angle(float x,float y,float around_x,float around_y, float angle,float *newx,float *newy)
+{
+  x=x-around_x;
+  y=y-around_y;
+  angle = angle * 3.14159265/180;
+  *newx=x*cos(angle)-y*sin(angle)+around_x;
+  *newy=x*sin(angle)+y*cos(angle)+around_y;
 }
 
 int readedge(String filename)
@@ -354,7 +343,7 @@ int readviapad(String filename,String sLayer)
             {
                 unsigned first,last=0;
                 float centrex,centrey,width,height,holex,holey;
-                string token;
+                string token,shape_drill;
 
                 while (last<255)
                 {
@@ -392,9 +381,9 @@ int readviapad(String filename,String sLayer)
                     cout << line << endl;
                 #endif
 
-                unsigned first,last=0,padtype;
+                unsigned first,last=0,padtype,second;
                 float centrex,centrey,width,height,holex,holey,cx,cy,rratio,angle2;
-                string token;
+                string token,shape_drill;
 
                 while (last<255)
                 {
@@ -422,6 +411,8 @@ int readviapad(String filename,String sLayer)
                         {
                             get_three_vals(token,&cx,&cy,&angle2);
                         }
+
+                        //rotate_angle(cx,cy,x1,y1,angle,&centrex,&centrey);
                         centrex=cx*cos(angle)-cy*sin(angle)+x1;
                         centrey=cx*sin(angle)+cy*cos(angle)+y1;
                         //cout << token << " " << angle << ":" << angle2 << endl;
@@ -439,13 +430,15 @@ int readviapad(String filename,String sLayer)
                     if (token.substr(0,5)=="drill")
                     {
                         if (count(token.begin(), token.end(), ' ')==3)
-                        {
-                            get_one_valf(token,&holex);
+                        {   get_one_valf(token,&holex);
                             holey=holex;
                         }
                         else
-                        {   first = line.find(" ");
+                        {
+                            first = line.find(" ");
                             token = line.substr (first+1);
+                            second = line.find(" ");
+                            shape_drill = line.substr(first+1,second-2);
                             get_two_vals(token,&holex,&holey);
                         }
                     }
@@ -463,8 +456,11 @@ int readviapad(String filename,String sLayer)
                     line = line.substr(last+1);
                 }
                 // End of reading one line
-                holex = min(holex,holey); // Lets take the smallest value since we dont know how to make ellipse gcode
-                holey=holex;
+                if (shape_drill!="oval")
+                {
+                  holex = min(holex,holey); // Lets take the smallest value since we dont know how to make ellipse gcode
+                  holey=holex;
+                }
 
                 ipadseg[ipadpos][PADTYPE]=padtype;
                 ipadseg[ipadpos][LOCX]=centrex;
@@ -693,20 +689,8 @@ void showpic()
             for(int i = 0; i < 4; ++i) vertices[i] = vertices2f[i];
 
              cv::fillConvexPoly(city,vertices,4,color);
-            //rectangle(city,Point2d(ipad[i][LOCX]-ipad[i][SIZEX],ipad[i][LOCY]-ipad[i][SIZEY]),
-            //               Point2d(ipad[i][LOCX]+ipad[i][SIZEX],ipad[i][LOCY]+ipad[i][SIZEY]),
-            //                Scalar(255,255,255),-1);
         } else
         {
-            /*cv::RotatedRect rotatedRectangle(Point2f(ipad[i][LOCX],ipad[i][LOCY]),
-                                             Size2f(ipad[i][SIZEX] << 1,ipad[i][SIZEY]*1.5),
-                                              -(double)ipad[i][ANGLE]);
-            rotatedRectangle.points(vertices2f);
-            for(int i = 0; i < 4; ++i) vertices[i] = vertices2f[i];
-
-             cv::fillConvexPoly(city,vertices,4,color);
-             */
-
             cv::RotatedRect rotatedRectangleE(Point2f(ipad[i][LOCX],ipad[i][LOCY]),
                                              Size2f(ipad[i][SIZEX] << 1,ipad[i][SIZEY] << 1),
                                               -(double)ipad[i][ANGLE]);
@@ -766,7 +750,7 @@ void showpic()
                 {
                   if (dy>0) startAngle = 90; else startAngle = 180;
                   endAngle = startAngle-edgecuts[i][EDGEANGLE];
-                  cout << startAngle << ":" << dx << "x" << dy << "=" << edgecuts[i][EDGEANGLE] << endl;
+
                 }
 
                 ellipse(city,Point2d(x1,y1),Size2f(radius,radius),0,startAngle,endAngle,color,width);
@@ -1107,6 +1091,10 @@ void trace_drillholes()
         cout << "drillholes" << endl;
     #endif
     float x1,x2,yy,r;
+    float hx,hy;
+    float x11,x12,x21,x22,y11,y12,y21,y22;
+    float c1x,c1y,c_r, c2x,c2y,angle;
+
 
     for (unsigned int li=0; li<ipadpos; li++)
     {
@@ -1115,15 +1103,68 @@ void trace_drillholes()
         yy=(1.0*ipad[li][LOCY]/pxmm);
         r=(1.0*ipad[li][HOLEX]/(2*pxmm));
 
-        // Goto rightmost
+
+
+        // GCODE Block init
         gcode_print("(Block-name: blockvia "+to_string(blockcounter)+")\n(Block-expand: 0)\n(Block-enable: 1)");
         blockcounter++;
         gcode_print("G01 F120"); // Feedrate 120 mm/min
-        gcode_print("G0 X"+to_string(x1)+" Y"+to_string(yy));
-        gcode_print("M04 S1000");
 
-        // Draw circle
-        gcode_print("G02 X"+to_string(x1)+" I-"+to_string(r)+" F120");
+        //## oval
+        if ( ipad[li][HOLEX] > ipad[li][HOLEY])
+        {
+            angle = 180-1.0* ipadseg[li][ANGLE];
+            hx = (ipad[li][HOLEX]- ipad[li][HOLEY])/(2.0*pxmm);
+            hy = (1.0*ipad[li][HOLEY])/(2*pxmm);
+
+            rotate_angle(x2-hx, yy-hy, x2, yy, angle, &x11, &y11);
+            rotate_angle(x2+hx, yy-hy, x2, yy, angle, &x12, &y12);
+            rotate_angle(x2-hx, yy+hy, x2, yy, angle, &x21, &y21);
+            rotate_angle(x2+hx, yy+hy, x2, yy, angle, &x22, &y22);
+
+            rotate_angle(x2-hx, yy, x2, yy, angle, &c1x, &c1y);
+            rotate_angle(x2+hx, yy, x2, yy, angle, &c2x, &c2y);
+
+            gcode_print("G0 X"+to_string(x11)+" Y"+to_string(y11));
+            gcode_print("M04 S1000");
+            gcode_print("G1 X"+to_string(x12)+" Y"+to_string(y12));
+
+            gcode_print("G03 X"+to_string(x22)+" Y"+to_string(y22)+" I"+to_string(c2x-x12)+"J"+to_string(c2y-y12)+" F120");
+            gcode_print("G1 X"+to_string(x21)+" Y"+to_string(y21));
+            gcode_print("G03 X"+to_string(x11)+" Y"+to_string(y11)+" I"+to_string(c1x-x21)+"J"+to_string(c1y-y21)+" F120");
+
+
+        } else if ( ipad[li][HOLEX] < ipad[li][HOLEY])
+        {
+            hy = (ipad[li][HOLEY]- ipad[li][HOLEX])/(2.0*pxmm);
+            hx = (1.0*ipad[li][HOLEX])/(2*pxmm);
+
+            angle = 180-1.0*ipadseg[li][ANGLE];
+            rotate_angle(x2-hx, yy-hy, x2, yy, angle, &x11, &y11);
+            rotate_angle(x2+hx, yy-hy, x2, yy, angle, &x21, &y21);
+            rotate_angle(x2-hx, yy+hy, x2, yy, angle, &x12, &y12);
+            rotate_angle(x2+hx, yy+hy, x2, yy, angle, &x22, &y22);
+
+            rotate_angle(x2, yy-hy, x2, yy, angle, &c1x, &c1y);
+            rotate_angle(x2, yy+hy, x2, yy, angle, &c2x, &c2y);
+
+            gcode_print("G0 X"+to_string(x11)+" Y"+to_string(y11));
+            gcode_print("M04 S1000");
+            gcode_print("G1 X"+to_string(x12)+" Y"+to_string(y12));
+
+            gcode_print("G02 X"+to_string(x22)+" Y"+to_string(y22)+" I"+to_string(c2x-x12)+"J"+to_string(c2y-y12)+" F120");
+            gcode_print("G1 X"+to_string(x21)+" Y"+to_string(y21));
+            gcode_print("G02 X"+to_string(x11)+" Y"+to_string(y11)+" I"+to_string(c1x-x21)+"J"+to_string(c1y-y21)+" F120");
+        }
+        else
+        {
+          // Goto rightmost
+          gcode_print("G0 X"+to_string(x1)+" Y"+to_string(yy));
+          gcode_print("M04 S1000");
+
+          // Draw circle
+          gcode_print("G02 X"+to_string(x1)+" I-"+to_string(r)+" F120");
+      }
     }
 }
 
@@ -1164,7 +1205,7 @@ int main(int argc, char** argv)
     if (argc>2)
     {
         for (int i=2; i<argc; i++)
-        {   cout << i << " " << argv[i] << endl;
+        {   //cout << i << " " << argv[i] << endl;
             if (argv[i][0]=='-')
             {
                 switch (argv[i][1])
