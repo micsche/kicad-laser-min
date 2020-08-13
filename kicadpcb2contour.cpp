@@ -25,7 +25,7 @@
 using namespace cv;
 using namespace std;
 
-int pxmm = 30; // Tunable parameter resolves pixels per mm. Larger value slower calculation. Lower values coarser contours.
+unsigned int pixels_per_mm = 30; // Tunable parameter resolves pixels per mm. Larger value slower calculation. Lower values coarser contours.
 
 typedef cv::Point3_<uint8_t> Pixel;
 
@@ -584,7 +584,7 @@ int readkicad(String filename, String sLayer)
   return 0;
 }
 
-void scale_down()
+void scale_down(unsigned int pxmm)
 {
     #ifdef DEBUG
         cout << "scaledown" << endl;
@@ -997,7 +997,7 @@ void gcode_print(String gout)
     Find contours of the edges between the track expansion.
     Use contour and segment in lines.
  */
-int tracecontourexpansion()
+int tracecontourexpansion(unsigned int pxmm)
 {
     #ifdef DEBUG
         cout << "tracecontourexpansion" << endl;
@@ -1085,7 +1085,7 @@ int tracecontourexpansion()
 // Use original kicad drill holes
 // Assumption holes are circular
 
-void trace_drillholes()
+void trace_drillholes(unsigned int pxmm)
 {
     #ifdef DEBUG
         cout << "drillholes" << endl;
@@ -1233,8 +1233,8 @@ int main(int argc, char** argv)
                                 cout << "Pixels per mm: " << str_pxmm << endl;
                                 try
                                 {
-                                    pxmm = stoi(str_pxmm);
-                                    if (pxmm>1000)
+                                    pixels_per_mm = stoi(str_pxmm);
+                                    if (pixels_per_mm>1000)
                                     {
                                         cout << "Pixels per mm range 1..100" << endl;
                                         return ENOENT;
@@ -1289,14 +1289,14 @@ int main(int argc, char** argv)
         readedge(filename); //read Edge Cuts
 
         if (ipadpos==0) return 0;
-        scale_down();
+        scale_down(pixels_per_mm);
 
         showpic();    // output bw image map.png
     }
 
     getcontourexpansion(); // Expand tracks and find edge boundary of expansion
-    tracecontourexpansion();
-    trace_drillholes(); //  via/pad holes to gcode
+    tracecontourexpansion(pixels_per_mm);
+    trace_drillholes(pixels_per_mm); //  via/pad holes to gcode
 
     // Output gcode to kic.gcode
     std::ofstream out("kic.gcode");
