@@ -12,8 +12,7 @@ The KICAD pcb to image conversion uses `<pxmm>` scale (which defaults to 30 pixe
 
 Edge dilation takes time (why it is implemented in C++). The time is dependant on the `<pxmm>` scale.
 
-Drill holes for pads and vias will be added to the end gcode. The holes will be original size.
-Please note that the holes are circular (too much work to create oval gcode).
+Drill holes for pads and vias will be added to the end gcode. The holes drawn will be original size.
 
 <img src="images/output.png">
 From left to right - BW Image of tracks, Colourized Dilation of tracks, Edge Detection of dilation.

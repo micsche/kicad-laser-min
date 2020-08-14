@@ -20,11 +20,12 @@
 #include <algorithm>
 #include <sstream>
 #include <string>
+#include <math.h>
 
 using namespace cv;
 using namespace std;
 
-int pxmm = 30; // Tunable parameter resolves pixels per mm. Larger value slower calculation. Lower values coarser contours.
+unsigned int pixels_per_mm = 30; // Tunable parameter resolves pixels per mm. Larger value slower calculation. Lower values coarser contours.
 
 typedef cv::Point3_<uint8_t> Pixel;
 
@@ -38,6 +39,7 @@ bool color_pool[31*31*31];
 #define K_CIRCLE 3
 #define K_ROUNDRECT 4
 #define K_LINE 5
+#define K_ARC 6
 
 #define PADTYPE 0
 #define LOCX 1
@@ -47,6 +49,7 @@ bool color_pool[31*31*31];
 #define HOLEX 5
 #define HOLEY 6
 #define RRATIO 7
+#define ANGLE 8
 
 #define LINEX1 0
 #define LINEY1 1
@@ -60,6 +63,7 @@ bool color_pool[31*31*31];
 #define EDGEENDX 3
 #define EDGEENDY 4
 #define EDGEWIDTH 5
+#define EDGEANGLE 6
 
 
 Mat detected_edges;
@@ -67,16 +71,27 @@ Mat detected_edges;
 using namespace std;
 using namespace cv;
 
+class PCBTRACKS
+{
+  private:
+    float startx,starty,endx,endy;
+    unsigned int istartx,istarty,iendx,iendy;
+
+    static unsigned int count;
+
+
+};
+
 float linesegment[50000][5];
 unsigned int iline[50000][5];
 unsigned int linesegpos=0;
 
-float ipadseg[50000][8];
-unsigned int ipad[50000][8];
+float ipadseg[50000][9];
+unsigned int ipad[50000][9];
 unsigned int ipadpos=0;
 
-float edgecuts[10000][6];
-unsigned int iedgecuts[10000][6];
+float edgecuts[10000][7];
+unsigned int iedgecuts[10000][7];
 unsigned int edgecutpos=0;
 
 
@@ -86,9 +101,14 @@ unsigned int blockcounter=0;
 float boardminx=9.0e+9,boardminy=9.0e+9,boardmaxx=-9.0e+9,boardmaxy=-9.0e+9;
 unsigned image_height,image_width;
 
+void rounded_rectangle( Mat& src, Point topLeft, Point bottomRight, const Scalar lineColor, const int thickness, const int lineType , const int cornerRadius)
+{
+
+}
+
 bool is_number(const std::string& s)
 {
-    return !s.empty() && std::find_if(s.begin(), 
+    return !s.empty() && std::find_if(s.begin(),
         s.end(), [](unsigned char c) { return !std::isdigit(c); }) == s.end();
 }
 
@@ -98,17 +118,17 @@ void get_two_vals(std::string line, float *x, float *y)
     std::string token;
 
     line.erase(remove(line.begin(), line.end(), ')'), line.end());
-    
+
     int posit=0;
     while ((pos = line.find(" ")) != string::npos)
     {   token = line.substr(0,pos);
-        
+
         line.erase(0,pos + 1);
         if (posit==1)
         {
             *x=std::stof(token);
         } else if (posit==2)
-        {   
+        {
             *y=std::stof(token);
         }
         posit++;
@@ -121,17 +141,17 @@ void get_three_vals(std::string line, float *x, float *y,float *angle)
     std::string token;
 
     line.erase(remove(line.begin(), line.end(), ')'), line.end());
-    
+
     int posit=0;
     while ((pos = line.find(" ")) != string::npos)
     {   token = line.substr(0,pos);
-        
+
         line.erase(0,pos + 1);
         if (posit==1)
         {
             *x=std::stof(token);
         } else if (posit==2)
-        {   
+        {
             *y=std::stof(token);
         } else if (posit==3)
         {
@@ -145,7 +165,7 @@ void get_one_valf(std::string line, float *width)
 {   size_t pos =0;
     int posit=0;
     std::string token;
-    
+
     line.erase(remove(line.begin(), line.end(), ')'), line.end());
 
     while ((pos = line.find(" ")) != string::npos)
@@ -154,7 +174,7 @@ void get_one_valf(std::string line, float *width)
         if (posit==1)
         {
             *width=std::stof(token);
-        } 
+        }
         posit++;
     }
 }
@@ -163,7 +183,7 @@ void get_one_vals(std::string line, std::string *value)
 {   size_t pos =0;
     int posit=0;
     std::string token;
-    
+
     line.erase(remove(line.begin(), line.end(), ')'), line.end());
 
     while ((pos = line.find(" ")) != string::npos)
@@ -172,15 +192,24 @@ void get_one_vals(std::string line, std::string *value)
         if (posit==1)
         {
             *value=token;
-        } 
+        }
         posit++;
     }
 }
 
+void rotate_angle(float x,float y,float around_x,float around_y, float angle,float *newx,float *newy)
+{
+  x=x-around_x;
+  y=y-around_y;
+  angle = angle * 3.14159265/180;
+  *newx=x*cos(angle)-y*sin(angle)+around_x;
+  *newy=x*sin(angle)+y*cos(angle)+around_y;
+}
+
 int readedge(String filename)
 {
-    #ifdef DEBUG 
-        cout << "Edge  Cuts" << endl; 
+    #ifdef DEBUG
+        cout << "Edge  Cuts" << endl;
     #endif
 
     std::string line;
@@ -191,7 +220,7 @@ int readedge(String filename)
 
     if (myfile.is_open())
     {
-                
+
         while (! myfile.eof() )
         {
             getline (myfile,line);
@@ -202,9 +231,9 @@ int readedge(String filename)
             if ((line.find("Edge.Cuts")!=string::npos) && (line.find("gr_")!=string::npos))
             {
                 unsigned first,last=0;
-                float centrex,centrey,width,height,holex,holey;
+                float centrex,centrey,width,height,holex,holey,angle;
                 string token;
-        
+
                 while (last<255)
                 {
                     first = line.find("(");
@@ -215,9 +244,10 @@ int readedge(String filename)
 
                     if (token.find("gr_line")!=string::npos) line_type=K_LINE;
                     if (token.find("gr_circle")!=string::npos) line_type=K_CIRCLE;
-                    
+                    if (token.find("gr_arc")!=string::npos) line_type=K_ARC;
+
                     if ((token.find("start")!=string::npos) || (token.find("center")!=string::npos))
-                    {   
+                    {
                         get_two_vals(token,&x1,&y1);
                     }
 
@@ -230,6 +260,11 @@ int readedge(String filename)
                     {
                         get_one_valf(token, &width);
                     }
+
+                    if ((token.find("angle")!=string::npos))
+                    {
+                        get_one_valf(token, &angle);
+                    }
                 }
 
                 edgecuts[edgecutpos][EDGETYPE]=line_type;
@@ -238,6 +273,8 @@ int readedge(String filename)
                 edgecuts[edgecutpos][EDGEENDX]=x2;
                 edgecuts[edgecutpos][EDGEENDY]=y2;
                 edgecuts[edgecutpos][EDGEWIDTH]=width;
+                edgecuts[edgecutpos][EDGEANGLE]=angle;
+
                 edgecutpos++;
 
                 if (line_type==K_LINE)
@@ -247,7 +284,7 @@ int readedge(String filename)
                     miny = min(y1,y2);
                     maxy = max(y1,y2);
 
-                } else if (line_type==K_CIRCLE)
+                } else if ((line_type==K_ARC) | (line_type==K_CIRCLE))
                 {
                     radius = sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2));
                     minx = x1 - radius;
@@ -268,9 +305,9 @@ int readedge(String filename)
 
 // GET Vias and Pads dimension
 int readviapad(String filename,String sLayer)
-{        
-    #ifdef DEBUG 
-        cout << "readviapad" << endl; 
+{
+    #ifdef DEBUG
+        cout << "readviapad" << endl;
     #endif
 
     std::string line;
@@ -279,7 +316,7 @@ int readviapad(String filename,String sLayer)
 
     if (myfile.is_open())
     {
-                
+
         while (! myfile.eof() )
         {
             getline (myfile,line);
@@ -294,9 +331,9 @@ int readviapad(String filename,String sLayer)
                 {
                     get_three_vals(line, &x1, &y1, &angle);
                     angle = (360-angle)*M_PI/180;
-                } 
+                }
                 else
-                {
+                {   angle=0;
                     get_two_vals(line,&x1,&y1);
                 }
             }
@@ -306,19 +343,19 @@ int readviapad(String filename,String sLayer)
             {
                 unsigned first,last=0;
                 float centrex,centrey,width,height,holex,holey;
-                string token;
-        
+                string token,shape_drill;
+
                 while (last<255)
                 {
                     first = line.find("(");
                     last = line.substr(first+1).find("(");
                     token = line.substr (first+1,last-first);
-                    
+
                     if (token.substr(0,2)=="at") get_two_vals(token,&centrex,&centrey);
                     if (token.substr(0,4)=="size") get_one_valf(token,&width);
                     if (token.substr(0,5)=="drill") get_one_valf(token,&holex);
 
-                    if (token.substr(0,5)=="layer") 
+                    if (token.substr(0,5)=="layer")
                     {
                         holey=holex;
                         height=width;
@@ -339,15 +376,15 @@ int readviapad(String filename,String sLayer)
             if ((line.find("pad")!=string::npos) && (line.find("layers")!=string::npos))
             if ((line.find(sLayer)!=string::npos) || (line.find("*.Cu")!=string::npos))
             {
-                
+
                 #ifdef DEBUG
                     cout << line << endl;
                 #endif
 
-                unsigned first,last=0,padtype;
-                float centrex,centrey,width,height,holex,holey,cx,cy,rratio;
-                string token;
-        
+                unsigned first,last=0,padtype,second;
+                float centrex,centrey,width,height,holex,holey,cx,cy,rratio,angle2;
+                string token,shape_drill;
+
                 while (last<255)
                 {
                     first = line.find("(");
@@ -365,32 +402,45 @@ int readviapad(String filename,String sLayer)
                         if (token.find("round")!=string::npos) padtype=K_ROUNDRECT;
                     }
 
-                    if (token.substr(0,2)=="at") 
-                    { 
-                        get_two_vals(token,&cx,&cy); 
+                    if (token.substr(0,2)=="at")
+                    {
+                        if (std::count(token.begin(), token.end(), ' ')==4)
+                        {   get_two_vals(token,&cx,&cy);
+                            angle2= 0;
+                        } else
+                        {
+                            get_three_vals(token,&cx,&cy,&angle2);
+                        }
+
+                        //rotate_angle(cx,cy,x1,y1,angle,&centrex,&centrey);
                         centrex=cx*cos(angle)-cy*sin(angle)+x1;
                         centrey=cx*sin(angle)+cy*cos(angle)+y1;
+                        //cout << token << " " << angle << ":" << angle2 << endl;
                     }
 
-                    if (token.substr(0,4)=="size") 
-                    { 
-                        get_two_vals(token,&cx,&cy); 
-                        width  = abs(cx*cos(angle)-cy*sin(angle));
-                        height = abs(cx*sin(angle)+cy*cos(angle));
+                    if (token.substr(0,4)=="size")
+                    {
+                        get_two_vals(token,&cx,&cy);
+                        width  = cx; //abs(cx*cos(angle)-cy*sin(angle));
+                        height = cy; // abs(cx*sin(angle)+cy*cos(angle));
+
+                        //cout << token << " " << cx << ":" << cy << endl;
                     }
 
-                    if (token.substr(0,5)=="drill") 
-                    {   
+                    if (token.substr(0,5)=="drill")
+                    {
                         if (count(token.begin(), token.end(), ' ')==3)
-                        {
-                            get_one_valf(token,&holex);
+                        {   get_one_valf(token,&holex);
                             holey=holex;
-                        } 
+                        }
                         else
-                        {   first = line.find(" ");
+                        {
+                            first = line.find(" ");
                             token = line.substr (first+1);
+                            second = line.find(" ");
+                            shape_drill = line.substr(first+1,second-2);
                             get_two_vals(token,&holex,&holey);
-                        }                        
+                        }
                     }
 
                     if (token.substr(0,9)=="roundrect")
@@ -398,17 +448,20 @@ int readviapad(String filename,String sLayer)
                         get_one_valf(token,&rratio);
                     }
 
-                    if (token.substr(0,5)=="layer") 
+                    if (token.substr(0,5)=="layer")
                     {
                             // Nothing
                     }
-                    
+
                     line = line.substr(last+1);
                 }
                 // End of reading one line
-                holex = min(holex,holey); // Lets take the smallest value since we dont know how to make ellipse gcode
-                holey=holex;
-                
+                if (shape_drill!="oval")
+                {
+                  holex = min(holex,holey); // Lets take the smallest value since we dont know how to make ellipse gcode
+                  holey=holex;
+                }
+
                 ipadseg[ipadpos][PADTYPE]=padtype;
                 ipadseg[ipadpos][LOCX]=centrex;
                 ipadseg[ipadpos][LOCY]=centrey;
@@ -417,7 +470,9 @@ int readviapad(String filename,String sLayer)
                 ipadseg[ipadpos][HOLEX]=holex;
                 ipadseg[ipadpos][HOLEY]=holey;
                 ipadseg[ipadpos][RRATIO]=rratio;
-                
+                ipadseg[ipadpos][ANGLE]=angle2;
+
+
                 boardminx=min(centrex,boardminx);
                 boardminy=min(centrey,boardminy);
                 boardmaxx=max(centrex,boardmaxx);
@@ -430,9 +485,9 @@ int readviapad(String filename,String sLayer)
         cout << ipadpos << " vias/pads read." << endl;
     }
     else
-    {  
-        #ifdef DEBUG 
-            cout << "Problem File" << endl; 
+    {
+        #ifdef DEBUG
+            cout << "Problem File" << endl;
         #endif
         return ENOENT;
     }
@@ -443,11 +498,11 @@ int readviapad(String filename,String sLayer)
 
 // GET Tracks
 int readkicad(String filename, String sLayer)
-{   
-    #ifdef DEBUG 
-        cout << "readkicad" << endl; 
+{
+    #ifdef DEBUG
+        cout << "readkicad" << endl;
     #endif
-    
+
     std::string line;
     std::string layer;
     float x1,y1,x2,y2,width;
@@ -465,7 +520,7 @@ int readkicad(String filename, String sLayer)
                 while ((pos = line.find("(")) != string::npos)
                 {
                     token = line.substr(0,pos);
-                    
+
                     if (token.rfind("start",0) == 0)
                     {
                         get_two_vals(token,&x1,&y1);
@@ -483,9 +538,9 @@ int readkicad(String filename, String sLayer)
                         get_one_vals(token,&layer);
 
                         // Only look at Bottom PCB
-                        // find boardminx,boardminy and boardmaxx,boardmaxy by selecting 
+                        // find boardminx,boardminy and boardmaxx,boardmaxy by selecting
                         // min and max of track segments co-ordinates
-                        
+
                         if (layer == sLayer) //"B.Cu" or "F.Cu"
                         {
                             linesegment[linesegpos][LINEX1]=x1;
@@ -509,18 +564,18 @@ int readkicad(String filename, String sLayer)
                             linesegpos++;
                         }
                     }
-                    
+
                     line.erase(0,pos + 1);
                 }
-                
+
             }
-            
+
         }
         myfile.close();
 
         cout << linesegpos << " track segments read." << endl;
     }
-    else 
+    else
     {
         return ENOENT;
     }
@@ -529,10 +584,10 @@ int readkicad(String filename, String sLayer)
   return 0;
 }
 
-void scale_down()
+void scale_down(unsigned int pxmm)
 {
-    #ifdef DEBUG 
-        cout << "scaledown" << endl; 
+    #ifdef DEBUG
+        cout << "scaledown" << endl;
     #endif
 
     boardmaxx+=2; // Increment slightly boardmaxx
@@ -543,31 +598,33 @@ void scale_down()
     image_width = int(boardmaxx-boardminx)*pxmm;
     image_height = int(boardmaxy-boardminy)*pxmm;
 
-    /* Store via and pad as 
+    /* Store via and pad as
             PADTYPE,
-            CENTRE X, CENTRE Y, 
+            CENTRE X, CENTRE Y,
             X SIZE OF PAD, Y SIZE OF PAD
             X SIZE of DRILL HOLE, Y SIZE of DRILL HOLE
-    
+
         move origin of pcb board to boardminx,boardminy
         scale up using Pixels per mm
     */
     for (unsigned int li=0; li<ipadpos; li++)
     {
-        ipad[li][PADTYPE]   = int(ipadseg[li][PADTYPE]); 
+        ipad[li][PADTYPE]   = int(ipadseg[li][PADTYPE]);
         ipad[li][LOCX]      = int((ipadseg[li][LOCX]-boardminx)*pxmm);
         ipad[li][LOCY]      = int((ipadseg[li][LOCY]-boardminy)*pxmm);
-        
+
         ipad[li][SIZEX]     = int((ipadseg[li][SIZEX]*pxmm/2));
         ipad[li][SIZEY]     = int((ipadseg[li][SIZEY]*pxmm/2));
 
         ipad[li][HOLEX]     = int((ipadseg[li][HOLEX])*pxmm);
         ipad[li][HOLEY]     = int((ipadseg[li][HOLEY])*pxmm);
+        ipad[li][ANGLE]     = int((ipadseg[li][ANGLE]));
+
     }
 
     /* Store track segment line
         X1,Y1,X2,Y2, Width
-        
+
         move origin of pcb board to boardminx,boardminy
         scale up using Pixels per mm
     */
@@ -585,7 +642,7 @@ void scale_down()
 
     /* Store edge Cuts
         X1,Y1,X2,Y2, Width
-        
+
         move origin of pcb board to boardminx,boardminy
         scale up using Pixels per mm
     */
@@ -607,9 +664,12 @@ void scale_down()
 
 //Create image
 void showpic()
-{
-    #ifdef DEBUG 
-        cout << "showpic" << endl; 
+{   cv::Scalar color = cv::Scalar(255.0, 255.0, 255.0);
+    cv::Point2f vertices2f[4];
+    cv::Point vertices[4];
+
+    #ifdef DEBUG
+        cout << "showpic" << endl;
     #endif
     Mat city = Mat::zeros(Size(image_width,image_height),CV_8UC3);
 
@@ -622,21 +682,20 @@ void showpic()
     {
         if (ipad[i][0]==K_RECT)
         {
-            rectangle(city,Point2d(ipad[i][LOCX]-ipad[i][SIZEX],ipad[i][LOCY]-ipad[i][SIZEY]),
-                           Point2d(ipad[i][LOCX]+ipad[i][SIZEX],ipad[i][LOCY]+ipad[i][SIZEY]),
-                            Scalar(255,255,255),-1);
+            cv::RotatedRect rotatedRectangle(Point2f(ipad[i][LOCX],ipad[i][LOCY]),
+                                             Size2f(ipad[i][SIZEX] << 1,ipad[i][SIZEY] << 1),
+                                              -(double)ipad[i][ANGLE]);
+            rotatedRectangle.points(vertices2f);
+            for(int i = 0; i < 4; ++i) vertices[i] = vertices2f[i];
+
+             cv::fillConvexPoly(city,vertices,4,color);
         } else
         {
-            ellipse(city,
-                    Point(ipad[i][LOCX],ipad[i][LOCY]),
-                    Size(ipad[i][SIZEX],ipad[i][SIZEY]),
-                    0,0,360,
-                    Scalar(255,255,255),
-                    -1, 
-                    LINE_8,
-                    0);
-
-        }   
+            cv::RotatedRect rotatedRectangleE(Point2f(ipad[i][LOCX],ipad[i][LOCY]),
+                                             Size2f(ipad[i][SIZEX] << 1,ipad[i][SIZEY] << 1),
+                                              -(double)ipad[i][ANGLE]);
+            cv::ellipse(city,rotatedRectangleE,color,-1);
+        }
     }
 
     imwrite( "map.png", city );
@@ -644,21 +703,22 @@ void showpic()
     // Create EDGE MASK
     if (edgecutpos>0)
     {
-    
+
         city = Mat::zeros(Size(image_width,image_height),CV_8UC3);
-        int x1,y1,x2,y2,radius,width;
+        int x1,y1,x2,y2,radius,width, startAngle, endAngle;
+        float dx,dy;
 
         for (int i=0; i<edgecutpos; i++)
         {   width=1;
-            
+
             width = iedgecuts[i][EDGEWIDTH];
-            width = max (1,width);
-            
+            width = max (2,width);
+
             if (iedgecuts[i][EDGETYPE]==K_LINE)
             {
-                line(city,Point2d(iedgecuts[i][EDGESTARTX],iedgecuts[i][EDGESTARTY]), 
+                line(city,Point2d(iedgecuts[i][EDGESTARTX],iedgecuts[i][EDGESTARTY]),
                     Point2d(iedgecuts[i][EDGEENDX],iedgecuts[i][EDGEENDY]),
-                    Scalar(255,255,255),width);
+                    color,width);
 
             } else if (iedgecuts[i][EDGETYPE]==K_CIRCLE) {
                 x1=iedgecuts[i][EDGESTARTX];
@@ -666,19 +726,47 @@ void showpic()
                 y1=iedgecuts[i][EDGESTARTY];
                 y2=iedgecuts[i][EDGEENDY];
                 radius = sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2));
-                circle(city, Point2d(x1,y1),radius,Scalar(255,255,255),width);
+                circle(city, Point2d(x1,y1),radius,color,width);
+            } else if (iedgecuts[i][EDGETYPE]==K_ARC) {
+                x1=iedgecuts[i][EDGESTARTX];
+                x2=iedgecuts[i][EDGEENDX];
+                y1=iedgecuts[i][EDGESTARTY];
+                y2=iedgecuts[i][EDGEENDY];
+                radius = sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2));
+
+                dy = y2-y1;
+                dx = x2-x1;
+                if (dx!=0)
+                {
+                  startAngle =  atan(dy/dx)*180/3.14159265;
+
+                  if (dx<0)
+                  {
+                    startAngle = 180+startAngle;
+                  }
+                  endAngle = startAngle+edgecuts[i][EDGEANGLE];
+
+                } else
+                {
+                  if (dy>0) startAngle = 90; else startAngle = 180;
+                  endAngle = startAngle-edgecuts[i][EDGEANGLE];
+
+                }
+
+                ellipse(city,Point2d(x1,y1),Size2f(radius,radius),0,startAngle,endAngle,color,width);
+
             }
         }
-        
+
         int i=0;
-        
+
         while ((city.at<Vec3b>(Point(i,image_height >> 1))==Vec3b(0,0,0)) && (i<image_width)) i++; //find 1st edge
         x1=i;
 
         while ((city.at<Vec3b>(Point(i,image_height >> 1))!=Vec3b(0,0,0)) && (i<image_width)) i++; // traverse edge
         while ((city.at<Vec3b>(Point(i,image_height >> 1))==Vec3b(0,0,0)) && (i<image_width)) i++; // find 2nd edge
         x2=i;
-        
+
         if (x2<image_width)
         {
             floodFill(city, Point2d((x2+x1) >> 1,image_height >> 1), Scalar(255,255,255));
@@ -689,7 +777,7 @@ void showpic()
             cout << "Error parsing Edge Cut shape." << endl;
         }
     }
-    
+
 }
 
 //pseudo random color pick
@@ -705,7 +793,7 @@ cv::Scalar get_colour_from_pool()
             seed-=31*31*31;
         }
     }
-    
+
     color_pool[seed]=true;
     int r=(seed & 31744) >> 7;
     int g=(seed & 992) >> 2;
@@ -718,7 +806,7 @@ void ScanImageAndReduceC(Mat &I,Mat &image)
 {
     // accept only char type matrices
     CV_Assert(I.depth() == CV_8U);
-    
+
     int nRows = I.rows;
     int nCols = I.cols;
     int channels = I.channels();
@@ -730,10 +818,10 @@ void ScanImageAndReduceC(Mat &I,Mat &image)
     if (progressbar==4) progressbar=0;
 
     I.copyTo(image);
-    
-    //Init color pool 
-    for (int r=1; r<31*31*31; r++) 
-        color_pool[r]=true; 
+
+    //Init color pool
+    for (int r=1; r<31*31*31; r++)
+        color_pool[r]=true;
 
     for (int r=1; r<32; r++)
     for (int g=1; g<32; g++)
@@ -742,16 +830,16 @@ void ScanImageAndReduceC(Mat &I,Mat &image)
 
     //Colourize tracks with different colours
     for (int r =0; r<nRows; r++)
-    {   
+    {
         for (int c =0; c<nCols; c++)
         {   Vec3b colour = image.at<Vec3b>(Point(c, r));
-            
+
             if(colour.val[0]==255 && colour.val[1]==255 && colour.val[2]==255)
             {
                 floodFill(image,Point(c,r), get_colour_from_pool() );
             }
         }
-        
+
     }
 
     // Dilate with colours
@@ -764,7 +852,7 @@ void ScanImageAndReduceC(Mat &I,Mat &image)
 
     Mat dimage[3];
     Mat newimage;
-    
+
     while (change)
     {
         cout << "Progress: " << progress[progressbar++] << "\r" << std::flush;
@@ -774,7 +862,7 @@ void ScanImageAndReduceC(Mat &I,Mat &image)
         image.copyTo(newimage);
 
         for (int r=1; r<(nRows-1); r++)
-        {   
+        {
             for (int c=1; c<(nCols-1); c++)
             {
                 if ((uchar) image.at<Vec3b>(r,c)[2]==0)
@@ -785,16 +873,16 @@ void ScanImageAndReduceC(Mat &I,Mat &image)
                     memcpy(bb,dimage[2].data, 9*sizeof(byte));
 
                     bool edge=false;
-                    for (int lll=0; lll<9; lll++) if ((int)bb[lll]>0) {edge=true;} 
-                    
+                    for (int lll=0; lll<9; lll++) if ((int)bb[lll]>0) {edge=true;}
+
                     if (edge)
-                    {    
+                    {
                         memcpy(rr,dimage[0].data, 9*sizeof(byte));
                         memcpy(gg,dimage[1].data, 9*sizeof(byte));
                         memset(tb,0,32768*sizeof(int));
 
                         std::vector<int> colour_list = {};
-                        
+
                         for (int l=0; l<9; l++)
                         {
                             if (l!=4)
@@ -802,18 +890,18 @@ void ScanImageAndReduceC(Mat &I,Mat &image)
                                 index = ((rr[l] & 248) << 7) | ((gg[l] & 248) << 2) | (bb[l] >> 3);
 
                                 tb[index]=tb[index]+1;
-                                
+
                                 if (std::find(std::begin(colour_list), std::end(colour_list), index) == std::end(colour_list))
                                 {
                                     colour_list.insert(colour_list.begin(),index);
                                 }
-                                
+
                             }
                         }
 
                         tb[0]=0; // which is not background
                         index=0;
-    
+
                         // Find colour which neighbours most pixels
 
                         for (std::vector<int>::iterator it = colour_list.begin() ; it != colour_list.end(); ++it)
@@ -823,7 +911,7 @@ void ScanImageAndReduceC(Mat &I,Mat &image)
 
 
                         if ((int) tb[index]>0)
-                        {   
+                        {
                             cr=((index & 31744) >> 7);
                             cg=((index & 992) >> 2);
                             cb=((index & 31) << 3);
@@ -832,7 +920,7 @@ void ScanImageAndReduceC(Mat &I,Mat &image)
                         }
 
                         change=true;
-                    } 
+                    }
                 }
             }
 
@@ -843,9 +931,9 @@ void ScanImageAndReduceC(Mat &I,Mat &image)
 };
 
 int getcontourexpansion()
-{   
-    #ifdef DEBUG 
-            cout << "getcontourexpansions" << endl; 
+{
+    #ifdef DEBUG
+            cout << "getcontourexpansions" << endl;
     #endif
 
     Mat image,city,output;
@@ -865,7 +953,7 @@ int getcontourexpansion()
 
         ScanImageAndReduceC(image,city);   // Dilate tracks until all tracks meet at middle. Then find edge.
 
-        
+
         String maskName = "mask.png";
         std::ifstream maskfile(maskName);
 
@@ -886,16 +974,16 @@ int getcontourexpansion()
         city = imread("cpp_image.png");
     }
 
-    // Edge detection    
+    // Edge detection
     Canny( city, detected_edges, 50, 150, 7 );
-    
+
     // Dilate and Erode lines so that close lines get attached.
     Mat element = getStructuringElement( MORPH_RECT,Size( 2*5 + 1, 2*5+1 ),Point( 5, 5 ) );
     dilate( detected_edges, detected_edges, element );
     erode( detected_edges, detected_edges, element );
 
-    imwrite( "trace.png", detected_edges );      
-    
+    imwrite( "trace.png", detected_edges );
+
     return 0;
 }
 
@@ -905,14 +993,14 @@ void gcode_print(String gout)
     gcode = gcode + gout + "\n";
 }
 
-/* 
+/*
     Find contours of the edges between the track expansion.
     Use contour and segment in lines.
  */
-int tracecontourexpansion()
+int tracecontourexpansion(unsigned int pxmm)
 {
-    #ifdef DEBUG 
-        cout << "tracecontourexpansion" << endl; 
+    #ifdef DEBUG
+        cout << "tracecontourexpansion" << endl;
     #endif
 
     // threshold function
@@ -934,14 +1022,14 @@ int tracecontourexpansion()
     {
         // Get all contours from Input Image
         findContours( detected_edges, contours, hierarchy, RETR_TREE, CHAIN_APPROX_SIMPLE, Point(0, 0) );
-       
+
         bool first = true;
         unsigned int no_lines = 0;
         Point j,k;
 
         // remove First Contour by tracing lines on Input Image
         for (Point i: contours[0] )
-        {   
+        {
             if (first)
             {
                 first=false;
@@ -978,13 +1066,13 @@ int tracecontourexpansion()
                 k=i;
             }
             else
-            {   
+            {
                 gcode_print("G1 X"+to_string(1.0*i.x/pxmm)+" Y"+to_string(1.0*i.y/pxmm));
             }
         }
         gcode_print("G1 X"+to_string(1.0*smallcontours[0].x/pxmm)+" Y"+to_string(1.0*smallcontours[0].y/pxmm));
         gcode_print("M05\n ");
-        
+
         // if no more contours then stop
         if (contours.size()<2) found = false;
         cnt--;
@@ -997,12 +1085,16 @@ int tracecontourexpansion()
 // Use original kicad drill holes
 // Assumption holes are circular
 
-void trace_drillholes()
-{    
-    #ifdef DEBUG 
-        cout << "drillholes" << endl; 
+void trace_drillholes(unsigned int pxmm)
+{
+    #ifdef DEBUG
+        cout << "drillholes" << endl;
     #endif
     float x1,x2,yy,r;
+    float hx,hy;
+    float x11,x12,x21,x22,y11,y12,y21,y22;
+    float c1x,c1y,c_r, c2x,c2y,angle;
+
 
     for (unsigned int li=0; li<ipadpos; li++)
     {
@@ -1011,15 +1103,68 @@ void trace_drillholes()
         yy=(1.0*ipad[li][LOCY]/pxmm);
         r=(1.0*ipad[li][HOLEX]/(2*pxmm));
 
-        // Goto rightmost
+
+
+        // GCODE Block init
         gcode_print("(Block-name: blockvia "+to_string(blockcounter)+")\n(Block-expand: 0)\n(Block-enable: 1)");
         blockcounter++;
         gcode_print("G01 F120"); // Feedrate 120 mm/min
-        gcode_print("G0 X"+to_string(x1)+" Y"+to_string(yy));
-        gcode_print("M04 S1000");
 
-        // Draw circle
-        gcode_print("G02 X"+to_string(x1)+" I-"+to_string(r)+" F120");
+        //## oval
+        if ( ipad[li][HOLEX] > ipad[li][HOLEY])
+        {
+            angle = 180-1.0* ipadseg[li][ANGLE];
+            hx = (ipad[li][HOLEX]- ipad[li][HOLEY])/(2.0*pxmm);
+            hy = (1.0*ipad[li][HOLEY])/(2*pxmm);
+
+            rotate_angle(x2-hx, yy-hy, x2, yy, angle, &x11, &y11);
+            rotate_angle(x2+hx, yy-hy, x2, yy, angle, &x12, &y12);
+            rotate_angle(x2-hx, yy+hy, x2, yy, angle, &x21, &y21);
+            rotate_angle(x2+hx, yy+hy, x2, yy, angle, &x22, &y22);
+
+            rotate_angle(x2-hx, yy, x2, yy, angle, &c1x, &c1y);
+            rotate_angle(x2+hx, yy, x2, yy, angle, &c2x, &c2y);
+
+            gcode_print("G0 X"+to_string(x11)+" Y"+to_string(y11));
+            gcode_print("M04 S1000");
+            gcode_print("G1 X"+to_string(x12)+" Y"+to_string(y12));
+
+            gcode_print("G03 X"+to_string(x22)+" Y"+to_string(y22)+" I"+to_string(c2x-x12)+"J"+to_string(c2y-y12)+" F120");
+            gcode_print("G1 X"+to_string(x21)+" Y"+to_string(y21));
+            gcode_print("G03 X"+to_string(x11)+" Y"+to_string(y11)+" I"+to_string(c1x-x21)+"J"+to_string(c1y-y21)+" F120");
+
+
+        } else if ( ipad[li][HOLEX] < ipad[li][HOLEY])
+        {
+            hy = (ipad[li][HOLEY]- ipad[li][HOLEX])/(2.0*pxmm);
+            hx = (1.0*ipad[li][HOLEX])/(2*pxmm);
+
+            angle = 180-1.0*ipadseg[li][ANGLE];
+            rotate_angle(x2-hx, yy-hy, x2, yy, angle, &x11, &y11);
+            rotate_angle(x2+hx, yy-hy, x2, yy, angle, &x21, &y21);
+            rotate_angle(x2-hx, yy+hy, x2, yy, angle, &x12, &y12);
+            rotate_angle(x2+hx, yy+hy, x2, yy, angle, &x22, &y22);
+
+            rotate_angle(x2, yy-hy, x2, yy, angle, &c1x, &c1y);
+            rotate_angle(x2, yy+hy, x2, yy, angle, &c2x, &c2y);
+
+            gcode_print("G0 X"+to_string(x11)+" Y"+to_string(y11));
+            gcode_print("M04 S1000");
+            gcode_print("G1 X"+to_string(x12)+" Y"+to_string(y12));
+
+            gcode_print("G02 X"+to_string(x22)+" Y"+to_string(y22)+" I"+to_string(c2x-x12)+"J"+to_string(c2y-y12)+" F120");
+            gcode_print("G1 X"+to_string(x21)+" Y"+to_string(y21));
+            gcode_print("G02 X"+to_string(x11)+" Y"+to_string(y11)+" I"+to_string(c1x-x21)+"J"+to_string(c1y-y21)+" F120");
+        }
+        else
+        {
+          // Goto rightmost
+          gcode_print("G0 X"+to_string(x1)+" Y"+to_string(yy));
+          gcode_print("M04 S1000");
+
+          // Draw circle
+          gcode_print("G02 X"+to_string(x1)+" I-"+to_string(r)+" F120");
+      }
     }
 }
 
@@ -1059,8 +1204,8 @@ int main(int argc, char** argv)
 
     if (argc>2)
     {
-        for (int i=2; i<argc; i++)  
-        {   cout << i << " " << argv[i] << endl;
+        for (int i=2; i<argc; i++)
+        {   //cout << i << " " << argv[i] << endl;
             if (argv[i][0]=='-')
             {
                 switch (argv[i][1])
@@ -1070,7 +1215,7 @@ int main(int argc, char** argv)
                         sLayer = "F.Cu";
                     break;
 
-                    case 'm':  // Process map.png directly 
+                    case 'm':  // Process map.png directly
                         if (strlen(argv[i])!=2)
                         {
                             cout << "Invalid Argument for " << argv[0] << endl;
@@ -1086,10 +1231,10 @@ int main(int argc, char** argv)
                             if (is_number(str_pxmm))
                             {
                                 cout << "Pixels per mm: " << str_pxmm << endl;
-                                try 
+                                try
                                 {
-                                    pxmm = stoi(str_pxmm);
-                                    if (pxmm>1000)
+                                    pixels_per_mm = stoi(str_pxmm);
+                                    if (pixels_per_mm>1000)
                                     {
                                         cout << "Pixels per mm range 1..100" << endl;
                                         return ENOENT;
@@ -1115,21 +1260,21 @@ int main(int argc, char** argv)
                         {
                             cout << "Invalid Argument for " << argv[0] << endl;
                             return ENOENT;
-                        }   
+                        }
                     break;
 
                     default:
                         cout << "Invalid Argument for " << argv[0] << endl;
                         return ENOENT;
                 }
-                
+
             }
             else
             {
                 cout << "Invalid Argument for " << argv[0] << endl;
                 return ENOENT;
             }
-            
+
         }
     }
 
@@ -1144,14 +1289,14 @@ int main(int argc, char** argv)
         readedge(filename); //read Edge Cuts
 
         if (ipadpos==0) return 0;
-        scale_down();
+        scale_down(pixels_per_mm);
 
         showpic();    // output bw image map.png
     }
 
     getcontourexpansion(); // Expand tracks and find edge boundary of expansion
-    tracecontourexpansion();
-    trace_drillholes(); //  via/pad holes to gcode
+    tracecontourexpansion(pixels_per_mm);
+    trace_drillholes(pixels_per_mm); //  via/pad holes to gcode
 
     // Output gcode to kic.gcode
     std::ofstream out("kic.gcode");
@@ -1159,6 +1304,6 @@ int main(int argc, char** argv)
     out.close();
 
     cout << "kic.gcode written." << endl;
-    
+
     return 0;
 }
