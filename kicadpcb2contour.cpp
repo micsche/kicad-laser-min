@@ -802,22 +802,13 @@ cv::Scalar get_colour_from_pool()
     return CV_RGB(r,g,b);
 }
 
-void ScanImageAndReduceC(Mat &I,Mat &image)
+void colorize_tracks(Mat &image)
 {
-    // accept only char type matrices
-    CV_Assert(I.depth() == CV_8U);
+    CV_Assert(image.depth() == CV_8U);
 
-    int nRows = I.rows;
-    int nCols = I.cols;
-    int channels = I.channels();
-
-    String progress[4]= {"|...",".|..","..|.","...|"};
-    int progressbar=0;
-
-    cout << "Progress: " << progress[progressbar++] << "\r" << std::flush;
-    if (progressbar==4) progressbar=0;
-
-    I.copyTo(image);
+    int nRows = image.rows;
+    int nCols = image.cols;
+    int channels = image.channels();
 
     //Init color pool
     for (int r=1; r<31*31*31; r++)
@@ -841,51 +832,49 @@ void ScanImageAndReduceC(Mat &I,Mat &image)
         }
 
     }
+}
 
-    // Dilate with colours
+// Dilate with colours
+bool track_dilate(Mat &image,Mat &newimage, int sRow,int nRows,int sCol,int nCols)
+{
     typedef unsigned char byte;
-    bool change=true;
+    Mat dimage[3];
     byte rr[9],gg[9],bb[9];
     int tb[32768];
     char cr,cg,cb;
     int index,tmaxc;
 
-    Mat dimage[3];
-    Mat newimage;
+    bool change=false;
 
-    while (change)
     {
-        cout << "Progress: " << progress[progressbar++] << "\r" << std::flush;
-        if (progressbar==4) progressbar=0;
-        change=false;
-
-        image.copyTo(newimage);
-
-        for (int r=1; r<(nRows-1); r++)
+    
+    for (int r=sRow; r<(nRows-1); r++)
         {
-            for (int c=1; c<(nCols-1); c++)
+            for (int c=sCol; c<(nCols-1); c++)
             {
-                if ((uchar) image.at<Vec3b>(r,c)[2]==0)
+                if ((uchar) image.at<Vec3b>(r,c)[2]==0) // if focus pixel is background
                 {
                     Mat roi = image(Rect(c-1,r-1,3,3));
+                    
+                    /// Are there any coloured pixels round focus?
                     split(roi,dimage);
-
-                    memcpy(bb,dimage[2].data, 9*sizeof(byte));
-
+                    memcpy(bb,dimage[2].data, 9*sizeof(byte)); // no edge has Blue=0
                     bool edge=false;
                     for (int lll=0; lll<9; lll++) if ((int)bb[lll]>0) {edge=true;}
 
+                    /// if Yes its and edge
                     if (edge)
                     {
-                        memcpy(rr,dimage[0].data, 9*sizeof(byte));
-                        memcpy(gg,dimage[1].data, 9*sizeof(byte));
+                        memcpy(rr,dimage[0].data, 9*sizeof(byte)); // get rest of pixel values red
+                        memcpy(gg,dimage[1].data, 9*sizeof(byte)); // get rest of pixel values blue
                         memset(tb,0,32768*sizeof(int));
 
                         std::vector<int> colour_list = {};
 
+                        // Build a list of colours around the focus pixel
                         for (int l=0; l<9; l++)
                         {
-                            if (l!=4)
+                            if (l!=4) // Go through all pixels except focus
                             {
                                 index = ((rr[l] & 248) << 7) | ((gg[l] & 248) << 2) | (bb[l] >> 3);
 
@@ -902,8 +891,7 @@ void ScanImageAndReduceC(Mat &I,Mat &image)
                         tb[0]=0; // which is not background
                         index=0;
 
-                        // Find colour which neighbours most pixels
-
+                        // Selected colour = colour of  most neighbours pixels with the same colour
                         for (std::vector<int>::iterator it = colour_list.begin() ; it != colour_list.end(); ++it)
                         {
                             if (tb[index]<tb[*it]) { index=*it;}
@@ -916,7 +904,8 @@ void ScanImageAndReduceC(Mat &I,Mat &image)
                             cg=((index & 992) >> 2);
                             cb=((index & 31) << 3);
 
-                            newimage.at<Vec3b>(Point(c, r))=Vec3b(cr,cg,cb);
+                            // Change Focus pixel colour to Selected Colour
+                            newimage.at<Vec3b>(Point(c, r))=Vec3b(cr,cg,cb); 
                         }
 
                         change=true;
@@ -925,12 +914,48 @@ void ScanImageAndReduceC(Mat &I,Mat &image)
             }
 
         }
-        newimage.copyTo(image);
+    }
+    return change;
+}
 
+void ScanImageAndReduceC(Mat &I,Mat &image)
+{
+    // accept only char type matrices
+    CV_Assert(I.depth() == CV_8U);
+    I.copyTo(image);
+
+    int nRows = I.rows;
+    int nCols = I.cols;
+    int channels = I.channels();
+
+    String progress[4]= {"|...",".|..","..|.","...|"};
+    int progressbar=0;
+
+    cout << "Progress: " << progress[progressbar++] << "\r" << std::flush;
+    if (progressbar==4) progressbar=0;
+
+    
+    bool change=true;
+    Mat newimage;
+
+    while (change)
+    {
+        cout << "Progress: " << progress[progressbar++] << "\r" << std::flush;
+        if (progressbar==4) progressbar=0;
+
+        image.copyTo(newimage);
+        change = track_dilate(image, newimage,1, nRows,  1,nCols); 
+        //change = track_dilate(image, newimage,              1, nRows >> 1,  1,              (nCols >> 1)); 
+        //change = track_dilate(image, newimage, (nRows >> 1)-1, nRows,       1,              (nCols >> 1));
+        //change = track_dilate(image, newimage,              1, nRows >> 1,  (nCols >> 1)-1, nCols       );
+        //change = track_dilate(image, newimage, (nRows >> 1)-1, nRows,       (nCols >> 1)-1, nCols       );
+        
+        newimage.copyTo(image);
+        
     }
 };
 
-int getcontourexpansion()
+int getcontourexpansion(String sLayer)
 {
     #ifdef DEBUG
             cout << "getcontourexpansions" << endl;
@@ -950,7 +975,7 @@ int getcontourexpansion()
         }
 
         city = Mat::zeros(Size(image.cols,image.rows),CV_8UC3);
-
+        colorize_tracks(image);            // Colorize tracks
         ScanImageAndReduceC(image,city);   // Dilate tracks until all tracks meet at middle. Then find edge.
 
 
@@ -997,7 +1022,7 @@ void gcode_print(String gout)
     Find contours of the edges between the track expansion.
     Use contour and segment in lines.
  */
-int tracecontourexpansion(unsigned int pxmm)
+int tracecontourexpansion(unsigned int pxmm, string sLayer)
 {
     #ifdef DEBUG
         cout << "tracecontourexpansion" << endl;
@@ -1009,6 +1034,12 @@ int tracecontourexpansion(unsigned int pxmm)
     vector<vector<Point> > contours;
     vector<Point> smallcontours;
     vector<Vec4i> hierarchy;
+
+    float xflip = 1.0;
+    if (sLayer=="B.Cu")
+    {
+        xflip=-1.0;
+    }
 
     drImg = Mat::zeros(Size(detected_edges.cols,detected_edges.rows),CV_8UC3);
     Scalar color( 255, 0, 0 );
@@ -1052,7 +1083,7 @@ int tracecontourexpansion(unsigned int pxmm)
         gcode_print("(Block-name: block "+to_string(blockcounter)+")\n(Block-expand: 0)\n(Block-enable: 1)");
         blockcounter++;
         gcode_print("G01 F120"); // Feedrate 120 mm/min
-        gcode_print("G0 X"+to_string(1.0*smallcontours[0].x/pxmm)+" Y"+to_string(1.0*smallcontours[0].y/pxmm));
+        gcode_print("G0 X"+to_string(xflip*smallcontours[0].x/pxmm)+" Y"+to_string(-1.0*smallcontours[0].y/pxmm));
         gcode_print("M04 S1000");
 
         // gcode line segments
@@ -1067,10 +1098,10 @@ int tracecontourexpansion(unsigned int pxmm)
             }
             else
             {
-                gcode_print("G1 X"+to_string(1.0*i.x/pxmm)+" Y"+to_string(1.0*i.y/pxmm));
+                gcode_print("G1 X"+to_string(xflip*i.x/pxmm)+" Y"+to_string(-1.0*i.y/pxmm));
             }
         }
-        gcode_print("G1 X"+to_string(1.0*smallcontours[0].x/pxmm)+" Y"+to_string(1.0*smallcontours[0].y/pxmm));
+        gcode_print("G1 X"+to_string(xflip*smallcontours[0].x/pxmm)+" Y"+to_string(-1.0*smallcontours[0].y/pxmm));
         gcode_print("M05\n ");
 
         // if no more contours then stop
@@ -1085,7 +1116,7 @@ int tracecontourexpansion(unsigned int pxmm)
 // Use original kicad drill holes
 // Assumption holes are circular
 
-void trace_drillholes(unsigned int pxmm)
+void trace_drillholes(unsigned int pxmm, string sLayer)
 {
     #ifdef DEBUG
         cout << "drillholes" << endl;
@@ -1095,12 +1126,17 @@ void trace_drillholes(unsigned int pxmm)
     float x11,x12,x21,x22,y11,y12,y21,y22;
     float c1x,c1y,c_r, c2x,c2y,angle;
 
+    float xflip = 1.0;
+    if (sLayer=="B.Cu")
+    {
+        xflip=-1.0;
+    }
 
     for (unsigned int li=0; li<ipadpos; li++)
     {
-        x1=(1.0*ipad[li][LOCX]+ipad[li][HOLEX]/2)/pxmm;
-        x2=(1.0*ipad[li][LOCX]/pxmm);
-        yy=(1.0*ipad[li][LOCY]/pxmm);
+        x1=(xflip*ipad[li][LOCX]+ipad[li][HOLEX]/2)/pxmm;
+        x2=(xflip*ipad[li][LOCX]/pxmm);
+        yy=(-1.0*ipad[li][LOCY]/pxmm);
         r=(1.0*ipad[li][HOLEX]/(2*pxmm));
 
 
@@ -1136,7 +1172,7 @@ void trace_drillholes(unsigned int pxmm)
 
         } else if ( ipad[li][HOLEX] < ipad[li][HOLEY])
         {
-            hy = (ipad[li][HOLEY]- ipad[li][HOLEX])/(2.0*pxmm);
+            hy = -(ipad[li][HOLEY]- ipad[li][HOLEX])/(2.0*pxmm);
             hx = (1.0*ipad[li][HOLEX])/(2*pxmm);
 
             angle = 180-1.0*ipadseg[li][ANGLE];
@@ -1294,9 +1330,9 @@ int main(int argc, char** argv)
         showpic();    // output bw image map.png
     }
 
-    getcontourexpansion(); // Expand tracks and find edge boundary of expansion
-    tracecontourexpansion(pixels_per_mm);
-    trace_drillholes(pixels_per_mm); //  via/pad holes to gcode
+    getcontourexpansion(sLayer); // Expand tracks and find edge boundary of expansion
+    tracecontourexpansion(pixels_per_mm, sLayer);
+    trace_drillholes(pixels_per_mm, sLayer); //  via/pad holes to gcode
 
     // Output gcode to kic.gcode
     std::ofstream out("kic.gcode");
