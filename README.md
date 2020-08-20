@@ -50,7 +50,8 @@ kicadpcb2contour.cpp
 OpenCV libraries (version 4.2 used)
 
 ### Compilation
-g++ -g kicadpcb2contour.cpp -o kicadcontour `pkg-config --cflags  opencv4 --libs opencv4`
+Go into the directory and type in ```make```
+make
 
 The output is from ```pkginfo``` on include and libraries for ```opencv4```.
 
