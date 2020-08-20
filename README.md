@@ -50,10 +50,9 @@ kicadpcb2contour.cpp
 OpenCV libraries (version 4.2 used)
 
 ### Compilation
-Go into the directory and type in ```make```
-make
+Go into the directory and type in ```make```.
 
-The output is from ```pkginfo``` on include and libraries for ```opencv4```.
+
 
 ### Docker image( To come )
 

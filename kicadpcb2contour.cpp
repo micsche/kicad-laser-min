@@ -1172,7 +1172,7 @@ void trace_drillholes(unsigned int pxmm, string sLayer)
 
         } else if ( ipad[li][HOLEX] < ipad[li][HOLEY])
         {
-            hy = -(ipad[li][HOLEY]- ipad[li][HOLEX])/(2.0*pxmm);
+            hy = (ipad[li][HOLEY]- ipad[li][HOLEX])/(2.0*pxmm);
             hx = (1.0*ipad[li][HOLEX])/(2*pxmm);
 
             angle = 180-1.0*ipadseg[li][ANGLE];
