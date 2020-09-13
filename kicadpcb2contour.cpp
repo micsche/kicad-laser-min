@@ -959,17 +959,18 @@ void ScanImageAndReduceC(Mat &I,Mat &image, String sLayer)
     }
 };
 
-int getcontourexpansion(String sLayer)
+/*cppdirect is a debug flag to use immediated cpp_image.png*/
+int getcontourexpansion(String sLayer, bool cppdirect)
 {
     #ifdef DEBUG
             cout << "getcontourexpansions" << endl;
     #endif
 
     Mat image,city,output;
-    bool file_is_ready = false;
-
-    if (!file_is_ready)
+    
+    if (cppdirect==false)
     {
+        
         String imageName( "map.png" ); // by default
         image = imread( samples::findFile( imageName ), IMREAD_COLOR ); // Read the file
         if( image.empty() )                      // Check for invalid input
@@ -996,12 +997,14 @@ int getcontourexpansion(String sLayer)
 
             bitwise_and(city,mask,city);                                    // Mask out Edge Cuts
         }
-        imwrite( "cpp_image.png", city );  // Output to cpp_image.png
+        imwrite( "cpp_image.png", city );  // Output to cpp_image.png        
     }
     else
-    {
+    {   // debug -t option
+        cout << "Using cpp_image directly" << endl;
         city = imread("cpp_image.png");
     }
+    
 
     // Edge detection
     Canny( city, detected_edges, 50, 150, 7 );
@@ -1063,6 +1066,7 @@ int tracecontourexpansion(unsigned int pxmm, string sLayer)
         Point j,k;
 
         // remove First Contour by tracing lines on Input Image
+        
         for (Point i: contours[0] )
         {
             if (first)
@@ -1077,11 +1081,13 @@ int tracecontourexpansion(unsigned int pxmm, string sLayer)
 
             no_lines++;
         }
+        
         line(detected_edges, k, j,  Scalar(0,0,0), 2, LINE_4);
 
         // build gcode from Approximate contour
         approxPolyDP(Mat(contours[0]),smallcontours,1,true);
 
+        
         // gcode blockheader
         gcode_print("G0 Z2"); // dont need this in laser
         gcode_print("(Block-name: block "+to_string(blockcounter)+")\n(Block-expand: 0)\n(Block-enable: 1)");
@@ -1107,6 +1113,7 @@ int tracecontourexpansion(unsigned int pxmm, string sLayer)
         }
         gcode_print("G1 X"+to_string(xflip*smallcontours[0].x/pxmm)+" Y"+to_string(-1.0*smallcontours[0].y/pxmm));
         gcode_print("M05\n ");
+        
 
         // if no more contours then stop
         if (contours.size()<2) found = false;
@@ -1213,6 +1220,7 @@ int main(int argc, char** argv)
     String filename,sLayer="B.Cu";
     int flags, opt;
     bool process=false;
+    bool cppdirect = false;
     bool process_both_layers = false;
     bool clean_up = true;
 
@@ -1254,7 +1262,6 @@ int main(int argc, char** argv)
             {
                 switch (argv[i][1])
                 {
-
                     case 'c': // Do not cleanup after processing;
                         clean_up = false;
                     break;
@@ -1285,6 +1292,13 @@ int main(int argc, char** argv)
                         }
                         process=true;
                     break;
+
+                    case 't' : // process cpp_image directly - debug purposes
+                        cppdirect = true;
+                        process = true;
+                    break;
+
+
 
                     case 'p': // Pixels per mm
                         if (strlen(argv[i])>2)
@@ -1367,7 +1381,8 @@ int main(int argc, char** argv)
             showpic();    // output bw image map.png
         }
     
-        getcontourexpansion(sLayer); // Expand tracks and find edge boundary of expansion
+        getcontourexpansion(sLayer,cppdirect); // Expand tracks and find edge boundary of expansion
+        
         tracecontourexpansion(pixels_per_mm, sLayer);
         trace_drillholes(pixels_per_mm, sLayer); //  via/pad holes to gcode
 
