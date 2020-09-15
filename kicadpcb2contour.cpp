@@ -101,11 +101,6 @@ unsigned int blockcounter=0;
 float boardminx=9.0e+9,boardminy=9.0e+9,boardmaxx=-9.0e+9,boardmaxy=-9.0e+9;
 unsigned image_height,image_width;
 
-void rounded_rectangle( Mat& src, Point topLeft, Point bottomRight, const Scalar lineColor, const int thickness, const int lineType , const int cornerRadius)
-{
-
-}
-
 bool is_number(const std::string& s)
 {
     return !s.empty() && std::find_if(s.begin(),
@@ -918,7 +913,11 @@ bool track_dilate(Mat &image,Mat &newimage, int sRow,int nRows,int sCol,int nCol
     return change;
 }
 
+<<<<<<< HEAD
 void ScanImageAndReduceC(Mat &I,Mat &image)
+=======
+void ScanImageAndReduceC(Mat &I,Mat &image, String sLayer)
+>>>>>>> master
 {
     // accept only char type matrices
     CV_Assert(I.depth() == CV_8U);
@@ -931,6 +930,18 @@ void ScanImageAndReduceC(Mat &I,Mat &image)
     String progress[4]= {"|...",".|..","..|.","...|"};
     int progressbar=0;
 
+<<<<<<< HEAD
+=======
+    if (sLayer=="F.Cu")
+    {   cout << "Processing Front Copper Layer." << endl;
+    }
+    else
+    {
+        cout << "Processing Bottom Copper Layer." << endl;
+    }
+    
+
+>>>>>>> master
     cout << "Progress: " << progress[progressbar++] << "\r" << std::flush;
     if (progressbar==4) progressbar=0;
 
@@ -955,17 +966,22 @@ void ScanImageAndReduceC(Mat &I,Mat &image)
     }
 };
 
+<<<<<<< HEAD
 int getcontourexpansion(String sLayer)
+=======
+/*cppdirect is a debug flag to use immediated cpp_image.png*/
+int getcontourexpansion(String sLayer, bool cppdirect)
+>>>>>>> master
 {
     #ifdef DEBUG
             cout << "getcontourexpansions" << endl;
     #endif
 
     Mat image,city,output;
-    bool file_is_ready = false;
-
-    if (!file_is_ready)
+    
+    if (cppdirect==false)
     {
+        
         String imageName( "map.png" ); // by default
         image = imread( samples::findFile( imageName ), IMREAD_COLOR ); // Read the file
         if( image.empty() )                      // Check for invalid input
@@ -976,7 +992,11 @@ int getcontourexpansion(String sLayer)
 
         city = Mat::zeros(Size(image.cols,image.rows),CV_8UC3);
         colorize_tracks(image);            // Colorize tracks
+<<<<<<< HEAD
         ScanImageAndReduceC(image,city);   // Dilate tracks until all tracks meet at middle. Then find edge.
+=======
+        ScanImageAndReduceC(image,city,sLayer);   // Dilate tracks until all tracks meet at middle. Then find edge.
+>>>>>>> master
 
 
         String maskName = "mask.png";
@@ -992,12 +1012,14 @@ int getcontourexpansion(String sLayer)
 
             bitwise_and(city,mask,city);                                    // Mask out Edge Cuts
         }
-        imwrite( "cpp_image.png", city );  // Output to cpp_image.png
+        imwrite( "cpp_image.png", city );  // Output to cpp_image.png        
     }
     else
-    {
+    {   // debug -t option
+        cout << "Using cpp_image directly" << endl;
         city = imread("cpp_image.png");
     }
+    
 
     // Edge detection
     Canny( city, detected_edges, 50, 150, 7 );
@@ -1059,6 +1081,7 @@ int tracecontourexpansion(unsigned int pxmm, string sLayer)
         Point j,k;
 
         // remove First Contour by tracing lines on Input Image
+        
         for (Point i: contours[0] )
         {
             if (first)
@@ -1073,11 +1096,13 @@ int tracecontourexpansion(unsigned int pxmm, string sLayer)
 
             no_lines++;
         }
+        
         line(detected_edges, k, j,  Scalar(0,0,0), 2, LINE_4);
 
         // build gcode from Approximate contour
         approxPolyDP(Mat(contours[0]),smallcontours,1,true);
 
+        
         // gcode blockheader
         gcode_print("G0 Z2"); // dont need this in laser
         gcode_print("(Block-name: block "+to_string(blockcounter)+")\n(Block-expand: 0)\n(Block-enable: 1)");
@@ -1103,6 +1128,7 @@ int tracecontourexpansion(unsigned int pxmm, string sLayer)
         }
         gcode_print("G1 X"+to_string(xflip*smallcontours[0].x/pxmm)+" Y"+to_string(-1.0*smallcontours[0].y/pxmm));
         gcode_print("M05\n ");
+        
 
         // if no more contours then stop
         if (contours.size()<2) found = false;
@@ -1172,7 +1198,7 @@ void trace_drillholes(unsigned int pxmm, string sLayer)
 
         } else if ( ipad[li][HOLEX] < ipad[li][HOLEY])
         {
-            hy = (ipad[li][HOLEY]- ipad[li][HOLEX])/(2.0*pxmm);
+            hy = -(ipad[li][HOLEY]- ipad[li][HOLEX])/(2.0*pxmm);
             hx = (1.0*ipad[li][HOLEX])/(2*pxmm);
 
             angle = 180-1.0*ipadseg[li][ANGLE];
@@ -1209,12 +1235,17 @@ int main(int argc, char** argv)
     String filename,sLayer="B.Cu";
     int flags, opt;
     bool process=false;
+    bool cppdirect = false;
+    bool process_both_layers = false;
+    bool clean_up = true;
 
-    if ((argc<2) | (argc>4))
+    if ((argc<2) | (argc>5))
     {
         cout << "Usage: " << argv[0] << " <filename> " <<  endl;
         cout << "\tOption: -m         Process map.png directly" << endl;
         cout << "\t        -f         Process Front Copper Layer." << endl;
+        cout << "\t        -b         Process Bottom and Front Copper Layer." << endl;
+        cout << "\t        -c         Do not cleanup after processing." << endl;
         cout << "\t        -p<pxmm>   Change pixels per mm (default 30)" << endl;
         cout << endl;
 
@@ -1246,10 +1277,27 @@ int main(int argc, char** argv)
             {
                 switch (argv[i][1])
                 {
-                    case 'f': // Process Front Copper instead of Bottom Copper
-                        cout << "Processing Front Copper Layer." << endl;
-                        sLayer = "F.Cu";
+                    case 'c': // Do not cleanup after processing;
+                        clean_up = false;
                     break;
+
+                    case 'f': // Process Front Copper instead of Bottom Copper
+                        if (process_both_layers==true)
+                        {
+                            cout << " -f parameter ignored." << endl;
+                        }
+                        else sLayer = "F.Cu";
+                    break;
+
+                    case 'b': // Prcoess Both Layers
+                        cout << "Processing both layers. ";
+                        if (sLayer=="F.Cu")
+                        {
+                             cout << "-f parameter ignored.";
+                        }
+                        cout << endl;
+                        process_both_layers = true;
+                    break;                    
 
                     case 'm':  // Process map.png directly
                         if (strlen(argv[i])!=2)
@@ -1259,6 +1307,13 @@ int main(int argc, char** argv)
                         }
                         process=true;
                     break;
+
+                    case 't' : // process cpp_image directly - debug purposes
+                        cppdirect = true;
+                        process = true;
+                    break;
+
+
 
                     case 'p': // Pixels per mm
                         if (strlen(argv[i])>2)
@@ -1314,32 +1369,80 @@ int main(int argc, char** argv)
         }
     }
 
-    if (process==false)
+    bool notfinished = true;
+    if (process_both_layers) sLayer="B.Cu";
+    while (notfinished)
     {
-        remove("mask.png"); // remove mask.png
+        linesegpos=0;
+        ipadpos=0;
+        edgecutpos=0;
+        blockcounter=0;
+        boardminx=9.0e+9,boardminy=9.0e+9,boardmaxx=-9.0e+9,boardmaxy=-9.0e+9;
+        gcode="";
 
-        readkicad(filename, sLayer);  // read pcb tracks
+        if (process==false)
+        {
+            remove("mask.png"); // remove mask.png
 
-        readviapad(filename, sLayer); // read pad/via information
+            readkicad(filename, sLayer);  // read pcb tracks
 
-        readedge(filename); //read Edge Cuts
+            readviapad(filename, sLayer); // read pad/via information
 
-        if (ipadpos==0) return 0;
-        scale_down(pixels_per_mm);
+            readedge(filename); //read Edge Cuts
 
-        showpic();    // output bw image map.png
-    }
+            if (ipadpos==0) return 0;
+            scale_down(pixels_per_mm);
 
+            showpic();    // output bw image map.png
+        }
+    
+        getcontourexpansion(sLayer,cppdirect); // Expand tracks and find edge boundary of expansion
+        
+        tracecontourexpansion(pixels_per_mm, sLayer);
+        trace_drillholes(pixels_per_mm, sLayer); //  via/pad holes to gcode
+
+<<<<<<< HEAD
     getcontourexpansion(sLayer); // Expand tracks and find edge boundary of expansion
     tracecontourexpansion(pixels_per_mm, sLayer);
     trace_drillholes(pixels_per_mm, sLayer); //  via/pad holes to gcode
+=======
+        String filename="bottom.gcode";
+        if (sLayer=="F.Cu") filename="front.gcode";
+>>>>>>> master
 
-    // Output gcode to kic.gcode
-    std::ofstream out("kic.gcode");
-    out << gcode;
-    out.close();
+        // Output gcode to kic.gcode
+        std::ofstream out(filename);
+        out << gcode;
+        out.close();
 
-    cout << "kic.gcode written." << endl;
+        cout << filename << " written." << endl;
+
+        // remove all png output
+        if (clean_up)
+        {
+            remove("map.png");
+            remove("cpp_image.png");
+            remove("mask.png");
+            remove("trace.png");
+        }
+        
+        // Process first F.Cu then B.Cu then exit
+        if (process_both_layers)
+        {
+            if (sLayer == "F.Cu")
+            {
+                notfinished = false;
+            } else
+            {
+                sLayer = "F.Cu";
+            }
+
+        } else
+        {
+            notfinished = false;
+        }
+        
+    }
 
     return 0;
 }

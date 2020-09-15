@@ -29,9 +29,11 @@ Please review outputs, especially gcode (as I am not an expert on any of the fil
 ### Usage
 
 ```Usage:
-    Option: -m         Process map.png directly
-            -f         Process Front Copper Layer. (default Bottom Copper Layer)
-            -p<pxmm>   Change pixels per mm (default 30)
+    Option: -m         Process map.png directly.
+            -f         Process Front Copper Layer. (default Bottom Copper Layer).
+            -b         Process Front and Bottom Layer.
+            -c         Do not cleanup after program exits.
+            -p<pxmm>   Change pixels per mm (default 30).
 ```
 
 ### Files
@@ -41,7 +43,8 @@ kicadpcb2contour.cpp
     map.png       - BW output image of Kicad PCB conversion
     cpp_image.png - your mind on LSD. The colorised image dilation of PCB tracks.
     trace.png     - Edge detection of the dilated image
-    kic.gcode     - Final gcode
+    front.gcode   - Final gcode for Front Layer
+    bottom.gcode  - Final gcode for Bottom Layer
     mask.png      - Mask of PCB to handle Edge cuts
 
 
