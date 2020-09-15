@@ -13,6 +13,7 @@
 #include <opencv2/imgcodecs.hpp>
 #include <opencv2/highgui.hpp>
 #include <opencv2/imgproc.hpp>
+#include <opencv2/ximgproc.hpp>
 
 #include <iostream>
 #include <fstream>
@@ -23,6 +24,7 @@
 #include <math.h>
 
 using namespace cv;
+using namespace cv::ximgproc;
 using namespace std;
 
 unsigned int pixels_per_mm = 30; // Tunable parameter resolves pixels per mm. Larger value slower calculation. Lower values coarser contours.
@@ -842,7 +844,7 @@ bool track_dilate(Mat &image,Mat &newimage, int sRow,int nRows,int sCol,int nCol
     bool change=false;
 
     {
-    
+
     for (int r=sRow; r<(nRows-1); r++)
         {
             for (int c=sCol; c<(nCols-1); c++)
@@ -850,7 +852,7 @@ bool track_dilate(Mat &image,Mat &newimage, int sRow,int nRows,int sCol,int nCol
                 if ((uchar) image.at<Vec3b>(r,c)[2]==0) // if focus pixel is background
                 {
                     Mat roi = image(Rect(c-1,r-1,3,3));
-                    
+
                     /// Are there any coloured pixels round focus?
                     split(roi,dimage);
                     memcpy(bb,dimage[2].data, 9*sizeof(byte)); // no edge has Blue=0
@@ -900,7 +902,7 @@ bool track_dilate(Mat &image,Mat &newimage, int sRow,int nRows,int sCol,int nCol
                             cb=((index & 31) << 3);
 
                             // Change Focus pixel colour to Selected Colour
-                            newimage.at<Vec3b>(Point(c, r))=Vec3b(cr,cg,cb); 
+                            newimage.at<Vec3b>(Point(c, r))=Vec3b(cr,cg,cb);
                         }
 
                         change=true;
@@ -913,11 +915,7 @@ bool track_dilate(Mat &image,Mat &newimage, int sRow,int nRows,int sCol,int nCol
     return change;
 }
 
-<<<<<<< HEAD
-void ScanImageAndReduceC(Mat &I,Mat &image)
-=======
 void ScanImageAndReduceC(Mat &I,Mat &image, String sLayer)
->>>>>>> master
 {
     // accept only char type matrices
     CV_Assert(I.depth() == CV_8U);
@@ -930,8 +928,6 @@ void ScanImageAndReduceC(Mat &I,Mat &image, String sLayer)
     String progress[4]= {"|...",".|..","..|.","...|"};
     int progressbar=0;
 
-<<<<<<< HEAD
-=======
     if (sLayer=="F.Cu")
     {   cout << "Processing Front Copper Layer." << endl;
     }
@@ -939,13 +935,12 @@ void ScanImageAndReduceC(Mat &I,Mat &image, String sLayer)
     {
         cout << "Processing Bottom Copper Layer." << endl;
     }
-    
 
->>>>>>> master
+
     cout << "Progress: " << progress[progressbar++] << "\r" << std::flush;
     if (progressbar==4) progressbar=0;
 
-    
+
     bool change=true;
     Mat newimage;
 
@@ -955,33 +950,29 @@ void ScanImageAndReduceC(Mat &I,Mat &image, String sLayer)
         if (progressbar==4) progressbar=0;
 
         image.copyTo(newimage);
-        change = track_dilate(image, newimage,1, nRows,  1,nCols); 
-        //change = track_dilate(image, newimage,              1, nRows >> 1,  1,              (nCols >> 1)); 
+        change = track_dilate(image, newimage,1, nRows,  1,nCols);
+        //change = track_dilate(image, newimage,              1, nRows >> 1,  1,              (nCols >> 1));
         //change = track_dilate(image, newimage, (nRows >> 1)-1, nRows,       1,              (nCols >> 1));
         //change = track_dilate(image, newimage,              1, nRows >> 1,  (nCols >> 1)-1, nCols       );
         //change = track_dilate(image, newimage, (nRows >> 1)-1, nRows,       (nCols >> 1)-1, nCols       );
-        
+
         newimage.copyTo(image);
-        
+
     }
 };
 
-<<<<<<< HEAD
-int getcontourexpansion(String sLayer)
-=======
 /*cppdirect is a debug flag to use immediated cpp_image.png*/
 int getcontourexpansion(String sLayer, bool cppdirect)
->>>>>>> master
 {
     #ifdef DEBUG
             cout << "getcontourexpansions" << endl;
     #endif
 
     Mat image,city,output;
-    
+
     if (cppdirect==false)
     {
-        
+
         String imageName( "map.png" ); // by default
         image = imread( samples::findFile( imageName ), IMREAD_COLOR ); // Read the file
         if( image.empty() )                      // Check for invalid input
@@ -992,11 +983,7 @@ int getcontourexpansion(String sLayer, bool cppdirect)
 
         city = Mat::zeros(Size(image.cols,image.rows),CV_8UC3);
         colorize_tracks(image);            // Colorize tracks
-<<<<<<< HEAD
-        ScanImageAndReduceC(image,city);   // Dilate tracks until all tracks meet at middle. Then find edge.
-=======
         ScanImageAndReduceC(image,city,sLayer);   // Dilate tracks until all tracks meet at middle. Then find edge.
->>>>>>> master
 
 
         String maskName = "mask.png";
@@ -1012,14 +999,14 @@ int getcontourexpansion(String sLayer, bool cppdirect)
 
             bitwise_and(city,mask,city);                                    // Mask out Edge Cuts
         }
-        imwrite( "cpp_image.png", city );  // Output to cpp_image.png        
+        imwrite( "cpp_image.png", city );  // Output to cpp_image.png
     }
     else
     {   // debug -t option
         cout << "Using cpp_image directly" << endl;
         city = imread("cpp_image.png");
     }
-    
+
 
     // Edge detection
     Canny( city, detected_edges, 50, 150, 7 );
@@ -1028,6 +1015,7 @@ int getcontourexpansion(String sLayer, bool cppdirect)
     Mat element = getStructuringElement( MORPH_RECT,Size( 2*5 + 1, 2*5+1 ),Point( 5, 5 ) );
     dilate( detected_edges, detected_edges, element );
     erode( detected_edges, detected_edges, element );
+    thinning(detected_edges, detected_edges, 0 );
 
     imwrite( "trace.png", detected_edges );
 
@@ -1081,7 +1069,7 @@ int tracecontourexpansion(unsigned int pxmm, string sLayer)
         Point j,k;
 
         // remove First Contour by tracing lines on Input Image
-        
+
         for (Point i: contours[0] )
         {
             if (first)
@@ -1096,13 +1084,13 @@ int tracecontourexpansion(unsigned int pxmm, string sLayer)
 
             no_lines++;
         }
-        
+
         line(detected_edges, k, j,  Scalar(0,0,0), 2, LINE_4);
 
         // build gcode from Approximate contour
         approxPolyDP(Mat(contours[0]),smallcontours,1,true);
 
-        
+
         // gcode blockheader
         gcode_print("G0 Z2"); // dont need this in laser
         gcode_print("(Block-name: block "+to_string(blockcounter)+")\n(Block-expand: 0)\n(Block-enable: 1)");
@@ -1128,7 +1116,7 @@ int tracecontourexpansion(unsigned int pxmm, string sLayer)
         }
         gcode_print("G1 X"+to_string(xflip*smallcontours[0].x/pxmm)+" Y"+to_string(-1.0*smallcontours[0].y/pxmm));
         gcode_print("M05\n ");
-        
+
 
         // if no more contours then stop
         if (contours.size()<2) found = false;
@@ -1297,7 +1285,7 @@ int main(int argc, char** argv)
                         }
                         cout << endl;
                         process_both_layers = true;
-                    break;                    
+                    break;
 
                     case 'm':  // Process map.png directly
                         if (strlen(argv[i])!=2)
@@ -1395,20 +1383,14 @@ int main(int argc, char** argv)
 
             showpic();    // output bw image map.png
         }
-    
+
         getcontourexpansion(sLayer,cppdirect); // Expand tracks and find edge boundary of expansion
-        
+
         tracecontourexpansion(pixels_per_mm, sLayer);
         trace_drillholes(pixels_per_mm, sLayer); //  via/pad holes to gcode
 
-<<<<<<< HEAD
-    getcontourexpansion(sLayer); // Expand tracks and find edge boundary of expansion
-    tracecontourexpansion(pixels_per_mm, sLayer);
-    trace_drillholes(pixels_per_mm, sLayer); //  via/pad holes to gcode
-=======
         String filename="bottom.gcode";
         if (sLayer=="F.Cu") filename="front.gcode";
->>>>>>> master
 
         // Output gcode to kic.gcode
         std::ofstream out(filename);
@@ -1425,7 +1407,7 @@ int main(int argc, char** argv)
             remove("mask.png");
             remove("trace.png");
         }
-        
+
         // Process first F.Cu then B.Cu then exit
         if (process_both_layers)
         {
@@ -1441,7 +1423,7 @@ int main(int argc, char** argv)
         {
             notfinished = false;
         }
-        
+
     }
 
     return 0;

@@ -6,7 +6,7 @@ CC = g++
 # g++ -g kicadpcb2contour.cpp -o kicadcontour `pkg-config --cflags  opencv4 --libs opencv4`
 
 CFLAGS = `pkg-config --cflags  opencv4`
-LDFLAGS = `pkg-config --libs opencv4`
+LDFLAGS = `pkg-config --libs opencv4` -lopencv_ximgproc
 
 
 all: generate
