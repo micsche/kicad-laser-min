@@ -8,6 +8,8 @@ The application uses a line Voronoi segmentation technique on the BW image of on
 by colorizing each track a different color. Each track is dilated until regions meet. Finally, an edge detection algorithm will produce the contours.
 The contours produce the PCB region isolation. A contour following algorithm will transform the edge into gcode.
 
+Double separation creates increase isolation between PCB tracks  (0.5mm per contour) .
+
 The KICAD pcb to image conversion uses `<pxmm>` scale (which defaults to 30 pixels per mm).
 
 Edge dilation takes time (why it is implemented in C++). The time is dependant on the `<pxmm>` scale.
@@ -50,7 +52,7 @@ kicadpcb2contour.cpp
 
 
 ### Dependencies
-OpenCV libraries (version 4.2 used)
+OpenCV libraries (version 4.5 used) with opencv_contrib (ximgproc)
 
 ### Compilation
 Go into the directory and type in ```make```.
