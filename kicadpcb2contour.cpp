@@ -24,7 +24,6 @@
 #include <math.h>
 
 using namespace cv;
-using namespace cv::ximgproc;
 using namespace std;
 
 unsigned int pixels_per_mm = 30; // Tunable parameter resolves pixels per mm. Larger value slower calculation. Lower values coarser contours.
