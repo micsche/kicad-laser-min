@@ -17,6 +17,7 @@
 
 #include <iostream>
 #include <fstream>
+#include <unistd.h>
 #include <list>
 #include <algorithm>
 #include <sstream>
@@ -24,6 +25,7 @@
 #include <math.h>
 
 using namespace cv;
+using namespace cv::ximgproc;
 using namespace std;
 
 unsigned int pixels_per_mm = 30; // Tunable parameter resolves pixels per mm. Larger value slower calculation. Lower values coarser contours.
@@ -101,6 +103,31 @@ unsigned int blockcounter=0;
 
 float boardminx=9.0e+9,boardminy=9.0e+9,boardmaxx=-9.0e+9,boardmaxy=-9.0e+9;
 unsigned image_height,image_width;
+
+string type2str(int type) {
+  string r;
+
+  uchar depth = type & CV_MAT_DEPTH_MASK;
+  uchar chans = 1 + (type >> CV_CN_SHIFT);
+
+  switch ( depth ) {
+    case CV_8U:  r = "8U"; break;
+    case CV_8S:  r = "8S"; break;
+    case CV_16U: r = "16U"; break;
+    case CV_16S: r = "16S"; break;
+    case CV_32S: r = "32S"; break;
+    case CV_32F: r = "32F"; break;
+    case CV_64F: r = "64F"; break;
+    default:     r = "User"; break;
+  }
+
+  r += "C";
+  r += (chans+'0');
+
+  
+
+  return r;
+}
 
 bool is_number(const std::string& s)
 {
@@ -914,6 +941,7 @@ bool track_dilate(Mat &image,Mat &newimage, int sRow,int nRows,int sCol,int nCol
     return change;
 }
 
+
 void ScanImageAndReduceC(Mat &I,Mat &image, String sLayer)
 {
     // accept only char type matrices
@@ -950,19 +978,16 @@ void ScanImageAndReduceC(Mat &I,Mat &image, String sLayer)
 
         image.copyTo(newimage);
         change = track_dilate(image, newimage,1, nRows,  1,nCols);
-        //change = track_dilate(image, newimage,              1, nRows >> 1,  1,              (nCols >> 1));
-        //change = track_dilate(image, newimage, (nRows >> 1)-1, nRows,       1,              (nCols >> 1));
-        //change = track_dilate(image, newimage,              1, nRows >> 1,  (nCols >> 1)-1, nCols       );
-        //change = track_dilate(image, newimage, (nRows >> 1)-1, nRows,       (nCols >> 1)-1, nCols       );
-
         newimage.copyTo(image);
 
     }
 };
 
-/*cppdirect is a debug flag to use immediated cpp_image.png*/
+/*cppdirect is a debug flag to use a ready made cpp_image.png*/
 int getcontourexpansion(String sLayer, bool cppdirect)
 {
+    Mat worktrace;
+    
     #ifdef DEBUG
             cout << "getcontourexpansions" << endl;
     #endif
@@ -976,13 +1001,13 @@ int getcontourexpansion(String sLayer, bool cppdirect)
         image = imread( samples::findFile( imageName ), IMREAD_COLOR ); // Read the file
         if( image.empty() )                      // Check for invalid input
         {
-            cout <<  "Could not open or find the image" << std::endl ;
+            cout <<  "Not valid PNG." << std::endl ;
             return -1;
         }
 
         city = Mat::zeros(Size(image.cols,image.rows),CV_8UC3);
         colorize_tracks(image);            // Colorize tracks
-        ScanImageAndReduceC(image,city,sLayer);   // Dilate tracks until all tracks meet at middle. Then find edge.
+        ScanImageAndReduceC(image,city,sLayer);   // Dilate tracks until all tracks meet at middle. To find edge.
 
 
         String maskName = "mask.png";
@@ -1006,18 +1031,30 @@ int getcontourexpansion(String sLayer, bool cppdirect)
         city = imread("cpp_image.png");
     }
 
-
+    worktrace = Mat::zeros(Size(city.cols,city.rows),CV_8UC1);
     // Edge detection
     Canny( city, detected_edges, 50, 150, 7 );
 
+    string ty =  type2str( city.type() );
+    printf("city: %s %dx%d \n", ty.c_str(), city.cols, city.rows );
+    ty =  type2str( detected_edges.type() );
+    printf("detected_edges: %s %dx%d \n", ty.c_str(), detected_edges.cols, detected_edges.rows );
+
+
     // Dilate and Erode lines so that close lines get attached.
-    Mat element = getStructuringElement( MORPH_RECT,Size( 2*5 + 1, 2*5+1 ),Point( 5, 5 ) );
-    dilate( detected_edges, detected_edges, element );
-    erode( detected_edges, detected_edges, element );
+    Mat element5 = getStructuringElement( MORPH_RECT,Size( 2*5 + 1, 2*5+1 ),Point( 5, 5 ) );
+    Mat element3 = getStructuringElement( MORPH_RECT,Size( 2*3 + 1, 2*5+1 ),Point( 3, 3 ) );
+
+    dilate( detected_edges, detected_edges, element5 , Point(-1,-1),2);
+    detected_edges.copyTo(worktrace);
+
+    erode( detected_edges, detected_edges, element3 );
+    bitwise_xor(detected_edges,worktrace,detected_edges);
+    
     thinning(detected_edges, detected_edges, 0 );
 
     imwrite( "trace.png", detected_edges );
-
+    
     return 0;
 }
 
@@ -1089,7 +1126,6 @@ int tracecontourexpansion(unsigned int pxmm, string sLayer)
         // build gcode from Approximate contour
         approxPolyDP(Mat(contours[0]),smallcontours,1,true);
 
-
         // gcode blockheader
         gcode_print("G0 Z2"); // dont need this in laser
         gcode_print("(Block-name: block "+to_string(blockcounter)+")\n(Block-expand: 0)\n(Block-enable: 1)");
@@ -1097,6 +1133,8 @@ int tracecontourexpansion(unsigned int pxmm, string sLayer)
         gcode_print("G01 F120"); // Feedrate 120 mm/min
         gcode_print("G0 X"+to_string(xflip*smallcontours[0].x/pxmm)+" Y"+to_string(-1.0*smallcontours[0].y/pxmm));
         gcode_print("M04 S1000");
+
+
 
         // gcode line segments
         first = true;
@@ -1287,13 +1325,25 @@ int main(int argc, char** argv)
                     break;
 
                     case 'm':  // Process map.png directly
-                        if (strlen(argv[i])!=2)
+                    {
+                        std::ifstream rfile("map.png");
+                        
+                        if (rfile.good() != 1)
                         {
+                            cout << rfile.good() << endl;
+                            cout << "File map.png unexists!\n\n"  << endl;
+                            return ENOENT;
+                        }
+                        rfile.close();
+
+                        if (strlen(argv[i])!=2)
+                        {   
                             cout << "Invalid Argument for " << argv[0] << endl;
                             return ENOENT;
                         }
                         process=true;
                     break;
+                    }
 
                     case 't' : // process cpp_image directly - debug purposes
                         cppdirect = true;
@@ -1383,7 +1433,10 @@ int main(int argc, char** argv)
             showpic();    // output bw image map.png
         }
 
-        getcontourexpansion(sLayer,cppdirect); // Expand tracks and find edge boundary of expansion
+        if (getcontourexpansion(sLayer,cppdirect) == -1) // Expand tracks and find edge boundary of expansion
+        {
+            return -1;
+        }
 
         tracecontourexpansion(pixels_per_mm, sLayer);
         trace_drillholes(pixels_per_mm, sLayer); //  via/pad holes to gcode
