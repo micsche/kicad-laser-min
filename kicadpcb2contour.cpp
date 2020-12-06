@@ -43,6 +43,7 @@ bool color_pool[31*31*31];
 #define K_ROUNDRECT 4
 #define K_LINE 5
 #define K_ARC 6
+#define K_VIA 7
 
 #define PADTYPE 0
 #define LOCX 1
@@ -382,7 +383,7 @@ int readviapad(String filename,String sLayer)
                     {
                         holey=holex;
                         height=width;
-                        ipadseg[ipadpos][PADTYPE]=K_CIRCLE;
+                        ipadseg[ipadpos][PADTYPE]=K_VIA;
                         ipadseg[ipadpos][LOCX]=centrex;
                         ipadseg[ipadpos][LOCY]=centrey;
                         ipadseg[ipadpos][SIZEX]=width;
@@ -1036,7 +1037,7 @@ int getcontourexpansion(String sLayer, bool cppdirect)
     Canny( city, detected_edges, 50, 150, 7 );
 
     string ty =  type2str( city.type() );
-    printf("city: %s %dx%d \n", ty.c_str(), city.cols, city.rows );
+    printf("Board Image Size: %s %dx%d \n", ty.c_str(), city.cols, city.rows );
     ty =  type2str( detected_edges.type() );
     printf("detected_edges: %s %dx%d \n", ty.c_str(), detected_edges.cols, detected_edges.rows );
 
@@ -1080,6 +1081,7 @@ int tracecontourexpansion(unsigned int pxmm, string sLayer)
     vector<vector<Point> > contours;
     vector<Point> smallcontours;
     vector<Vec4i> hierarchy;
+    float xx, yy;
 
     float xflip = 1.0;
     if (sLayer=="B.Cu")
@@ -1090,6 +1092,7 @@ int tracecontourexpansion(unsigned int pxmm, string sLayer)
     drImg = Mat::zeros(Size(detected_edges.cols,detected_edges.rows),CV_8UC3);
     Scalar color( 255, 0, 0 );
     int cnt = 500;
+    String s;
 
     gcode_print("G21"); // Metric
     gcode_print("G90"); // Absolute
@@ -1148,10 +1151,24 @@ int tracecontourexpansion(unsigned int pxmm, string sLayer)
             }
             else
             {
-                gcode_print("G1 X"+to_string(xflip*i.x/pxmm)+" Y"+to_string(-1.0*i.y/pxmm));
+                // CHeck that lines are within 30cm of Origin
+                xx = xflip*i.x/pxmm;
+                yy = -1.0*i.y/pxmm;
+                if ((xx>-300) & (xx<300) & (yy>-300) & (yy<300))
+                {
+                    gcode_print("G1 X"+to_string(xx)+" Y"+to_string(yy));
+                }
+                
             }
         }
-        gcode_print("G1 X"+to_string(xflip*smallcontours[0].x/pxmm)+" Y"+to_string(-1.0*smallcontours[0].y/pxmm));
+
+        // CHeck that lines are within 30cm of Origin
+        xx = xflip*smallcontours[0].x/pxmm;
+        yy = -1.0*smallcontours[0].y/pxmm;
+        if ((xx>-300) & (xx<300) & (yy>-300) & (yy<300))
+        {
+            gcode_print("G1 X"+to_string(xx)+" Y"+to_string(yy));
+        }
         gcode_print("M05\n ");
 
 
@@ -1167,12 +1184,12 @@ int tracecontourexpansion(unsigned int pxmm, string sLayer)
 // Use original kicad drill holes
 // Assumption holes are circular
 
-void trace_drillholes(unsigned int pxmm, string sLayer)
+void trace_drillholes(unsigned int pxmm, string sLayer, bool mark_vias)
 {
     #ifdef DEBUG
         cout << "drillholes" << endl;
     #endif
-    float x1,x2,yy,r;
+    float x1,x2,yy,y1,y2,xx,r;
     float hx,hy;
     float x11,x12,x21,x22,y11,y12,y21,y22;
     float c1x,c1y,c_r, c2x,c2y,angle;
@@ -1193,7 +1210,12 @@ void trace_drillholes(unsigned int pxmm, string sLayer)
 
 
         // GCODE Block init
+        if ( ipad[li][PADTYPE] == K_VIA){
+            gcode_print("(Block-name: blockvia "+to_string(blockcounter)+")\n(Block-expand: 0)\n(Block-enable: 1)");
+        } else  {
         gcode_print("(Block-name: blockvia "+to_string(blockcounter)+")\n(Block-expand: 0)\n(Block-enable: 1)");
+            gcode_print("(Block-name: blockpad "+to_string(blockcounter)+")\n(Block-expand: 0)\n(Block-enable: 1)");
+        }
         blockcounter++;
         gcode_print("G01 F120"); // Feedrate 120 mm/min
 
@@ -1220,6 +1242,28 @@ void trace_drillholes(unsigned int pxmm, string sLayer)
             gcode_print("G1 X"+to_string(x21)+" Y"+to_string(y21));
             gcode_print("G03 X"+to_string(x11)+" Y"+to_string(y11)+" I"+to_string(c1x-x21)+"J"+to_string(c1y-y21)+" F120");
 
+            // Mark Vias Outside
+            if ((mark_vias == true) & ( ipad[li][PADTYPE] == K_VIA))
+            {
+                hx = (ipad[li][HOLEX]- ipad[li][HOLEY]+1)/(2.0*pxmm);
+                hy = (1.0*ipad[li][HOLEY]+1)/(2*pxmm);
+
+                rotate_angle(x2-hx, yy-hy, x2, yy, angle, &x11, &y11);
+                rotate_angle(x2+hx, yy-hy, x2, yy, angle, &x12, &y12);
+                rotate_angle(x2-hx, yy+hy, x2, yy, angle, &x21, &y21);
+                rotate_angle(x2+hx, yy+hy, x2, yy, angle, &x22, &y22);
+
+                rotate_angle(x2-hx, yy, x2, yy, angle, &c1x, &c1y);
+                rotate_angle(x2+hx, yy, x2, yy, angle, &c2x, &c2y);
+
+                gcode_print("G0 X"+to_string(x11)+" Y"+to_string(y11));
+                gcode_print("M04 S1000");
+                gcode_print("G1 X"+to_string(x12)+" Y"+to_string(y12));
+
+                gcode_print("G03 X"+to_string(x22)+" Y"+to_string(y22)+" I"+to_string(c2x-x12)+"J"+to_string(c2y-y12)+" F120");
+                gcode_print("G1 X"+to_string(x21)+" Y"+to_string(y21));
+                gcode_print("G03 X"+to_string(x11)+" Y"+to_string(y11)+" I"+to_string(c1x-x21)+"J"+to_string(c1y-y21)+" F120");
+            }
 
         } else if ( ipad[li][HOLEX] < ipad[li][HOLEY])
         {
@@ -1242,16 +1286,49 @@ void trace_drillholes(unsigned int pxmm, string sLayer)
             gcode_print("G02 X"+to_string(x22)+" Y"+to_string(y22)+" I"+to_string(c2x-x12)+"J"+to_string(c2y-y12)+" F120");
             gcode_print("G1 X"+to_string(x21)+" Y"+to_string(y21));
             gcode_print("G02 X"+to_string(x11)+" Y"+to_string(y11)+" I"+to_string(c1x-x21)+"J"+to_string(c1y-y21)+" F120");
+
+            if ((mark_vias == true) & ( ipad[li][PADTYPE] == K_VIA))
+            {
+                hy = -(ipad[li][HOLEY]- ipad[li][HOLEX]+1)/(2.0*pxmm);
+                hx = (1.0*ipad[li][HOLEX]+1)/(2*pxmm);
+
+                rotate_angle(x2-hx, yy-hy, x2, yy, angle, &x11, &y11);
+                rotate_angle(x2+hx, yy-hy, x2, yy, angle, &x21, &y21);
+                rotate_angle(x2-hx, yy+hy, x2, yy, angle, &x12, &y12);
+                rotate_angle(x2+hx, yy+hy, x2, yy, angle, &x22, &y22);
+
+                rotate_angle(x2, yy-hy, x2, yy, angle, &c1x, &c1y);
+                rotate_angle(x2, yy+hy, x2, yy, angle, &c2x, &c2y);
+
+                gcode_print("G0 X"+to_string(x11)+" Y"+to_string(y11));
+                gcode_print("M04 S1000");
+                gcode_print("G1 X"+to_string(x12)+" Y"+to_string(y12));
+
+                gcode_print("G02 X"+to_string(x22)+" Y"+to_string(y22)+" I"+to_string(c2x-x12)+"J"+to_string(c2y-y12)+" F120");
+                gcode_print("G1 X"+to_string(x21)+" Y"+to_string(y21));
+                gcode_print("G02 X"+to_string(x11)+" Y"+to_string(y11)+" I"+to_string(c1x-x21)+"J"+to_string(c1y-y21)+" F120");
+            }
         }
-        else
+        else //it's a circle
         {
+
           // Goto rightmost
           gcode_print("G0 X"+to_string(x1)+" Y"+to_string(yy));
           gcode_print("M04 S1000");
 
           // Draw circle
           gcode_print("G02 X"+to_string(x1)+" I-"+to_string(r)+" F120");
+
+           // Draw double marks
+          if ((mark_vias == true) & ( ipad[li][PADTYPE] == K_VIA))
+          {   gcode_print("G0 X"+to_string(x1+0.2)+" Y"+to_string(yy));
+              gcode_print("M04 S1000");
+
+             
+              gcode_print("G02 X"+to_string(x1+0.2)+" I-"+to_string(r+0.2)+" F120");
+          }
       }
+
     }
 }
 
@@ -1262,6 +1339,7 @@ int main(int argc, char** argv)
     bool process=false;
     bool cppdirect = false;
     bool process_both_layers = false;
+    bool mark_vias = true;
     bool clean_up = true;
 
     if ((argc<2) | (argc>5))
@@ -1272,6 +1350,7 @@ int main(int argc, char** argv)
         cout << "\t        -b         Process Bottom and Front Copper Layer." << endl;
         cout << "\t        -c         Do not cleanup after processing." << endl;
         cout << "\t        -p<pxmm>   Change pixels per mm (default 30)" << endl;
+        cout << "\t         -v        Don't Double Mark Vias" << endl;
         cout << endl;
 
         if (argc>4) return E2BIG;
@@ -1312,6 +1391,11 @@ int main(int argc, char** argv)
                             cout << " -f parameter ignored." << endl;
                         }
                         else sLayer = "F.Cu";
+                    break;
+
+                    case 'v': // Dont Double mark vias
+                        cout << "Just output Via holes"  << endl;
+                        mark_vias = false;
                     break;
 
                     case 'b': // Prcoess Both Layers
@@ -1439,7 +1523,7 @@ int main(int argc, char** argv)
         }
 
         tracecontourexpansion(pixels_per_mm, sLayer);
-        trace_drillholes(pixels_per_mm, sLayer); //  via/pad holes to gcode
+        trace_drillholes(pixels_per_mm, sLayer, mark_vias); //  via/pad holes to gcode
 
         String filename="bottom.gcode";
         if (sLayer=="F.Cu") filename="front.gcode";
