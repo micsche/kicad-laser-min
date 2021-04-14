@@ -98,6 +98,9 @@ float edgecuts[10000][7];
 unsigned int iedgecuts[10000][7];
 unsigned int edgecutpos=0;
 
+// Board Origin will reset to 0,0
+// Unless X target has been drawn in PCB
+float orig_x,orig_y;
 
 std::string gcode="";
 unsigned int blockcounter=0;
@@ -125,7 +128,7 @@ string type2str(int type) {
   r += "C";
   r += (chans+'0');
 
-  
+
 
   return r;
 }
@@ -251,12 +254,42 @@ int readedge(String filename)
             while (line[0]==' ') line.erase(0,1);  // remove initial whitespaces
             replace( line.begin(), line.end(), ')', ' '); // remove ')' from line
 
+            // Capture Target X and use for Board Origin
+            if ((line.find("Edge.Cuts")!=string::npos) && (line.find("target")!=string::npos))
+            {   unsigned first,last=0;
+
+                bool targetx=false;
+                string token;
+
+                while (last<255)
+                {
+                    first = line.find("(");
+                    last = line.substr(first+1).find("(");
+                    token = line.substr (first+1,last-first);
+
+                    line = line.substr(last+1);
+
+                    if (token.find("x")!=string::npos) targetx = true;
+
+                    if ((targetx==true) && (token.find("at")!=string::npos))
+                    {
+                        get_two_vals(token,&orig_x,&orig_y);
+
+                        cout << "Target X at " << orig_x << "," << orig_y << std::endl;
+                    }
+                }
+
+
+            }
+
             // (at indicate footprint location
             if ((line.find("Edge.Cuts")!=string::npos) && (line.find("gr_")!=string::npos))
             {
                 unsigned first,last=0;
                 float centrex,centrey,width,height,holex,holey,angle;
+
                 string token;
+
 
                 while (last<255)
                 {
@@ -269,6 +302,7 @@ int readedge(String filename)
                     if (token.find("gr_line")!=string::npos) line_type=K_LINE;
                     if (token.find("gr_circle")!=string::npos) line_type=K_CIRCLE;
                     if (token.find("gr_arc")!=string::npos) line_type=K_ARC;
+
 
                     if ((token.find("start")!=string::npos) || (token.find("center")!=string::npos))
                     {
@@ -366,7 +400,7 @@ int readviapad(String filename,String sLayer)
             if ((line.find("via")!=string::npos) && (line.find("layers")!=string::npos))
             {
                 unsigned first,last=0;
-                float centrex,centrey,width,height,holex,holey;
+                float centrex,centrey,width,height,holex=0,holey=0;
                 string token,shape_drill;
 
                 while (last<255)
@@ -406,7 +440,7 @@ int readviapad(String filename,String sLayer)
                 #endif
 
                 unsigned first,last=0,padtype,second;
-                float centrex,centrey,width,height,holex,holey,cx,cy,rratio,angle2;
+                float centrex,centrey,width,height,holex=0,holey=0,cx,cy,rratio,angle2;
                 string token,shape_drill;
 
                 while (last<255)
@@ -424,6 +458,7 @@ int readviapad(String filename,String sLayer)
                         if (token.find("oval")!=string::npos) padtype=K_ELLPSE;
                         if (token.find("rect")!=string::npos) padtype=K_RECT;
                         if (token.find("round")!=string::npos) padtype=K_ROUNDRECT;
+                        if (token.find("roundrect")!=string::npos) padtype=K_ROUNDRECT;
                     }
 
                     if (token.substr(0,2)=="at")
@@ -448,7 +483,7 @@ int readviapad(String filename,String sLayer)
                         width  = cx; //abs(cx*cos(angle)-cy*sin(angle));
                         height = cy; // abs(cx*sin(angle)+cy*cos(angle));
 
-                        //cout << token << " " << cx << ":" << cy << endl;
+                        // cout << cx << ":" << cy << endl;
                     }
 
                     if (token.substr(0,5)=="drill")
@@ -485,6 +520,7 @@ int readviapad(String filename,String sLayer)
                   holex = min(holex,holey); // Lets take the smallest value since we dont know how to make ellipse gcode
                   holey=holex;
                 }
+
 
                 ipadseg[ipadpos][PADTYPE]=padtype;
                 ipadseg[ipadpos][LOCX]=centrex;
@@ -985,10 +1021,10 @@ void ScanImageAndReduceC(Mat &I,Mat &image, String sLayer)
 };
 
 /*cppdirect is a debug flag to use a ready made cpp_image.png*/
-int getcontourexpansion(String sLayer, bool cppdirect)
+int getcontourexpansion(String sLayer, bool cppdirect, bool doubleseperation)
 {
     Mat worktrace;
-    
+
     #ifdef DEBUG
             cout << "getcontourexpansions" << endl;
     #endif
@@ -1046,16 +1082,22 @@ int getcontourexpansion(String sLayer, bool cppdirect)
     Mat element5 = getStructuringElement( MORPH_RECT,Size( 2*5 + 1, 2*5+1 ),Point( 5, 5 ) );
     Mat element3 = getStructuringElement( MORPH_RECT,Size( 2*3 + 1, 2*5+1 ),Point( 3, 3 ) );
 
-    dilate( detected_edges, detected_edges, element5 , Point(-1,-1),2);
-    detected_edges.copyTo(worktrace);
+    if (doubleseperation==true)
+    {   dilate( detected_edges, detected_edges, element5 , Point(-1,-1),1);
+        detected_edges.copyTo(worktrace);
 
-    erode( detected_edges, detected_edges, element3 );
-    bitwise_xor(detected_edges,worktrace,detected_edges);
-    
+        erode( detected_edges, detected_edges, element3 );
+        bitwise_xor(detected_edges,worktrace,detected_edges);
+    } else
+    {
+        dilate( detected_edges, detected_edges, element5 );
+        erode( detected_edges, detected_edges, element5 );
+    }
+
     thinning(detected_edges, detected_edges, 0 );
 
     imwrite( "trace.png", detected_edges );
-    
+
     return 0;
 }
 
@@ -1074,6 +1116,12 @@ int tracecontourexpansion(unsigned int pxmm, string sLayer)
     #ifdef DEBUG
         cout << "tracecontourexpansion" << endl;
     #endif
+
+    cout << "Orig:" << orig_x << "," << orig_y << endl;
+    cout << "Brd: " << boardminx << "," << boardminy << endl;
+
+    orig_x=boardminx-orig_x;
+    orig_y=boardminy-orig_y;
 
     // threshold function
     Mat outImg,drImg;
@@ -1130,11 +1178,11 @@ int tracecontourexpansion(unsigned int pxmm, string sLayer)
         approxPolyDP(Mat(contours[0]),smallcontours,1,true);
 
         // gcode blockheader
-        gcode_print("G0 Z2"); // dont need this in laser
+        // gcode_print("G0 Z2"); // dont need this in laser
         gcode_print("(Block-name: block "+to_string(blockcounter)+")\n(Block-expand: 0)\n(Block-enable: 1)");
         blockcounter++;
         gcode_print("G01 F120"); // Feedrate 120 mm/min
-        gcode_print("G0 X"+to_string(xflip*smallcontours[0].x/pxmm)+" Y"+to_string(-1.0*smallcontours[0].y/pxmm));
+        gcode_print("G0 X"+to_string(xflip*smallcontours[0].x/pxmm-orig_x)+" Y"+to_string(-1.0*smallcontours[0].y/pxmm-orig_y));
         gcode_print("M04 S1000");
 
 
@@ -1156,9 +1204,9 @@ int tracecontourexpansion(unsigned int pxmm, string sLayer)
                 yy = -1.0*i.y/pxmm;
                 if ((xx>-300) & (xx<300) & (yy>-300) & (yy<300))
                 {
-                    gcode_print("G1 X"+to_string(xx)+" Y"+to_string(yy));
+                    gcode_print("G1 X"+to_string(xx-orig_x)+" Y"+to_string(yy-orig_y));
                 }
-                
+
             }
         }
 
@@ -1167,7 +1215,7 @@ int tracecontourexpansion(unsigned int pxmm, string sLayer)
         yy = -1.0*smallcontours[0].y/pxmm;
         if ((xx>-300) & (xx<300) & (yy>-300) & (yy<300))
         {
-            gcode_print("G1 X"+to_string(xx)+" Y"+to_string(yy));
+            gcode_print("G1 X"+to_string(xx-orig_x)+" Y"+to_string(yy-orig_y));
         }
         gcode_print("M05\n ");
 
@@ -1207,19 +1255,17 @@ void trace_drillholes(unsigned int pxmm, string sLayer, bool mark_vias)
         yy=(-1.0*ipad[li][LOCY]/pxmm);
         r=(1.0*ipad[li][HOLEX]/(2*pxmm));
 
-
-
         // GCODE Block init
         if ( ipad[li][PADTYPE] == K_VIA){
             gcode_print("(Block-name: blockvia "+to_string(blockcounter)+")\n(Block-expand: 0)\n(Block-enable: 1)");
         } else  {
-        gcode_print("(Block-name: blockvia "+to_string(blockcounter)+")\n(Block-expand: 0)\n(Block-enable: 1)");
             gcode_print("(Block-name: blockpad "+to_string(blockcounter)+")\n(Block-expand: 0)\n(Block-enable: 1)");
         }
         blockcounter++;
         gcode_print("G01 F120"); // Feedrate 120 mm/min
 
         //## oval
+        if ((ipad[li][HOLEX]!=0) & (ipad[li][HOLEY]!=0))
         if ( ipad[li][HOLEX] > ipad[li][HOLEY])
         {
             angle = 180-1.0* ipadseg[li][ANGLE];
@@ -1234,13 +1280,13 @@ void trace_drillholes(unsigned int pxmm, string sLayer, bool mark_vias)
             rotate_angle(x2-hx, yy, x2, yy, angle, &c1x, &c1y);
             rotate_angle(x2+hx, yy, x2, yy, angle, &c2x, &c2y);
 
-            gcode_print("G0 X"+to_string(x11)+" Y"+to_string(y11));
+            gcode_print("G0 X"+to_string(x11-orig_x)+" Y"+to_string(y11-orig_y));
             gcode_print("M04 S1000");
-            gcode_print("G1 X"+to_string(x12)+" Y"+to_string(y12));
+            gcode_print("G1 X"+to_string(x12-orig_x)+" Y"+to_string(y12-orig_y));
 
-            gcode_print("G03 X"+to_string(x22)+" Y"+to_string(y22)+" I"+to_string(c2x-x12)+"J"+to_string(c2y-y12)+" F120");
-            gcode_print("G1 X"+to_string(x21)+" Y"+to_string(y21));
-            gcode_print("G03 X"+to_string(x11)+" Y"+to_string(y11)+" I"+to_string(c1x-x21)+"J"+to_string(c1y-y21)+" F120");
+            gcode_print("G03 X"+to_string(x22-orig_x)+" Y"+to_string(y22-orig_y)+" I"+to_string(c2x-x12-orig_x)+"J"+to_string(c2y-y12-orig_y)+" F120");
+            gcode_print("G1 X"+to_string(x21-orig_x)+" Y"+to_string(y21-orig_y));
+            gcode_print("G03 X"+to_string(x11-orig_x)+" Y"+to_string(y11-orig_y)+" I"+to_string(c1x-x21-orig_x)+"J"+to_string(c1y-y21-orig_y)+" F120");
 
             // Mark Vias Outside
             if ((mark_vias == true) & ( ipad[li][PADTYPE] == K_VIA))
@@ -1256,13 +1302,20 @@ void trace_drillholes(unsigned int pxmm, string sLayer, bool mark_vias)
                 rotate_angle(x2-hx, yy, x2, yy, angle, &c1x, &c1y);
                 rotate_angle(x2+hx, yy, x2, yy, angle, &c2x, &c2y);
 
-                gcode_print("G0 X"+to_string(x11)+" Y"+to_string(y11));
-                gcode_print("M04 S1000");
-                gcode_print("G1 X"+to_string(x12)+" Y"+to_string(y12));
+                /* Blip
+                */
+                gcode_print("G1 X"+to_string(x11-orig_x)+" Y"+to_string(y11-orig_y));
 
-                gcode_print("G03 X"+to_string(x22)+" Y"+to_string(y22)+" I"+to_string(c2x-x12)+"J"+to_string(c2y-y12)+" F120");
-                gcode_print("G1 X"+to_string(x21)+" Y"+to_string(y21));
-                gcode_print("G03 X"+to_string(x11)+" Y"+to_string(y11)+" I"+to_string(c1x-x21)+"J"+to_string(c1y-y21)+" F120");
+
+                /*   Double Circle
+                gcode_print("G0 X"+to_string(x11-orig_x)+" Y"+to_string(y11-orig_y));
+                gcode_print("M04 S1000");
+                gcode_print("G1 X"+to_string(x12-orig_x)+" Y"+to_string(y12-orig_y));
+
+                gcode_print("G03 X"+to_string(x22-orig_x)+" Y"+to_string(y22-orig_y)+" I"+to_string(c2x-x12-orig_x)+"J"+to_string(c2y-y12-orig_y)+" F120");
+                gcode_print("G1 X"+to_string(x21-orig_x)+" Y"+to_string(y21-orig_y));
+                gcode_print("G03 X"+to_string(x11-orig_x)+" Y"+to_string(y11-orig_y)+" I"+to_string(c1x-x21-orig_x)+"J"+to_string(c1y-y21-orig_y)+" F120");
+                */
             }
 
         } else if ( ipad[li][HOLEX] < ipad[li][HOLEY])
@@ -1279,13 +1332,13 @@ void trace_drillholes(unsigned int pxmm, string sLayer, bool mark_vias)
             rotate_angle(x2, yy-hy, x2, yy, angle, &c1x, &c1y);
             rotate_angle(x2, yy+hy, x2, yy, angle, &c2x, &c2y);
 
-            gcode_print("G0 X"+to_string(x11)+" Y"+to_string(y11));
+            gcode_print("G0 X"+to_string(x11-orig_x)+" Y"+to_string(y11-orig_y));
             gcode_print("M04 S1000");
-            gcode_print("G1 X"+to_string(x12)+" Y"+to_string(y12));
+            gcode_print("G1 X"+to_string(x12-orig_x)+" Y"+to_string(y12-orig_y));
 
-            gcode_print("G02 X"+to_string(x22)+" Y"+to_string(y22)+" I"+to_string(c2x-x12)+"J"+to_string(c2y-y12)+" F120");
-            gcode_print("G1 X"+to_string(x21)+" Y"+to_string(y21));
-            gcode_print("G02 X"+to_string(x11)+" Y"+to_string(y11)+" I"+to_string(c1x-x21)+"J"+to_string(c1y-y21)+" F120");
+            gcode_print("G02 X"+to_string(x22-orig_x)+" Y"+to_string(y22-orig_y)+" I"+to_string(c2x-x12-orig_x)+"J"+to_string(c2y-y12-orig_y)+" F120");
+            gcode_print("G1 X"+to_string(x21-orig_x)+" Y"+to_string(y21-orig_y));
+            gcode_print("G02 X"+to_string(x11-orig_x)+" Y"+to_string(y11-orig_y)+" I"+to_string(c1x-x21-orig_x)+"J"+to_string(c1y-y21-orig_y)+" F120");
 
             if ((mark_vias == true) & ( ipad[li][PADTYPE] == K_VIA))
             {
@@ -1300,34 +1353,49 @@ void trace_drillholes(unsigned int pxmm, string sLayer, bool mark_vias)
                 rotate_angle(x2, yy-hy, x2, yy, angle, &c1x, &c1y);
                 rotate_angle(x2, yy+hy, x2, yy, angle, &c2x, &c2y);
 
-                gcode_print("G0 X"+to_string(x11)+" Y"+to_string(y11));
-                gcode_print("M04 S1000");
-                gcode_print("G1 X"+to_string(x12)+" Y"+to_string(y12));
+                /* Blip
+                */
+                gcode_print("G1 X"+to_string(x11-orig_x)+" Y"+to_string(y11-orig_y));
 
-                gcode_print("G02 X"+to_string(x22)+" Y"+to_string(y22)+" I"+to_string(c2x-x12)+"J"+to_string(c2y-y12)+" F120");
-                gcode_print("G1 X"+to_string(x21)+" Y"+to_string(y21));
-                gcode_print("G02 X"+to_string(x11)+" Y"+to_string(y11)+" I"+to_string(c1x-x21)+"J"+to_string(c1y-y21)+" F120");
+                /*   Double Circle
+                gcode_print("G0 X"+to_string(x11-orig_x)+" Y"+to_string(y11-orig_y));
+                gcode_print("M04 S1000");
+                gcode_print("G1 X"+to_string(x12-orig_x)+" Y"+to_string(y12-orig_y));
+
+                gcode_print("G02 X"+to_string(x22-orig_x)+" Y"+to_string(y22-orig_y)+" I"+to_string(c2x-x12-orig_x)+"J"+to_string(c2y-y12-orig_y)+" F120");
+                gcode_print("G1 X"+to_string(x21-orig_x)+" Y"+to_string(y21-orig_y));
+                gcode_print("G02 X"+to_string(x11-orig_x)+" Y"+to_string(y11-orig_y)+" I"+to_string(c1x-x21-orig_x)+"J"+to_string(c1y-y21-orig_y)+" F120");
+                */
             }
+
         }
         else //it's a circle
         {
 
           // Goto rightmost
-          gcode_print("G0 X"+to_string(x1)+" Y"+to_string(yy));
+          gcode_print("G0 X"+to_string(x1-orig_x)+" Y"+to_string(yy-orig_y));
           gcode_print("M04 S1000");
 
           // Draw circle
-          gcode_print("G02 X"+to_string(x1)+" I-"+to_string(r)+" F120");
+          gcode_print("G02 X"+to_string(x1-orig_x)+" I-"+to_string(r)+" F120");
 
            // Draw double marks
           if ((mark_vias == true) & ( ipad[li][PADTYPE] == K_VIA))
-          {   gcode_print("G0 X"+to_string(x1+0.2)+" Y"+to_string(yy));
-              gcode_print("M04 S1000");
+          {
+                /* Blip
+                */
+                gcode_print("G1 X"+to_string(x1+0.2-orig_x)+" Y"+to_string(yy-orig_y));
 
-             
-              gcode_print("G02 X"+to_string(x1+0.2)+" I-"+to_string(r+0.2)+" F120");
+                /*   Double Circle
+                gcode_print("G0 X"+to_string(x1+0.2-orig_x)+" Y"+to_string(yy-orig_y));
+                gcode_print("M04 S1000");
+
+
+                gcode_print("G02 X"+to_string(x1+0.2-orig_x)+" I-"+to_string(r+0.2)+" F120");
+                */
           }
       }
+      gcode_print("M05");
 
     }
 }
@@ -1338,6 +1406,7 @@ int main(int argc, char** argv)
     int flags, opt;
     bool process=false;
     bool cppdirect = false;
+    bool doubleseperation = false;
     bool process_both_layers = false;
     bool mark_vias = true;
     bool clean_up = true;
@@ -1350,7 +1419,8 @@ int main(int argc, char** argv)
         cout << "\t        -b         Process Bottom and Front Copper Layer." << endl;
         cout << "\t        -c         Do not cleanup after processing." << endl;
         cout << "\t        -p<pxmm>   Change pixels per mm (default 30)" << endl;
-        cout << "\t         -v        Don't Double Mark Vias" << endl;
+        cout << "\t        -v        Don't Double Mark Vias" << endl;
+        cout << "\t        -d        Increase Separation between Isolated Zones" << endl;
         cout << endl;
 
         if (argc>4) return E2BIG;
@@ -1411,7 +1481,7 @@ int main(int argc, char** argv)
                     case 'm':  // Process map.png directly
                     {
                         std::ifstream rfile("map.png");
-                        
+
                         if (rfile.good() != 1)
                         {
                             cout << rfile.good() << endl;
@@ -1421,7 +1491,7 @@ int main(int argc, char** argv)
                         rfile.close();
 
                         if (strlen(argv[i])!=2)
-                        {   
+                        {
                             cout << "Invalid Argument for " << argv[0] << endl;
                             return ENOENT;
                         }
@@ -1434,6 +1504,10 @@ int main(int argc, char** argv)
                         process = true;
                     break;
 
+                    case 'd' : // double seperation of tracks
+                        cout << "Double Seperation On." << endl;
+                        doubleseperation = true;
+                    break;
 
 
                     case 'p': // Pixels per mm
@@ -1517,7 +1591,7 @@ int main(int argc, char** argv)
             showpic();    // output bw image map.png
         }
 
-        if (getcontourexpansion(sLayer,cppdirect) == -1) // Expand tracks and find edge boundary of expansion
+        if (getcontourexpansion(sLayer,cppdirect, doubleseperation) == -1) // Expand tracks and find edge boundary of expansion
         {
             return -1;
         }
