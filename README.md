@@ -31,11 +31,17 @@ Please review outputs, especially gcode (as I am not an expert on any of the fil
 ### Usage
 
 ```Usage:
-    Option: -m         Process map.png directly.
-            -f         Process Front Copper Layer. (default Bottom Copper Layer).
-            -b         Process Front and Bottom Layer.
-            -c         Do not cleanup after program exits.
-            -p<pxmm>   Change pixels per mm (default 30).
+Option: -m         Process map.png directly
+        -f         Process Front Copper Layer.
+        -b         Process Bottom and Front Copper Layer.
+        -c         Do not cleanup after processing.
+        -p<pxmm>   Change pixels per mm (default 30)
+        -v        Don't Double Mark Vias
+        -x        Mark Pads and Vias with '+'
+        -d        Increase Separation between Isolated Zones
+        -t       Increase Separation between Isolated Zones but include middle-trace
+        -r       Override feedrate (default 120)
+
 ```
 
 ### Files
@@ -57,13 +63,11 @@ OpenCV libraries (version 4.5 used) with opencv_contrib (ximgproc)
 ### Compilation
 Go into the directory and type in ```make```.
 
-
-
-### Docker image( To come )
+### Solved
+Some offshoot tracks where created, output from opencv finContours. Contours outside the board are pruned out.
 
 ### Errors
 
-Opencv follow contour sometimes does not make closed contours. This is a problem in PCB making, as it would short-circuit PCB tracks.
 However, as shown the inter-contour distance tolerance is of 0.0685mm. I have a laser cutter with an engraving width of 0.2mm (i.e. a
 possible 0.1mm engraving width on the centre of track to a track coninciding from left or right side)
 
@@ -76,5 +80,3 @@ However, distance is small enough to still function.
 OpenCV follow contours creates two contours from both sides.
 One could propose new findcontour method. No real problem here, rather than double time to process pcb.
 <img src="images/error-3.png">
-
-```findcountour``` also creates small artefacts, which don't deter from final quality but may slow rendering of PCB.

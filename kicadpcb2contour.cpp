@@ -4,6 +4,7 @@
  File Created
     map.png - BW image of tracks
     trace.png - BW contour of track expansion
+    trace2.png - BW contour of track expansion
     cpp_image.png - Colour track expansion
 */
 
@@ -89,6 +90,7 @@ class PCBTRACKS
 float linesegment[50000][5];
 unsigned int iline[50000][5];
 unsigned int linesegpos=0;
+
 
 float ipadseg[50000][9];
 unsigned int ipad[50000][9];
@@ -1020,10 +1022,21 @@ void ScanImageAndReduceC(Mat &I,Mat &image, String sLayer)
     }
 };
 
+
+/* getcontourexpansion
+    Input map.png - a 2bit image of tracks
+      - colourize tracks
+      - expand tracks till they meet and create border
+      - join borders by dilation
+      - edge detect
+    Output trace.png - track expansion borders edges
+        Global Variable detected_edges modified
+*/
 /*cppdirect is a debug flag to use a ready made cpp_image.png*/
 int getcontourexpansion(String sLayer, bool cppdirect, bool doubleseperation)
 {
     Mat worktrace;
+    Mat temptrace;
 
     #ifdef DEBUG
             cout << "getcontourexpansions" << endl;
@@ -1082,21 +1095,39 @@ int getcontourexpansion(String sLayer, bool cppdirect, bool doubleseperation)
     Mat element5 = getStructuringElement( MORPH_RECT,Size( 2*5 + 1, 2*5+1 ),Point( 5, 5 ) );
     Mat element3 = getStructuringElement( MORPH_RECT,Size( 2*3 + 1, 2*5+1 ),Point( 3, 3 ) );
 
+    detected_edges.copyTo(temptrace);
+
     if (doubleseperation==true)
-    {   dilate( detected_edges, detected_edges, element5 , Point(-1,-1),1);
+    {   
+        dilate( detected_edges, detected_edges, element5 , Point(-1,-1),1);
         detected_edges.copyTo(worktrace);
 
+        /* Double Separation */
         erode( detected_edges, detected_edges, element3 );
         bitwise_xor(detected_edges,worktrace,detected_edges);
+
+        thinning(detected_edges, detected_edges, 0 );
+
+        imwrite( "trace.png", detected_edges );
+
+        /* Middle Way */
+        dilate( temptrace, temptrace, element5 );
+        erode( temptrace, temptrace, element5 );
+
+        thinning(temptrace, temptrace, 0 );
+
+        imwrite( "trace2.png", temptrace );
+
     } else
     {
         dilate( detected_edges, detected_edges, element5 );
         erode( detected_edges, detected_edges, element5 );
+
+        thinning(detected_edges, detected_edges, 0 );
+
+        imwrite( "trace.png", detected_edges );
+
     }
-
-    thinning(detected_edges, detected_edges, 0 );
-
-    imwrite( "trace.png", detected_edges );
 
     return 0;
 }
@@ -1110,24 +1141,32 @@ void gcode_print(String gout)
 /*
     Find contours of the edges between the track expansion.
     Use contour and segment in lines.
+
+    Global Variable: "detectedges" as input image
  */
-int tracecontourexpansion(unsigned int pxmm, string sLayer)
+int tracecontourexpansion(unsigned int pxmm, string sLayer, bool first_try, String feedrate)
 {
     #ifdef DEBUG
         cout << "tracecontourexpansion" << endl;
     #endif
 
-    cout << "Orig:" << orig_x << "," << orig_y << endl;
-    cout << "Brd: " << boardminx << "," << boardminy << endl;
+    if (first_try)
+    {
+        cout << "Orig:" << orig_x << "," << orig_y << endl;
+        cout << "Brd: " << boardminx << "," << boardminy << endl;
 
-    orig_x=boardminx-orig_x;
-    orig_y=boardminy-orig_y;
+        orig_x=boardminx-orig_x;
+        orig_y=boardminy-orig_y;
+    } 
 
     // threshold function
     Mat outImg,drImg;
     bool found = true;
-    vector<vector<Point> > contours;
-    vector<Point> smallcontours;
+    
+    vector<vector<Point> > contours_p; // List of Contours from findContours - we only use 1st contour - erase it from image 
+    vector<Point> smallcontours; // 1st contour after approximating simpler polygon
+    vector<Point>  contours; // 1st contour after approximating simpler polygon and pruning from spurious co-ords outside board.
+    
     vector<Vec4i> hierarchy;
     float xx, yy;
 
@@ -1137,7 +1176,12 @@ int tracecontourexpansion(unsigned int pxmm, string sLayer)
         xflip=-1.0;
     }
 
-    drImg = Mat::zeros(Size(detected_edges.cols,detected_edges.rows),CV_8UC3);
+    // get board limits and draw a rectangle (helps in spurios pixels detection - findcontours)
+    int image_width = detected_edges.cols;
+    int image_height = detected_edges.rows;
+    rectangle(detected_edges, Point(0,0), Point(image_width-1,image_height-1), Scalar(255,255,255), 2, LINE_4);
+
+    drImg = Mat::zeros(Size(image_width, image_height),CV_8UC3);
     Scalar color( 255, 0, 0 );
     int cnt = 500;
     String s;
@@ -1149,15 +1193,20 @@ int tracecontourexpansion(unsigned int pxmm, string sLayer)
     while (found)
     {
         // Get all contours from Input Image
-        findContours( detected_edges, contours, hierarchy, RETR_TREE, CHAIN_APPROX_SIMPLE, Point(0, 0) );
+        findContours( detected_edges, contours_p, hierarchy, RETR_TREE, CHAIN_APPROX_SIMPLE, Point(0, 0) );
 
         bool first = true;
         unsigned int no_lines = 0;
         Point j,k;
 
-        // remove First Contour by tracing lines on Input Image
+        // correct some findcontours problems (reove coords outside board limits)
+        contours.clear();
+        for (Point i: contours_p[0])
+        {   if ((i.x<image_width) & (i.y<image_height)  & (i.x>=0) & (i.y>=0)) contours.push_back(i);
+        }
 
-        for (Point i: contours[0] )
+        // erase contour from image
+        for (Point i: contours )
         {
             if (first)
             {
@@ -1171,57 +1220,52 @@ int tracecontourexpansion(unsigned int pxmm, string sLayer)
 
             no_lines++;
         }
-
         line(detected_edges, k, j,  Scalar(0,0,0), 2, LINE_4);
 
         // build gcode from Approximate contour
-        approxPolyDP(Mat(contours[0]),smallcontours,1,true);
-
-        // gcode blockheader
-        // gcode_print("G0 Z2"); // dont need this in laser
-        gcode_print("(Block-name: block "+to_string(blockcounter)+")\n(Block-expand: 0)\n(Block-enable: 1)");
-        blockcounter++;
-        gcode_print("G01 F120"); // Feedrate 120 mm/min
-        gcode_print("G0 X"+to_string(xflip*smallcontours[0].x/pxmm-orig_x)+" Y"+to_string(-1.0*smallcontours[0].y/pxmm-orig_y));
-        gcode_print("M04 S1000");
-
-
-
-        // gcode line segments
-        first = true;
-        for (Point i: smallcontours)
+        if (contours.size()>0)
         {
-            if (first)
+            approxPolyDP(Mat(contours),smallcontours,1,true); // find simpler polygon (reduces gcode size)
+
+            // gcode blockheader
+            gcode_print("(Block-name: block "+to_string(blockcounter)+")\n(Block-expand: 0)\n(Block-enable: 1)");
+            blockcounter++;
+            gcode_print("G01"+feedrate); // Feedrate 120 mm/min
+            gcode_print("G0 X"+to_string(xflip*smallcontours[0].x/pxmm-orig_x)+" Y"+to_string(-1.0*smallcontours[0].y/pxmm-orig_y));
+            gcode_print("M04 S1000");
+
+            // gcode line segments
+            first = true;
+            for (Point i: smallcontours)
             {
-                first=false;
-                j=i;
-                k=i;
-            }
-            else
-            {
-                // CHeck that lines are within 30cm of Origin
-                xx = xflip*i.x/pxmm;
-                yy = -1.0*i.y/pxmm;
-                if ((xx>-300) & (xx<300) & (yy>-300) & (yy<300))
+                if (first)
                 {
-                    gcode_print("G1 X"+to_string(xx-orig_x)+" Y"+to_string(yy-orig_y));
+                    first=false;
+                    j=i;
+                    k=i;
                 }
+                else
+                {
+                    // CHeck that lines are within 30cm of Origin
+                    xx = xflip*i.x/pxmm;
+                    yy = -1.0*i.y/pxmm;
+                    if ((xx>-300) & (xx<300) & (yy>-300) & (yy<300))
+                    {
+                        gcode_print("G1 X"+to_string(xx-orig_x)+" Y"+to_string(yy-orig_y));
+                    }
 
+                }
             }
-        }
 
-        // CHeck that lines are within 30cm of Origin
-        xx = xflip*smallcontours[0].x/pxmm;
-        yy = -1.0*smallcontours[0].y/pxmm;
-        if ((xx>-300) & (xx<300) & (yy>-300) & (yy<300))
-        {
+            xx = xflip*smallcontours[0].x/pxmm;
+            yy = -1.0*smallcontours[0].y/pxmm;
             gcode_print("G1 X"+to_string(xx-orig_x)+" Y"+to_string(yy-orig_y));
+            gcode_print("M05\n ");
         }
-        gcode_print("M05\n ");
 
 
         // if no more contours then stop
-        if (contours.size()<2) found = false;
+        if (contours_p.size()<2) found = false;
         cnt--;
         if (cnt==0) found = false;
     }
@@ -1232,7 +1276,7 @@ int tracecontourexpansion(unsigned int pxmm, string sLayer)
 // Use original kicad drill holes
 // Assumption holes are circular
 
-void trace_drillholes(unsigned int pxmm, string sLayer, bool mark_vias)
+void mark_drillholes(unsigned int pxmm, string sLayer, String feedrate)
 {
     #ifdef DEBUG
         cout << "drillholes" << endl;
@@ -1250,10 +1294,10 @@ void trace_drillholes(unsigned int pxmm, string sLayer, bool mark_vias)
 
     for (unsigned int li=0; li<ipadpos; li++)
     {
-        x1=(xflip*ipad[li][LOCX]+ipad[li][HOLEX]/2)/pxmm;
-        x2=(xflip*ipad[li][LOCX]/pxmm);
-        yy=(-1.0*ipad[li][LOCY]/pxmm);
-        r=(1.0*ipad[li][HOLEX]/(2*pxmm));
+        x1=(xflip*ipad[li][LOCX]+ipad[li][HOLEX]/2)/pxmm; // pixel x coord of left of hole
+        x2=(xflip*ipad[li][LOCX]/pxmm);                   // pixel x coord of middle of hole
+        yy=(-1.0*ipad[li][LOCY]/pxmm);                    // pixel y coord of middle of hole
+        r=(1.0*ipad[li][HOLEX]/(2*pxmm));                 // pixel radius of hole
 
         // GCODE Block init
         if ( ipad[li][PADTYPE] == K_VIA){
@@ -1262,8 +1306,53 @@ void trace_drillholes(unsigned int pxmm, string sLayer, bool mark_vias)
             gcode_print("(Block-name: blockpad "+to_string(blockcounter)+")\n(Block-expand: 0)\n(Block-enable: 1)");
         }
         blockcounter++;
-        gcode_print("G01 F120"); // Feedrate 120 mm/min
+        gcode_print("G01"+feedrate); // Feedrate 120 mm/min
 
+        gcode_print("G0 X"+to_string(x1-orig_x)+" Y"+to_string(yy-r-orig_y));
+        gcode_print("M04 S1000");
+        gcode_print("G1 X"+to_string(x1-orig_x)+" Y"+to_string(yy+r-orig_y));
+        gcode_print("M05");
+
+        gcode_print("G0 X"+to_string(x1-r-orig_x)+" Y"+to_string(yy-orig_y));
+        gcode_print("M04 S1000");
+        gcode_print("G1 X"+to_string(x1+r-orig_x)+" Y"+to_string(yy-orig_y));
+        gcode_print("M05");
+
+    }
+}
+
+void trace_drillholes(unsigned int pxmm, string sLayer, bool mark_vias, String feedrate)
+{
+    #ifdef DEBUG
+        cout << "drillholes" << endl;
+    #endif
+    float x1,x2,yy,y1,y2,xx,r;
+    float hx,hy;
+    float x11,x12,x21,x22,y11,y12,y21,y22;
+    float c1x,c1y,c_r, c2x,c2y,angle;
+
+    float xflip = 1.0;
+    if (sLayer=="B.Cu")
+    {
+        xflip=-1.0;
+    }
+
+    for (unsigned int li=0; li<ipadpos; li++)
+    {
+        x1=(xflip*ipad[li][LOCX]+ipad[li][HOLEX]/2)/pxmm; // pixel x coord of left of hole
+        x2=(xflip*ipad[li][LOCX]/pxmm);                   // pixel x coord of middle of hole
+        yy=(-1.0*ipad[li][LOCY]/pxmm);                    // pixel y coord of middle of hole
+        r=(1.0*ipad[li][HOLEX]/(2*pxmm));                 // pixel radius of hole
+
+        // GCODE Block init
+        if ( ipad[li][PADTYPE] == K_VIA){
+            gcode_print("(Block-name: blockvia "+to_string(blockcounter)+")\n(Block-expand: 0)\n(Block-enable: 1)");
+        } else  {
+            gcode_print("(Block-name: blockpad "+to_string(blockcounter)+")\n(Block-expand: 0)\n(Block-enable: 1)");
+        }
+        blockcounter++;
+        gcode_print("G01"+feedrate); // Feedrate 120 mm/min
+        
         //## oval
         if ((ipad[li][HOLEX]!=0) & (ipad[li][HOLEY]!=0))
         if ( ipad[li][HOLEX] > ipad[li][HOLEY])
@@ -1284,9 +1373,9 @@ void trace_drillholes(unsigned int pxmm, string sLayer, bool mark_vias)
             gcode_print("M04 S1000");
             gcode_print("G1 X"+to_string(x12-orig_x)+" Y"+to_string(y12-orig_y));
 
-            gcode_print("G03 X"+to_string(x22-orig_x)+" Y"+to_string(y22-orig_y)+" I"+to_string(c2x-x12-orig_x)+"J"+to_string(c2y-y12-orig_y)+" F120");
+            gcode_print("G03 X"+to_string(x22-orig_x)+" Y"+to_string(y22-orig_y)+" I"+to_string(c2x-x12-orig_x)+"J"+to_string(c2y-y12-orig_y)+feedrate);
             gcode_print("G1 X"+to_string(x21-orig_x)+" Y"+to_string(y21-orig_y));
-            gcode_print("G03 X"+to_string(x11-orig_x)+" Y"+to_string(y11-orig_y)+" I"+to_string(c1x-x21-orig_x)+"J"+to_string(c1y-y21-orig_y)+" F120");
+            gcode_print("G03 X"+to_string(x11-orig_x)+" Y"+to_string(y11-orig_y)+" I"+to_string(c1x-x21-orig_x)+"J"+to_string(c1y-y21-orig_y)+feedrate);
 
             // Mark Vias Outside
             if ((mark_vias == true) & ( ipad[li][PADTYPE] == K_VIA))
@@ -1305,17 +1394,6 @@ void trace_drillholes(unsigned int pxmm, string sLayer, bool mark_vias)
                 /* Blip
                 */
                 gcode_print("G1 X"+to_string(x11-orig_x)+" Y"+to_string(y11-orig_y));
-
-
-                /*   Double Circle
-                gcode_print("G0 X"+to_string(x11-orig_x)+" Y"+to_string(y11-orig_y));
-                gcode_print("M04 S1000");
-                gcode_print("G1 X"+to_string(x12-orig_x)+" Y"+to_string(y12-orig_y));
-
-                gcode_print("G03 X"+to_string(x22-orig_x)+" Y"+to_string(y22-orig_y)+" I"+to_string(c2x-x12-orig_x)+"J"+to_string(c2y-y12-orig_y)+" F120");
-                gcode_print("G1 X"+to_string(x21-orig_x)+" Y"+to_string(y21-orig_y));
-                gcode_print("G03 X"+to_string(x11-orig_x)+" Y"+to_string(y11-orig_y)+" I"+to_string(c1x-x21-orig_x)+"J"+to_string(c1y-y21-orig_y)+" F120");
-                */
             }
 
         } else if ( ipad[li][HOLEX] < ipad[li][HOLEY])
@@ -1336,9 +1414,9 @@ void trace_drillholes(unsigned int pxmm, string sLayer, bool mark_vias)
             gcode_print("M04 S1000");
             gcode_print("G1 X"+to_string(x12-orig_x)+" Y"+to_string(y12-orig_y));
 
-            gcode_print("G02 X"+to_string(x22-orig_x)+" Y"+to_string(y22-orig_y)+" I"+to_string(c2x-x12-orig_x)+"J"+to_string(c2y-y12-orig_y)+" F120");
+            gcode_print("G02 X"+to_string(x22-orig_x)+" Y"+to_string(y22-orig_y)+" I"+to_string(c2x-x12-orig_x)+"J"+to_string(c2y-y12-orig_y)+feedrate);
             gcode_print("G1 X"+to_string(x21-orig_x)+" Y"+to_string(y21-orig_y));
-            gcode_print("G02 X"+to_string(x11-orig_x)+" Y"+to_string(y11-orig_y)+" I"+to_string(c1x-x21-orig_x)+"J"+to_string(c1y-y21-orig_y)+" F120");
+            gcode_print("G02 X"+to_string(x11-orig_x)+" Y"+to_string(y11-orig_y)+" I"+to_string(c1x-x21-orig_x)+"J"+to_string(c1y-y21-orig_y)+feedrate);
 
             if ((mark_vias == true) & ( ipad[li][PADTYPE] == K_VIA))
             {
@@ -1356,16 +1434,6 @@ void trace_drillholes(unsigned int pxmm, string sLayer, bool mark_vias)
                 /* Blip
                 */
                 gcode_print("G1 X"+to_string(x11-orig_x)+" Y"+to_string(y11-orig_y));
-
-                /*   Double Circle
-                gcode_print("G0 X"+to_string(x11-orig_x)+" Y"+to_string(y11-orig_y));
-                gcode_print("M04 S1000");
-                gcode_print("G1 X"+to_string(x12-orig_x)+" Y"+to_string(y12-orig_y));
-
-                gcode_print("G02 X"+to_string(x22-orig_x)+" Y"+to_string(y22-orig_y)+" I"+to_string(c2x-x12-orig_x)+"J"+to_string(c2y-y12-orig_y)+" F120");
-                gcode_print("G1 X"+to_string(x21-orig_x)+" Y"+to_string(y21-orig_y));
-                gcode_print("G02 X"+to_string(x11-orig_x)+" Y"+to_string(y11-orig_y)+" I"+to_string(c1x-x21-orig_x)+"J"+to_string(c1y-y21-orig_y)+" F120");
-                */
             }
 
         }
@@ -1377,7 +1445,7 @@ void trace_drillholes(unsigned int pxmm, string sLayer, bool mark_vias)
           gcode_print("M04 S1000");
 
           // Draw circle
-          gcode_print("G02 X"+to_string(x1-orig_x)+" I-"+to_string(r)+" F120");
+          gcode_print("G02 X"+to_string(x1-orig_x)+" I-"+to_string(r)+feedrate);
 
            // Draw double marks
           if ((mark_vias == true) & ( ipad[li][PADTYPE] == K_VIA))
@@ -1386,13 +1454,6 @@ void trace_drillholes(unsigned int pxmm, string sLayer, bool mark_vias)
                 */
                 gcode_print("G1 X"+to_string(x1+0.2-orig_x)+" Y"+to_string(yy-orig_y));
 
-                /*   Double Circle
-                gcode_print("G0 X"+to_string(x1+0.2-orig_x)+" Y"+to_string(yy-orig_y));
-                gcode_print("M04 S1000");
-
-
-                gcode_print("G02 X"+to_string(x1+0.2-orig_x)+" I-"+to_string(r+0.2)+" F120");
-                */
           }
       }
       gcode_print("M05");
@@ -1403,13 +1464,17 @@ void trace_drillholes(unsigned int pxmm, string sLayer, bool mark_vias)
 int main(int argc, char** argv)
 {
     String filename,sLayer="B.Cu";
+    String str_feedrate="120"; // default F120
     int flags, opt;
     bool process=false;
     bool cppdirect = false;
     bool doubleseperation = false;
+    bool doubleseperationmid = false;
     bool process_both_layers = false;
     bool mark_vias = true;
     bool clean_up = true;
+    bool circle_or_cross = false ; //default circle
+    String feedrate = " F120";
 
     if ((argc<2) | (argc>5))
     {
@@ -1420,10 +1485,13 @@ int main(int argc, char** argv)
         cout << "\t        -c         Do not cleanup after processing." << endl;
         cout << "\t        -p<pxmm>   Change pixels per mm (default 30)" << endl;
         cout << "\t        -v        Don't Double Mark Vias" << endl;
+        cout << "\t        -x        Mark Pads and Vias with '+'" << endl;
         cout << "\t        -d        Increase Separation between Isolated Zones" << endl;
+        cout << "\t        -t       Increase Separation between Isolated Zones but include middle-trace" << endl;
+        cout << "\t        -r       Override feedrate (default 120)" << endl;
         cout << endl;
 
-        if (argc>4) return E2BIG;
+        if (argc>8) return E2BIG;
         return EINVAL;
     }
 
@@ -1468,6 +1536,11 @@ int main(int argc, char** argv)
                         mark_vias = false;
                     break;
 
+                    case 'x': // Mark vias as X
+                        cout << "Mark VIAs/Pads with X. "  << endl;
+                        circle_or_cross = true;
+                    break;
+
                     case 'b': // Prcoess Both Layers
                         cout << "Processing both layers. ";
                         if (sLayer=="F.Cu")
@@ -1499,7 +1572,7 @@ int main(int argc, char** argv)
                     break;
                     }
 
-                    case 't' : // process cpp_image directly - debug purposes
+                    case 'z' : // process cpp_image directly - debug purposes
                         cppdirect = true;
                         process = true;
                     break;
@@ -1507,6 +1580,57 @@ int main(int argc, char** argv)
                     case 'd' : // double seperation of tracks
                         cout << "Double Seperation On." << endl;
                         doubleseperation = true;
+                    break;
+
+                    case 't' : // double seperation of tracks with Mid
+                        cout << "Double Seperation On with middle trace." << endl;
+                        doubleseperation = true;
+                        doubleseperationmid = true;
+                    break;
+
+                    case 'r':
+                        
+                        if (strlen(argv[i])>4)
+                        {
+                            str_feedrate = String(argv[i]).substr(2);
+                            if (is_number(str_feedrate))
+                            {
+                                try
+                                {
+                                    int pfr = stoi(str_feedrate);
+                                    feedrate = " F"+str_feedrate;
+                                    if (pfr>800)
+                                    {
+                                        cout << "Feedrate limit 800" << endl;
+                                        return ENOENT;
+                                    }
+                                }
+                                catch (std::invalid_argument const &e)
+                                {
+                                    cout << "Bad input " << argv[i] << endl;
+                                    return ENOENT;
+                                }
+                                catch (std::out_of_range const &e)
+                                {
+                                    cout << "Integer overflow." << endl;
+                                    return ENOENT;
+                                }
+
+                                cout << "FEEDRATE changed to "+feedrate << endl;
+
+                            } else
+                            {
+                                cout << "Invalid Argument for " << argv[0] << endl;
+                                return ENOENT;
+                            }
+                            
+                        }
+                        else
+                        {
+                            cout << "Invalid Argument for " << argv[0] << endl;
+                            return ENOENT;
+                        }
+                        
                     break;
 
 
@@ -1596,8 +1720,31 @@ int main(int argc, char** argv)
             return -1;
         }
 
-        tracecontourexpansion(pixels_per_mm, sLayer);
-        trace_drillholes(pixels_per_mm, sLayer, mark_vias); //  via/pad holes to gcode
+        tracecontourexpansion(pixels_per_mm, sLayer, true, feedrate); // detected_images to gcode
+
+        if (doubleseperationmid)
+        {
+            /*  Double separation */
+            String imageName( "trace2.png" ); 
+            detected_edges = imread( samples::findFile( imageName ), IMREAD_GRAYSCALE ); // Read the file
+            if ( detected_edges.empty() )                      // Check for invalid input
+            {
+                cout <<  "Not valid PNG." << std::endl ;
+                return -1;
+            } else
+            {   detected_edges.convertTo(detected_edges, CV_8U);
+                tracecontourexpansion(pixels_per_mm, sLayer, false, feedrate); // detected_images to gcode
+            }
+        }
+
+        if (circle_or_cross)
+        {
+            mark_drillholes(pixels_per_mm, sLayer, feedrate); //  via/pad holes to gcode
+        }
+        else 
+        {
+            trace_drillholes(pixels_per_mm, sLayer, mark_vias, feedrate); //  via/pad holes to gcode
+        }
 
         String filename="bottom.gcode";
         if (sLayer=="F.Cu") filename="front.gcode";
@@ -1616,6 +1763,7 @@ int main(int argc, char** argv)
             remove("cpp_image.png");
             remove("mask.png");
             remove("trace.png");
+            remove("trace2.png");
         }
 
         // Process first F.Cu then B.Cu then exit
